@@ -1,0 +1,4030 @@
+[
+ {
+  "ean": "3337875722827",
+  "nombre": "Effaclar Serum",
+  "marca": "La Roche-Posay",
+  "sku": "DERM-0170",
+  "categoria": "Cuidado de la piel > Facial",
+  "rama": "Cuidado de la piel",
+  "hoja": "Facial",
+  "lista": 119758,
+  "precio": 65867,
+  "off": 45,
+  "sin_iva": 54435.54,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/EFFACLAR SERUM 30ML - 3337875722827.jpg",
+  "presentacion": "30 ml",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-21"
+  ]
+ },
+ {
+  "ean": "3337875920582",
+  "nombre": "Hyalu B5 Serum",
+  "marca": "La Roche-Posay",
+  "sku": "DERM-0169",
+  "categoria": "Cuidado de la piel > Facial",
+  "rama": "Cuidado de la piel",
+  "hoja": "Facial",
+  "lista": 155600,
+  "precio": 85580,
+  "off": 45,
+  "sin_iva": 70727.27,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/NUEVO HB5 SURACT SERUM B30ml SP PT FR - 3337875920582.jpg",
+  "presentacion": "Serum · Suractivado · 30 ml",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-21"
+  ]
+ },
+ {
+  "ean": "3337875890021",
+  "nombre": "Mela B3 10 Serum",
+  "marca": "La Roche-Posay",
+  "sku": "DERM-0164",
+  "categoria": "Cuidado de la piel > Facial",
+  "rama": "Cuidado de la piel",
+  "hoja": "Facial",
+  "lista": 176318,
+  "precio": 96975,
+  "off": 45,
+  "sin_iva": 80144.63,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/MELA B3 10 SERUM NUEVO - 3337875890021.jpg",
+  "presentacion": "—",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-21"
+  ]
+ },
+ {
+  "ean": "3337875932349",
+  "nombre": "Anthelios UVAir Fluid",
+  "marca": "La Roche-Posay",
+  "sku": "DERM-0194",
+  "categoria": "Cuidado de la piel > Protección solar",
+  "rama": "Cuidado de la piel",
+  "hoja": "Protección solar",
+  "lista": 75000,
+  "precio": 45000,
+  "off": 40,
+  "sin_iva": 37190.08,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/ANTH UVAir Fluid 50ml - 3337875932349.jpg",
+  "presentacion": "40 · 50 ml",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-21"
+  ]
+ },
+ {
+  "ean": "3337875797597",
+  "nombre": "Anthelios UVMune 50+",
+  "marca": "La Roche-Posay",
+  "sku": "DERM-0185",
+  "categoria": "Cuidado de la piel > Protección solar",
+  "rama": "Cuidado de la piel",
+  "hoja": "Protección solar",
+  "lista": 83381,
+  "precio": 50029,
+  "off": 40,
+  "sin_iva": 41346.28,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/ANTHELIOS UVMUNE FLUID 50_ - 3337875797597.jpg",
+  "presentacion": "Cream · Fluid",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-21"
+  ]
+ },
+ {
+  "ean": "3337875597197",
+  "nombre": "CeraVe Limpiadores",
+  "marca": "CeraVe",
+  "sku": "DERM-0204",
+  "categoria": "Cuidado de la piel > Facial",
+  "rama": "Cuidado de la piel",
+  "hoja": "Facial",
+  "lista": 55620,
+  "precio": 33372,
+  "off": 40,
+  "sin_iva": 27580.17,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/GEL LIMPIADOR ESPUMOSO - 3337875597197.jpg",
+  "presentacion": "Gel espumoso · Hidratante · Air foam",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-21"
+  ]
+ },
+ {
+  "ean": "3337871328801",
+  "nombre": "Crema Antiarrugas Vichy Liftactiv Supreme para Piel Seca x 50 ml",
+  "marca": "Vichy",
+  "sku": "DERM-0221",
+  "categoria": "Cuidado de la piel > Facial",
+  "rama": "Cuidado de la piel",
+  "hoja": "Facial",
+  "lista": 158597,
+  "precio": 95158,
+  "off": 40,
+  "sin_iva": 78642.98,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/LIFTACTIV SUPREME PS - 3337871328801.jpg",
+  "presentacion": "",
+  "vigencia": [
+   "",
+   ""
+  ]
+ },
+ {
+  "ean": "3337871330286",
+  "nombre": "Dercos Anticaspa",
+  "marca": "Vichy",
+  "sku": "CAP-0056",
+  "categoria": "Cuidado del cabello",
+  "rama": "Cuidado del cabello",
+  "hoja": "Cuidado del cabello",
+  "lista": 61695,
+  "precio": 37017,
+  "off": 40,
+  "sin_iva": 30592.56,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/DERCOS SHAMPOO PARA LA CASPA ANTI-GRASO - 3337871330286.jpg",
+  "presentacion": "Cabello normal · Sensible · Anti-graso · Seco",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-21"
+  ]
+ },
+ {
+  "ean": "3337871311292",
+  "nombre": "Dercos Energizante",
+  "marca": "Vichy",
+  "sku": "CAP-0055",
+  "categoria": "Cuidado del cabello",
+  "rama": "Cuidado del cabello",
+  "hoja": "Cuidado del cabello",
+  "lista": 61695,
+  "precio": 37017,
+  "off": 40,
+  "sin_iva": 30592.56,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/DERCOS SHAMPOO ENERGIZANTE - 3337871311292.jpg",
+  "presentacion": "Shampoo · Après · Energy 400 ml",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-21"
+  ]
+ },
+ {
+  "ean": "7506306252820",
+  "nombre": "Dove Serum Corporal",
+  "marca": "Dove",
+  "sku": "DERM-0024",
+  "categoria": "Cuidado de la piel > Corporal",
+  "rama": "Cuidado de la piel",
+  "hoja": "Corporal",
+  "lista": 16790,
+  "precio": 10074,
+  "off": 40,
+  "sin_iva": 8325.62,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/DOVE SERUM CORP FIRM PRO-RETIN 200ML - 7506306252820.jpg",
+  "presentacion": "Dermo regenerador · Firmeza pro-retinol · Pro-ceramidas · Tono uniforme · 200 ml",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-30"
+  ]
+ },
+ {
+  "ean": "7506306252806",
+  "nombre": "Dove Serum Corporal Intense",
+  "marca": "Dove",
+  "sku": "DERM-0023",
+  "categoria": "Cuidado de la piel > Corporal",
+  "rama": "Cuidado de la piel",
+  "hoja": "Corporal",
+  "lista": 16790,
+  "precio": 10074,
+  "off": 40,
+  "sin_iva": 8325.62,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/DOVE SERUM CORP HIALU PIEL EXTRA SECA X 200ML - 7506306252806.jpg",
+  "presentacion": "Hialurónico piel extra seca · Glicólico · 200 ml",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-30"
+  ]
+ },
+ {
+  "ean": "3337875839624",
+  "nombre": "Minéral 89 Crema",
+  "marca": "Vichy",
+  "sku": "DERM-0174",
+  "categoria": "Cuidado de la piel > Facial",
+  "rama": "Cuidado de la piel",
+  "hoja": "Facial",
+  "lista": 109954,
+  "precio": 65972,
+  "off": 40,
+  "sin_iva": 54522.31,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/MINERAL 89 CREMA SIN FRAGANCIA - 3337875839624.jpg",
+  "presentacion": "Sin fragancia · Textura rica",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-21"
+  ]
+ },
+ {
+  "ean": "3337875895637",
+  "nombre": "Minéral 89 Crema",
+  "marca": "Vichy",
+  "sku": "DERM-0175",
+  "categoria": "Cuidado de la piel > Facial",
+  "rama": "Cuidado de la piel",
+  "hoja": "Facial",
+  "lista": 109954,
+  "precio": 65972,
+  "off": 40,
+  "sin_iva": 54522.31,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/MINERAL 89 CREMA TEXTURA RICA - 3337875895637.jpg",
+  "presentacion": "Sin fragancia · Textura rica",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-21"
+  ]
+ },
+ {
+  "ean": "3337875909235",
+  "nombre": "Pure Vitamin C",
+  "marca": "La Roche-Posay",
+  "sku": "DERM-0165",
+  "categoria": "Cuidado de la piel > Facial",
+  "rama": "Cuidado de la piel",
+  "hoja": "Facial",
+  "lista": 173059,
+  "precio": 103835,
+  "off": 40,
+  "sin_iva": 85814.05,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/PURE VITAMIN C 12 - 3337875909235.jpg",
+  "presentacion": "C10 · C12",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-21"
+  ]
+ },
+ {
+  "ean": "3337875694469",
+  "nombre": "Retinol B3 Serum",
+  "marca": "La Roche-Posay",
+  "sku": "DERM-0163",
+  "categoria": "Cuidado de la piel > Facial",
+  "rama": "Cuidado de la piel",
+  "hoja": "Facial",
+  "lista": 181481,
+  "precio": 108889,
+  "off": 40,
+  "sin_iva": 89990.91,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/RETINOL B3 SERUM - 3337875694469.jpg",
+  "presentacion": "—",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-21"
+  ]
+ },
+ {
+  "ean": "3337875761123",
+  "nombre": "Anthelios 50+",
+  "marca": "La Roche-Posay",
+  "sku": "DERM-0180",
+  "categoria": "Cuidado de la piel > Protección solar",
+  "rama": "Cuidado de la piel",
+  "hoja": "Protección solar",
+  "lista": 95770,
+  "precio": 62250,
+  "off": 35,
+  "sin_iva": 51446.28,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/ANTHELIOS CARTON TUBE 50_ 250ML - 3337875761123.jpg",
+  "presentacion": "Tubo · 250 ml",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-21"
+  ]
+ },
+ {
+  "ean": "3337875761031",
+  "nombre": "Anthelios Age Correct FPS 50",
+  "marca": "La Roche-Posay",
+  "sku": "DERM-0177",
+  "categoria": "Cuidado de la piel > Protección solar",
+  "rama": "Cuidado de la piel",
+  "hoja": "Protección solar",
+  "lista": 98661,
+  "precio": 64130,
+  "off": 35,
+  "sin_iva": 53000.0,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/ANTHELIOS AGE CORRECT FPS 50 - 3337875761031.jpg",
+  "presentacion": "Sin color · Con color",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-21"
+  ]
+ },
+ {
+  "ean": "3337875764353",
+  "nombre": "Anthelios Age Correct FPS 50",
+  "marca": "La Roche-Posay",
+  "sku": "DERM-0178",
+  "categoria": "Cuidado de la piel > Protección solar",
+  "rama": "Cuidado de la piel",
+  "hoja": "Protección solar",
+  "lista": 98661,
+  "precio": 64130,
+  "off": 35,
+  "sin_iva": 53000.0,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/ANTHELIOS AGE CORRECT FPS 50 CON COLOR - 3337875764353.jpg",
+  "presentacion": "Sin color · Con color",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-21"
+  ]
+ },
+ {
+  "ean": "3337872420153",
+  "nombre": "Anthelios Bruma Corporal XL 50+",
+  "marca": "La Roche-Posay",
+  "sku": "DERM-0179",
+  "categoria": "Cuidado de la piel > Protección solar",
+  "rama": "Cuidado de la piel",
+  "hoja": "Protección solar",
+  "lista": 96918,
+  "precio": 62997,
+  "off": 35,
+  "sin_iva": 52063.64,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/ANTH BRUME CORP XL50_ - 3337872420153.jpg",
+  "presentacion": "—",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-21"
+  ]
+ },
+ {
+  "ean": "3337875917407",
+  "nombre": "Anthelios Fluido Anti-manchas",
+  "marca": "La Roche-Posay",
+  "sku": "DERM-0189",
+  "categoria": "Cuidado de la piel > Protección solar",
+  "rama": "Cuidado de la piel",
+  "hoja": "Protección solar",
+  "lista": 83381,
+  "precio": 54198,
+  "off": 35,
+  "sin_iva": 44791.74,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/NUEVO ANTHELIOS FLUIDO ANTI-MANCHAS - 3337875917407.jpg",
+  "presentacion": "—",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-21"
+  ]
+ },
+ {
+  "ean": "3337875545891",
+  "nombre": "Anthelios Gel Crema Toque Seco FPS 50+",
+  "marca": "La Roche-Posay",
+  "sku": "DERM-0191",
+  "categoria": "Cuidado de la piel > Protección solar",
+  "rama": "Cuidado de la piel",
+  "hoja": "Protección solar",
+  "lista": 79502,
+  "precio": 51676,
+  "off": 35,
+  "sin_iva": 42707.44,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/ANTHELIOS GEL CREMA TOQUE SECO COLOR ANTIBRILLO FPS 50_ - 3337875545891.jpg",
+  "presentacion": "Antibrillo · Con color",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-21"
+  ]
+ },
+ {
+  "ean": "3337875546430",
+  "nombre": "Anthelios Gel Crema Toque Seco FPS 50+",
+  "marca": "La Roche-Posay",
+  "sku": "DERM-0192",
+  "categoria": "Cuidado de la piel > Protección solar",
+  "rama": "Cuidado de la piel",
+  "hoja": "Protección solar",
+  "lista": 79502,
+  "precio": 51676,
+  "off": 35,
+  "sin_iva": 42707.44,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/ANTHELIOS GEL CREMA TOQUE SECO ANTIBRILLO FPS 50_ - 3337875546430.jpg",
+  "presentacion": "Antibrillo · Con color",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-21"
+  ]
+ },
+ {
+  "ean": "3337875847087",
+  "nombre": "Anthelios Oil Control Fluido 50+",
+  "marca": "La Roche-Posay",
+  "sku": "DERM-0187",
+  "categoria": "Cuidado de la piel > Protección solar",
+  "rama": "Cuidado de la piel",
+  "hoja": "Protección solar",
+  "lista": 83381,
+  "precio": 54198,
+  "off": 35,
+  "sin_iva": 44791.74,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/ANTHELIOS OIL CONTROL FLUIDO COLOR 50_ - 3337875847087.jpg",
+  "presentacion": "Sin color · Con color",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-21"
+  ]
+ },
+ {
+  "ean": "3337875847292",
+  "nombre": "Anthelios Oil Control Fluido 50+",
+  "marca": "La Roche-Posay",
+  "sku": "DERM-0188",
+  "categoria": "Cuidado de la piel > Protección solar",
+  "rama": "Cuidado de la piel",
+  "hoja": "Protección solar",
+  "lista": 83381,
+  "precio": 54198,
+  "off": 35,
+  "sin_iva": 44791.74,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/ANTHELIOS OIL CONTROL FLUIDO AP 50_ - 3337875847292.jpg",
+  "presentacion": "Sin color · Con color",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-21"
+  ]
+ },
+ {
+  "ean": "3337875797719",
+  "nombre": "Anthelios UVMune 50+",
+  "marca": "La Roche-Posay",
+  "sku": "DERM-0183",
+  "categoria": "Cuidado de la piel > Protección solar",
+  "rama": "Cuidado de la piel",
+  "hoja": "Protección solar",
+  "lista": 83420,
+  "precio": 54223,
+  "off": 35,
+  "sin_iva": 44812.4,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/ANTHELIOS UVMUNE CREAM 50_ - 3337875797719.jpg",
+  "presentacion": "Cream · Fluid",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-21"
+  ]
+ },
+ {
+  "ean": "3337875797689",
+  "nombre": "Anthelios UVMune 50+ Antibrillo",
+  "marca": "La Roche-Posay",
+  "sku": "DERM-0182",
+  "categoria": "Cuidado de la piel > Protección solar",
+  "rama": "Cuidado de la piel",
+  "hoja": "Protección solar",
+  "lista": 83420,
+  "precio": 54223,
+  "off": 35,
+  "sin_iva": 44812.4,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/ANTHELIOS UVMUNE CREAM 50_ AP TT - 3337875797689.jpg",
+  "presentacion": "Cream · Fluid",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-21"
+  ]
+ },
+ {
+  "ean": "3337875797641",
+  "nombre": "Anthelios UVMune 50+ Antibrillo",
+  "marca": "La Roche-Posay",
+  "sku": "DERM-0186",
+  "categoria": "Cuidado de la piel > Protección solar",
+  "rama": "Cuidado de la piel",
+  "hoja": "Protección solar",
+  "lista": 83381,
+  "precio": 54198,
+  "off": 35,
+  "sin_iva": 44791.74,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/ANTHELIOS UVMUNE FLUID 50_ AP TT - 3337875797641.jpg",
+  "presentacion": "Cream · Fluid",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-21"
+  ]
+ },
+ {
+  "ean": "3337875886055",
+  "nombre": "Anthelios UVMune Dermopediátrico",
+  "marca": "La Roche-Posay",
+  "sku": "DERM-0173",
+  "categoria": "Cuidado de la piel > Protección solar",
+  "rama": "Cuidado de la piel",
+  "hoja": "Protección solar",
+  "lista": 114264,
+  "precio": 74271,
+  "off": 35,
+  "sin_iva": 61380.99,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/ANTHELIOS UVMUNE DERMOPEDIÁTRICO SHAKE SPRAY 50_ 200ML RENO - 3337875886055.jpg",
+  "presentacion": "Shake spray · Milk 250 ml",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-21"
+  ]
+ },
+ {
+  "ean": "7793742004384",
+  "nombre": "Aveno Jabón",
+  "marca": "Aveno",
+  "sku": "HIG-0027",
+  "categoria": "Higiene y cuidado personal",
+  "rama": "Higiene y cuidado personal",
+  "hoja": "Higiene y cuidado personal",
+  "lista": 20717,
+  "precio": 13466,
+  "off": 35,
+  "sin_iva": 11128.93,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/AVENO JABON 120 grs - 7793742004384.jpg",
+  "presentacion": "120 g",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-30"
+  ]
+ },
+ {
+  "ean": "7793742005503",
+  "nombre": "Aveno Solar F50 Corporal",
+  "marca": "Aveno",
+  "sku": "DERM-0056",
+  "categoria": "Cuidado de la piel > Protección solar",
+  "rama": "Cuidado de la piel",
+  "hoja": "Protección solar",
+  "lista": 36213,
+  "precio": 23538,
+  "off": 35,
+  "sin_iva": 19452.89,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/AVENO SOLAR F50 CORPORAL 175 ML - 7793742005503.jpg",
+  "presentacion": "175 ml",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-30"
+  ]
+ },
+ {
+  "ean": "3337875597333",
+  "nombre": "CERAVE FACIAL LIMPIADOR HIDRATANTE X 473ML",
+  "marca": "Nuevo",
+  "sku": "DERM-0265",
+  "categoria": "Cuidado de la piel > Facial",
+  "rama": "Cuidado de la piel",
+  "hoja": "Facial",
+  "lista": 65712,
+  "precio": 42713,
+  "off": 35,
+  "sin_iva": 35300.0,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/NUEVO LIMPIADOR HIDRATANTE 473ML - 3337875597333.jpg",
+  "presentacion": "",
+  "vigencia": [
+   "",
+   ""
+  ]
+ },
+ {
+  "ean": "3337875597357",
+  "nombre": "CERAVE GEL LIMPIADOR ESPUMOSO X 473ML",
+  "marca": "Nuevo",
+  "sku": "DERM-0253",
+  "categoria": "Cuidado de la piel > Facial",
+  "rama": "Cuidado de la piel",
+  "hoja": "Facial",
+  "lista": 78918,
+  "precio": 51297,
+  "off": 35,
+  "sin_iva": 42394.21,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/NUEVO GEL LIMPIADOR ESPUMOSO 473ml - 3337875597357.jpg",
+  "presentacion": "",
+  "vigencia": [
+   "",
+   ""
+  ]
+ },
+ {
+  "ean": "3337871321826",
+  "nombre": "Capital Soleil Leche Familiar",
+  "marca": "Vichy",
+  "sku": "DERM-0181",
+  "categoria": "Cuidado de la piel > Protección solar",
+  "rama": "Cuidado de la piel",
+  "hoja": "Protección solar",
+  "lista": 92476,
+  "precio": 60109,
+  "off": 35,
+  "sin_iva": 49676.86,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/CAPITAL SOLEIL LECHE FAMILIAR FPS 30 300ML - 3337871321826.jpg",
+  "presentacion": "FPS 30 · FPS 50+ · 300 ml",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-21"
+  ]
+ },
+ {
+  "ean": "3337871323622",
+  "nombre": "Capital Soleil Toque Seco",
+  "marca": "Vichy",
+  "sku": "DERM-0190",
+  "categoria": "Cuidado de la piel > Protección solar",
+  "rama": "Cuidado de la piel",
+  "hoja": "Protección solar",
+  "lista": 79528,
+  "precio": 51693,
+  "off": 35,
+  "sin_iva": 42721.49,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/CAPITAL SOLEIL TOQUE SECO FPS 50 - 3337871323622.jpg",
+  "presentacion": "FPS 30 · FPS 50",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-21"
+  ]
+ },
+ {
+  "ean": "7891150029293",
+  "nombre": "Dove Jabón Líquido",
+  "marca": "Dove",
+  "sku": "HIG-0008",
+  "categoria": "Higiene y cuidado personal",
+  "rama": "Higiene y cuidado personal",
+  "hoja": "Higiene y cuidado personal",
+  "lista": 6150,
+  "precio": 3998,
+  "off": 35,
+  "sin_iva": 3304.13,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/DOVE JABON LIQUIDO KARITE Y VAINILLA X 250 ML - 7891150029293.jpg",
+  "presentacion": "Coco · Karité y Vainilla · Nutrición Profunda · 250 ml",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-30"
+  ]
+ },
+ {
+  "ean": "7891150029309",
+  "nombre": "Dove Jabón Líquido",
+  "marca": "Dove",
+  "sku": "HIG-0007",
+  "categoria": "Higiene y cuidado personal",
+  "rama": "Higiene y cuidado personal",
+  "hoja": "Higiene y cuidado personal",
+  "lista": 6150,
+  "precio": 3998,
+  "off": 35,
+  "sin_iva": 3304.13,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/DOVE JABON LIQUIDO COCO X 250 ML - 7891150029309.jpg",
+  "presentacion": "Coco · Karité y Vainilla · Nutrición Profunda · 250 ml",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-30"
+  ]
+ },
+ {
+  "ean": "7891150063105",
+  "nombre": "Dove Jabón Líquido",
+  "marca": "Dove",
+  "sku": "HIG-0009",
+  "categoria": "Higiene y cuidado personal",
+  "rama": "Higiene y cuidado personal",
+  "hoja": "Higiene y cuidado personal",
+  "lista": 6140,
+  "precio": 3991,
+  "off": 35,
+  "sin_iva": 3298.35,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/DOVE JABON LIQUIDO NUTRICION PROF X 250 ML - 7891150063105.jpg",
+  "presentacion": "Coco · Karité y Vainilla · Nutrición Profunda · 250 ml",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-30"
+  ]
+ },
+ {
+  "ean": "3337875920667",
+  "nombre": "Hyalu B5 Crema",
+  "marca": "La Roche-Posay",
+  "sku": "DERM-0167",
+  "categoria": "Cuidado de la piel > Facial",
+  "rama": "Cuidado de la piel",
+  "hoja": "Facial",
+  "lista": 160161,
+  "precio": 104105,
+  "off": 35,
+  "sin_iva": 86037.19,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/HYALU B5 CREMA 50ml FPS30 - 3337875920667.jpg",
+  "presentacion": "Sin factor · FPS 30 · 50 ml",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-21"
+  ]
+ },
+ {
+  "ean": "3337875920698",
+  "nombre": "Hyalu B5 Crema",
+  "marca": "La Roche-Posay",
+  "sku": "DERM-0168",
+  "categoria": "Cuidado de la piel > Facial",
+  "rama": "Cuidado de la piel",
+  "hoja": "Facial",
+  "lista": 160161,
+  "precio": 104105,
+  "off": 35,
+  "sin_iva": 86037.19,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/HYALU B5 CREMA 50ml - 3337875920698.jpg",
+  "presentacion": "Sin factor · FPS 30 · 50 ml",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-21"
+  ]
+ },
+ {
+  "ean": "7793742005541",
+  "nombre": "Aveno",
+  "marca": "Aveno",
+  "sku": "DERM-0054",
+  "categoria": "Cuidado de la piel > Facial",
+  "rama": "Cuidado de la piel",
+  "hoja": "Facial",
+  "lista": 45133,
+  "precio": 31593,
+  "off": 30,
+  "sin_iva": 26109.92,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/AVENO PIEL SECA-SENS CR INTENSA 50 GRS - 7793742005541.jpg",
+  "presentacion": "Piel normal a mixta gel crema · Piel seca crema intensa · 50 g",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-30"
+  ]
+ },
+ {
+  "ean": "7793742005534",
+  "nombre": "Aveno",
+  "marca": "Aveno",
+  "sku": "DERM-0053",
+  "categoria": "Cuidado de la piel > Facial",
+  "rama": "Cuidado de la piel",
+  "hoja": "Facial",
+  "lista": 45126,
+  "precio": 31588,
+  "off": 30,
+  "sin_iva": 26105.79,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/AVENO PIEL NORMAL A MIX-SENS CR-GL 50 GRS - 7793742005534.jpg",
+  "presentacion": "Piel normal a mixta gel crema · Piel seca crema intensa · 50 g",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-30"
+  ]
+ },
+ {
+  "ean": "7793742004360",
+  "nombre": "Aveno",
+  "marca": "Aveno",
+  "sku": "CAP-0045",
+  "categoria": "Cuidado del cabello",
+  "rama": "Cuidado del cabello",
+  "hoja": "Cuidado del cabello",
+  "lista": 32046,
+  "precio": 22432,
+  "off": 30,
+  "sin_iva": 18538.84,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/AVENO SHAMPOO 250 ML - 7793742004360.jpg",
+  "presentacion": "Shampoo · Acondicionador · 250 ml",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-30"
+  ]
+ },
+ {
+  "ean": "7793742004353",
+  "nombre": "Aveno",
+  "marca": "Aveno",
+  "sku": "CAP-0042",
+  "categoria": "Cuidado del cabello",
+  "rama": "Cuidado del cabello",
+  "hoja": "Cuidado del cabello",
+  "lista": 32033,
+  "precio": 22423,
+  "off": 30,
+  "sin_iva": 18531.4,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/AVENO ACONDICIONADOR 250 ML - 7793742004353.jpg",
+  "presentacion": "Shampoo · Acondicionador · 250 ml",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-30"
+  ]
+ },
+ {
+  "ean": "7793742004377",
+  "nombre": "Aveno Emulsión",
+  "marca": "Aveno",
+  "sku": "DERM-0049",
+  "categoria": "Cuidado de la piel > Corporal",
+  "rama": "Cuidado de la piel",
+  "hoja": "Corporal",
+  "lista": 45290,
+  "precio": 31703,
+  "off": 30,
+  "sin_iva": 26200.83,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/AVENO EMULSION 250 ML - 7793742004377.jpg",
+  "presentacion": "250 · 400 ml",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-30"
+  ]
+ },
+ {
+  "ean": "7793742005565",
+  "nombre": "Aveno Emulsión Refill",
+  "marca": "Aveno",
+  "sku": "DERM-0055",
+  "categoria": "Cuidado de la piel > Corporal",
+  "rama": "Cuidado de la piel",
+  "hoja": "Corporal",
+  "lista": 37943,
+  "precio": 26560,
+  "off": 30,
+  "sin_iva": 21950.41,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/AVENO REFILL EMULSIÓN X250 ML - 7793742005565.jpg",
+  "presentacion": "250 ml",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-30"
+  ]
+ },
+ {
+  "ean": "7793742005428",
+  "nombre": "Aveno Infantil",
+  "marca": "Aveno",
+  "sku": "CAP-0044",
+  "categoria": "Bebés y mamá",
+  "rama": "Bebés y mamá",
+  "hoja": "Bebés y mamá",
+  "lista": 32347,
+  "precio": 22643,
+  "off": 30,
+  "sin_iva": 18713.22,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/AVENO INFANTIL SHAMPOO 250 ML - 7793742005428.jpg",
+  "presentacion": "Shampoo · Acondicionador · Gel de baño · 250 ml",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-30"
+  ]
+ },
+ {
+  "ean": "7793742005442",
+  "nombre": "Aveno Infantil",
+  "marca": "Aveno",
+  "sku": "CAP-0043",
+  "categoria": "Bebés y mamá",
+  "rama": "Bebés y mamá",
+  "hoja": "Bebés y mamá",
+  "lista": 32347,
+  "precio": 22643,
+  "off": 30,
+  "sin_iva": 18713.22,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/AVENO INFANTIL ACONDICIONADOR EM 250 ML - 7793742005442.jpg",
+  "presentacion": "Shampoo · Acondicionador · Gel de baño · 250 ml",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-30"
+  ]
+ },
+ {
+  "ean": "7793742005459",
+  "nombre": "Aveno Limpieza",
+  "marca": "Aveno",
+  "sku": "DERM-0052",
+  "categoria": "Cuidado de la piel > Facial",
+  "rama": "Cuidado de la piel",
+  "hoja": "Facial",
+  "lista": 40337,
+  "precio": 28236,
+  "off": 30,
+  "sin_iva": 23335.54,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/AVENO LIMPIEZA GEL 250 GRS - 7793742005459.jpg",
+  "presentacion": "Espuma 150 ml · Gel 250 g",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-30"
+  ]
+ },
+ {
+  "ean": "7793742005633",
+  "nombre": "Aveno Limpieza",
+  "marca": "Aveno",
+  "sku": "DERM-0051",
+  "categoria": "Cuidado de la piel > Facial",
+  "rama": "Cuidado de la piel",
+  "hoja": "Facial",
+  "lista": 38802,
+  "precio": 27161,
+  "off": 30,
+  "sin_iva": 22447.11,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/AVENO ESPUMA DE LIMPIEZA 150 ML - 7793742005633.jpg",
+  "presentacion": "Espuma 150 ml · Gel 250 g",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-30"
+  ]
+ },
+ {
+  "ean": "7798111820725",
+  "nombre": "By Derm Fresh Skin",
+  "marca": "By Derm",
+  "sku": "DERM-0207",
+  "categoria": "Cuidado de la piel > Facial",
+  "rama": "Cuidado de la piel",
+  "hoja": "Facial",
+  "lista": 40467,
+  "precio": 28327,
+  "off": 30,
+  "sin_iva": 23410.74,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/FRESH SKIN THERMAL 170ML. _ Aerosol - 7798111820725.jpg",
+  "presentacion": "Roxa spray 75 ml · Thermal aerosol 170 ml",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-30"
+  ]
+ },
+ {
+  "ean": "7798111820312",
+  "nombre": "Capilar Forte",
+  "marca": "By Derm",
+  "sku": "SUPL-0035",
+  "categoria": "Suplementos y vitaminas",
+  "rama": "Suplementos y vitaminas",
+  "hoja": "Suplementos y vitaminas",
+  "lista": 44561,
+  "precio": 31193,
+  "off": 30,
+  "sin_iva": 25779.34,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/CAPILAR FORTE 30 CÁP. _ Caja _ Monodosis - 7798111820312.jpg",
+  "presentacion": "x 30 cápsulas · monodosis",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-30"
+  ]
+ },
+ {
+  "ean": "7798120265883",
+  "nombre": "Caviahue Agua Micelar",
+  "marca": "Caviahue",
+  "sku": "DERM-0210",
+  "categoria": "Cuidado de la piel > Facial",
+  "rama": "Cuidado de la piel",
+  "hoja": "Facial",
+  "lista": 25000,
+  "precio": 17500,
+  "off": 30,
+  "sin_iva": 14462.81,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/AGUA MICELAR CAVIAHUE X 180 ML - 7798120265883.jpg",
+  "presentacion": "180 ml",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-30"
+  ]
+ },
+ {
+  "ean": "3337875597388",
+  "nombre": "CeraVe Crema Hidratante",
+  "marca": "CeraVe",
+  "sku": "DERM-0195",
+  "categoria": "Cuidado de la piel > Corporal",
+  "rama": "Cuidado de la piel",
+  "hoja": "Corporal",
+  "lista": 67853,
+  "precio": 47497,
+  "off": 30,
+  "sin_iva": 39253.72,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/CREMA HIDRATANTE x 454ml - 3337875597388.jpg",
+  "presentacion": "354 · 454 ml",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-21"
+  ]
+ },
+ {
+  "ean": "3337875597227",
+  "nombre": "CeraVe Crema Hidratante",
+  "marca": "CeraVe",
+  "sku": "DERM-0201",
+  "categoria": "Cuidado de la piel > Corporal",
+  "rama": "Cuidado de la piel",
+  "hoja": "Corporal",
+  "lista": 59492,
+  "precio": 41644,
+  "off": 30,
+  "sin_iva": 34416.53,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/CREMA HIDRATANTE x 354ml - 3337875597227.jpg",
+  "presentacion": "354 · 454 ml",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-21"
+  ]
+ },
+ {
+  "ean": "3337875597449",
+  "nombre": "CeraVe Hidratantes",
+  "marca": "CeraVe",
+  "sku": "DERM-0198",
+  "categoria": "Cuidado de la piel > Facial",
+  "rama": "Cuidado de la piel",
+  "hoja": "Facial",
+  "lista": 61166,
+  "precio": 42816,
+  "off": 30,
+  "sin_iva": 35385.12,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/LOCIÓN HIDRATANTE PARA ROSTRO - 3337875597449.jpg",
+  "presentacion": "Loción rostro · Oil control · Water gel 48 ml",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-21"
+  ]
+ },
+ {
+  "ean": "3337875952903",
+  "nombre": "CeraVe Hidratantes",
+  "marca": "CeraVe",
+  "sku": "DERM-0202",
+  "categoria": "Cuidado de la piel > Facial",
+  "rama": "Cuidado de la piel",
+  "hoja": "Facial",
+  "lista": 56794,
+  "precio": 39756,
+  "off": 30,
+  "sin_iva": 32856.2,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/NUEVO CERAVE HYD HA WATER GEL 48ML ITSP - 3337875952903.jpg",
+  "presentacion": "Loción rostro · Oil control · Water gel 48 ml",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-21"
+  ]
+ },
+ {
+  "ean": "3337875597395",
+  "nombre": "CeraVe Loción Hidratante",
+  "marca": "CeraVe",
+  "sku": "DERM-0197",
+  "categoria": "Cuidado de la piel > Corporal",
+  "rama": "Cuidado de la piel",
+  "hoja": "Corporal",
+  "lista": 61875,
+  "precio": 43312,
+  "off": 30,
+  "sin_iva": 35795.04,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/LOCIÓN HIDRATANTE x 473ml - 3337875597395.jpg",
+  "presentacion": "236 · 473 ml",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-21"
+  ]
+ },
+ {
+  "ean": "3337875840620",
+  "nombre": "CeraVe Loción Hidratante Rostro",
+  "marca": "CeraVe",
+  "sku": "DERM-0199",
+  "categoria": "Cuidado de la piel > Protección solar",
+  "rama": "Cuidado de la piel",
+  "hoja": "Protección solar",
+  "lista": 61166,
+  "precio": 42816,
+  "off": 30,
+  "sin_iva": 35385.12,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/LOCIÓN HIDRATANTE PARA ROSTRO CON FPS 30 - 3337875840620.jpg",
+  "presentacion": "FPS 30",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-21"
+  ]
+ },
+ {
+  "ean": "7509546700434",
+  "nombre": "Colgate Luminous White Color Correct",
+  "marca": "Colgate",
+  "sku": "HIG-0072",
+  "categoria": "Higiene y cuidado personal",
+  "rama": "Higiene y cuidado personal",
+  "hoja": "Higiene y cuidado personal",
+  "lista": 7040,
+  "precio": 4928,
+  "off": 30,
+  "sin_iva": 4072.73,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/COLGATE CR LOMINOUS WHITE COLOR CORRECT X 70 - 7509546700434.jpg",
+  "presentacion": "Crema dental · 70 g",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-30"
+  ]
+ },
+ {
+  "ean": "7793742208522",
+  "nombre": "Dermaglós Facial Ultra Contorno de Ojos",
+  "marca": "Dermaglós",
+  "sku": "DERM-0122",
+  "categoria": "Cuidado de la piel > Facial",
+  "rama": "Cuidado de la piel",
+  "hoja": "Facial",
+  "lista": 47812,
+  "precio": 33468,
+  "off": 30,
+  "sin_iva": 27659.5,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/DERMAGLÓS F ULTRA FIRMEZA CONT CR 15GR - 7793742208522.jpg",
+  "presentacion": "Firmeza · Hidratación · Volumen · 15 g",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-30"
+  ]
+ },
+ {
+  "ean": "7793742003509",
+  "nombre": "Dermaglós Solar F30",
+  "marca": "Dermaglós",
+  "sku": "DERM-0143",
+  "categoria": "Cuidado de la piel > Protección solar",
+  "rama": "Cuidado de la piel",
+  "hoja": "Protección solar",
+  "lista": 33028,
+  "precio": 23120,
+  "off": 30,
+  "sin_iva": 19107.44,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/DERMAGLÓS SOLAR F30 EM 250 ML - 7793742003509.jpg",
+  "presentacion": "Emulsión · 250 · 380 ml",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-30"
+  ]
+ },
+ {
+  "ean": "7793742024610",
+  "nombre": "Dermaglós Solar F40",
+  "marca": "Dermaglós",
+  "sku": "DERM-0146",
+  "categoria": "Cuidado de la piel > Protección solar",
+  "rama": "Cuidado de la piel",
+  "hoja": "Protección solar",
+  "lista": 35290,
+  "precio": 24703,
+  "off": 30,
+  "sin_iva": 20415.7,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/DERMAGLÓS SOLAR F40 EM 380ML - 7793742024610.jpg",
+  "presentacion": "Emulsión · 250 · 380 ml",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-30"
+  ]
+ },
+ {
+  "ean": "7793742003516",
+  "nombre": "Dermaglós Solar F40",
+  "marca": "Dermaglós",
+  "sku": "DERM-0145",
+  "categoria": "Cuidado de la piel > Protección solar",
+  "rama": "Cuidado de la piel",
+  "hoja": "Protección solar",
+  "lista": 34445,
+  "precio": 24112,
+  "off": 30,
+  "sin_iva": 19927.27,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/DERMAGLÓS SOLAR F40 EM 250 ML - 7793742003516.jpg",
+  "presentacion": "Emulsión · 250 · 380 ml",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-30"
+  ]
+ },
+ {
+  "ean": "7793742024627",
+  "nombre": "Dermaglós Solar F50",
+  "marca": "Dermaglós",
+  "sku": "DERM-0150",
+  "categoria": "Cuidado de la piel > Protección solar",
+  "rama": "Cuidado de la piel",
+  "hoja": "Protección solar",
+  "lista": 46236,
+  "precio": 32365,
+  "off": 30,
+  "sin_iva": 26747.93,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/DERMAGLÓS SOLAR F50 EM 380ML - 7793742024627.jpg",
+  "presentacion": "Emulsión · 250 · 380 ml",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-30"
+  ]
+ },
+ {
+  "ean": "7793742004520",
+  "nombre": "Dermaglós Solar F50 Facial Dermo",
+  "marca": "Dermaglós",
+  "sku": "DERM-0154",
+  "categoria": "Cuidado de la piel > Protección solar",
+  "rama": "Cuidado de la piel",
+  "hoja": "Protección solar",
+  "lista": 36088,
+  "precio": 25262,
+  "off": 30,
+  "sin_iva": 20877.69,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/DERMAGLÓS SOLAR F50 FACIAL DERMO - TN CLARO 50GR - 7793742004520.jpg",
+  "presentacion": "Tono claro · Tono medio · 50 g",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-30"
+  ]
+ },
+ {
+  "ean": "7891150094741",
+  "nombre": "Dove Anti-Serum Cream",
+  "marca": "Dove",
+  "sku": "DERM-0018",
+  "categoria": "Higiene y cuidado personal",
+  "rama": "Higiene y cuidado personal",
+  "hoja": "Higiene y cuidado personal",
+  "lista": 5910,
+  "precio": 4137,
+  "off": 30,
+  "sin_iva": 3419.01,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/DOVE ANTI.SERUM CREAM REPARACION DIARIA - 7891150094741.jpg",
+  "presentacion": "Piel sensible · Prevención del oscurecimiento · Reparación diaria",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-30"
+  ]
+ },
+ {
+  "ean": "7891150096783",
+  "nombre": "Dove Anti-Serum Cream",
+  "marca": "Dove",
+  "sku": "DERM-0017",
+  "categoria": "Higiene y cuidado personal",
+  "rama": "Higiene y cuidado personal",
+  "hoja": "Higiene y cuidado personal",
+  "lista": 5910,
+  "precio": 4137,
+  "off": 30,
+  "sin_iva": 3419.01,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/DOVE ANTI.SERUM CREAM PREV.OSCURECIMIENTO - 7891150096783.jpg",
+  "presentacion": "Piel sensible · Prevención del oscurecimiento · Reparación diaria",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-30"
+  ]
+ },
+ {
+  "ean": "7891150096790",
+  "nombre": "Dove Anti-Serum Cream",
+  "marca": "Dove",
+  "sku": "DERM-0016",
+  "categoria": "Higiene y cuidado personal",
+  "rama": "Higiene y cuidado personal",
+  "hoja": "Higiene y cuidado personal",
+  "lista": 5910,
+  "precio": 4137,
+  "off": 30,
+  "sin_iva": 3419.01,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/DOVE ANTI.SERUM CREAM PIEL SENSIBLE - 7891150096790.jpg",
+  "presentacion": "Piel sensible · Prevención del oscurecimiento · Reparación diaria",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-30"
+  ]
+ },
+ {
+  "ean": "7791293049618",
+  "nombre": "Dove Clinical Aerosol",
+  "marca": "Dove",
+  "sku": "PERF-0118",
+  "categoria": "Higiene y cuidado personal",
+  "rama": "Higiene y cuidado personal",
+  "hoja": "Higiene y cuidado personal",
+  "lista": 9250,
+  "precio": 6475,
+  "off": 30,
+  "sin_iva": 5351.24,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/DOVE AEROSOL CLINICAL WOMAN X 150 ML - 7791293049618.jpg",
+  "presentacion": "Men · Women · 150 ml",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-30"
+  ]
+ },
+ {
+  "ean": "7791293049625",
+  "nombre": "Dove Clinical Aerosol",
+  "marca": "Dove",
+  "sku": "PERF-0119",
+  "categoria": "Higiene y cuidado personal",
+  "rama": "Higiene y cuidado personal",
+  "hoja": "Higiene y cuidado personal",
+  "lista": 9250,
+  "precio": 6475,
+  "off": 30,
+  "sin_iva": 5351.24,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/DOVE AEROSOL CLINICAL MEN X 150 ML - 7791293049625.jpg",
+  "presentacion": "Men · Women · 150 ml",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-30"
+  ]
+ },
+ {
+  "ean": "7891150106116",
+  "nombre": "Dove Serum Corporal Intense",
+  "marca": "Dove",
+  "sku": "HIG-0016",
+  "categoria": "Cuidado de la piel > Corporal",
+  "rama": "Cuidado de la piel",
+  "hoja": "Corporal",
+  "lista": 16790,
+  "precio": 11753,
+  "off": 30,
+  "sin_iva": 9713.22,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/DOVE SERUM CORP INTENSE GLICOLICO X 200 - 7891150106116.jpg",
+  "presentacion": "Hialurónico piel extra seca · Glicólico · 200 ml",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-30"
+  ]
+ },
+ {
+  "ean": "3337875863377",
+  "nombre": "Effaclar Duo [+]",
+  "marca": "La Roche-Posay",
+  "sku": "DERM-0171",
+  "categoria": "Cuidado de la piel > Facial",
+  "rama": "Cuidado de la piel",
+  "hoja": "Facial",
+  "lista": 118666,
+  "precio": 83066,
+  "off": 30,
+  "sin_iva": 68649.59,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/EFFACLAR DUO _ APF RENO - 3337875863377.jpg",
+  "presentacion": "Renovado",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-21"
+  ]
+ },
+ {
+  "ean": "3337875909303",
+  "nombre": "Effaclar Duo [+] Unifiant",
+  "marca": "La Roche-Posay",
+  "sku": "DERM-0172",
+  "categoria": "Cuidado de la piel > Facial",
+  "rama": "Cuidado de la piel",
+  "hoja": "Facial",
+  "lista": 118666,
+  "precio": 83066,
+  "off": 30,
+  "sin_iva": 68649.59,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/NUEVO EFFACLAR DUO _ UNIF LIGHT 40ML - 3337875909303.jpg",
+  "presentacion": "Light · Medium · 40 ml",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-21"
+  ]
+ },
+ {
+  "ean": "3337875924887",
+  "nombre": "Effaclar Duo+M Parches",
+  "marca": "La Roche-Posay",
+  "sku": "DERM-0196",
+  "categoria": "Cuidado de la piel > Facial",
+  "rama": "Cuidado de la piel",
+  "hoja": "Facial",
+  "lista": 67771,
+  "precio": 47440,
+  "off": 30,
+  "sin_iva": 39206.61,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/EFFACLAR DUO_M PARCHES - 3337875924887.jpg",
+  "presentacion": "—",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-21"
+  ]
+ },
+ {
+  "ean": "3337872411083",
+  "nombre": "Effaclar Gel",
+  "marca": "La Roche-Posay",
+  "sku": "DERM-0193",
+  "categoria": "Cuidado de la piel > Facial",
+  "rama": "Cuidado de la piel",
+  "hoja": "Facial",
+  "lista": 75162,
+  "precio": 52613,
+  "off": 30,
+  "sin_iva": 43481.82,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/EFFACLAR GEL 200 ML - 3337872411083.jpg",
+  "presentacion": "200 · 400 ml",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-21"
+  ]
+ },
+ {
+  "ean": "3337875660570",
+  "nombre": "Pure Vitamin C",
+  "marca": "La Roche-Posay",
+  "sku": "DERM-0166",
+  "categoria": "Cuidado de la piel > Facial",
+  "rama": "Cuidado de la piel",
+  "hoja": "Facial",
+  "lista": 163082,
+  "precio": 114157,
+  "off": 30,
+  "sin_iva": 94344.63,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/PURE VITAMIN C 10 - 3337875660570.jpg",
+  "presentacion": "C10 · C12",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-21"
+  ]
+ },
+ {
+  "ean": "7891150102835",
+  "nombre": "Rexona All Body Crema",
+  "marca": "Rexona",
+  "sku": "PERF-0116",
+  "categoria": "Higiene y cuidado personal",
+  "rama": "Higiene y cuidado personal",
+  "hoja": "Higiene y cuidado personal",
+  "lista": 9388,
+  "precio": 6572,
+  "off": 30,
+  "sin_iva": 5431.4,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/REXONA MEN CREMA ALL BODY OCEAN RUSH - 7891150102835.jpg",
+  "presentacion": "Men Ocean Rush · Women Wild Rose",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-30"
+  ]
+ },
+ {
+  "ean": "7891150102859",
+  "nombre": "Rexona All Body Crema",
+  "marca": "Rexona",
+  "sku": "PERF-0117",
+  "categoria": "Higiene y cuidado personal",
+  "rama": "Higiene y cuidado personal",
+  "hoja": "Higiene y cuidado personal",
+  "lista": 9388,
+  "precio": 6572,
+  "off": 30,
+  "sin_iva": 5431.4,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/REXONA WOMAN CREMA ALL BODY WILD ROSE - 7891150102859.jpg",
+  "presentacion": "Men Ocean Rush · Women Wild Rose",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-30"
+  ]
+ },
+ {
+  "ean": "7791293051543",
+  "nombre": "Rexona All Body Desodorante",
+  "marca": "Rexona",
+  "sku": "PERF-0122",
+  "categoria": "Higiene y cuidado personal",
+  "rama": "Higiene y cuidado personal",
+  "hoja": "Higiene y cuidado personal",
+  "lista": 6572,
+  "precio": 4600,
+  "off": 30,
+  "sin_iva": 3801.65,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/REXONA W DEO ALL BODY WILDROSE X 150 - 7791293051543.jpg",
+  "presentacion": "Fresh Citrus · Wild Rose · 150 ml",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-30"
+  ]
+ },
+ {
+  "ean": "7791293051550",
+  "nombre": "Rexona All Body Desodorante",
+  "marca": "Rexona",
+  "sku": "PERF-0123",
+  "categoria": "Higiene y cuidado personal",
+  "rama": "Higiene y cuidado personal",
+  "hoja": "Higiene y cuidado personal",
+  "lista": 6572,
+  "precio": 4600,
+  "off": 30,
+  "sin_iva": 3801.65,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/REXONA W DEO ALL BODY FRESHCITR X 150 - 7791293051550.jpg",
+  "presentacion": "Fresh Citrus · Wild Rose · 150 ml",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-30"
+  ]
+ },
+ {
+  "ean": "7791293033013",
+  "nombre": "St. Ives Avena y Karité",
+  "marca": "St. Ives",
+  "sku": "DERM-0033",
+  "categoria": "Cuidado de la piel > Corporal",
+  "rama": "Cuidado de la piel",
+  "hoja": "Corporal",
+  "lista": 11649,
+  "precio": 8154,
+  "off": 30,
+  "sin_iva": 6738.84,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/ST. IVES CR AVENA Y KARITE X 532 - 7791293033013.jpg",
+  "presentacion": "Crema · 350 · 532 ml",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-30"
+  ]
+ },
+ {
+  "ean": "7791293033068",
+  "nombre": "St. Ives Piel Renovada",
+  "marca": "St. Ives",
+  "sku": "DERM-0038",
+  "categoria": "Cuidado de la piel > Corporal",
+  "rama": "Cuidado de la piel",
+  "hoja": "Corporal",
+  "lista": 8394,
+  "precio": 5876,
+  "off": 30,
+  "sin_iva": 4856.2,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/ST. IVES CR PIEL RENOVADA X 350 - 7791293033068.jpg",
+  "presentacion": "Crema · 350 · 532 ml",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-30"
+  ]
+ },
+ {
+  "ean": "3337875578486",
+  "nombre": "Toleriane Sensitive",
+  "marca": "La Roche-Posay",
+  "sku": "DERM-0184",
+  "categoria": "Cuidado de la piel > Facial",
+  "rama": "Cuidado de la piel",
+  "hoja": "Facial",
+  "lista": 83398,
+  "precio": 58379,
+  "off": 30,
+  "sin_iva": 48247.11,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/TOLERIANE SENSITIVE - 3337875578486.jpg",
+  "presentacion": "—",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-21"
+  ]
+ },
+ {
+  "ean": "7798095410233",
+  "nombre": "Avene Agua Termal 150ml",
+  "marca": "Avene",
+  "sku": "DERM-0283",
+  "categoria": "Cuidado de la piel > Facial",
+  "rama": "Cuidado de la piel",
+  "hoja": "Facial",
+  "lista": 47000,
+  "precio": 35250,
+  "off": 25,
+  "sin_iva": 29132.23,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Transparentes - video y carteleria/AVENE AGUA TERMAL 150ML - 7798095410233.png",
+  "presentacion": "",
+  "vigencia": [
+   "",
+   ""
+  ]
+ },
+ {
+  "ean": "7790375004330",
+  "nombre": "Bagóvit AE",
+  "marca": "Bagóvit A",
+  "sku": "DERM-0209",
+  "categoria": "Cuidado de la piel > Corporal",
+  "rama": "Cuidado de la piel",
+  "hoja": "Corporal",
+  "lista": 28254,
+  "precio": 21190,
+  "off": 25,
+  "sin_iva": 17512.4,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/BAGOVIT AE CRM X 200 - 7790375004330.jpg",
+  "presentacion": "Crema · 200 g",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-30"
+  ]
+ },
+ {
+  "ean": "7790375271176",
+  "nombre": "Bagóvit Facial Esencial",
+  "marca": "Bagóvit Facial",
+  "sku": "DERM-0208",
+  "categoria": "Cuidado de la piel > Facial",
+  "rama": "Cuidado de la piel",
+  "hoja": "Facial",
+  "lista": 29294,
+  "precio": 21971,
+  "off": 25,
+  "sin_iva": 18157.85,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/BAG. FACIAL ESENCIAL CREMA HIDRATANTE - 7790375271176.jpg",
+  "presentacion": "Aqua gel · Crema hidratante",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-30"
+  ]
+ },
+ {
+  "ean": "7790375271275",
+  "nombre": "Bagóvit Facial Esencial Gel Espuma",
+  "marca": "Bagóvit Facial",
+  "sku": "DERM-0219",
+  "categoria": "Cuidado de la piel > Facial",
+  "rama": "Cuidado de la piel",
+  "hoja": "Facial",
+  "lista": 15004,
+  "precio": 11253,
+  "off": 25,
+  "sin_iva": 9300.0,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/BAG. FACIAL ESENCIAL GEL ESPUMA - 7790375271275.jpg",
+  "presentacion": "—",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-30"
+  ]
+ },
+ {
+  "ean": "7790375268459",
+  "nombre": "Bagóvit Facial Pro Bio Agua Micelar",
+  "marca": "Bagóvit Facial",
+  "sku": "DERM-0217",
+  "categoria": "Cuidado de la piel > Facial",
+  "rama": "Cuidado de la piel",
+  "hoja": "Facial",
+  "lista": 18781,
+  "precio": 14086,
+  "off": 25,
+  "sin_iva": 11641.32,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/BAG.F.PRO BIO AGUA MIC.REV DETOX.LOCX200 - 7790375268459.jpg",
+  "presentacion": "Revitalizante detox · 200 ml",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-30"
+  ]
+ },
+ {
+  "ean": "7793742008276",
+  "nombre": "Dermaglós Corporal",
+  "marca": "Dermaglós",
+  "sku": "DERM-0076",
+  "categoria": "Cuidado de la piel > Corporal",
+  "rama": "Cuidado de la piel",
+  "hoja": "Corporal",
+  "lista": 30137,
+  "precio": 22603,
+  "off": 25,
+  "sin_iva": 18680.17,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/DERMAGLÓS C HIDRATACIÓN _ REGENERACIÓN EM 300 ML - 7793742008276.jpg",
+  "presentacion": "Hidratación esencial · Hidratación + regeneración · 300 ml",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-30"
+  ]
+ },
+ {
+  "ean": "7793742008214",
+  "nombre": "Dermaglós Manos y Uñas Hidratación Esencial",
+  "marca": "Dermaglós",
+  "sku": "DERM-0139",
+  "categoria": "Cuidado de la piel > Corporal",
+  "rama": "Cuidado de la piel",
+  "hoja": "Corporal",
+  "lista": 13415,
+  "precio": 10062,
+  "off": 25,
+  "sin_iva": 8315.7,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/DERMAGLÓS M Y U HID ESENCIAL CR 50 GR - 7793742008214.jpg",
+  "presentacion": "Crema · 50 · 100 g",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-30"
+  ]
+ },
+ {
+  "ean": "7793742007989",
+  "nombre": "Dermaglós Piel del Diabético",
+  "marca": "Dermaglós",
+  "sku": "DERM-0079",
+  "categoria": "Cuidado de la piel > Piel del diabético",
+  "rama": "Cuidado de la piel",
+  "hoja": "Piel del diabético",
+  "lista": 13670,
+  "precio": 10253,
+  "off": 25,
+  "sin_iva": 8473.55,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/DERMAGLÓS C PIEL DEL DIABÉTICO EM 50 ML - 7793742007989.jpg",
+  "presentacion": "Crema 100 g · Emulsión 50 · 300 ml",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-30"
+  ]
+ },
+ {
+  "ean": "7793742004773",
+  "nombre": "Dermaglós Solar F50 Niños",
+  "marca": "Dermaglós",
+  "sku": "DERM-0064",
+  "categoria": "Cuidado de la piel > Protección solar",
+  "rama": "Cuidado de la piel",
+  "hoja": "Protección solar",
+  "lista": 38925,
+  "precio": 29194,
+  "off": 25,
+  "sin_iva": 24127.27,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/DERMAGLOS SOLAR F50 NIÑOS GATILLO 250 ML - 7793742004773.jpg",
+  "presentacion": "Emulsión · Spray continuo · Gatillo",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-30"
+  ]
+ },
+ {
+  "ean": "7793742003790",
+  "nombre": "Dermaglós Solar F50 Niños",
+  "marca": "Dermaglós",
+  "sku": "DERM-0157",
+  "categoria": "Cuidado de la piel > Protección solar",
+  "rama": "Cuidado de la piel",
+  "hoja": "Protección solar",
+  "lista": 33292,
+  "precio": 24969,
+  "off": 25,
+  "sin_iva": 20635.54,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/DERMAGLÓS SOLAR F50 NIÑOS EM 180 ML. - 7793742003790.jpg",
+  "presentacion": "Emulsión · Spray continuo · Gatillo",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-30"
+  ]
+ },
+ {
+  "ean": "7793742003813",
+  "nombre": "Dermaglós Solar FPS 30 Efecto Seco",
+  "marca": "Dermaglós",
+  "sku": "DERM-0060",
+  "categoria": "Cuidado de la piel > Protección solar",
+  "rama": "Cuidado de la piel",
+  "hoja": "Protección solar",
+  "lista": 31762,
+  "precio": 23821,
+  "off": 25,
+  "sin_iva": 19686.78,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/DERMAGLOS FPS30 Efecto Seco CR 180 GRS - 7793742003813.jpg",
+  "presentacion": "Crema · 180 g",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-30"
+  ]
+ },
+ {
+  "ean": "8934868194286",
+  "nombre": "Dove Body Wash",
+  "marca": "Dove",
+  "sku": "HIG-0001",
+  "categoria": "Higiene y cuidado personal",
+  "rama": "Higiene y cuidado personal",
+  "hoja": "Higiene y cuidado personal",
+  "lista": 18450,
+  "precio": 13837,
+  "off": 25,
+  "sin_iva": 11435.54,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/DOVE BODY WASH ACNE CONTROL X 300 ML - 8934868194286.jpg",
+  "presentacion": "5 variedades · 300 ml",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-30"
+  ]
+ },
+ {
+  "ean": "8934868194309",
+  "nombre": "Dove Body Wash",
+  "marca": "Dove",
+  "sku": "HIG-0003",
+  "categoria": "Higiene y cuidado personal",
+  "rama": "Higiene y cuidado personal",
+  "hoja": "Higiene y cuidado personal",
+  "lista": 18450,
+  "precio": 13837,
+  "off": 25,
+  "sin_iva": 11435.54,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/DOVE BODY WASH RADIANT GLOW X 300 ML - 8934868194309.jpg",
+  "presentacion": "5 variedades · 300 ml",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-30"
+  ]
+ },
+ {
+  "ean": "8934868194347",
+  "nombre": "Dove Body Wash",
+  "marca": "Dove",
+  "sku": "HIG-0005",
+  "categoria": "Higiene y cuidado personal",
+  "rama": "Higiene y cuidado personal",
+  "hoja": "Higiene y cuidado personal",
+  "lista": 18450,
+  "precio": 13837,
+  "off": 25,
+  "sin_iva": 11435.54,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/DOVE BODY WASH UNIFORM SKIN X 300 ML - 8934868194347.jpg",
+  "presentacion": "5 variedades · 300 ml",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-30"
+  ]
+ },
+ {
+  "ean": "8934868194361",
+  "nombre": "Dove Body Wash",
+  "marca": "Dove",
+  "sku": "HIG-0004",
+  "categoria": "Higiene y cuidado personal",
+  "rama": "Higiene y cuidado personal",
+  "hoja": "Higiene y cuidado personal",
+  "lista": 18450,
+  "precio": 13837,
+  "off": 25,
+  "sin_iva": 11435.54,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/DOVE BODY WASH SKIN FIRMING X 300 ML - 8934868194361.jpg",
+  "presentacion": "5 variedades · 300 ml",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-30"
+  ]
+ },
+ {
+  "ean": "7791293051017",
+  "nombre": "Dove Bond Repair",
+  "marca": "Dove",
+  "sku": "CAP-0007",
+  "categoria": "Cuidado del cabello",
+  "rama": "Cuidado del cabello",
+  "hoja": "Cuidado del cabello",
+  "lista": 11615,
+  "precio": 8712,
+  "off": 25,
+  "sin_iva": 7200.0,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/DOVE SHAMPOO BOND REPAIR X 250 ML - 7791293051017.jpg",
+  "presentacion": "Shampoo · Acondicionador · 250 ml",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-30"
+  ]
+ },
+ {
+  "ean": "7891150097148",
+  "nombre": "Dove Bond Repair",
+  "marca": "Dove",
+  "sku": "CAP-0003",
+  "categoria": "Cuidado del cabello",
+  "rama": "Cuidado del cabello",
+  "hoja": "Cuidado del cabello",
+  "lista": 9816,
+  "precio": 7362,
+  "off": 25,
+  "sin_iva": 6084.3,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/DOVE ACONDIC.BOND REPAIR X 250 ML - 7891150097148.jpg",
+  "presentacion": "Shampoo · Acondicionador · 250 ml",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-30"
+  ]
+ },
+ {
+  "ean": "7891150104839",
+  "nombre": "Dove UV Repair & Glow",
+  "marca": "Dove",
+  "sku": "CAP-0011",
+  "categoria": "Cuidado del cabello",
+  "rama": "Cuidado del cabello",
+  "hoja": "Cuidado del cabello",
+  "lista": 11615,
+  "precio": 8712,
+  "off": 25,
+  "sin_iva": 7200.0,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/DOVE SHAMPOO UV REPAIR Y GLOW X 400ML - 7891150104839.jpg",
+  "presentacion": "Shampoo · Acondicionador · 400 ml",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-30"
+  ]
+ },
+ {
+  "ean": "7891150103474",
+  "nombre": "Dove UV Repair & Glow",
+  "marca": "Dove",
+  "sku": "CAP-0002",
+  "categoria": "Cuidado del cabello",
+  "rama": "Cuidado del cabello",
+  "hoja": "Cuidado del cabello",
+  "lista": 9816,
+  "precio": 7362,
+  "off": 25,
+  "sin_iva": 6084.3,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/DOVE ACONDIC. UV REPAIR Y GLOWX400 - 7891150103474.jpg",
+  "presentacion": "Shampoo · Acondicionador · 400 ml",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-30"
+  ]
+ },
+ {
+  "ean": "7891150068735",
+  "nombre": "Rexona Clinical 96 h Aerosol",
+  "marca": "Rexona",
+  "sku": "PERF-0120",
+  "categoria": "Higiene y cuidado personal",
+  "rama": "Higiene y cuidado personal",
+  "hoja": "Higiene y cuidado personal",
+  "lista": 8003,
+  "precio": 6002,
+  "off": 25,
+  "sin_iva": 4960.33,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/REXONA AER M CLINICAL SPORT 96HS X 91GR - 7891150068735.jpg",
+  "presentacion": "Men Intense · Men Sport · Men Clean · Women Fresh · 91 g",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-30"
+  ]
+ },
+ {
+  "ean": "7891150089952",
+  "nombre": "Rexona Clinical 96 h Aerosol",
+  "marca": "Rexona",
+  "sku": "PERF-0121",
+  "categoria": "Higiene y cuidado personal",
+  "rama": "Higiene y cuidado personal",
+  "hoja": "Higiene y cuidado personal",
+  "lista": 8003,
+  "precio": 6002,
+  "off": 25,
+  "sin_iva": 4960.33,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/REXONA AER W CLINICAL FRESH 96HS X 91GR - 7891150089952.jpg",
+  "presentacion": "Men Intense · Men Sport · Men Clean · Women Fresh · 91 g",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-30"
+  ]
+ },
+ {
+  "ean": "7791293049694",
+  "nombre": "Tresemmé",
+  "marca": "Tresemmé",
+  "sku": "CAP-0034",
+  "categoria": "Cuidado del cabello",
+  "rama": "Cuidado del cabello",
+  "hoja": "Cuidado del cabello",
+  "lista": 10342,
+  "precio": 7756,
+  "off": 25,
+  "sin_iva": 6409.92,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/TRESEMME PROTEC.TERMICO X120 ML - 7791293049694.jpg",
+  "presentacion": "Óleo 60 ml · Protector térmico 120 ml",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-30"
+  ]
+ },
+ {
+  "ean": "7891150100114",
+  "nombre": "Tresemmé Coat Sellador",
+  "marca": "Tresemmé",
+  "sku": "CAP-0031",
+  "categoria": "Cuidado del cabello",
+  "rama": "Cuidado del cabello",
+  "hoja": "Cuidado del cabello",
+  "lista": 15954,
+  "precio": 11966,
+  "off": 25,
+  "sin_iva": 9889.26,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/TRESEMME COAT SELLADOR X 190ML - 7891150100114.jpg",
+  "presentacion": "190 ml",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-30"
+  ]
+ },
+ {
+  "ean": "7891150100282",
+  "nombre": "Tresemmé Keratina AntiFrizz Máscara",
+  "marca": "Tresemmé",
+  "sku": "CAP-0032",
+  "categoria": "Cuidado del cabello",
+  "rama": "Cuidado del cabello",
+  "hoja": "Cuidado del cabello",
+  "lista": 10759,
+  "precio": 8069,
+  "off": 25,
+  "sin_iva": 6668.6,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/TRESEMME KERATINA ANTIFRIZZ MASCARA X300 - 7891150100282.jpg",
+  "presentacion": "300 ml",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-30"
+  ]
+ },
+ {
+  "ean": "7791984001154",
+  "nombre": "102 Mujer",
+  "marca": "102",
+  "sku": "SUPL-0003",
+  "categoria": "Suplementos y vitaminas",
+  "rama": "Suplementos y vitaminas",
+  "hoja": "Suplementos y vitaminas",
+  "lista": 24447,
+  "precio": 19558,
+  "off": 20,
+  "sin_iva": 16163.64,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/102 MUJER X 30 COMP. - 7791984001154.jpg",
+  "presentacion": "x 30 comprimidos",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-30"
+  ]
+ },
+ {
+  "ean": "3337875904520",
+  "nombre": "CeraVe Hidratantes",
+  "marca": "CeraVe",
+  "sku": "DERM-0200",
+  "categoria": "Cuidado de la piel > Facial",
+  "rama": "Cuidado de la piel",
+  "hoja": "Facial",
+  "lista": 61166,
+  "precio": 48933,
+  "off": 20,
+  "sin_iva": 40440.5,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/CREMA OIL CONTROL - 3337875904520.jpg",
+  "presentacion": "Loción rostro · Oil control · Water gel 48 ml",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-21"
+  ]
+ },
+ {
+  "ean": "3337875925358",
+  "nombre": "CeraVe Limpiadores",
+  "marca": "CeraVe",
+  "sku": "DERM-0205",
+  "categoria": "Cuidado de la piel > Facial",
+  "rama": "Cuidado de la piel",
+  "hoja": "Facial",
+  "lista": 55618,
+  "precio": 44494,
+  "off": 20,
+  "sin_iva": 36771.9,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/NUEVO LIMPIADOR AIR FOAM - 3337875925358.jpg",
+  "presentacion": "Gel espumoso · Hidratante · Air foam",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-21"
+  ]
+ },
+ {
+  "ean": "3337875904292",
+  "nombre": "CeraVe Loción Hidratación Intensiva",
+  "marca": "CeraVe",
+  "sku": "DERM-0206",
+  "categoria": "Cuidado de la piel > Corporal",
+  "rama": "Cuidado de la piel",
+  "hoja": "Corporal",
+  "lista": 47562,
+  "precio": 38050,
+  "off": 20,
+  "sin_iva": 31446.28,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/NUEVO LOCION DE HIDRATACIÓN INTENSIVA X 236ml - 3337875904292.jpg",
+  "presentacion": "236 ml",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-21"
+  ]
+ },
+ {
+  "ean": "3337875816847",
+  "nombre": "Cicaplast Balm B5",
+  "marca": "La Roche-Posay",
+  "sku": "DERM-0176",
+  "categoria": "Cuidado de la piel > Facial",
+  "rama": "Cuidado de la piel",
+  "hoja": "Facial",
+  "lista": 100004,
+  "precio": 80003,
+  "off": 20,
+  "sin_iva": 66118.18,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/CICAPLAST BALM B5 100 ML - 3337875816847.jpg",
+  "presentacion": "40 · 100 ml",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-21"
+  ]
+ },
+ {
+  "ean": "3337875816809",
+  "nombre": "Cicaplast Balm B5",
+  "marca": "La Roche-Posay",
+  "sku": "DERM-0203",
+  "categoria": "Cuidado de la piel > Facial",
+  "rama": "Cuidado de la piel",
+  "hoja": "Facial",
+  "lista": 56777,
+  "precio": 45422,
+  "off": 20,
+  "sin_iva": 37538.84,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/CICAPLAST BALM B5 40 ML - 3337875816809.jpg",
+  "presentacion": "40 · 100 ml",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-21"
+  ]
+ },
+ {
+  "ean": "7791984999994",
+  "nombre": "Curflex",
+  "marca": "Curflex",
+  "sku": "SUPL-0126",
+  "categoria": "Suplementos y vitaminas",
+  "rama": "Suplementos y vitaminas",
+  "hoja": "Suplementos y vitaminas",
+  "lista": 27847,
+  "precio": 22277,
+  "off": 20,
+  "sin_iva": 18410.74,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/CURFLEX X 30 COMP. - 7791984999994.jpg",
+  "presentacion": "x 30 comprimidos",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-30"
+  ]
+ },
+ {
+  "ean": "7791984001055",
+  "nombre": "Curflex Plus",
+  "marca": "Curflex",
+  "sku": "SUPL-0117",
+  "categoria": "Suplementos y vitaminas",
+  "rama": "Suplementos y vitaminas",
+  "hoja": "Suplementos y vitaminas",
+  "lista": 32031,
+  "precio": 25625,
+  "off": 20,
+  "sin_iva": 21177.69,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/CURFLEX PLUS X 30 COMP. - 7791984001055.jpg",
+  "presentacion": "x 30 comprimidos",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-30"
+  ]
+ },
+ {
+  "ean": "7793742005022",
+  "nombre": "Dermaglós Facial Desmaquillante de Ojos",
+  "marca": "Dermaglós",
+  "sku": "DERM-0092",
+  "categoria": "Cuidado de la piel > Facial",
+  "rama": "Cuidado de la piel",
+  "hoja": "Facial",
+  "lista": 19039,
+  "precio": 15231,
+  "off": 20,
+  "sin_iva": 12587.6,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/DERMAGLÓS F DESMAQUILLANTE OJOS LC 100 ML - 7793742005022.jpg",
+  "presentacion": "Loción · 100 ml",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-30"
+  ]
+ },
+ {
+  "ean": "7793742007606",
+  "nombre": "Dermaglós Facial Hidratante",
+  "marca": "Dermaglós",
+  "sku": "DERM-0103",
+  "categoria": "Cuidado de la piel > Facial",
+  "rama": "Cuidado de la piel",
+  "hoja": "Facial",
+  "lista": 35936,
+  "precio": 28749,
+  "off": 20,
+  "sin_iva": 23759.5,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/DERMAGLÓS F HID P MIX A GRASA GL 70 GR - 7793742007606.jpg",
+  "presentacion": "Piel mixta a grasa · Gel · 70 g",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-30"
+  ]
+ },
+ {
+  "ean": "7793742007903",
+  "nombre": "Dermaglós Facial Hidratante F12",
+  "marca": "Dermaglós",
+  "sku": "DERM-0100",
+  "categoria": "Cuidado de la piel > Facial",
+  "rama": "Cuidado de la piel",
+  "hoja": "Facial",
+  "lista": 33396,
+  "precio": 26717,
+  "off": 20,
+  "sin_iva": 22080.17,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/DERMAGLÓS F HID F12 P NORMAL EM 75 ML - 7793742007903.jpg",
+  "presentacion": "Piel normal · Crema 50 g · Emulsión 75 ml",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-30"
+  ]
+ },
+ {
+  "ean": "7793742007897",
+  "nombre": "Dermaglós Facial Hidratante F12",
+  "marca": "Dermaglós",
+  "sku": "DERM-0099",
+  "categoria": "Cuidado de la piel > Facial",
+  "rama": "Cuidado de la piel",
+  "hoja": "Facial",
+  "lista": 23617,
+  "precio": 18894,
+  "off": 20,
+  "sin_iva": 15614.88,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/DERMAGLÓS F HID F12 P NORMAL CR 50 GR - 7793742007897.jpg",
+  "presentacion": "Piel normal · Crema 50 g · Emulsión 75 ml",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-30"
+  ]
+ },
+ {
+  "ean": "7793742002922",
+  "nombre": "Dermaglós Facial Hidratante F20",
+  "marca": "Dermaglós",
+  "sku": "DERM-0102",
+  "categoria": "Cuidado de la piel > Facial",
+  "rama": "Cuidado de la piel",
+  "hoja": "Facial",
+  "lista": 37267,
+  "precio": 29814,
+  "off": 20,
+  "sin_iva": 24639.67,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/DERMAGLÓS F HID F20 P NORMAL EM 70 ML - 7793742002922.jpg",
+  "presentacion": "Piel normal · Crema 70 g · Emulsión 70 ml",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-30"
+  ]
+ },
+ {
+  "ean": "7793742002915",
+  "nombre": "Dermaglós Facial Hidratante F20",
+  "marca": "Dermaglós",
+  "sku": "DERM-0101",
+  "categoria": "Cuidado de la piel > Facial",
+  "rama": "Cuidado de la piel",
+  "hoja": "Facial",
+  "lista": 29965,
+  "precio": 23972,
+  "off": 20,
+  "sin_iva": 19811.57,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/DERMAGLÓS F HID F20 P NORMAL CR 70 GR - 7793742002915.jpg",
+  "presentacion": "Piel normal · Crema 70 g · Emulsión 70 ml",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-30"
+  ]
+ },
+ {
+  "ean": "7793742007644",
+  "nombre": "Dermaglós Facial Nutritiva",
+  "marca": "Dermaglós",
+  "sku": "DERM-0112",
+  "categoria": "Cuidado de la piel > Facial",
+  "rama": "Cuidado de la piel",
+  "hoja": "Facial",
+  "lista": 37267,
+  "precio": 29814,
+  "off": 20,
+  "sin_iva": 24639.67,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/DERMAGLÓS F NUT P SECA CR 50 GR - 7793742007644.jpg",
+  "presentacion": "Piel normal 70 g · Piel seca 50 g",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-30"
+  ]
+ },
+ {
+  "ean": "7793742007576",
+  "nombre": "Dermaglós Facial Nutritiva",
+  "marca": "Dermaglós",
+  "sku": "DERM-0111",
+  "categoria": "Cuidado de la piel > Facial",
+  "rama": "Cuidado de la piel",
+  "hoja": "Facial",
+  "lista": 34731,
+  "precio": 27785,
+  "off": 20,
+  "sin_iva": 22962.81,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/DERMAGLÓS F NUT P NORMAL CR 70 GR - 7793742007576.jpg",
+  "presentacion": "Piel normal 70 g · Piel seca 50 g",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-30"
+  ]
+ },
+ {
+  "ean": "7793742007422",
+  "nombre": "Dermaglós Facial Ultra CC Cream",
+  "marca": "Dermaglós",
+  "sku": "DERM-0066",
+  "categoria": "Cuidado de la piel > Facial",
+  "rama": "Cuidado de la piel",
+  "hoja": "Facial",
+  "lista": 47156,
+  "precio": 37725,
+  "off": 20,
+  "sin_iva": 31177.69,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/DERMAGLOS ULTRA F CC CREAM TONO MEDIO x 50 GR - 7793742007422.jpg",
+  "presentacion": "Tono 1 · Tono medio · 50 g",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-30"
+  ]
+ },
+ {
+  "ean": "7793742008306",
+  "nombre": "Dermaglós Hombres",
+  "marca": "Dermaglós",
+  "sku": "HIG-0028",
+  "categoria": "Higiene y cuidado personal",
+  "rama": "Higiene y cuidado personal",
+  "hoja": "Higiene y cuidado personal",
+  "lista": 21018,
+  "precio": 16815,
+  "off": 20,
+  "sin_iva": 13896.69,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/DERMAGLÓS HOMBRE AFTERSHAVE EM 100 ML - 7793742008306.jpg",
+  "presentacion": "Aftershave 100 ml · Gel de limpieza 100 g",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-30"
+  ]
+ },
+ {
+  "ean": "7796285289331",
+  "nombre": "Evagina Cuidado Íntimo",
+  "marca": "Evagina",
+  "sku": "SEX-0010",
+  "categoria": "Higiene y cuidado personal",
+  "rama": "Higiene y cuidado personal",
+  "hoja": "Higiene y cuidado personal",
+  "lista": 12834,
+  "precio": 10268,
+  "off": 20,
+  "sin_iva": 8485.95,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/EVAGINA GEL LUBRICANTE X 50 ML - 7796285289331.jpg",
+  "presentacion": "Gel lubricante · Serum · Toallitas",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-30"
+  ]
+ },
+ {
+  "ean": "7796285290740",
+  "nombre": "Evagina Cuidado Íntimo",
+  "marca": "Evagina",
+  "sku": "HIG-0073",
+  "categoria": "Higiene y cuidado personal",
+  "rama": "Higiene y cuidado personal",
+  "hoja": "Higiene y cuidado personal",
+  "lista": 6510,
+  "precio": 5208,
+  "off": 20,
+  "sin_iva": 4304.13,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/EVAGINA TOALLITAS INTIMAS X 20 UNID. - 7796285290740.jpg",
+  "presentacion": "Gel lubricante · Serum · Toallitas",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-30"
+  ]
+ },
+ {
+  "ean": "7796285289348",
+  "nombre": "Evagina Higiene Íntima",
+  "marca": "Evagina",
+  "sku": "HIG-0010",
+  "categoria": "Higiene y cuidado personal",
+  "rama": "Higiene y cuidado personal",
+  "hoja": "Higiene y cuidado personal",
+  "lista": 17104,
+  "precio": 13683,
+  "off": 20,
+  "sin_iva": 11308.26,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/EVAGINA JABON ESPUMA X 240 ML - 7796285289348.jpg",
+  "presentacion": "Jabón espuma · Jabón líquido · Desodorante",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-30"
+  ]
+ },
+ {
+  "ean": "7791984000720",
+  "nombre": "Megacistin",
+  "marca": "Megacistin",
+  "sku": "CAP-0091",
+  "categoria": "Suplementos y vitaminas",
+  "rama": "Suplementos y vitaminas",
+  "hoja": "Suplementos y vitaminas",
+  "lista": 35030,
+  "precio": 28024,
+  "off": 20,
+  "sin_iva": 23160.33,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/MEGACISTIN MAX X 30 COMP. - 7791984000720.jpg",
+  "presentacion": "Blocker x 30 cápsulas · Max x 30 comprimidos",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-30"
+  ]
+ },
+ {
+  "ean": "7791293051482",
+  "nombre": "Sedal Luminous Crema para Peinar",
+  "marca": "Sedal",
+  "sku": "CAP-0024",
+  "categoria": "Cuidado del cabello",
+  "rama": "Cuidado del cabello",
+  "hoja": "Cuidado del cabello",
+  "lista": 6139,
+  "precio": 4911,
+  "off": 20,
+  "sin_iva": 4058.68,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/SEDAL CREMA P.PEINAR LUMINOUS X 300ML - 7791293051482.jpg",
+  "presentacion": "300 ml",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-30"
+  ]
+ },
+ {
+  "ean": "7798122342001",
+  "nombre": "Viasek Candifense",
+  "marca": "Viasek",
+  "sku": "HIG-0034",
+  "categoria": "Cuidado íntimo y femenino > Higiene íntima",
+  "rama": "Cuidado íntimo y femenino",
+  "hoja": "Higiene íntima",
+  "lista": 43050,
+  "precio": 34440,
+  "off": 20,
+  "sin_iva": 28462.81,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/VIASEK CANDIFENSE x 60 caps - 7798122342001.jpg",
+  "presentacion": "x 60 cápsulas",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-30"
+  ]
+ },
+ {
+  "ean": "7798122341868",
+  "nombre": "Viasek Ecovag",
+  "marca": "Viasek",
+  "sku": "HIG-0033",
+  "categoria": "Cuidado íntimo y femenino > Higiene íntima",
+  "rama": "Cuidado íntimo y femenino",
+  "hoja": "Higiene íntima",
+  "lista": 64490,
+  "precio": 51592,
+  "off": 20,
+  "sin_iva": 42638.02,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/VIASEK ECOVAG X 30 CAPS - 7798122341868.jpg",
+  "presentacion": "x 30 cápsulas",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-30"
+  ]
+ },
+ {
+  "ean": "7798122341417",
+  "nombre": "Viasek Espuma Íntima",
+  "marca": "Viasek",
+  "sku": "HIG-0053",
+  "categoria": "Cuidado íntimo y femenino > Higiene íntima",
+  "rama": "Cuidado íntimo y femenino",
+  "hoja": "Higiene íntima",
+  "lista": 15390,
+  "precio": 12312,
+  "off": 20,
+  "sin_iva": 10175.21,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/VIASEK ESPUMA PH 3.5 x frasco aerosol - 7798122341417.jpg",
+  "presentacion": "pH 3.5 · pH 6.8 · aerosol",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-30"
+  ]
+ },
+ {
+  "ean": "7798122341684",
+  "nombre": "Viasek Fem Espuma",
+  "marca": "Viasek",
+  "sku": "HIG-0048",
+  "categoria": "Cuidado íntimo y femenino > Higiene íntima",
+  "rama": "Cuidado íntimo y femenino",
+  "hoja": "Higiene íntima",
+  "lista": 19220,
+  "precio": 15376,
+  "off": 20,
+  "sin_iva": 12707.44,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/VIASEK FEM Espuma x 75 ml - 7798122341684.jpg",
+  "presentacion": "75 ml",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-30"
+  ]
+ },
+ {
+  "ean": "7798122341943",
+  "nombre": "Viasek Fresh Jabón Líquido",
+  "marca": "Viasek",
+  "sku": "HIG-0058",
+  "categoria": "Cuidado íntimo y femenino > Higiene íntima",
+  "rama": "Cuidado íntimo y femenino",
+  "hoja": "Higiene íntima",
+  "lista": 11940,
+  "precio": 9552,
+  "off": 20,
+  "sin_iva": 7894.21,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/VIASEK FRESH PH 6.8 JAB LIQ X 200 ML - 7798122341943.jpg",
+  "presentacion": "pH 3.5 · pH 6.8 · 200 ml",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-30"
+  ]
+ },
+ {
+  "ean": "7798122341530",
+  "nombre": "Viasek Gel Íntimo",
+  "marca": "Viasek",
+  "sku": "HIG-0046",
+  "categoria": "Cuidado íntimo y femenino > Higiene íntima",
+  "rama": "Cuidado íntimo y femenino",
+  "hoja": "Higiene íntima",
+  "lista": 29850,
+  "precio": 23880,
+  "off": 20,
+  "sin_iva": 19735.54,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/VIASEK GEL x frasco Airless 100 ml - 7798122341530.jpg",
+  "presentacion": "40 ml · Airless 25 ml · Airless 100 ml",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-30"
+  ]
+ },
+ {
+  "ean": "7798122341806",
+  "nombre": "Viasek Gel Íntimo",
+  "marca": "Viasek",
+  "sku": "HIG-0061",
+  "categoria": "Cuidado íntimo y femenino > Higiene íntima",
+  "rama": "Cuidado íntimo y femenino",
+  "hoja": "Higiene íntima",
+  "lista": 10110,
+  "precio": 8088,
+  "off": 20,
+  "sin_iva": 6684.3,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/VIASEK GEL x frasco Airless 25 ml - 7798122341806.jpg",
+  "presentacion": "40 ml · Airless 25 ml · Airless 100 ml",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-30"
+  ]
+ },
+ {
+  "ean": "7798122341745",
+  "nombre": "Viasek Lubrigel",
+  "marca": "Viasek",
+  "sku": "SEX-0007",
+  "categoria": "Bienestar sexual > Lubricantes",
+  "rama": "Bienestar sexual",
+  "hoja": "Lubricantes",
+  "lista": 10550,
+  "precio": 8440,
+  "off": 20,
+  "sin_iva": 6975.21,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/VIASEK LUBRIGEL x frasco Airless 25 ml - 7798122341745.jpg",
+  "presentacion": "Airless · 25 ml",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-30"
+  ]
+ },
+ {
+  "ean": "7798122341691",
+  "nombre": "Viasek Men Espuma",
+  "marca": "Viasek",
+  "sku": "HIG-0049",
+  "categoria": "Cuidado íntimo y femenino > Higiene íntima",
+  "rama": "Cuidado íntimo y femenino",
+  "hoja": "Higiene íntima",
+  "lista": 19220,
+  "precio": 15376,
+  "off": 20,
+  "sin_iva": 12707.44,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/VIASEK MEN Espuma x 75 ml - 7798122341691.jpg",
+  "presentacion": "75 ml",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-30"
+  ]
+ },
+ {
+  "ean": "7798122341790",
+  "nombre": "Viasek Menocare",
+  "marca": "Viasek",
+  "sku": "SUPL-0037",
+  "categoria": "Suplementos y vitaminas",
+  "rama": "Suplementos y vitaminas",
+  "hoja": "Suplementos y vitaminas",
+  "lista": 33240,
+  "precio": 26592,
+  "off": 20,
+  "sin_iva": 21976.86,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/VIASEK MENOCARE x 32 cáps. - 7798122341790.jpg",
+  "presentacion": "x 32 cápsulas",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-30"
+  ]
+ },
+ {
+  "ean": "7798122342032",
+  "nombre": "Viasek Menocare Gel",
+  "marca": "Viasek",
+  "sku": "HIG-0050",
+  "categoria": "Cuidado íntimo y femenino > Higiene íntima",
+  "rama": "Cuidado íntimo y femenino",
+  "hoja": "Higiene íntima",
+  "lista": 18770,
+  "precio": 15016,
+  "off": 20,
+  "sin_iva": 12409.92,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/VIASEK MENOCARE GEL x frasco 50 ml - 7798122342032.jpg",
+  "presentacion": "50 ml · 100 ml",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-30"
+  ]
+ },
+ {
+  "ean": "7798122341981",
+  "nombre": "Viasek Perineal Spray",
+  "marca": "Viasek",
+  "sku": "HIG-0047",
+  "categoria": "Cuidado íntimo y femenino > Higiene íntima",
+  "rama": "Cuidado íntimo y femenino",
+  "hoja": "Higiene íntima",
+  "lista": 28660,
+  "precio": 22928,
+  "off": 20,
+  "sin_iva": 18948.76,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/VIASEK PERINEAL spray x 100 ml - 7798122341981.jpg",
+  "presentacion": "100 ml",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-30"
+  ]
+ },
+ {
+  "ean": "7798122341578",
+  "nombre": "Viasek Repair",
+  "marca": "Viasek",
+  "sku": "HIG-0045",
+  "categoria": "Cuidado íntimo y femenino > Higiene íntima",
+  "rama": "Cuidado íntimo y femenino",
+  "hoja": "Higiene íntima",
+  "lista": 34380,
+  "precio": 27504,
+  "off": 20,
+  "sin_iva": 22730.58,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/VIASEK REPAIR pomo x 30 ML - 7798122341578.jpg",
+  "presentacion": "Pomo · 30 ml",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-30"
+  ]
+ },
+ {
+  "ean": "7798122341714",
+  "nombre": "Viasek Teens Espuma",
+  "marca": "Viasek",
+  "sku": "HIG-0063",
+  "categoria": "Cuidado íntimo y femenino > Higiene íntima",
+  "rama": "Cuidado íntimo y femenino",
+  "hoja": "Higiene íntima",
+  "lista": 9320,
+  "precio": 7456,
+  "off": 20,
+  "sin_iva": 6161.98,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/VIASEK TEENS x frasco esp foam 150 ml - 7798122341714.jpg",
+  "presentacion": "Foam · 150 ml",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-30"
+  ]
+ },
+ {
+  "ean": "7798122341561",
+  "nombre": "Viasek Toallitas Íntimas",
+  "marca": "Viasek",
+  "sku": "HIG-0064",
+  "categoria": "Cuidado íntimo y femenino > Higiene íntima",
+  "rama": "Cuidado íntimo y femenino",
+  "hoja": "Higiene íntima",
+  "lista": 7140,
+  "precio": 5712,
+  "off": 20,
+  "sin_iva": 4720.66,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/VIASEK TOALLITAS SOB X 16 X1 - 7798122341561.jpg",
+  "presentacion": "Sobre x 16",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-30"
+  ]
+ },
+ {
+  "ean": "7798140250371",
+  "nombre": "Cicatricure Beauty Care",
+  "marca": "Cicatricure",
+  "sku": "DERM-0005",
+  "categoria": "Cuidado de la piel > Facial",
+  "rama": "Cuidado de la piel",
+  "hoja": "Facial",
+  "lista": 32990,
+  "precio": 28042,
+  "off": 15,
+  "sin_iva": 23175.21,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/CICATRICURE BEUTY CARE - 7798140250371.jpg",
+  "presentacion": "—",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-30"
+  ]
+ },
+ {
+  "ean": "7798140259381",
+  "nombre": "Cicatricure Gold Lift",
+  "marca": "Cicatricure",
+  "sku": "DERM-0008",
+  "categoria": "Cuidado de la piel > Facial",
+  "rama": "Cuidado de la piel",
+  "hoja": "Facial",
+  "lista": 45990,
+  "precio": 39092,
+  "off": 15,
+  "sin_iva": 32307.44,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/CICATRICURE GOLD LIFT DIA - 7798140259381.jpg",
+  "presentacion": "Día · Noche",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-30"
+  ]
+ },
+ {
+  "ean": "7798140259398",
+  "nombre": "Cicatricure Gold Lift",
+  "marca": "Cicatricure",
+  "sku": "DERM-0009",
+  "categoria": "Cuidado de la piel > Facial",
+  "rama": "Cuidado de la piel",
+  "hoja": "Facial",
+  "lista": 45990,
+  "precio": 39092,
+  "off": 15,
+  "sin_iva": 32307.44,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/CICATRICURE GOLD LIFT NOCHE - 7798140259398.jpg",
+  "presentacion": "Día · Noche",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-30"
+  ]
+ },
+ {
+  "ean": "7898636190706",
+  "nombre": "Cicatricure Vitamina C Serum",
+  "marca": "Cicatricure",
+  "sku": "DERM-0013",
+  "categoria": "Cuidado de la piel > Facial",
+  "rama": "Cuidado de la piel",
+  "hoja": "Facial",
+  "lista": 39990,
+  "precio": 33992,
+  "off": 15,
+  "sin_iva": 28092.56,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/CICATRICURE VIT. C SERUM - 7898636190706.jpg",
+  "presentacion": "—",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-30"
+  ]
+ },
+ {
+  "ean": "7891150099906",
+  "nombre": "Sedal Luminous Serum",
+  "marca": "Sedal",
+  "sku": "DERM-0030",
+  "categoria": "Cuidado del cabello",
+  "rama": "Cuidado del cabello",
+  "hoja": "Cuidado del cabello",
+  "lista": 10782,
+  "precio": 9704,
+  "off": 10,
+  "sin_iva": 8019.83,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/SEDAL LUMINOUS SERUM X 110 ML - 7891150099906.jpg",
+  "presentacion": "110 ml",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-30"
+  ]
+ },
+ {
+  "ean": "7798028884223",
+  "nombre": "ALMOHADILLA ELECT C/FUNDA DESMONT LARGE AL 91",
+  "marca": "Almohadilla",
+  "sku": "EQS-0008",
+  "categoria": "",
+  "rama": "",
+  "hoja": "",
+  "lista": 62585,
+  "precio": 62585,
+  "off": 0,
+  "sin_iva": 51723.14,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/ALMOHADILLA TERMICA LARGE AL91-GR - 7798028884223.jpg",
+  "presentacion": "",
+  "vigencia": [
+   "",
+   ""
+  ]
+ },
+ {
+  "ean": "7798195030201",
+  "nombre": "ARLYT EXPRESS env.x 60 ml",
+  "marca": "Arlyt",
+  "sku": "SUPL-0020",
+  "categoria": "",
+  "rama": "",
+  "hoja": "",
+  "lista": 8770,
+  "precio": 8770,
+  "off": 0,
+  "sin_iva": 7247.93,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/ARLYT EXPRESS SOL X 60 ML - 7798195030201.jpg",
+  "presentacion": "",
+  "vigencia": [
+   "",
+   ""
+  ]
+ },
+ {
+  "ean": "7798195030164",
+  "nombre": "ARLYT PREMIUM env.x 240 ml",
+  "marca": "Arlyt",
+  "sku": "SUPL-0025",
+  "categoria": "",
+  "rama": "",
+  "hoja": "",
+  "lista": 21004,
+  "precio": 21004,
+  "off": 0,
+  "sin_iva": 17358.68,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/ARLYT PREMIUM SOL X 240 ML - 7798195030164.jpg",
+  "presentacion": "",
+  "vigencia": [
+   "",
+   ""
+  ]
+ },
+ {
+  "ean": "7798195031031",
+  "nombre": "ARLYT SOLUCION SALINA env.x 500 ml",
+  "marca": "Arlyt",
+  "sku": "SUPL-0029",
+  "categoria": "",
+  "rama": "",
+  "hoja": "",
+  "lista": 17643,
+  "precio": 17643,
+  "off": 0,
+  "sin_iva": 14580.99,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/ARLYT SOLUCION SALINA X 500 ML - 7798195031031.jpg",
+  "presentacion": "",
+  "vigencia": [
+   "",
+   ""
+  ]
+ },
+ {
+  "ean": "7790375268183",
+  "nombre": "BAGO+ ACTIVAMENTE 30 COMP REC SUP DIE",
+  "marca": "Bago",
+  "sku": "SUPL-0071",
+  "categoria": "Suplementos y vitaminas > Suplementos naturales",
+  "rama": "Suplementos y vitaminas",
+  "hoja": "Suplementos naturales",
+  "lista": 27845,
+  "precio": 27845,
+  "off": 0,
+  "sin_iva": 23012.4,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/BAGO _ ACTIVAMENTE COR X 30 - 7790375268183.jpg",
+  "presentacion": "",
+  "vigencia": [
+   "",
+   ""
+  ]
+ },
+ {
+  "ean": "7790375245054",
+  "nombre": "BAGOVIT A Classic cr.x 200 g",
+  "marca": "Bagovit",
+  "sku": "DERM-0315",
+  "categoria": "Cuidado de la piel > Corporal",
+  "rama": "Cuidado de la piel",
+  "hoja": "Corporal",
+  "lista": 26846,
+  "precio": 26846,
+  "off": 0,
+  "sin_iva": 22186.78,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/BAGOVIT A CLASSIC CRM X 200 G - 7790375245054.jpg",
+  "presentacion": "",
+  "vigencia": [
+   "",
+   ""
+  ]
+ },
+ {
+  "ean": "7790375268787",
+  "nombre": "BAGOVIT A Classic cr.x 50 g",
+  "marca": "Bagovit",
+  "sku": "DERM-0333",
+  "categoria": "Cuidado de la piel > Corporal",
+  "rama": "Cuidado de la piel",
+  "hoja": "Corporal",
+  "lista": 14514,
+  "precio": 14514,
+  "off": 0,
+  "sin_iva": 11995.04,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/BAGOVIT A CLASSIC CRM X 50 GR - 7790375268787.jpg",
+  "presentacion": "",
+  "vigencia": [
+   "",
+   ""
+  ]
+ },
+ {
+  "ean": "7790375001308",
+  "nombre": "BAGOVIT A EMULSION PIEL EXTRA SECA emuls.x 350 ml",
+  "marca": "Bagovit",
+  "sku": "DERM-0311",
+  "categoria": "Cuidado de la piel > Corporal",
+  "rama": "Cuidado de la piel",
+  "hoja": "Corporal",
+  "lista": 29490,
+  "precio": 29490,
+  "off": 0,
+  "sin_iva": 24371.9,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/BAGOVIT A EMU PIEL EXTRA SECA X 350 - 7790375001308.jpg",
+  "presentacion": "",
+  "vigencia": [
+   "",
+   ""
+  ]
+ },
+ {
+  "ean": "7790375268824",
+  "nombre": "BAGOVIT A MANOS Y UÑAS Cr.x 50 g",
+  "marca": "Bagovit",
+  "sku": "DERM-0334",
+  "categoria": "Cuidado de la piel > Corporal",
+  "rama": "Cuidado de la piel",
+  "hoja": "Corporal",
+  "lista": 12631,
+  "precio": 12631,
+  "off": 0,
+  "sin_iva": 10438.84,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/BAGOVIT A MANOS Y UÑAS CRM X 50 - 7790375268824.jpg",
+  "presentacion": "",
+  "vigencia": [
+   "",
+   ""
+  ]
+ },
+ {
+  "ean": "7790375269784",
+  "nombre": "BAGOVIT CAPILAR PELO LARGO Y S/FRIZZ crema p/ peinar x 200 ml",
+  "marca": "Bagovit",
+  "sku": "CAP-0089",
+  "categoria": "Cuidado del cabello > Peinado",
+  "rama": "Cuidado del cabello",
+  "hoja": "Peinado",
+  "lista": 9971,
+  "precio": 9971,
+  "off": 0,
+  "sin_iva": 8240.5,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/BAG.CAP.PELO LARGO Y S_FRIZZ CRP X 200ML - 7790375269784.jpg",
+  "presentacion": "",
+  "vigencia": [
+   "",
+   ""
+  ]
+ },
+ {
+  "ean": "7790375269913",
+  "nombre": "Bagó +",
+  "marca": "Bagó +",
+  "sku": "SUPL-0041",
+  "categoria": "Suplementos y vitaminas",
+  "rama": "Suplementos y vitaminas",
+  "hoja": "Suplementos y vitaminas",
+  "lista": 20015,
+  "precio": 20015,
+  "off": 0,
+  "sin_iva": 16541.32,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/BAGÓ _ CALMA COR X 30 - 7790375269913.jpg",
+  "presentacion": "Calma x 30 · Descanso x 20",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-30"
+  ]
+ },
+ {
+  "ean": "7790375270216",
+  "nombre": "Bagó +",
+  "marca": "Bagó +",
+  "sku": "SUPL-0042",
+  "categoria": "Suplementos y vitaminas",
+  "rama": "Suplementos y vitaminas",
+  "hoja": "Suplementos y vitaminas",
+  "lista": 12565,
+  "precio": 12565,
+  "off": 0,
+  "sin_iva": 10384.3,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/BAGÓ _ DESCANSO COR X 20 - 7790375270216.jpg",
+  "presentacion": "Calma x 30 · Descanso x 20",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-30"
+  ]
+ },
+ {
+  "ean": "7790375260941",
+  "nombre": "Bagóvit A Classic",
+  "marca": "Bagóvit A",
+  "sku": "DERM-0215",
+  "categoria": "Cuidado de la piel > Corporal",
+  "rama": "Cuidado de la piel",
+  "hoja": "Corporal",
+  "lista": 21793,
+  "precio": 21793,
+  "off": 0,
+  "sin_iva": 18010.74,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/BAGOVIT A CLASSIC CRM X 100 G - 7790375260941.jpg",
+  "presentacion": "Crema · 100 g",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-30"
+  ]
+ },
+ {
+  "ean": "7790375268954",
+  "nombre": "Bagóvit A Efecto Luminoso",
+  "marca": "Bagóvit A",
+  "sku": "DERM-0214",
+  "categoria": "Cuidado de la piel > Corporal",
+  "rama": "Cuidado de la piel",
+  "hoja": "Corporal",
+  "lista": 22701,
+  "precio": 22701,
+  "off": 0,
+  "sin_iva": 18761.16,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/BAGOVIT A EFECTO LUMINOSO X 200 - 7790375268954.jpg",
+  "presentacion": "200 ml",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-30"
+  ]
+ },
+ {
+  "ean": "7790375000042",
+  "nombre": "Bagóvit A Hidratante Autobronceante",
+  "marca": "Bagóvit A",
+  "sku": "DERM-0211",
+  "categoria": "Cuidado de la piel > Corporal",
+  "rama": "Cuidado de la piel",
+  "hoja": "Corporal",
+  "lista": 24175,
+  "precio": 24175,
+  "off": 0,
+  "sin_iva": 19979.34,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/BAGOVIT A EMU HIDRAT AUTOBR X 200 - 7790375000042.jpg",
+  "presentacion": "Emulsión · 200 ml",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-30"
+  ]
+ },
+ {
+  "ean": "7790375245061",
+  "nombre": "Bagóvit A Light",
+  "marca": "Bagóvit A",
+  "sku": "DERM-0218",
+  "categoria": "Cuidado de la piel > Corporal",
+  "rama": "Cuidado de la piel",
+  "hoja": "Corporal",
+  "lista": 17729,
+  "precio": 17729,
+  "off": 0,
+  "sin_iva": 14652.07,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/BAGOVIT A LIGHT CRM X 100 G - 7790375245061.jpg",
+  "presentacion": "Crema · 100 g",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-30"
+  ]
+ },
+ {
+  "ean": "7790375269289",
+  "nombre": "Bagóvit A Spray Continuo",
+  "marca": "Bagóvit A",
+  "sku": "DERM-0213",
+  "categoria": "Cuidado de la piel > Corporal",
+  "rama": "Cuidado de la piel",
+  "hoja": "Corporal",
+  "lista": 23426,
+  "precio": 23426,
+  "off": 0,
+  "sin_iva": 19360.33,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/BAGOVIT A SPRAY CONTINUO X 170 - 7790375269289.jpg",
+  "presentacion": "170 ml",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-30"
+  ]
+ },
+ {
+  "ean": "7790375269319",
+  "nombre": "Bagóvit Absorción 1 Minuto",
+  "marca": "Bagóvit A",
+  "sku": "DERM-0216",
+  "categoria": "Cuidado de la piel > Corporal",
+  "rama": "Cuidado de la piel",
+  "hoja": "Corporal",
+  "lista": 20248,
+  "precio": 20248,
+  "off": 0,
+  "sin_iva": 16733.88,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/BAG. ABSORCION 1 MIN SPY CONT. X 170 ML - 7790375269319.jpg",
+  "presentacion": "Spray continuo · 170 ml",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-30"
+  ]
+ },
+ {
+  "ean": "7790375269715",
+  "nombre": "Bagóvit Brillo Sublime",
+  "marca": "Bagóvit Capilar",
+  "sku": "CAP-0060",
+  "categoria": "Cuidado del cabello",
+  "rama": "Cuidado del cabello",
+  "hoja": "Cuidado del cabello",
+  "lista": 9972,
+  "precio": 9972,
+  "off": 0,
+  "sin_iva": 8241.32,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/BAG. CAP. BRILLO SUBLIME ACO. X 350 ML - 7790375269715.jpg",
+  "presentacion": "Shampoo · Acondicionador · 350 ml",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-30"
+  ]
+ },
+ {
+  "ean": "7790375269661",
+  "nombre": "Bagóvit Brillo Sublime",
+  "marca": "Bagóvit Capilar",
+  "sku": "CAP-0061",
+  "categoria": "Cuidado del cabello",
+  "rama": "Cuidado del cabello",
+  "hoja": "Cuidado del cabello",
+  "lista": 9972,
+  "precio": 9972,
+  "off": 0,
+  "sin_iva": 8241.32,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/BAG. CAP. BRILLO SUBLIME SHA. X 350 ML - 7790375269661.jpg",
+  "presentacion": "Shampoo · Acondicionador · 350 ml",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-30"
+  ]
+ },
+ {
+  "ean": "7790375269302",
+  "nombre": "Bagóvit Bronceado Progresivo",
+  "marca": "Bagóvit A",
+  "sku": "DERM-0212",
+  "categoria": "Cuidado de la piel > Corporal",
+  "rama": "Cuidado de la piel",
+  "hoja": "Corporal",
+  "lista": 23929,
+  "precio": 23929,
+  "off": 0,
+  "sin_iva": 19776.03,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/BAG.EMU.BRONC.PROGR.SPRAY CONT. X 150 ML - 7790375269302.jpg",
+  "presentacion": "Spray continuo · 150 ml",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-30"
+  ]
+ },
+ {
+  "ean": "7790375270629",
+  "nombre": "Bagóvit Plasma Vegetal Regenerador",
+  "marca": "Bagóvit Capilar",
+  "sku": "CAP-0057",
+  "categoria": "Cuidado del cabello",
+  "rama": "Cuidado del cabello",
+  "hoja": "Cuidado del cabello",
+  "lista": 10470,
+  "precio": 10470,
+  "off": 0,
+  "sin_iva": 8652.89,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/BAG.CAP.PLASMA VEG.REGENERADOR SHAX350ML - 7790375270629.jpg",
+  "presentacion": "Shampoo · Acondicionador · Tratamiento",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-30"
+  ]
+ },
+ {
+  "ean": "7790375270636",
+  "nombre": "Bagóvit Plasma Vegetal Regenerador",
+  "marca": "Bagóvit Capilar",
+  "sku": "CAP-0058",
+  "categoria": "Cuidado del cabello",
+  "rama": "Cuidado del cabello",
+  "hoja": "Cuidado del cabello",
+  "lista": 10470,
+  "precio": 10470,
+  "off": 0,
+  "sin_iva": 8652.89,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/BAG.CAP.PLASMA VEG.REGENERADOR ACOX350ML - 7790375270636.jpg",
+  "presentacion": "Shampoo · Acondicionador · Tratamiento",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-30"
+  ]
+ },
+ {
+  "ean": "7790375270643",
+  "nombre": "Bagóvit Plasma Vegetal Regenerador",
+  "marca": "Bagóvit Capilar",
+  "sku": "CAP-0059",
+  "categoria": "Cuidado del cabello",
+  "rama": "Cuidado del cabello",
+  "hoja": "Cuidado del cabello",
+  "lista": 10392,
+  "precio": 10392,
+  "off": 0,
+  "sin_iva": 8588.43,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/BAG.CAP.PLASMA VEG.REGENERADOR TRC X 300 - 7790375270643.jpg",
+  "presentacion": "Shampoo · Acondicionador · Tratamiento",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-30"
+  ]
+ },
+ {
+  "ean": "7790375269708",
+  "nombre": "Bagóvit Reparación Intensiva",
+  "marca": "Bagóvit Capilar",
+  "sku": "CAP-0062",
+  "categoria": "Cuidado del cabello",
+  "rama": "Cuidado del cabello",
+  "hoja": "Cuidado del cabello",
+  "lista": 9972,
+  "precio": 9972,
+  "off": 0,
+  "sin_iva": 8241.32,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/BAG.CAP. REPARACIÓN INTENSIVA SHA X350ML - 7790375269708.jpg",
+  "presentacion": "Shampoo · Crema de tratamiento",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-30"
+  ]
+ },
+ {
+  "ean": "7790375269777",
+  "nombre": "Bagóvit Reparación Intensiva",
+  "marca": "Bagóvit Capilar",
+  "sku": "CAP-0063",
+  "categoria": "Cuidado del cabello",
+  "rama": "Cuidado del cabello",
+  "hoja": "Cuidado del cabello",
+  "lista": 9972,
+  "precio": 9972,
+  "off": 0,
+  "sin_iva": 8241.32,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/BAG.CAP. REPARACIÓN INTENSIVA CRT X300ML - 7790375269777.jpg",
+  "presentacion": "Shampoo · Crema de tratamiento",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-30"
+  ]
+ },
+ {
+  "ean": "7790375003012",
+  "nombre": "CHIA OMEGA-3 BAGO 1000 mg caps.bl.x 30",
+  "marca": "Chia",
+  "sku": "SUPL-0099",
+  "categoria": "Suplementos y vitaminas > Suplementos naturales",
+  "rama": "Suplementos y vitaminas",
+  "hoja": "Suplementos naturales",
+  "lista": 17953,
+  "precio": 17953,
+  "off": 0,
+  "sin_iva": 14837.19,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/CHIA OM3 BAGO 1000 MG Cáp. Blandas x 30 - 7790375003012.jpg",
+  "presentacion": "",
+  "vigencia": [
+   "",
+   ""
+  ]
+ },
+ {
+  "ean": "7790375268015",
+  "nombre": "CHIA PLUS BAGO caps.bl.x 30",
+  "marca": "Chia",
+  "sku": "SUPL-0092",
+  "categoria": "Suplementos y vitaminas > Suplementos naturales",
+  "rama": "Suplementos y vitaminas",
+  "hoja": "Suplementos naturales",
+  "lista": 20153,
+  "precio": 20153,
+  "off": 0,
+  "sin_iva": 16655.37,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/CHIA PLUS BAGO CPB X 30 - 7790375268015.jpg",
+  "presentacion": "",
+  "vigencia": [
+   "",
+   ""
+  ]
+ },
+ {
+  "ean": "7509546654034",
+  "nombre": "Colgate Crema Dental Total",
+  "marca": "Colgate",
+  "sku": "HIG-0069",
+  "categoria": "Higiene y cuidado personal",
+  "rama": "Higiene y cuidado personal",
+  "hoja": "Higiene y cuidado personal",
+  "lista": 8450,
+  "precio": 8450,
+  "off": 0,
+  "sin_iva": 6983.47,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/COLGATE CREMA TOTAL ANTISARRO x 90 g - 7509546654034.jpg",
+  "presentacion": "Antisarro · Carbón · 90 g",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-30"
+  ]
+ },
+ {
+  "ean": "7509546686042",
+  "nombre": "Colgate Crema Dental Total",
+  "marca": "Colgate",
+  "sku": "HIG-0071",
+  "categoria": "Higiene y cuidado personal",
+  "rama": "Higiene y cuidado personal",
+  "hoja": "Higiene y cuidado personal",
+  "lista": 7040,
+  "precio": 7040,
+  "off": 0,
+  "sin_iva": 5818.18,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/COLGATE CREMA TOTAL CARBON X90 - 7509546686042.jpg",
+  "presentacion": "Antisarro · Carbón · 90 g",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-30"
+  ]
+ },
+ {
+  "ean": "7790375004361",
+  "nombre": "Contorno de Ojos Bagóvit Anti Arrugas Pro Lifting x 15 g",
+  "marca": "Bagóvit",
+  "sku": "DERM-0288",
+  "categoria": "Cuidado de la piel > Facial",
+  "rama": "Cuidado de la piel",
+  "hoja": "Facial",
+  "lista": 42724,
+  "precio": 42724,
+  "off": 0,
+  "sin_iva": 35309.09,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/BAG.FA.PRO LIF.CONT.OJOS CRM X 15 G - 7790375004361.jpg",
+  "presentacion": "",
+  "vigencia": [
+   "",
+   ""
+  ]
+ },
+ {
+  "ean": "7796285286002",
+  "nombre": "Copa Menstrual Hipoalergénica Evacopa Talle 3",
+  "marca": "Evacopa",
+  "sku": "HIG-0032",
+  "categoria": "",
+  "rama": "",
+  "hoja": "",
+  "lista": 23913,
+  "precio": 23913,
+  "off": 0,
+  "sin_iva": 19762.81,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/Copa Menstrual Hipoalergénica Evacopa Talle 3 - 7796285286002.jpg",
+  "presentacion": "",
+  "vigencia": [
+   "",
+   ""
+  ]
+ },
+ {
+  "ean": "7798120265609",
+  "nombre": "Crema Facial para Hombres 360 Caviahue x 45 g",
+  "marca": "Caviahue",
+  "sku": "DERM-0268",
+  "categoria": "Cuidado de la piel > Facial",
+  "rama": "Cuidado de la piel",
+  "hoja": "Facial",
+  "lista": 62000,
+  "precio": 62000,
+  "off": 0,
+  "sin_iva": 51239.67,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/CREMA FACIAL PARA HOMBRES 360 CAVIAHUE X 45 G - 7798120265609.jpg",
+  "presentacion": "",
+  "vigencia": [
+   "",
+   ""
+  ]
+ },
+ {
+  "ean": "7891150097124",
+  "nombre": "Dove Bond Repair Óleo Intense Repair",
+  "marca": "Dove",
+  "sku": "CAP-0006",
+  "categoria": "Cuidado del cabello",
+  "rama": "Cuidado del cabello",
+  "hoja": "Cuidado del cabello",
+  "lista": 18960,
+  "precio": 18960,
+  "off": 0,
+  "sin_iva": 15669.42,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/DOVE OLEO BOND INTENSE REPAIRX 110 ML - 7891150097124.jpg",
+  "presentacion": "110 ml",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-30"
+  ]
+ },
+ {
+  "ean": "7791293048635",
+  "nombre": "Dove Tratamiento Reconstrucción",
+  "marca": "Dove",
+  "sku": "CAP-0015",
+  "categoria": "Cuidado del cabello",
+  "rama": "Cuidado del cabello",
+  "hoja": "Cuidado del cabello",
+  "lista": 10462,
+  "precio": 10462,
+  "off": 0,
+  "sin_iva": 8646.28,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/DOVE TRATAMIENTO RECONSTRUCCIÓN X 300 - 7791293048635.jpg",
+  "presentacion": "300 ml",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-30"
+  ]
+ },
+ {
+  "ean": "7891150103504",
+  "nombre": "Dove UV Repair & Glow Óleo Bifásico",
+  "marca": "Dove",
+  "sku": "CAP-0005",
+  "categoria": "Cuidado del cabello",
+  "rama": "Cuidado del cabello",
+  "hoja": "Cuidado del cabello",
+  "lista": 18960,
+  "precio": 18960,
+  "off": 0,
+  "sin_iva": 15669.42,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/DOVE OLEO BIFASICO UV REPAIR Y GLOW - 7891150103504.jpg",
+  "presentacion": "—",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-30"
+  ]
+ },
+ {
+  "ean": "7796285285135",
+  "nombre": "EVACOPA copa menstrual D40 T1 x1",
+  "marca": "Evacopa",
+  "sku": "HIG-0030",
+  "categoria": "",
+  "rama": "",
+  "hoja": "",
+  "lista": 23913,
+  "precio": 23913,
+  "off": 0,
+  "sin_iva": 19762.81,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/Copa Menstrual Hipoalergénica Evacopa Talle 1 - 7796285285135.jpg",
+  "presentacion": "",
+  "vigencia": [
+   "",
+   ""
+  ]
+ },
+ {
+  "ean": "7796285285999",
+  "nombre": "EVACOPA copa menstrual D44 T2 x1",
+  "marca": "Evacopa",
+  "sku": "HIG-0031",
+  "categoria": "",
+  "rama": "",
+  "hoja": "",
+  "lista": 23913,
+  "precio": 23913,
+  "off": 0,
+  "sin_iva": 19762.81,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/Copa Menstrual Hipoalergénica Evacopa Talle 2 - 7796285285999.jpg",
+  "presentacion": "",
+  "vigencia": [
+   "",
+   ""
+  ]
+ },
+ {
+  "ean": "7790375004378",
+  "nombre": "Emulsión Cuidados Cotidianos con Efecto Seda Bagóvit A por 200 mililitros",
+  "marca": "Bagovit",
+  "sku": "DERM-0329",
+  "categoria": "Cuidado de la piel > Corporal",
+  "rama": "Cuidado de la piel",
+  "hoja": "Corporal",
+  "lista": 18785,
+  "precio": 18785,
+  "off": 0,
+  "sin_iva": 15524.79,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/BAGOVIT ABSORCION 1 MINUTO EMU X 200 ML - 7790375004378.jpg",
+  "presentacion": "",
+  "vigencia": [
+   "",
+   ""
+  ]
+ },
+ {
+  "ean": "7790375267803",
+  "nombre": "Emulsión Humectante Bagovit Reafirmante Efecto Tensor x 350 ml",
+  "marca": "Bagóvit",
+  "sku": "DERM-0320",
+  "categoria": "Cuidado de la piel > Corporal",
+  "rama": "Cuidado de la piel",
+  "hoja": "Corporal",
+  "lista": 24293,
+  "precio": 24293,
+  "off": 0,
+  "sin_iva": 20076.86,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/BAG.A CUID.COT.REAF.EF.TENS.EMU X 350 ML - 7790375267803.jpg",
+  "presentacion": "",
+  "vigencia": [
+   "",
+   ""
+  ]
+ },
+ {
+  "ean": "3337875757669",
+  "nombre": "Fluido Hidratante Diario La Roche-Posay Toleriane Dermallergo 40ml",
+  "marca": "La Roche-Posay",
+  "sku": "DERM-0226",
+  "categoria": "Cuidado de la piel > Facial",
+  "rama": "Cuidado de la piel",
+  "hoja": "Facial",
+  "lista": 137102,
+  "precio": 137102,
+  "off": 0,
+  "sin_iva": 113307.44,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/TOL DERMALLERGO FLUID 40ML - 3337875757669.jpg",
+  "presentacion": "",
+  "vigencia": [
+   "",
+   ""
+  ]
+ },
+ {
+  "ean": "3337875807043",
+  "nombre": "LRP TOLERIANE ROSALIAC 40 ML CRE",
+  "marca": "Lrp",
+  "sku": "DERM-0222",
+  "categoria": "Cuidado de la piel > Facial",
+  "rama": "Cuidado de la piel",
+  "hoja": "Facial",
+  "lista": 150680,
+  "precio": 150680,
+  "off": 0,
+  "sin_iva": 124528.93,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/TOLERIANE ROSALIAC - 3337875807043.jpg",
+  "presentacion": "",
+  "vigencia": [
+   "",
+   ""
+  ]
+ },
+ {
+  "ean": "7798028885398",
+  "nombre": "NEBUL SILFAB MESH A BATERIA MANOS LIBRES BREEZE FLEX",
+  "marca": "Nebul",
+  "sku": "EQS-0010",
+  "categoria": "",
+  "rama": "",
+  "hoja": "",
+  "lista": 97274,
+  "precio": 97274,
+  "off": 0,
+  "sin_iva": 80391.74,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/NEBULIZADOR MESH BREEZE FLEX NM40 - 7798028885398.jpg",
+  "presentacion": "",
+  "vigencia": [
+   "",
+   ""
+  ]
+ },
+ {
+  "ean": "7798028885404",
+  "nombre": "NEBUL SILFAB MESH A BATERIA TASA REGULABLE BREEZE PRO",
+  "marca": "Nebul",
+  "sku": "EQS-0009",
+  "categoria": "",
+  "rama": "",
+  "hoja": "",
+  "lista": 116730,
+  "precio": 116730,
+  "off": 0,
+  "sin_iva": 96471.07,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/NEBULIZADOR MESH BREEZE PRO NM50 - 7798028885404.jpg",
+  "presentacion": "",
+  "vigencia": [
+   "",
+   ""
+  ]
+ },
+ {
+  "ean": "7798028884797",
+  "nombre": "NEBUL SILFAB MINI MESH NM10",
+  "marca": "Nebul",
+  "sku": "EQS-0006",
+  "categoria": "",
+  "rama": "",
+  "hoja": "",
+  "lista": 68025,
+  "precio": 68025,
+  "off": 0,
+  "sin_iva": 56219.01,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/NEBULIZADOR MINIMESH NM10 - 7798028884797.jpg",
+  "presentacion": "",
+  "vigencia": [
+   "",
+   ""
+  ]
+ },
+ {
+  "ean": "7798028882687",
+  "nombre": "NEBUL SILFAB PISTON PIXEL",
+  "marca": "Nebul",
+  "sku": "EQS-0003",
+  "categoria": "",
+  "rama": "",
+  "hoja": "",
+  "lista": 103241,
+  "precio": 103241,
+  "off": 0,
+  "sin_iva": 85323.14,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/NEBULIZADOR A PISTON 2EN1 DUOVENTO - 7798028882687.jpg",
+  "presentacion": "",
+  "vigencia": [
+   "",
+   ""
+  ]
+ },
+ {
+  "ean": "7798028884131",
+  "nombre": "NEBUL SILFAB ULTRASON N61 PICCOLO",
+  "marca": "Nebul",
+  "sku": "EQS-0005",
+  "categoria": "",
+  "rama": "",
+  "hoja": "",
+  "lista": 119994,
+  "precio": 119994,
+  "off": 0,
+  "sin_iva": 99168.6,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/NEBULIZADOR ULTRASONICO ULTRA NUOVO N60 - 7798028884131.jpg",
+  "presentacion": "",
+  "vigencia": [
+   "",
+   ""
+  ]
+ },
+ {
+  "ean": "7790770002900",
+  "nombre": "Nosotras Protectores Diarios",
+  "marca": "Nosotras",
+  "sku": "HIG-0068",
+  "categoria": "Higiene y cuidado personal",
+  "rama": "Higiene y cuidado personal",
+  "hoja": "Higiene y cuidado personal",
+  "lista": 8474,
+  "precio": 8474,
+  "off": 0,
+  "sin_iva": 7003.31,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/NOSOTRAS P.DIARIOS X 60 - 7790770002900.jpg",
+  "presentacion": "Multiestilo x 20 · Clásicos x 60",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-30"
+  ]
+ },
+ {
+  "ean": "7798028885381",
+  "nombre": "SILFAB NEBULIZADORES MESH NM30 NEBULIZADOR MESH A BATERÍA BREEZE GO",
+  "marca": "Silfab",
+  "sku": "EQS-0011",
+  "categoria": "",
+  "rama": "",
+  "hoja": "",
+  "lista": 84218,
+  "precio": 84218,
+  "off": 0,
+  "sin_iva": 69601.65,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/NEBULIZADOR MESH BREEZE GO NM30 - 7798028885381.jpg",
+  "presentacion": "",
+  "vigencia": [
+   "",
+   ""
+  ]
+ },
+ {
+  "ean": "7790580148843",
+  "nombre": "SIMPLE COLAGENO HIDROLIZADO limonada env. x 273 g",
+  "marca": "Simple",
+  "sku": "SUPL-0063",
+  "categoria": "Suplementos y vitaminas > Nutricosmética",
+  "rama": "Suplementos y vitaminas",
+  "hoja": "Nutricosmética",
+  "lista": 38929,
+  "precio": 38929,
+  "off": 0,
+  "sin_iva": 32172.73,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/SIMPLE COLAGENO HIDROLIZADO x273 G - 7790580148843.jpg",
+  "presentacion": "",
+  "vigencia": [
+   "",
+   ""
+  ]
+ },
+ {
+  "ean": "7798028884247",
+  "nombre": "Silfab Almohadilla Térmica Cintura Con Funda Desmontable",
+  "marca": "Silfab",
+  "sku": "EQS-0007",
+  "categoria": "",
+  "rama": "",
+  "hoja": "",
+  "lista": 67405,
+  "precio": 67405,
+  "off": 0,
+  "sin_iva": 55706.61,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/ALMOHADILLA TERMICA CINTURA AL93-GR - 7798028884247.jpg",
+  "presentacion": "",
+  "vigencia": [
+   "",
+   ""
+  ]
+ },
+ {
+  "ean": "7790580130077",
+  "nombre": "Simple",
+  "marca": "Simple",
+  "sku": "SUPL-0036",
+  "categoria": "Suplementos y vitaminas",
+  "rama": "Suplementos y vitaminas",
+  "hoja": "Suplementos y vitaminas",
+  "lista": 35030,
+  "precio": 35030,
+  "off": 0,
+  "sin_iva": 28950.41,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/SIMPLE COLAGENO FRASCO X 60 UN - 7790580130077.jpg",
+  "presentacion": "Calcio + Vitamina D · Defensas · Vitalidad · Colágeno · x 60",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-30"
+  ]
+ },
+ {
+  "ean": "7790580119614",
+  "nombre": "Simple",
+  "marca": "Simple",
+  "sku": "SUPL-0038",
+  "categoria": "Suplementos y vitaminas",
+  "rama": "Suplementos y vitaminas",
+  "hoja": "Suplementos y vitaminas",
+  "lista": 29677,
+  "precio": 29677,
+  "off": 0,
+  "sin_iva": 24526.45,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/SIMPLE CALCIO _ VITAMINA D FCO. X 60 - 7790580119614.jpg",
+  "presentacion": "Calcio + Vitamina D · Defensas · Vitalidad · Colágeno · x 60",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-30"
+  ]
+ },
+ {
+  "ean": "7790580118082",
+  "nombre": "Simple",
+  "marca": "Simple",
+  "sku": "SUPL-0039",
+  "categoria": "Suplementos y vitaminas",
+  "rama": "Suplementos y vitaminas",
+  "hoja": "Suplementos y vitaminas",
+  "lista": 23935,
+  "precio": 23935,
+  "off": 0,
+  "sin_iva": 19780.99,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/SIMPLE VITALIDAD FCO. X 60 - 7790580118082.jpg",
+  "presentacion": "Calcio + Vitamina D · Defensas · Vitalidad · Colágeno · x 60",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-30"
+  ]
+ },
+ {
+  "ean": "7790580125592",
+  "nombre": "Simple",
+  "marca": "Simple",
+  "sku": "SUPL-0040",
+  "categoria": "Suplementos y vitaminas",
+  "rama": "Suplementos y vitaminas",
+  "hoja": "Suplementos y vitaminas",
+  "lista": 22842,
+  "precio": 22842,
+  "off": 0,
+  "sin_iva": 18877.69,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/SIMPLE DEFENSAS FCO X 60 UNID - 7790580125592.jpg",
+  "presentacion": "Calcio + Vitamina D · Defensas · Vitalidad · Colágeno · x 60",
+  "vigencia": [
+   "2026-09-01",
+   "2026-09-30"
+  ]
+ },
+ {
+  "ean": "7790375268350",
+  "nombre": "Sérum Facial Antiarrugas Bagóvit Pro Lifting 30g",
+  "marca": "Bagovit",
+  "sku": "DERM-0280",
+  "categoria": "Cuidado de la piel > Facial",
+  "rama": "Cuidado de la piel",
+  "hoja": "Facial",
+  "lista": 48754,
+  "precio": 48754,
+  "off": 0,
+  "sin_iva": 40292.56,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/BAG.PRO LIFT.SERUM ANTIARRUGAS CRM X 30 - 7790375268350.jpg",
+  "presentacion": "",
+  "vigencia": [
+   "",
+   ""
+  ]
+ },
+ {
+  "ean": "7798028880768",
+  "nombre": "TENSIOMETRO ANEROIDE CON ESTETOSCOPIO",
+  "marca": "Tensiometro",
+  "sku": "EQS-0019",
+  "categoria": "Equipos de salud > Tensiómetros",
+  "rama": "Equipos de salud",
+  "hoja": "Tensiómetros",
+  "lista": 31798,
+  "precio": 31798,
+  "off": 0,
+  "sin_iva": 26279.34,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/TENSIOMETRO ANEROIDE STANDARD 1300 - 7798028880768.jpg",
+  "presentacion": "",
+  "vigencia": [
+   "",
+   ""
+  ]
+ },
+ {
+  "ean": "7791293050263",
+  "nombre": "TRESEMME ACO DETOX 500",
+  "marca": "Tresemme",
+  "sku": "CAP-0028",
+  "categoria": "",
+  "rama": "",
+  "hoja": "",
+  "lista": 11191,
+  "precio": 11191,
+  "off": 0,
+  "sin_iva": 9248.76,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/Acondicionador Dosificador Tresemmé Detox Capilar x 500 ml - 7791293050263.jpg",
+  "presentacion": "",
+  "vigencia": [
+   "",
+   ""
+  ]
+ },
+ {
+  "ean": "7791293050201",
+  "nombre": "TRESEMME ACO ONDAS B X500",
+  "marca": "Tresemme",
+  "sku": "CAP-0030",
+  "categoria": "",
+  "rama": "",
+  "hoja": "",
+  "lista": 11191,
+  "precio": 11191,
+  "off": 0,
+  "sin_iva": 9248.76,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/Acondicionador Tresemmé Ondas Boho x 500 ml - 7791293050201.jpg",
+  "presentacion": "",
+  "vigencia": [
+   "",
+   ""
+  ]
+ },
+ {
+  "ean": "7791293050256",
+  "nombre": "TRESEMME SH DETOX X 500",
+  "marca": "Tresemme",
+  "sku": "CAP-0036",
+  "categoria": "",
+  "rama": "",
+  "hoja": "",
+  "lista": 11191,
+  "precio": 11191,
+  "off": 0,
+  "sin_iva": 9248.76,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/Shampoo Dosificador Tresemmé Detox Capilar x 500 ml - 7791293050256.jpg",
+  "presentacion": "",
+  "vigencia": [
+   "",
+   ""
+  ]
+ },
+ {
+  "ean": "7791293049953",
+  "nombre": "TRESEMME SH KERATIN 500",
+  "marca": "Tresemme",
+  "sku": "CAP-0037",
+  "categoria": "",
+  "rama": "",
+  "hoja": "",
+  "lista": 11191,
+  "precio": 11191,
+  "off": 0,
+  "sin_iva": 9248.76,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/Shampoo Dosificador Tresemmé Keratina AntiFrizz x 500 ml - 7791293049953.jpg",
+  "presentacion": "",
+  "vigencia": [
+   "",
+   ""
+  ]
+ },
+ {
+  "ean": "7791293050195",
+  "nombre": "TRESEMME SH ONDAS B X 500",
+  "marca": "Tresemme",
+  "sku": "CAP-0040",
+  "categoria": "",
+  "rama": "",
+  "hoja": "",
+  "lista": 11191,
+  "precio": 11191,
+  "off": 0,
+  "sin_iva": 9248.76,
+  "foto": "/Users/miguel/Documents/Proyectos/Grupo Oggi 2026/Banco de imágenes/Fondo blanco - web/Shampoo Dosificador Tresemmé Ondas Boho x 500 ml - 7791293050195.jpg",
+  "presentacion": "",
+  "vigencia": [
+   "",
+   ""
+  ]
+ }
+]
