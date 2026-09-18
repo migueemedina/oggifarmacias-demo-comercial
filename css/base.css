@@ -1,0 +1,111 @@
+/* ============================================================
+   OGGI FARMA — Base shared helpers
+   Utilidades mínimas compartidas por todos los bloques .oggi-*.
+   NO resetea html/body (eso queda al tema padre). Sólo ayudas.
+   ============================================================ */
+
+/* Fuente display (Poppins) aplicada GLOBAL al sitio.
+   :where() = especificidad 0, así cualquier regla específica gana fácil.
+   Excluimos los icon fonts (dashicons, FA, material) para que no se rompan. */
+:where(html),
+:where(body),
+:where(button),
+:where(input),
+:where(select),
+:where(textarea),
+:where(h1, h2, h3, h4, h5, h6),
+:where(p, a, span, li, label, strong, em),
+:where(.product_title),
+:where(.price),
+:where(.woocommerce-Price-amount),
+:where(.woocommerce-loop-product__title),
+:where(.entry-title),
+:where(.site-title) {
+    font-family: var(--oggi-font-display, "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif);
+}
+
+/* Iconos: revertir al font-family que define la fuente de iconos (no Poppins). */
+.dashicons,
+.dashicons-before::before,
+[class^="dashicons-"]::before,
+[class*=" dashicons-"]::before,
+.fa, .fas, .far, .fal, .fab,
+[class^="fa-"],
+[class*=" fa-"],
+.material-icons,
+.material-icons-outlined,
+.material-symbols-outlined,
+.glyphicon {
+    font-family: revert !important;
+}
+
+/* Defensivo: los buttons dentro de .oggi-* no deben subrayarse/tacharse
+   por reglas default del parent theme */
+[class*="oggi-"] button,
+[class*="oggi-"] a {
+    text-decoration: none;
+}
+
+/* ============================================================
+   Layout sin sidebar (home, páginas estáticas, etc.)
+   El control PHP vive en inc/layout/sidebar-control.php.
+   Cuando body tiene .oggi-no-sidebar → content full width, sidebar oculto.
+   ============================================================ */
+body.oggi-no-sidebar #primary,
+body.oggi-no-sidebar .content-area {
+    width: 100%;
+    max-width: 100%;
+    float: none;
+    margin: 0 auto;
+}
+body.oggi-no-sidebar #secondary,
+body.oggi-no-sidebar .widget-area,
+body.oggi-no-sidebar .sidebar { display: none !important; }
+
+/* En páginas con sidebar mantenemos el comportamiento default de Storefront */
+body.oggi-has-sidebar #secondary { display: block; }
+
+/* Contenedor estándar del mock */
+.oggi-container {
+    max-width: var(--oggi-container);
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Iconos SVG inline: hereda color del padre, tamaño fluido */
+.oggi-icon {
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    vertical-align: middle;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    flex-shrink: 0;
+}
+.oggi-icon--sm { font-size: 14px; }
+.oggi-icon--md { font-size: 18px; }
+.oggi-icon--lg { font-size: 22px; }
+
+/* Iconos "filled" (logos de marca: FB, IG, TikTok, YT, WhatsApp):
+   pisan el fill:none / stroke:currentColor default.
+   !important porque Storefront/WP meten reglas .site-footer svg a veces. */
+svg.oggi-icon.oggi-icon--filled,
+.oggi-icon.oggi-icon--filled,
+.oggi-icon--filled {
+    fill: currentColor !important;
+    stroke: none !important;
+}
+
+/* Reset quirúrgico de botones dentro de bloques .oggi-* */
+[class*="oggi-"] button {
+    font-family: inherit;
+    cursor: pointer;
+}
+
+/* Helper para esconder en mobile (usado en topbar) */
+@media (max-width: 768px) {
+    .oggi-hide-s { display: none !important; }
+}

@@ -72,6 +72,65 @@ button { font: inherit; }
 /* la pieza es transparente y se centra: sin sombra de texto encima */
 .oggi-topbar__msg--img .oggi-topbar__msg-text { text-shadow: none; }
 
+/* ══════════════════════════════════════════════════════════════════
+   LOS BOTONES, EN NAVY CON TINTA BLANCA — propuesta para el tema
+   ══════════════════════════════════════════════════════════════════
+   Elegido por Miguel el 18/09 sobre nueve tratamientos rendidos
+   (`lab_botones.py` → `demo/lab-botones.html`).
+
+   El tema pinta hoy tres botones con `background: var(--oggi-lime) #A3E635;
+   color: var(--oggi-navy)`, y él pidió tipografía blanca y más pesada. Blanco
+   sobre el lima da **1,51:1**, y el techo de claridad para que el blanco pase
+   4,5:1 es **L* 0,55** sea cual sea el tono (barrido de 110° a 180°); el lima
+   está en L* 0,849. O sea: verde claro y tinta blanca no conviven.
+
+   La salida fue sacar el verde de la masa: **navy #1b3a77 con blanco, 10,95:1**
+   — el contraste más holgado de los nueve y el que ya usan «Todas las
+   categorías» y «Sucursales». La web queda con **un solo botón** en vez de dos
+   lenguajes, y el lima vuelve a ser acento, que es lo que dicen las DIRECTRICES.
+
+   Al no depender de 3:1, el tamaño deja de ser load-bearing: el peso 800 es
+   decisión de diseño, no una muleta del contraste.
+
+   🐞 De paso tapa un bug del tema: `.oggi-catnav__link--hot:hover` y
+   `.oggi-hdr__search-btn:hover` pasaban a `--oggi-lime-600 #84CC16` con
+   `color:#fff` — **1,98:1**. Ilegible desde siempre, sólo que al pasar el mouse.
+
+   EN EL TEMA hay que cambiar, con este par:
+     header.css:227 (search-btn) · header.css:242 (su hover)
+     header.css:285 (el disco del carrito)
+     catnav.css:127 (Ofertas) · catnav.css:133 (su hover)
+     product-carousel.css:129 (flecha :hover)
+     hero-mosaic.css:208 · banner-tira.css:120 (controles :hover)
+   ══════════════════════════════════════════════════════════════════ */
+:root {
+    --oggi-btn:   #1b3a77;   /* blanco encima: 10,95:1, en cualquier tamaño */
+    --oggi-btn-h: #14305F;   /* el hover (= --oggi-navy-700 del tema) */
+}
+.oggi-hdr__search-btn,
+.oggi-catnav__link--hot,
+.oggi-hdr__action--cart .oggi-hdr__action-icon,
+.oggi-pcar__arr:hover,
+.oggi-hero-mosaic__ctrl:hover,
+.oggi-hero-mosaic__ctrl:focus-visible,
+.oggi-tira__ctrl:hover,
+.oggi-tira__ctrl:focus-visible {
+    background: var(--oggi-btn) !important;
+    color: #FFFFFF !important;
+    border-color: var(--oggi-btn) !important;
+}
+/* el «bolder» que pidió. Acá sí es sólo diseño: el contraste no depende de esto */
+.oggi-hdr__search-btn,
+.oggi-catnav__link--hot { font-weight: 800 !important; }
+
+.oggi-hdr__search-btn:hover,
+.oggi-catnav__link--hot:hover {
+    background: var(--oggi-btn-h) !important;
+    color: #FFFFFF !important;
+}
+/* el borde del buscador acompaña al botón */
+.oggi-hdr__search { border-color: var(--oggi-btn) !important; }
+
 /* ── Marcas de la demo: lo que no es del sitio se ve distinto a propósito ── */
 [data-demo-nota] {
     font-size: 11px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase;
