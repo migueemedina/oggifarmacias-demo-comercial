@@ -1,0 +1,180 @@
+/* ============================================================
+   OGGI FARMA — Topbar
+   Marquee de mensajes promocionales rotando con bg que cambia
+   (navy / lime / pink / yellow) + items de utility a la derecha.
+   Scope: .oggi-topbar
+   ============================================================ */
+
+.oggi-topbar {
+    background: var(--oggi-navy);
+    color: #fff;
+    font-size: 13px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    letter-spacing: .2px;
+    font-weight: 700;
+    position: relative;
+    z-index: 1200;
+    overflow: hidden;
+    transition: background .55s ease, color .55s ease;
+}
+
+/* Campos de color — cambian según el mensaje activo (data-bg).
+   Los cuatro primeros son los del sistema visual claro: son los mismos sobre
+   los que están horneadas las franjas-imagen de `topbar/contenido/`, así que
+   elegir acá el mismo campo que el nombre del archivo hace que la tinta del
+   PNG caiga sobre el color para el que fue medida.
+   La tinta (`color`) sólo aplica a los mensajes de TEXTO; en las franjas-imagen
+   ya viene adentro del PNG.
+   Fuente única de la paleta: oggi_topbar_campos() en top-bar-announcement/render.php. */
+.oggi-topbar[data-bg="hondo"]  { background: #005192;              color: #fff; }
+.oggi-topbar[data-bg="azul"]   { background: #1479B8;              color: #fff; }
+.oggi-topbar[data-bg="lima"]   { background: #A8F02C;              color: #005192; }
+.oggi-topbar[data-bg="claro"]  { background: #D2E4FD;              color: #005192; }
+
+.oggi-topbar,
+.oggi-topbar[data-bg="navy"]   { background: var(--oggi-navy);     color: #fff; }
+.oggi-topbar[data-bg="lime"]   { background: var(--oggi-lime);     color: #fff; }
+.oggi-topbar[data-bg="pink"]   { background: #EC4899;              color: #fff; }
+.oggi-topbar[data-bg="yellow"] { background: var(--oggi-yellow);   color: #fff; }
+
+/* Sobre los dos campos claros la tinta es azul y la sombra negra la ensucia:
+   ahí el contraste ya lo da el color, no hace falta el truco. */
+.oggi-topbar[data-bg="lima"]  .oggi-topbar__msg-text,
+.oggi-topbar[data-bg="claro"] .oggi-topbar__msg-text { text-shadow: none; }
+
+.oggi-topbar__container {
+    max-width: var(--oggi-container);
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ─── Marquee de mensajes (centrado) ─── */
+.oggi-topbar__marquee {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    max-width: 720px;
+    min-width: 0;
+}
+/* Slide horizontal: el saliente se va a la izquierda, el entrante viene
+   desde la derecha. Para que funcione, el JS pone "is-leaving" en el
+   slide saliente antes de removerle "is-active". */
+.oggi-topbar__msg {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    opacity: 0;
+    transform: translateX(60px);
+    transition: opacity .4s ease, transform .55s cubic-bezier(.4, 0, .2, 1);
+    pointer-events: none;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: 700;
+    /* Hereda la tinta del campo activo. Estaba fijo en #fff y por eso los dos
+       campos claros (lima y celeste) sacaban texto blanco sobre fondo claro:
+       la regla de tinta del [data-bg] no le ganaba nunca. */
+    color: inherit;
+}
+.oggi-topbar__msg.is-active {
+    opacity: 1;
+    transform: translateX(0);
+    pointer-events: auto;
+}
+.oggi-topbar__msg.is-leaving {
+    opacity: 0;
+    transform: translateX(-60px);
+}
+/* Scrim leve detrás del contenido: un fondito oscuro apenas translúcido que
+   abraza solo el texto+emoji, para que el blanco se lea sobre cualquier color
+   (sobre todo lime y yellow). Sutil sobre navy/pink, donde ya se leía bien. */
+.oggi-topbar__msg-inner {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0;
+    background: transparent; /* sin scrim negro: el contraste lo da la sombra del texto */
+    max-width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+/* El inner es un <a> cuando el mensaje tiene link. Hereda todo del topbar
+   para que un mensaje con y sin link se vean exactamente igual. */
+a.oggi-topbar__msg-inner {
+    color: inherit;
+    text-decoration: none !important;
+}
+a.oggi-topbar__msg-inner:hover .oggi-topbar__msg-text { text-decoration: underline; }
+.oggi-topbar__msg-inner .oggi-topbar__msg-text {
+    /* Doble sombra: el blanco se lee sobre lime/yellow y también sobre navy */
+    text-shadow: 0 1px 3px rgba(0, 0, 0, .60), 0 0 2px rgba(0, 0, 0, .45);
+}
+.oggi-topbar__msg-emoji {
+    font-size: 15px;
+    line-height: 1;
+    flex: none;
+}
+.oggi-topbar__msg-text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.oggi-topbar__msg strong {
+    font-weight: 800;
+    /* el strong hereda el color del topbar (que cambia con bg) */
+}
+
+/* ─── Mensaje como franja-imagen ───
+   El PNG es transparente y sólo trae el contenido (cruceta + texto + píldora);
+   el color de la barra lo sigue poniendo [data-bg] de arriba. Por eso una
+   misma pieza sirve de 360 a 2560 px de ancho: no se estira, se centra.
+
+   Medidas de las piezas (= oggi_topbar_medidas() en el PHP):
+     · desktop  1440 × 76  (720 × 38 @2x)
+     · mobile    680 × 68  (340 × 34 @2x)
+
+   `max-width: 100%` + `object-fit: contain` es la red de seguridad: en un
+   teléfono angosto, o si alguien sube sólo la pieza de desktop, la franja se
+   achica proporcionalmente en vez de recortarse. */
+.oggi-topbar__msg--img .oggi-topbar__msg-inner {
+    gap: 0;
+    width: 100%;
+    justify-content: center;
+}
+.oggi-topbar__msg-pic {
+    display: block;
+    height: 100%;
+    max-width: 100%;
+}
+.oggi-topbar__msg-img {
+    display: block;
+    height: 100%;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
+    /* La pieza ya viene con su propio interlineado óptico: nada de filtros
+       ni sombras encima, que le comerían el borde del troquel de la cruceta. */
+}
+
+/* ─── Responsive ─── */
+@media (max-width: 768px) {
+    .oggi-topbar {
+        font-size: 12px;
+        height: 34px;
+    }
+    .oggi-topbar__container { padding: 0 12px; }
+}
+
+@media (max-width: 480px) {
+    .oggi-topbar__container { padding: 0 10px; }
+    .oggi-topbar__msg-text { font-size: 11.5px; }
+}

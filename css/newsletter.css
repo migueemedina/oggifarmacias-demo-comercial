@@ -1,0 +1,232 @@
+/* ============================================================
+   OGGI FARMA — Newsletter card
+   Card con gradient lime: copy a la izq + form + socials a la der.
+   ============================================================ */
+
+.oggi-nl {
+    background: transparent;
+    padding: 24px 0;
+    position: relative;
+}
+
+.oggi-nl--full {
+    width: 100vw;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+}
+
+.oggi-nl__inner {
+    max-width: var(--oggi-container);
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* --- Card principal --- */
+.oggi-nl__card {
+    background: var(--oggi-lime);
+    color: var(--oggi-navy);
+    border-radius: 28px;
+    padding: 48px 52px;
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    gap: 48px;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+/* Decoración: círculo lime claro abajo-izquierda + gradiente sutil */
+.oggi-nl__card::before {
+    content: "";
+    position: absolute;
+    inset: auto auto -120px -120px;
+    width: 360px;
+    height: 360px;
+    border-radius: 50%;
+    background: radial-gradient(closest-side, rgba(255,255,255,.35), rgba(255,255,255,0));
+    pointer-events: none;
+}
+.oggi-nl__card::after {
+    content: "";
+    position: absolute;
+    inset: -80px -80px auto auto;
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    background: radial-gradient(closest-side, rgba(15,40,71,.08), rgba(15,40,71,0));
+    pointer-events: none;
+}
+
+/* --- Copy --- */
+.oggi-nl__copy {
+    position: relative;
+    z-index: 2;
+}
+.oggi-nl__title {
+    font-family: var(--oggi-font-display);
+    font-size: 38px;
+    font-weight: 800;
+    margin: 0 0 12px;
+    letter-spacing: -.6px;
+    color: var(--oggi-navy);
+    line-height: 1.05;
+}
+.oggi-nl__desc {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.55;
+    max-width: 460px;
+    color: var(--oggi-navy);
+    font-weight: 500;
+}
+
+/* --- Right column (form + socials) --- */
+.oggi-nl__right {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    position: relative;
+    z-index: 2;
+}
+
+/* --- Form --- */
+.oggi-nl__form {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    background: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+    height: 60px;
+    padding: 6px;
+    gap: 6px;
+    box-shadow: 0 10px 24px rgba(15, 40, 71, .12);
+}
+.oggi-nl__form button {
+    border-radius: 10px;
+}
+.oggi-nl__form input[type="email"] {
+    border: 0;
+    outline: 0;
+    padding: 0 22px;
+    font-family: var(--oggi-font-display);
+    font-size: 14.5px;
+    color: var(--oggi-ink, #0F172A);
+    background: transparent;
+    min-width: 0;
+}
+.oggi-nl__form input[type="email"]::placeholder {
+    color: var(--oggi-muted);
+}
+.oggi-nl__form button {
+    background: var(--oggi-navy);
+    color: #fff;
+    font-family: var(--oggi-font-display);
+    font-weight: 800;
+    padding: 0 28px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    white-space: nowrap;
+    transition: background .15s ease;
+}
+.oggi-nl__form button:hover {
+    background: var(--oggi-navy-700);
+}
+.oggi-nl__form.is-submitted {
+    pointer-events: none;
+}
+.oggi-nl__form.is-submitted input,
+.oggi-nl__form.is-submitted button {
+    opacity: .6;
+}
+
+/* --- Mensaje de "gracias" post-submit --- */
+.oggi-nl__success {
+    display: none;
+    background: #fff;
+    color: var(--oggi-navy);
+    border-radius: 14px;
+    padding: 18px 22px;
+    font-family: var(--oggi-font-display);
+    font-weight: 700;
+    font-size: 14.5px;
+    box-shadow: 0 14px 30px rgba(0, 0, 0, .12);
+    line-height: 1.35;
+}
+.oggi-nl__form.is-submitted + .oggi-nl__success {
+    display: block;
+}
+
+/* --- Socials --- */
+.oggi-nl__socials {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: var(--oggi-font-display);
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--oggi-navy);
+    flex-wrap: wrap;
+}
+.oggi-nl__socials-label {
+    margin-right: 4px;
+    letter-spacing: .2px;
+}
+.oggi-nl .oggi-nl__social,
+.oggi-nl .oggi-nl__social:link,
+.oggi-nl .oggi-nl__social:visited {
+    width: 40px !important;
+    height: 40px !important;
+    border-radius: 50% !important;
+    background: #fff !important;
+    color: var(--oggi-navy) !important;
+    display: grid !important;
+    place-items: center !important;
+    text-decoration: none !important;
+    border-bottom: none !important;
+    transition: background .15s ease, color .15s ease;
+    padding: 0;
+    line-height: 0;
+}
+.oggi-nl .oggi-nl__social:hover {
+    background: var(--oggi-navy) !important;
+    color: #fff !important;
+}
+.oggi-nl .oggi-nl__social svg,
+.oggi-nl .oggi-nl__social .oggi-icon {
+    width: 16px !important;
+    height: 16px !important;
+    display: block;
+    fill: currentColor !important;
+    stroke: none !important;
+    color: inherit;
+}
+
+/* --- Responsive --- */
+@media (max-width: 900px) {
+    .oggi-nl__card {
+        grid-template-columns: 1fr;
+        padding: 32px;
+        gap: 24px;
+    }
+    .oggi-nl__title { font-size: 24px; }
+}
+
+@media (max-width: 560px) {
+    .oggi-nl { padding: 14px 0; }
+    .oggi-nl__inner { padding: 0 12px; }
+    .oggi-nl__card {
+        padding: 24px 22px;
+        border-radius: 22px;
+    }
+    .oggi-nl__title { font-size: 20px; }
+    .oggi-nl__desc { font-size: 13.5px; }
+    .oggi-nl__form { height: 52px; }
+    .oggi-nl__form input[type="email"] { font-size: 14px; padding: 0 16px; }
+    .oggi-nl__form button { padding: 0 18px; font-size: 13.5px; }
+    .oggi-nl__social { width: 34px; height: 34px; }
+}

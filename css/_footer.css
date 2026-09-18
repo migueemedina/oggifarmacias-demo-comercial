@@ -1,0 +1,298 @@
+/* =========================================
+   Oggi Farma — Footer
+   ========================================= */
+
+/* ── Base container ── */
+footer#colophon {
+    background-color: #fff;
+    color: var(--oggi-texto, #333);
+    padding: 0;
+    margin-top: 3em;
+    font-size: 0.9rem;
+    position: relative;
+}
+
+/* ── Newsletter Bar ── */
+.oggi-footer__newsletter {
+    background: var(--oggi-azul-marino, #1b3a77);
+    padding: 0 16px;
+}
+
+.oggi-footer__newsletter-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+    padding: 28px 0;
+    flex-wrap: wrap;
+}
+
+.oggi-footer__newsletter-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.oggi-footer__newsletter-pre {
+    color: var(--oggi-verde, #88c541);
+    font-size: 0.82rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+}
+
+.oggi-footer__newsletter-title {
+    color: #fff;
+    font-size: 1.15rem;
+    font-weight: 800;
+}
+
+.oggi-footer__newsletter-sub {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.82rem;
+}
+
+/* Form */
+.oggi-footer__newsletter-form {
+    flex-shrink: 0;
+}
+
+.oggi-newsletter-form {
+    display: flex;
+    gap: 0;
+    align-items: stretch;
+}
+
+.oggi-newsletter-form input[type="email"] {
+    padding: 12px 18px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-right: none;
+    border-radius: 8px 0 0 8px;
+    background: rgba(255, 255, 255, 0.08);
+    color: #fff;
+    font-size: 0.88rem;
+    min-width: 240px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.oggi-newsletter-form input[type="email"]::placeholder {
+    color: rgba(255, 255, 255, 0.45);
+}
+
+.oggi-newsletter-form input[type="email"]:focus {
+    border-color: var(--oggi-verde, #88c541);
+    background: rgba(255, 255, 255, 0.12);
+}
+
+.oggi-newsletter-form button {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 0 8px 8px 0;
+    background: var(--oggi-verde, #88c541);
+    color: #fff;
+    font-weight: 700;
+    font-size: 0.88rem;
+    cursor: pointer;
+    transition: background 0.2s;
+    white-space: nowrap;
+}
+
+.oggi-newsletter-form button:hover {
+    background: var(--oggi-verde-oscuro, #76af3b);
+}
+
+/* ── Links Grid ── */
+.oggi-footer__links {
+    padding: 0 16px;
+    border-bottom: 1px solid #eee;
+}
+
+.oggi-footer__links-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+    padding: 40px 0;
+}
+
+.oggi-footer__col-title {
+    font-size: 0.88rem;
+    font-weight: 800;
+    color: var(--oggi-azul-marino, #1b3a77);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    margin: 0 0 16px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--oggi-verde, #88c541);
+    display: inline-block;
+}
+
+.oggi-footer__col ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.oggi-footer__col li {
+    margin-bottom: 10px;
+}
+
+.oggi-footer__col li::before {
+    content: none !important;
+}
+
+.oggi-footer__col li a {
+    color: #555;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 500;
+    transition: color 0.2s;
+    background: transparent;
+    padding: 0;
+    border-radius: 0;
+}
+
+.oggi-footer__col li a:hover {
+    color: var(--oggi-verde, #88c541);
+    background: transparent;
+    box-shadow: none;
+}
+
+/* ── Social Icons ── */
+.oggi-footer__social {
+    padding: 0 16px;
+    border-bottom: 1px solid #eee;
+}
+
+.oggi-footer__social-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 20px 0;
+}
+
+.oggi-footer__social a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    border: 1.5px solid #ddd;
+    color: var(--oggi-azul-marino, #1b3a77);
+    transition: all 0.2s;
+    background: transparent;
+}
+
+.oggi-footer__social a:hover {
+    background: var(--oggi-azul-marino, #1b3a77);
+    border-color: var(--oggi-azul-marino, #1b3a77);
+    color: #fff;
+    box-shadow: none;
+}
+
+.oggi-footer__social svg {
+    width: 18px;
+    height: 18px;
+}
+
+/* ── Copyright ── */
+footer#colophon .site-info {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 18px 16px;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #999;
+    border-top: none;
+}
+
+.oggi-footer__copyright a {
+    color: var(--oggi-verde, #88c541);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.oggi-footer__copyright a:hover {
+    text-decoration: underline;
+}
+
+/* Remove storefront default footer widget styles */
+footer#colophon .widget-title,
+footer#colophon h1, footer#colophon h2, footer#colophon h3 {
+    color: var(--oggi-azul-marino, #1b3a77);
+}
+
+footer#colophon .widget-title::after,
+footer#colophon h3::after {
+    content: none;
+}
+
+footer#colophon::before {
+    content: none;
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+
+    .oggi-footer__newsletter-inner {
+        flex-direction: column;
+        text-align: center;
+        gap: 16px;
+        padding: 24px 0;
+    }
+
+    .oggi-footer__newsletter-text {
+        align-items: center;
+    }
+
+    .oggi-newsletter-form {
+        width: 100%;
+    }
+
+    .oggi-newsletter-form input[type="email"] {
+        min-width: 0;
+        flex: 1;
+    }
+
+    .oggi-footer__links-inner {
+        grid-template-columns: 1fr 1fr;
+        gap: 24px;
+        padding: 28px 0;
+    }
+
+    .oggi-footer__social-inner {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .oggi-footer__links-inner {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .oggi-footer__col-title {
+        display: block;
+    }
+
+    .oggi-newsletter-form {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .oggi-newsletter-form input[type="email"] {
+        border-right: 2px solid rgba(255, 255, 255, 0.2);
+        border-radius: 8px;
+    }
+
+    .oggi-newsletter-form button {
+        border-radius: 8px;
+    }
+}

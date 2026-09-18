@@ -1,0 +1,456 @@
+/* ============================================================
+   OGGI FARMA — Product Carousel
+   Carrusel horizontal de productos Woo con scroll-snap +
+   flechas redondas flotantes. Cards con badges, brand, title,
+   precios (sale/regular) y botón "Agregar" (AJAX add-to-cart).
+   ============================================================ */
+
+.oggi-pcar {
+    background: transparent;
+    padding: 20px 0;
+    position: relative;
+}
+
+.oggi-pcar--full {
+    width: 100vw;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+}
+
+.oggi-pcar__inner {
+    max-width: var(--oggi-container);
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* --- Fondos tintados: se aplican al inner como card redondeada --- */
+.oggi-pcar[class*="oggi-pcar--bg-"] .oggi-pcar__inner {
+    padding: 36px 32px 32px;
+    border-radius: 28px;
+}
+.oggi-pcar--bg-pink   .oggi-pcar__inner { background: var(--oggi-bg-pink); }
+.oggi-pcar--bg-sky    .oggi-pcar__inner { background: var(--oggi-bg-sky); }
+.oggi-pcar--bg-lime   .oggi-pcar__inner { background: var(--oggi-bg-lime); }
+.oggi-pcar--bg-orange .oggi-pcar__inner { background: var(--oggi-bg-orange); }
+.oggi-pcar--bg-amber  .oggi-pcar__inner { background: var(--oggi-bg-amber); }
+.oggi-pcar--bg-violet .oggi-pcar__inner { background: var(--oggi-bg-violet); }
+.oggi-pcar--bg-mint   .oggi-pcar__inner { background: var(--oggi-bg-mint); }
+
+/* --- Cabecera --- */
+.oggi-pcar__head {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+}
+.oggi-pcar__head-text {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.oggi-pcar__kicker {
+    font-family: var(--oggi-font-display);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: var(--oggi-muted, #64748b);
+}
+.oggi-pcar__heading {
+    font-family: var(--oggi-font-display);
+    font-size: 34px;
+    font-weight: 800;
+    color: var(--oggi-navy);
+    margin: 0;
+    line-height: 1.1;
+    letter-spacing: -.6px;
+}
+.oggi-pcar__link {
+    font-family: var(--oggi-font-display);
+    font-weight: 700;
+    font-size: 13px;
+    color: var(--oggi-navy);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 14px;
+    border: 1px solid #E5E7EB;
+    border-radius: 10px;
+    transition: border-color .15s ease, color .15s ease;
+}
+.oggi-pcar__link:hover {
+    border-color: var(--oggi-lime);
+    color: var(--oggi-lime-700, #4D7C0F);
+}
+
+/* --- Carrusel wrap --- */
+.oggi-pcar__wrap {
+    position: relative;
+    padding: 0 6px;
+}
+.oggi-pcar__track {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 228px;
+    gap: 14px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    padding: 4px 2px 20px;
+    scrollbar-width: none;
+    overscroll-behavior-x: contain;
+}
+.oggi-pcar__track::-webkit-scrollbar { display: none; }
+
+/* --- Flechas --- */
+.oggi-pcar__arr {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: #fff;
+    border: 1px solid #E5E7EB;
+    color: var(--oggi-navy);
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    z-index: 4;
+    transition: background .15s ease, color .15s ease, border-color .15s ease;
+    padding: 0;
+}
+.oggi-pcar__arr:hover {
+    background: var(--oggi-lime);
+    color: var(--oggi-navy);
+    border-color: var(--oggi-lime);
+}
+.oggi-pcar__arr:disabled {
+    opacity: .35;
+    cursor: default;
+}
+.oggi-pcar__arr--prev { left: -22px; }
+.oggi-pcar__arr--next { right: -22px; }
+
+@media (max-width: 1100px) {
+    .oggi-pcar__arr--prev { left: 4px; }
+    .oggi-pcar__arr--next { right: 4px; }
+}
+
+/* ============================================================
+   PRODUCT CARD (scope: .oggi-prodcard) — estilo Farmapuntos
+   Card blanca con imagen limpia arriba, iconos heart+share a la
+   derecha, badge de descuento flotante a la izquierda y CTA
+   full-width oscura abajo.
+   ============================================================ */
+
+.oggi-prodcard {
+    background: #fff;
+    border: 1px solid #E5E7EB;
+    border-radius: 18px;
+    padding: 14px 14px 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    transition: border-color .15s ease;
+    overflow: hidden;
+}
+.oggi-prodcard:hover {
+    border-color: var(--oggi-lime);
+}
+
+/* Actions top-right (heart + share) */
+.oggi-prodcard__actions {
+    position: absolute;
+    top: 12px;
+    right: 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    z-index: 3;
+    color: var(--oggi-navy);
+}
+.oggi-prodcard__actions button,
+.oggi-prodcard__wish-slot .yith-wcwl-add-to-wishlist a,
+.oggi-prodcard__wish-slot a.add_to_wishlist {
+    background: transparent;
+    border: none;
+    color: var(--oggi-navy) !important;
+    cursor: pointer;
+    padding: 2px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    transition: color .15s ease;
+    text-decoration: none !important;
+}
+.oggi-prodcard__share:hover { color: var(--oggi-lime-700, #4D7C0F); }
+
+/* YITH Wishlist — re-estilado para integrarse al diseño */
+.oggi-prodcard__wish-slot .yith-wcwl-add-to-wishlist {
+    margin: 0;
+    padding: 0;
+    background: none;
+    border: none;
+    line-height: 1;
+}
+.oggi-prodcard__wish-slot .yith-wcwl-add-to-wishlist .feedback,
+.oggi-prodcard__wish-slot .yith-wcwl-add-to-wishlist .ajax-loading,
+.oggi-prodcard__wish-slot .yith-wcwl-icon {
+    display: none !important;
+}
+.oggi-prodcard__wish-slot a.add_to_wishlist::before,
+.oggi-prodcard__wish-slot a.delete_item::before {
+    content: "";
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    background-color: currentColor;
+    -webkit-mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>') center / contain no-repeat;
+            mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>') center / contain no-repeat;
+}
+.oggi-prodcard__wish-slot a.delete_item { color: #E11D48 !important; }
+.oggi-prodcard__wish-slot a > *:not(::before) { display: none; }
+
+/* Imagen — fondo blanco limpio, sin caja gris */
+.oggi-prodcard__img {
+    position: relative;
+    display: grid;
+    place-items: center;
+    height: 210px;
+    border-radius: 12px;
+    overflow: hidden;
+    text-decoration: none;
+    background: #fff;
+}
+.oggi-prodcard__img img {
+    max-height: 190px;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    display: block;
+    object-fit: contain;
+}
+
+/* Badge de descuento — pegado bajo la imagen, alineado a la izquierda */
+.oggi-prodcard__disc {
+    align-self: flex-start;
+    margin: 10px 0 6px;
+    font-family: var(--oggi-font-display);
+    font-weight: 800;
+    font-size: 13px;
+    line-height: 1;
+    padding: 6px 10px;
+    border-radius: 8px;
+    color: #fff;
+    letter-spacing: .2px;
+}
+.oggi-prodcard__disc--red    { background: #EF4444; }
+.oggi-prodcard__disc--purple { background: #8B5CF6; }
+.oggi-prodcard__disc--orange { background: #F59E0B; }
+.oggi-prodcard__disc--blue   { background: #3B82F6; }
+
+/* Textos */
+.oggi-prodcard__brand {
+    font-family: var(--oggi-font-display);
+    font-size: 14px;
+    font-weight: 800;
+    color: var(--oggi-navy);
+    margin: 2px 0 4px;
+    line-height: 1.1;
+}
+.oggi-prodcard__title {
+    font-family: var(--oggi-font-display);
+    font-size: 15.5px;
+    color: var(--oggi-navy);
+    font-weight: 700;
+    line-height: 1.3;
+    min-height: 40px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin: 0 0 10px;
+}
+.oggi-prodcard__title a,
+.oggi-prodcard__img,
+.oggi-prodcard__img:hover,
+.oggi-prodcard__title a:hover,
+.oggi-prodcard__title a:focus {
+    color: inherit;
+    text-decoration: none !important;
+    border-bottom: none !important;
+    box-shadow: none !important;
+}
+.oggi-prodcard__title a:hover {
+    color: var(--oggi-lime-700, #4D7C0F);
+}
+
+/* Chip "N presentaciones" para productos variables */
+.oggi-prodcard__variants {
+    display: inline-flex;
+    align-items: center;
+    align-self: flex-start;
+    gap: 4px;
+    font-family: var(--oggi-font-display);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: .3px;
+    color: var(--oggi-navy);
+    background: var(--oggi-navy-50, #E6ECF3);
+    border-radius: 999px;
+    padding: 4px 10px;
+    margin: 0 0 10px;
+    line-height: 1.2;
+}
+.oggi-prodcard__variants::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--oggi-lime);
+    display: inline-block;
+}
+
+/* Prices */
+.oggi-prodcard__prices {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+    margin-top: auto;
+}
+.oggi-prodcard__old {
+    color: var(--oggi-muted, #94A3B8);
+    text-decoration: line-through;
+    font-size: 13px;
+    font-weight: 500;
+}
+.oggi-prodcard__old bdi,
+.oggi-prodcard__now bdi {
+    display: inline;
+}
+.oggi-prodcard__now {
+    color: var(--oggi-navy);
+    font-family: var(--oggi-font-display);
+    font-weight: 800;
+    font-size: 22px;
+    letter-spacing: -.4px;
+    line-height: 1.1;
+}
+.oggi-prodcard__ex-tax {
+    font-family: var(--oggi-font-display);
+    font-size: 10.5px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--oggi-muted, #94A3B8);
+    margin-top: 8px;
+    line-height: 1.3;
+}
+.oggi-prodcard__ex-tax bdi { font-weight: 700; color: var(--oggi-muted, #94A3B8); }
+
+/* Add-to-cart button — full width, oscuro */
+.oggi-prodcard__add {
+    margin: 14px -14px 0;
+    background: var(--oggi-navy);
+    color: #fff !important;
+    font-family: var(--oggi-font-display);
+    font-weight: 700;
+    padding: 14px 14px;
+    border-radius: 0 0 18px 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: 14px;
+    text-decoration: none !important;
+    border: none;
+    cursor: pointer;
+    text-transform: none;
+    transition: background .15s ease, color .15s ease;
+}
+.oggi-prodcard__add:hover,
+.oggi-prodcard__add:focus {
+    background: var(--oggi-lime);
+    color: var(--oggi-navy) !important;
+}
+/* Medicamento → CTA WhatsApp lime en lugar del add-to-cart */
+.oggi-prodcard__add--whatsapp {
+    background: var(--oggi-lime);
+    color: var(--oggi-navy) !important;
+}
+.oggi-prodcard__add--whatsapp:hover,
+.oggi-prodcard__add--whatsapp:focus {
+    background: var(--oggi-lime-600, #65A30D);
+    color: var(--oggi-navy) !important;
+}
+/* Variante: sin estado "Agregado", se ve ligeramente distinto para señalar que va al producto */
+.oggi-prodcard__add--variable {
+    background: var(--oggi-navy);
+}
+.oggi-prodcard__add--variable:hover,
+.oggi-prodcard__add--variable:focus {
+    background: var(--oggi-navy-600, #1E3A5F);
+    color: #fff !important;
+}
+.oggi-prodcard__add.loading {
+    opacity: .85;
+    pointer-events: none;
+}
+/* Feedback cuando el producto ya fue agregado: queda verde */
+.oggi-prodcard__add.added {
+    background: var(--oggi-lime);
+    color: var(--oggi-navy) !important;
+}
+.oggi-prodcard__add.added::after {
+    /* Woo inyecta un tick "→"; lo tapamos */
+    display: none !important;
+}
+
+/* ------------------------------------------------------------
+   Matar el link "Ver carrito" horrible que Woo agrega después
+   del AJAX add-to-cart. Queremos que el botón "Agregar" sea el
+   único CTA visible; la confirmación la da el mini-cart del header.
+   ------------------------------------------------------------ */
+.oggi-prodcard .added_to_cart,
+.oggi-prodcard a.added_to_cart.wc-forward {
+    display: none !important;
+}
+
+/* Text swap: "Agregar" ↔ "Agregado ✓" según el estado del botón */
+.oggi-prodcard__add-label--added { display: none; }
+.oggi-prodcard__add.added .oggi-prodcard__add-label--default { display: none; }
+.oggi-prodcard__add.added .oggi-prodcard__add-label--added  { display: inline; }
+
+/* --- Responsive de la card/carrusel --- */
+@media (max-width: 1100px) {
+    .oggi-pcar__track { grid-auto-columns: 260px; }
+}
+
+@media (max-width: 560px) {
+    .oggi-pcar { padding: 14px 0; }
+    .oggi-pcar__inner { padding: 0 12px; }
+    .oggi-pcar[class*="oggi-pcar--bg-"] .oggi-pcar__inner {
+        padding: 24px 16px 20px;
+        border-radius: 20px;
+    }
+    .oggi-pcar__heading { font-size: 22px; letter-spacing: -.3px; }
+    /* Cards más compactas: ~2,5 por vista y menos altas, para que entre
+       la tarjeta completa en pantalla y se lea bien. */
+    .oggi-pcar__track { grid-auto-columns: 40vw; gap: 10px; }
+    .oggi-pcar__arr { display: none; } /* flechas off en mobile, scroll nativo */
+    .oggi-prodcard { padding: 10px 10px 0; }
+    .oggi-prodcard__img { height: 138px; }
+    .oggi-prodcard__img img { max-height: 122px; }
+    .oggi-prodcard__now { font-size: 17px; }
+    .oggi-prodcard__add { margin: 10px -10px 0; padding: 10px; border-radius: 0 0 16px 16px; }
+}

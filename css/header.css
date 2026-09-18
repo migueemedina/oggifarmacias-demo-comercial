@@ -1,0 +1,368 @@
+/* ============================================================
+   OGGI FARMA — Header desktop
+   Layout 3 columnas: logo | search (con select Woo) | acciones
+   Scope: .oggi-hdr (namespace nuevo para no chocar con el viejo)
+   ============================================================ */
+
+/* ── Contenedor full-width con container interno 1360px ──
+   Storefront lo imprime dentro de .site-header .col-full, así que
+   rompemos el col-full con el truco 100vw + margin negativo. */
+.oggi-hdr {
+    background: var(--oggi-white);
+    border-bottom: 1px solid var(--oggi-line-2);
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    z-index: 60;
+}
+
+/* Neutraliza cualquier sombra/espacio residual del col-full de Storefront */
+.site-header .oggi-hdr { box-shadow: none; }
+
+.oggi-hdr__inner {
+    max-width: var(--oggi-container);
+    margin: 0 auto;
+    padding: 12px 20px;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 28px;
+}
+
+/* Pegar el header al topbar (sin gap residual de Storefront) */
+.site-header { margin-top: 0 !important; padding-top: 0 !important; }
+.oggi-topbar + .site-header,
+.oggi-topbar ~ .site-header { margin-top: 0 !important; }
+
+/* ─────────── LOGO ─────────── */
+.oggi-hdr__logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    color: var(--oggi-navy);
+    text-decoration: none;
+    line-height: 1;
+    letter-spacing: -.3px;
+}
+.oggi-hdr__logo img {
+    height: 54px;
+    width: auto;
+    display: block;
+}
+.oggi-hdr__logo-text {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+.oggi-hdr__logo-title {
+    font-weight: 800;
+    font-size: 22px;
+    color: var(--oggi-navy);
+}
+.oggi-hdr__logo-accent { color: var(--oggi-lime-600); }
+.oggi-hdr__logo-sub {
+    font-size: 10.5px;
+    font-weight: 500;
+    color: var(--oggi-lime-600);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* ─────────── SEARCH ─────────── */
+.oggi-hdr__search {
+    display: grid;
+    grid-template-columns: 160px 1fr auto;
+    align-items: stretch;
+    border: 2px solid var(--oggi-lime);
+    border-radius: 12px;
+    background: #fff;
+    overflow: visible; /* el dropdown custom necesita desbordar */
+    height: 48px;
+    width: 100%;
+    max-width: 760px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* ── Custom dropdown de categoría (reemplaza <select> nativo) ── */
+.oggi-hdr__cat-picker {
+    position: relative;
+    display: flex;
+    border-right: 1px solid var(--oggi-lime-100);
+    /* NO overflow:hidden — el menu absolute necesita desbordar hacia abajo */
+}
+
+.oggi-hdr__cat-toggle {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    outline: 0;
+    padding: 0 34px 0 14px;
+    background: var(--oggi-lime-50);
+    color: var(--oggi-navy);
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 13px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+    text-align: left;
+    position: relative;
+    transition: background var(--oggi-t-fast);
+    border-radius: 10px 0 0 10px; /* esquina izquierda redondeada */
+}
+.oggi-hdr__cat-toggle:hover { background: var(--oggi-lime-100); }
+
+.oggi-hdr__cat-label {
+    flex: 1;
+    min-width: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.oggi-hdr__cat-chev {
+    font-size: 14px;
+    stroke-width: 3;
+    color: var(--oggi-navy);
+    transition: transform var(--oggi-t-fast);
+    flex-shrink: 0;
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.oggi-hdr__cat-toggle[aria-expanded="true"] .oggi-hdr__cat-chev {
+    transform: translateY(-50%) rotate(180deg);
+}
+
+.oggi-hdr__cat-menu {
+    position: absolute;
+    top: calc(100% + 6px);
+    left: -2px; /* compensa border del wrap */
+    min-width: calc(100% + 4px);
+    max-width: 340px;
+    max-height: 360px;
+    overflow-y: auto;
+    background: #fff;
+    border: 1px solid var(--oggi-line);
+    border-radius: var(--oggi-r);
+    box-shadow: var(--oggi-sh-2);
+    list-style: none;
+    margin: 0;
+    padding: 6px;
+    z-index: 100;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-4px);
+    transition: opacity var(--oggi-t-fast), transform var(--oggi-t-fast), visibility var(--oggi-t-fast);
+}
+.oggi-hdr__cat-picker.is-open .oggi-hdr__cat-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.oggi-hdr__cat-item {
+    padding: 9px 14px;
+    font-size: 13px;
+    color: var(--oggi-ink-2);
+    border-radius: var(--oggi-r-sm);
+    cursor: pointer;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: background var(--oggi-t-fast), color var(--oggi-t-fast);
+    position: relative;
+}
+.oggi-hdr__cat-item:hover,
+.oggi-hdr__cat-item.is-focused {
+    background: var(--oggi-lime-50);
+    color: var(--oggi-navy);
+}
+.oggi-hdr__cat-item.is-selected {
+    background: var(--oggi-lime-100);
+    color: var(--oggi-navy);
+    font-weight: 700;
+}
+.oggi-hdr__cat-item.is-selected::after {
+    content: "";
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    width: 6px;
+    height: 10px;
+    border: solid var(--oggi-navy);
+    border-width: 0 2px 2px 0;
+    transform: translateY(-65%) rotate(45deg);
+}
+
+/* Scrollbar más sutil en el menú */
+.oggi-hdr__cat-menu::-webkit-scrollbar { width: 8px; }
+.oggi-hdr__cat-menu::-webkit-scrollbar-track { background: transparent; }
+.oggi-hdr__cat-menu::-webkit-scrollbar-thumb {
+    background: var(--oggi-line);
+    border-radius: 4px;
+}
+.oggi-hdr__cat-menu::-webkit-scrollbar-thumb:hover { background: var(--oggi-muted); }
+
+.oggi-hdr__search-input {
+    border: 0;
+    outline: 0;
+    padding: 0 16px;
+    font-size: 14.5px;
+    color: var(--oggi-ink);
+    min-width: 0;
+    background: #fff;
+    height: 100%;
+}
+.oggi-hdr__search-input::placeholder { color: #9CA3AF; }
+
+.oggi-hdr__search-btn {
+    background: var(--oggi-lime);
+    color: var(--oggi-navy);
+    font-weight: 700;
+    font-size: 13.5px;
+    padding: 0 22px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    border: 0;
+    cursor: pointer;
+    transition: background var(--oggi-t-fast), color var(--oggi-t-fast);
+    height: 100%;
+    border-radius: 0 10px 10px 0; /* esquinas derechas redondeadas */
+}
+.oggi-hdr__search-btn:hover {
+    background: var(--oggi-lime-600);
+    color: #fff;
+}
+.oggi-hdr__search-btn .oggi-icon { font-size: 18px; stroke-width: 2.4; }
+
+/* ─────────── ACTIONS (cuenta, favoritos, carrito) ─────────── */
+.oggi-hdr__actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.oggi-hdr__action {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 12px;
+    border-radius: 10px;
+    color: var(--oggi-navy);
+    font-size: 12.5px;
+    line-height: 1.1;
+    white-space: nowrap;
+    text-decoration: none;
+    transition: background var(--oggi-t-fast);
+}
+.oggi-hdr__action:hover {
+    background: var(--oggi-bg);
+    color: var(--oggi-navy);
+}
+
+.oggi-hdr__action-icon {
+    width: 36px;
+    height: 36px;
+    background: var(--oggi-navy-50);
+    color: var(--oggi-navy);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    position: relative;
+    flex-shrink: 0;
+}
+.oggi-hdr__action-icon .oggi-icon { font-size: 18px; }
+.oggi-hdr__action--cart .oggi-hdr__action-icon {
+    background: var(--oggi-lime);
+    color: var(--oggi-navy);
+}
+
+.oggi-hdr__action-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+.oggi-hdr__action-t1 {
+    color: var(--oggi-muted);
+    font-size: 11.5px;
+    font-weight: 400;
+}
+.oggi-hdr__action-t2 {
+    font-weight: 700;
+    color: var(--oggi-navy);
+    font-size: 13px;
+}
+
+/* Badge del carrito (actualizado via woocommerce_add_to_cart_fragments) */
+.oggi-hdr__cart-badge {
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    background: var(--oggi-red);
+    color: #fff;
+    font-size: 10px;
+    font-weight: 700;
+    min-width: 18px;
+    height: 18px;
+    border-radius: 10px;
+    display: grid;
+    place-items: center;
+    padding: 0 4px;
+    border: 2px solid #fff;
+    line-height: 1;
+}
+.oggi-hdr__cart-badge--empty { display: none; }
+
+/* ─────────── PISAR STOREFRONT ─────────── */
+/* Neutraliza márgenes/padding inferior del header para pegarlo a lo que viene abajo
+   (nav de Storefront en Fase 3-4, category-nav en Fase 5). */
+.site-header { margin-bottom: 0 !important; padding-bottom: 0 !important; }
+
+/* No tocamos el max-width/padding del col-full porque la nav primary de Storefront
+   sigue viva hasta la Fase 5 y necesita su propio container. */
+
+/* Oculta TODO lo que Storefront imprima por default en el header:
+   - site-branding (logo texto)
+   - site-search (search nativo)
+   - site-header-cart (carrito default, formato "$X.XX N producto")
+   - a.cart-contents directos del header que NO sean nuestros
+   - header-widget-region si Storefront lo usara
+   Defensa en profundidad: si el remove_action no alcanza, CSS los oculta igual. */
+.site-header .site-branding,
+.site-header .site-search,
+.site-header .site-header-cart,
+.site-header ul.site-header-cart,
+.site-header .site-header-cart-wrapper,
+.site-header .header-widget-region,
+.site-header > .col-full > .cart-contents,
+.site-header .col-full > a.cart-contents,
+.site-header .col-full > .widget_shopping_cart {
+    display: none !important;
+}
+
+/* ─────────── RESPONSIVE ─────────── */
+@media (max-width: 1100px) {
+    .oggi-hdr__inner {
+        grid-template-columns: auto 1fr auto;
+        gap: 16px;
+        padding: 14px 16px;
+    }
+    .oggi-hdr__logo img { height: 46px; }
+    .oggi-hdr__action-text { display: none; }
+    .oggi-hdr__action { padding: 6px 8px; }
+}
+
+@media (max-width: 768px) {
+    /* Desktop header se oculta en mobile — Fase 4 arma el mobile header propio */
+    .oggi-hdr { display: none; }
+}

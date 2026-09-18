@@ -1,0 +1,183 @@
+/* ============================================================
+   OGGI FARMA — Custom Footer (estilo Central Oeste)
+   Minimalista, fullwidth, bg blanco.
+   ============================================================ */
+
+/* Unconstraint Storefront's .site-footer + .col-full para que el footer
+   sea full-width sin necesitar hacks con 100vw que rompen el layout. */
+.site-footer,
+.site-footer > .col-full,
+.site-footer .col-full {
+    max-width: 100% !important;
+    width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    background: transparent !important;
+    border: 0 !important;
+}
+.site-footer .site-info { display: none !important; }
+
+.oggi-footer {
+    background: #fff;
+    color: var(--oggi-ink);
+    padding: 56px 0 0;
+    margin-top: 40px;
+    font-family: var(--oggi-font-display);
+    width: 100%;
+    position: relative;
+}
+
+.oggi-footer__inner {
+    max-width: var(--oggi-container);
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* --- Grid de columnas --- */
+.oggi-footer__cols {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 36px;
+}
+
+.oggi-footer__col {
+    min-width: 0;
+}
+
+.oggi-footer__title {
+    font-family: var(--oggi-font-display);
+    color: var(--oggi-navy);
+    font-size: 15px;
+    font-weight: 800;
+    margin: 0 0 20px;
+    letter-spacing: .2px;
+}
+
+/* --- Links (forzamos color + no-underline con !important para ganarle a Storefront) --- */
+.oggi-footer .oggi-footer__menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.oggi-footer__menu li {
+    margin: 0;
+    padding: 0;
+}
+.oggi-footer__menu a,
+.oggi-footer__menu a:link,
+.oggi-footer__menu a:visited,
+.oggi-footer__menu span {
+    display: block;
+    padding: 6px 0;
+    font-size: 13.5px;
+    color: #475569 !important; /* slate-600 */
+    text-decoration: none !important;
+    border-bottom: none !important;
+    background: transparent !important;
+    transition: color .15s ease;
+    font-weight: 500;
+}
+.oggi-footer__menu a:hover,
+.oggi-footer__menu a:focus {
+    color: var(--oggi-lime-700, #4D7C0F) !important;
+}
+
+/* --- Socials: círculos sólidos navy con icono blanco, hover lime --- */
+.oggi-footer__socials {
+    display: flex;
+    gap: 12px;
+    margin-top: 44px;
+    padding-top: 32px;
+    border-top: 1px solid var(--oggi-line);
+    align-items: center;
+}
+/* Specificity alta + !important para ganar cualquier regla de Storefront */
+.oggi-footer .oggi-footer__social,
+.oggi-footer .oggi-footer__social:link,
+.oggi-footer .oggi-footer__social:visited {
+    width: 44px !important;
+    height: 44px !important;
+    border-radius: 50% !important;
+    background: var(--oggi-navy) !important;
+    color: #fff !important;
+    border: none !important;
+    display: grid !important;
+    place-items: center !important;
+    text-decoration: none !important;
+    border-bottom: none !important;
+    transition: background .15s ease, color .15s ease;
+    padding: 0;
+    line-height: 0;
+}
+.oggi-footer .oggi-footer__social:hover {
+    background: var(--oggi-lime) !important;
+    color: var(--oggi-navy) !important;
+}
+/* Icono dentro: fill currentColor para que tome el color del botón */
+.oggi-footer .oggi-footer__social svg,
+.oggi-footer .oggi-footer__social .oggi-icon {
+    width: 18px !important;
+    height: 18px !important;
+    display: block;
+    fill: currentColor !important;
+    stroke: none !important;
+    color: inherit;
+}
+
+/* --- Copyright: centrado, una sola línea (sacamos el "Hecho con" del bottom) --- */
+.oggi-footer__bottom {
+    padding: 22px 0 28px;
+    font-size: 12.5px;
+    color: var(--oggi-muted, #64748B);
+    font-weight: 500;
+    text-align: left;
+}
+
+/* --- Legal bar --- */
+.oggi-footer__legal {
+    background: #F1F5F9;
+    color: #64748B;
+    padding: 16px 0;
+    font-size: 11.5px;
+    line-height: 1.55;
+    border-top: 1px solid var(--oggi-line);
+}
+.oggi-footer__legal-inner {
+    max-width: var(--oggi-container);
+    margin: 0 auto;
+    padding: 0 24px;
+}
+.oggi-footer__legal a,
+.oggi-footer__legal a:link,
+.oggi-footer__legal a:visited {
+    color: var(--oggi-navy) !important;
+    text-decoration: underline !important;
+    text-underline-offset: 2px;
+    border-bottom: none !important;
+    font-weight: 600;
+}
+.oggi-footer__legal a:hover {
+    color: var(--oggi-lime-700, #4D7C0F) !important;
+}
+
+/* --- Responsive --- */
+@media (max-width: 1100px) {
+    .oggi-footer__cols {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 32px;
+    }
+}
+
+@media (max-width: 640px) {
+    .oggi-footer { padding: 36px 0 0; margin-top: 24px; }
+    .oggi-footer__inner { padding: 0 16px; }
+    .oggi-footer__cols { grid-template-columns: 1fr; gap: 24px; }
+    .oggi-footer__title { margin-bottom: 12px; }
+    .oggi-footer__socials { margin-top: 32px; padding-top: 24px; }
+    .oggi-footer__bottom {
+        font-size: 11.5px;
+        padding: 18px 0 22px;
+    }
+    .oggi-footer__legal { font-size: 11px; }
+    .oggi-footer__legal-inner { padding: 0 16px; }
+}

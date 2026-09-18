@@ -1,0 +1,194 @@
+/* ============================================================
+   OGGI FARMA — Promo Mosaic
+   4 banners promocionales en 2 filas.
+   Fila 1: 2 banners wide-thin equal.
+   Fila 2: 2 banners taller, izq más ancho (1.65:1).
+   Cada tile es una imagen completa con el diseño adentro.
+   ============================================================ */
+
+.oggi-promo-mosaic {
+    background: transparent;
+    padding: 20px 0;
+    position: relative;
+}
+
+.oggi-promo-mosaic--full {
+    width: 100vw;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+}
+
+.oggi-promo-mosaic__inner {
+    max-width: var(--oggi-container);
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* Fondos tintados con inner redondeado (mismo pattern que pcar/dbanner) */
+.oggi-promo-mosaic[class*="oggi-promo-mosaic--bg-"] .oggi-promo-mosaic__inner {
+    padding: 32px;
+    border-radius: 28px;
+}
+.oggi-promo-mosaic--bg-pink   .oggi-promo-mosaic__inner { background: var(--oggi-bg-pink); }
+.oggi-promo-mosaic--bg-sky    .oggi-promo-mosaic__inner { background: var(--oggi-bg-sky); }
+.oggi-promo-mosaic--bg-lime   .oggi-promo-mosaic__inner { background: var(--oggi-bg-lime); }
+.oggi-promo-mosaic--bg-orange .oggi-promo-mosaic__inner { background: var(--oggi-bg-orange); }
+.oggi-promo-mosaic--bg-amber  .oggi-promo-mosaic__inner { background: var(--oggi-bg-amber); }
+.oggi-promo-mosaic--bg-violet .oggi-promo-mosaic__inner { background: var(--oggi-bg-violet); }
+.oggi-promo-mosaic--bg-mint   .oggi-promo-mosaic__inner { background: var(--oggi-bg-mint); }
+
+/* --- Filas --- */
+.oggi-promo-mosaic__row {
+    display: grid;
+    gap: 16px;
+}
+.oggi-promo-mosaic__row--top {
+    /* 2 banners equal wide-thin */
+    grid-template-columns: 1fr 1fr;
+}
+.oggi-promo-mosaic__row--bottom {
+    /* izq 1164px / der 570px → proporciones del asset original */
+    grid-template-columns: 1164fr 570fr;
+    align-items: stretch; /* que los dos tiles compartan altura */
+}
+
+/* --- Tile --- */
+.oggi-promo-mosaic__tile {
+    position: relative;
+    display: block;
+    border-radius: 18px;
+    overflow: hidden;
+    background: var(--oggi-navy-50, #E6ECF3);
+    text-decoration: none !important;
+    min-width: 0;
+}
+.oggi-promo-mosaic__tile img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Fila 1: aspect wide-thin matcheando el asset (971 × 251) */
+.oggi-promo-mosaic__tile--1,
+.oggi-promo-mosaic__tile--2 {
+    aspect-ratio: 971 / 251;
+}
+
+/* Fila 2: el wide define el row height (1164 × 370). El narrow (570 × 370)
+   tiene la misma altura naturalmente porque las columnas son fr proporcionales. */
+.oggi-promo-mosaic__tile--3 {
+    aspect-ratio: 1164 / 370;
+}
+.oggi-promo-mosaic__tile--4 {
+    /* sin aspect-ratio — stretch para igualar al wide */
+    height: 100%;
+}
+
+/* Placeholder cuando falta imagen */
+.oggi-promo-mosaic__placeholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    background: var(--oggi-lime-50);
+    color: var(--oggi-navy);
+    border: 2px dashed var(--oggi-lime);
+    border-radius: 16px;
+    padding: 18px;
+    text-align: center;
+    font-family: var(--oggi-font-display);
+}
+.oggi-promo-mosaic__placeholder-label {
+    font-weight: 800;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.oggi-promo-mosaic__placeholder-hint {
+    font-size: 11px;
+    font-weight: 500;
+    color: var(--oggi-muted);
+}
+.oggi-promo-mosaic__placeholder-hint code {
+    background: #fff;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 10.5px;
+    color: var(--oggi-navy);
+    font-family: monospace;
+}
+
+/* --- Responsive --- */
+
+/* Carrusel mobile: oculto por default, sólo aparece en ≤768px. */
+.oggi-promo-mosaic__mobile { display: none; }
+
+/* Tablet: stack en 1 col (paso intermedio antes del carrusel mobile) */
+@media (max-width: 900px) and (min-width: 769px) {
+    .oggi-promo-mosaic__row--top,
+    .oggi-promo-mosaic__row--bottom {
+        grid-template-columns: 1fr;
+    }
+    .oggi-promo-mosaic__tile--4 {
+        height: auto;
+        aspect-ratio: 1.4 / 1;
+    }
+}
+
+/* ───── Mobile: los banners desktop se ocultan y mostramos un carrusel
+   horizontal con imágenes propias 6:5 (300×250) — mismo estilo que los
+   mosaicos del hero. El JS oggi-promo-mosaic.js le da auto-scroll, con pausa
+   al touch/hover. ─────────────────────────────────────────────────────── */
+@media (max-width: 768px) {
+    .oggi-promo-mosaic { padding: 14px 0; }
+
+    /* Ocultamos el layout de banners desktop. */
+    .oggi-promo-mosaic__inner { display: none !important; }
+
+    /* Mostramos el carrusel mobile. */
+    .oggi-promo-mosaic__mobile { display: block; }
+
+    .oggi-promo-mosaic__mtrack {
+        display: flex;
+        flex-direction: row;
+        gap: 12px;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        padding: 4px 16px 10px;
+        margin: 0;
+        scrollbar-width: none;
+        overscroll-behavior-x: contain;
+        -webkit-overflow-scrolling: touch;
+    }
+    .oggi-promo-mosaic__mtrack::-webkit-scrollbar { display: none; }
+
+    /* Cada tile mobile: aspect 6:5 (300×250), ~80% del viewport (igual al hero). */
+    .oggi-promo-mosaic__mtile {
+        flex: 0 0 80%;
+        max-width: 80%;
+        aspect-ratio: 300 / 250;
+        scroll-snap-align: center;
+        scroll-snap-stop: always;
+        border-radius: 14px;
+        overflow: hidden;
+        display: block;
+        background: var(--oggi-navy-50, #E6ECF3);
+        text-decoration: none !important;
+    }
+    .oggi-promo-mosaic__mtile img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}

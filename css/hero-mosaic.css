@@ -1,0 +1,410 @@
+/* ============================================================
+   OGGI FARMA — Hero Mosaic (5 tiles)
+   Layout: 3 cols, 2 rows, centro ocupa 2 rows
+   Cada tile es una imagen clickeable. Centro puede ser slider.
+   ============================================================ */
+
+.oggi-hero-mosaic {
+    /* Un solo gap para todo el mosaico: horizontal y vertical iguales.
+       Tocá esta variable si alguna vez hay que apretar o soltar el conjunto. */
+    --hm-gap: 12px;
+
+    background: #fff;
+    padding: 8px 0 16px;
+    position: relative;
+}
+
+/* Versión "full" rompe el container */
+.oggi-hero-mosaic--full {
+    width: 100vw;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+}
+
+.oggi-hero-mosaic__inner {
+    max-width: var(--oggi-container);
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* En desktop los wrappers mobile no existen — display: contents hace que
+   los tiles queden como hijos directos del grid y respetan grid-column/row. */
+.oggi-hero-mosaic__row-mobile {
+    display: contents;
+}
+
+/* ═══ Grid principal ═══ */
+/* Dos filas y UN gap real, igual al de las columnas.
+ *
+ * La versión anterior tenía una tercera fila "vacía" de 50fr que hacía de
+ * separador: a 1320 px de ancho eso daba 50 px entre la plaquita de arriba y
+ * la de abajo, contra 12 px entre columnas. Cuatro veces más aire en vertical
+ * que en horizontal — es lo que se veía suelto.
+ *
+ * Ahora el ALTO lo dicta el tile central (su imagen 9:5 + la barra de
+ * controles) y las dos filas laterales se reparten ese alto en proporción
+ * 250:150, que es la relación entre la plaquita alta y la baja. Las laterales
+ * quedan ~7% más altas que su proporción nominal y `object-fit: cover` se come
+ * esa diferencia: es el mismo recorte que ya hacían en cualquier ancho menor
+ * a 1360 px.
+ *
+ * Sin aspect-ratio ni max-height en el contenedor: el centro es la única
+ * fuente de verdad del alto, así no hay dos cuentas que puedan desincronizarse.
+ *   - Centro: 720×400 (9:5), abarca las 2 filas
+ *   - Lateral arriba: 300×250 (6:5) nominal
+ *   - Lateral abajo: 300×150 (2:1) nominal
+ */
+.oggi-hero-mosaic__grid {
+    display: grid;
+    grid-template-columns: 300fr 720fr 300fr;
+    grid-template-rows: 250fr 150fr;
+    gap: var(--hm-gap);
+}
+
+/* ═══ Tile individual ═══ */
+.oggi-hero-mosaic__tile {
+    position: relative;
+    border-radius: 14px;
+    overflow: hidden;
+    background: #fff;
+    display: block;
+    text-decoration: none !important;
+    min-height: 0;
+    min-width: 0;
+}
+.oggi-hero-mosaic__tile img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Posiciones */
+.oggi-hero-mosaic__tile--left-top     { grid-column: 1; grid-row: 1; }
+.oggi-hero-mosaic__tile--left-bottom  { grid-column: 1; grid-row: 2; }
+.oggi-hero-mosaic__tile--center       { grid-column: 2; grid-row: 1 / 3; }
+.oggi-hero-mosaic__tile--right-top    { grid-column: 3; grid-row: 1; }
+.oggi-hero-mosaic__tile--right-bottom { grid-column: 3; grid-row: 2; }
+
+/* Centro sin slider (una sola imagen): no tiene barra de controles, así que
+   necesita declarar su proporción — es lo que le da alto a las dos filas. */
+.oggi-hero-mosaic__tile--center:not(.oggi-hero-mosaic__tile--has-controls) {
+    aspect-ratio: 720 / 400;
+}
+
+/* ═══ Placeholder (cuando falta imagen) ═══ */
+.oggi-hero-mosaic__placeholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    background: var(--oggi-lime-50);
+    color: var(--oggi-navy);
+    border: 2px dashed var(--oggi-lime);
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    font-family: var(--oggi-font-display);
+}
+.oggi-hero-mosaic__placeholder-label {
+    font-weight: 800;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.oggi-hero-mosaic__placeholder-hint {
+    font-size: 11px;
+    font-weight: 500;
+    color: var(--oggi-muted);
+}
+.oggi-hero-mosaic__placeholder-hint code {
+    background: #fff;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 10.5px;
+    color: var(--oggi-navy);
+    font-family: monospace;
+}
+
+/* ═══ Tile central con controles DEBAJO de la imagen ═══
+   El tile se vuelve una columna flex: arriba el slider (imagen, flex:1) y
+   abajo la barra de controles. Así las flechas/pausa/dots no tapan la foto.
+   El redondeo + overflow pasan al slider (la barra queda fuera, sin recorte). */
+.oggi-hero-mosaic__tile--has-controls {
+    display: flex;
+    flex-direction: column;
+    border-radius: 0;
+    overflow: visible;
+    background: transparent;
+}
+/* En todos los breakpoints el alto lo manda el slider (aspect 720/400) + la
+   barra; ignoramos cualquier aspect-ratio que los media queries le pongan al
+   tile central, así la imagen mantiene 720×400 y nunca se recorta. */
+.oggi-hero-mosaic__tile--center.oggi-hero-mosaic__tile--has-controls {
+    aspect-ratio: auto;
+}
+
+/* ═══ Slider del centro (opcional, si hay >1 slide) ═══
+   El área de imagen tiene aspect-ratio FIJO 720×400 (9:5) para que la foto
+   nunca se recorte por la barra de controles. Slider + barra son los que le
+   dan el alto a todo el mosaico (ver el comentario del grid).
+   ⇒ Resolución óptima de las imágenes del centro: 720 × 400 px (o 1440 × 800 @2x). */
+.oggi-hero-mosaic__slider {
+    position: relative;
+    width: 100%;
+    flex: 0 0 auto;
+    aspect-ratio: 720 / 400;
+    border-radius: 14px;
+    overflow: hidden;
+}
+/* Slide horizontal: el saliente se va a la izquierda, el entrante viene
+   desde la derecha. JS pone "is-leaving" en el slide saliente antes de
+   removerle "is-active" para que la transition se vea. */
+.oggi-hero-mosaic__slide {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transform: translateX(100%);
+    transition: opacity .5s ease, transform .6s cubic-bezier(.4, 0, .2, 1);
+    pointer-events: none;
+}
+.oggi-hero-mosaic__slide.is-active {
+    opacity: 1;
+    transform: translateX(0);
+    pointer-events: auto;
+}
+.oggi-hero-mosaic__slide.is-leaving {
+    opacity: 0;
+    transform: translateX(-100%);
+}
+.oggi-hero-mosaic__slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.oggi-hero-mosaic__dots {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.oggi-hero-mosaic__dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: rgba(27, 58, 119, .22); /* navy translúcido — visible sobre blanco */
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+    transition: all var(--oggi-t-fast);
+}
+.oggi-hero-mosaic__dot:hover { background: rgba(27, 58, 119, .4); }
+.oggi-hero-mosaic__dot.is-active {
+    background: var(--oggi-lime);
+    width: 22px;
+    border-radius: 4px;
+}
+
+/* ── Barra de controles DEBAJO de la imagen ──
+   Ocupa el ancho del tile central: dots a la izquierda, flechas/pausa a la
+   derecha. Sin position absolute → no tapa la foto. */
+.oggi-hero-mosaic__controls {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    /* Alto total ≈ 42px (botón 30 + 8 arriba + 4 abajo). Cuanto más flaca es
+       esta barra, menos se estiran las plaquitas laterales por encima de su
+       proporción nominal — ver el comentario del grid. */
+    padding: 8px 2px 4px;
+}
+.oggi-hero-mosaic__ctrl-group {
+    display: flex;
+    gap: 8px;
+}
+.oggi-hero-mosaic__ctrl {
+    /* Reset de browser button para que no quede ovalado por padding default */
+    appearance: none;
+    -webkit-appearance: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    line-height: 0;
+    cursor: pointer;
+    flex-shrink: 0;
+
+    /* Forma circular */
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: var(--oggi-navy-50, #E6ECF3);
+    color: var(--oggi-navy);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: background var(--oggi-t-fast), color var(--oggi-t-fast);
+}
+.oggi-hero-mosaic__ctrl:hover,
+.oggi-hero-mosaic__ctrl:focus-visible {
+    background: var(--oggi-lime);
+    color: var(--oggi-navy);
+    outline: none;
+}
+.oggi-hero-mosaic__ctrl svg { display: block; }
+
+.oggi-hero-mosaic__pause-icon {
+    line-height: 1;
+    pointer-events: none;
+}
+/* Default state (running): mostramos las dos barras de "pausa" */
+.oggi-hero-mosaic__pause-icon--pause {
+    display: inline-flex;
+    gap: 3px;
+    align-items: center;
+}
+.oggi-hero-mosaic__pause-icon--pause span {
+    display: inline-block;
+    width: 4px;
+    height: 13px;
+    background: currentColor;
+    border-radius: 1px;
+}
+.oggi-hero-mosaic__pause-icon--play {
+    font-size: 12px;
+    margin-left: 2px;
+    display: none;
+}
+/* El icono play/pausa se decide por aria-pressed del botón (lo togglea el JS),
+   ya no por una clase en el slider. */
+.oggi-hero-mosaic__ctrl--pause[aria-pressed="true"] .oggi-hero-mosaic__pause-icon--pause { display: none; }
+.oggi-hero-mosaic__ctrl--pause[aria-pressed="true"] .oggi-hero-mosaic__pause-icon--play  { display: inline-flex; }
+
+/* Mobile: controles un toque más chicos */
+@media (max-width: 600px) {
+    .oggi-hero-mosaic__controls { padding: 6px 2px 0; gap: 8px; }
+    .oggi-hero-mosaic__ctrl { width: 28px; height: 28px; }
+    .oggi-hero-mosaic__pause-icon--pause span { width: 3px; height: 10px; }
+}
+
+/* ═══ Responsive ═══ */
+@media (max-width: 1100px) {
+    .oggi-hero-mosaic__grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto;
+        gap: var(--hm-gap);
+        aspect-ratio: auto;
+        max-height: none;
+        min-height: 0;
+    }
+    /* Centro full-width arriba con su aspecto 9:5 */
+    .oggi-hero-mosaic__tile--center       { grid-column: 1 / 3; grid-row: 1; aspect-ratio: 720 / 400; }
+    /* Tops 6:5 */
+    .oggi-hero-mosaic__tile--left-top     { grid-column: 1; grid-row: 2; aspect-ratio: 300 / 250; }
+    .oggi-hero-mosaic__tile--right-top    { grid-column: 2; grid-row: 2; aspect-ratio: 300 / 250; }
+    /* Bottoms 2:1 */
+    .oggi-hero-mosaic__tile--left-bottom  { grid-column: 1; grid-row: 3; aspect-ratio: 300 / 150; }
+    .oggi-hero-mosaic__tile--right-bottom { grid-column: 2; grid-row: 3; aspect-ratio: 300 / 150; }
+}
+
+/* ───── Mobile: 3 carruseles separados (centro / tops / bottoms).
+   Layout 3 filas:
+     Fila 1: centro (full width, sigue siendo slider si tiene multi-slides)
+     Fila 2: 2 tops (300×250) en carrusel horizontal scroll-snap
+     Fila 3: 2 bottoms (300×150) en carrusel horizontal scroll-snap
+   Logramos esto en CSS-only:
+     - El grid pasa a 1 col, gap más generoso entre filas.
+     - Tops (left_top + right_top) se "agrupan" via grid-row=2 + flex-flow inline.
+     - Bottoms igual en grid-row=3.
+   Trick: usamos grid-column con scroll snap para que sólo los 2 tiles de
+   la misma "categoría" hagan carrusel horizontal entre sí. */
+@media (max-width: 600px) {
+    .oggi-hero-mosaic { padding: 12px 0; }
+    .oggi-hero-mosaic__inner { padding: 0; }
+
+    /* El grid principal pasa a flex-column: cada "fila" es un sub-carrusel */
+    .oggi-hero-mosaic__grid {
+        display: flex;
+        flex-direction: column;
+        gap: var(--hm-gap);
+        aspect-ratio: auto;
+        max-height: none;
+        grid-template-columns: none;
+        grid-template-rows: none;
+        column-gap: 0;
+        row-gap: 0;
+    }
+
+    /* Centro: full width, sigue como slider si tiene >1 slide */
+    .oggi-hero-mosaic__tile--center {
+        order: 1;
+        width: 100%;
+        aspect-ratio: 720 / 400;
+        grid-column: auto;
+        grid-row: auto;
+    }
+
+    /* Tops (left_top + right_top) en carrusel horizontal scroll-snap.
+       Para agruparlos visualmente sin tocar el HTML, usamos un wrapper
+       virtual via "display: contents" en el grid + un pseudo container.
+       Pero como display:contents no permite scroll, hacemos un truco con
+       grid-template-areas + inline-grid en filas. */
+
+    /* Fila tops — 2 tiles lado a lado en carrusel */
+    .oggi-hero-mosaic__tile--left-top,
+    .oggi-hero-mosaic__tile--right-top {
+        order: 2;
+        flex: none;
+    }
+
+    /* Fila bottoms — 2 tiles lado a lado en carrusel */
+    .oggi-hero-mosaic__tile--left-bottom,
+    .oggi-hero-mosaic__tile--right-bottom {
+        order: 3;
+        flex: none;
+    }
+
+    /* Los wrappers de carrusel se generan via ::before/::after del grid.
+       Como esto es complicado en CSS puro con HTML actual, lo más simple
+       es: agregar un wrapper en el shortcode (ver hero-mosaic.php). */
+
+    /* Variante más robusta: si el shortcode genera wrappers .oggi-hm-row,
+       usamos esto en su lugar (ver más abajo el bloque de selectores
+       específicos). */
+}
+
+/* Mobile: cuando el shortcode envuelve los pares de tiles en
+   .oggi-hero-mosaic__row-mobile (hecho a partir de v108), aplicamos
+   carrusel horizontal real con scroll-snap. */
+@media (max-width: 600px) {
+    .oggi-hero-mosaic__row-mobile {
+        display: flex;
+        gap: var(--hm-gap);
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        padding: 0 16px 4px;
+        margin: 0 -16px;
+        scrollbar-width: none;
+        overscroll-behavior-x: contain;
+        -webkit-overflow-scrolling: touch;
+    }
+    .oggi-hero-mosaic__row-mobile::-webkit-scrollbar { display: none; }
+    .oggi-hero-mosaic__row-mobile > .oggi-hero-mosaic__tile {
+        flex: 0 0 80%;
+        max-width: 80%;
+        scroll-snap-align: center;
+        scroll-snap-stop: always;
+    }
+    .oggi-hero-mosaic__row-mobile--tops > .oggi-hero-mosaic__tile {
+        aspect-ratio: 300 / 250;
+    }
+    .oggi-hero-mosaic__row-mobile--bottoms > .oggi-hero-mosaic__tile {
+        aspect-ratio: 300 / 150;
+    }
+}

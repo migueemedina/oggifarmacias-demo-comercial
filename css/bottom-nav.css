@@ -1,0 +1,132 @@
+/* ============================================================
+   OGGI FARMA — Barra inferior mobile (bottom nav)
+   Inicio · Categorías · ▶ Videos · Carrito · Cuenta.
+   Solo mobile (<=768px). Dispara el overlay .oggi-vf.
+   ============================================================ */
+
+.oggi-bnav { display: none; }
+
+@media (max-width: 768px) {
+	.oggi-bnav {
+		position: fixed;
+		left: 0; right: 0; bottom: 0;
+		z-index: 9990;
+		height: 60px;
+		background: var(--oggi-white, #fff);
+		border-top: 1px solid var(--oggi-line, #e5e7eb);
+		box-shadow: 0 -4px 16px rgba(15,40,71,.06);
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		padding: 0 4px;
+		padding-bottom: env(safe-area-inset-bottom, 0);
+	}
+
+	.oggi-bnav__item {
+		flex: 1;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 3px;
+		background: none;
+		border: 0;
+		padding: 6px 0;
+		font-family: var(--oggi-font-display);
+		font-size: 10px;
+		font-weight: 600;
+		color: var(--oggi-muted, #6b7280);
+		text-decoration: none;
+		cursor: pointer;
+		position: relative;
+		-webkit-tap-highlight-color: transparent;
+	}
+	.oggi-bnav__item svg { width: 23px; height: 23px; }
+	.oggi-bnav__item span { line-height: 1; }
+	.oggi-bnav__item.is-active { color: var(--oggi-navy, #1b3a77); }
+	.oggi-bnav__item:active { color: var(--oggi-navy, #1b3a77); }
+
+	/* Botón central ▶ (con lluvia de descuentos) */
+	.oggi-bnav__play { flex: 0 0 auto; padding: 0 10px; }
+	.oggi-bnav__play-btn {
+		position: relative;
+		width: 54px; height: 34px;
+		border-radius: 12px;
+		background: var(--oggi-navy, #1b3a77);
+		display: flex; align-items: center; justify-content: center;
+		box-shadow: 0 6px 16px rgba(15,40,71,.28);
+		overflow: hidden;
+	}
+	.oggi-bnav__play-btn svg { width: 20px; height: 20px; }
+	.oggi-bnav__play:active .oggi-bnav__play-btn { background: var(--oggi-navy-700, #14305f); }
+
+	/* Triángulo (estado por defecto) */
+	.oggi-bnav__play-tri {
+		display: flex; align-items: center; justify-content: center;
+		transition: opacity .3s ease, transform .3s ease;
+	}
+	.oggi-bnav__play.is-raining .oggi-bnav__play-tri {
+		opacity: 0; transform: scale(.4);
+	}
+
+	/* Descuentos "lloviendo" dentro del marco navy.
+	   Dos carriles (izq/der) + ciclo largo (9.6s) con ventana de visibilidad
+	   corta y delays escalonados de 1.6s: en cada momento hay ~2 cayendo, en
+	   carriles distintos → distinguibles. Cada etiqueta cruza TODO el globito. */
+	.oggi-bnav__deals { position: absolute; inset: 0; pointer-events: none; overflow: hidden; }
+	.oggi-bnav__deal {
+		position: absolute; top: 0;
+		font-family: var(--oggi-font-display);
+		font-size: 11px; font-weight: 800; line-height: 1;
+		color: var(--oggi-lime, #A3E635);
+		white-space: nowrap;
+		opacity: 0;
+		transform: translateY(-16px);
+		text-shadow: 0 1px 2px rgba(0,0,0,.6);
+	}
+	.oggi-bnav__deal:nth-child(odd)  { left: 8%; }   /* carril izquierdo */
+	.oggi-bnav__deal:nth-child(even) { left: 50%; }  /* carril derecho */
+	.oggi-bnav__play.is-raining .oggi-bnav__deal { animation: oggi-deal-rain 9.6s linear infinite; }
+	.oggi-bnav__play.is-raining .oggi-bnav__deal:nth-child(1) { animation-delay:  0s; }
+	.oggi-bnav__play.is-raining .oggi-bnav__deal:nth-child(2) { animation-delay: -1.6s; }
+	.oggi-bnav__play.is-raining .oggi-bnav__deal:nth-child(3) { animation-delay: -3.2s; }
+	.oggi-bnav__play.is-raining .oggi-bnav__deal:nth-child(4) { animation-delay: -4.8s; }
+	.oggi-bnav__play.is-raining .oggi-bnav__deal:nth-child(5) { animation-delay: -6.4s; }
+	.oggi-bnav__play.is-raining .oggi-bnav__deal:nth-child(6) { animation-delay: -8.0s; }
+	/* La ventana visible (5%–37% del ciclo) dura ~3s: cada etiqueta se ve
+	   cruzar de arriba (-16px) hasta abajo (+44px) del marco de 34px. */
+	@keyframes oggi-deal-rain {
+		0%   { opacity: 0; transform: translateY(-16px) rotate(-6deg); }
+		5%   { opacity: 1; }
+		37%  { opacity: 1; }
+		42%  { opacity: 0; transform: translateY(44px) rotate(6deg); }
+		100% { opacity: 0; transform: translateY(44px); }
+	}
+	@media (prefers-reduced-motion: reduce) {
+		.oggi-bnav__play.is-raining .oggi-bnav__play-tri { opacity: 1; transform: none; }
+		.oggi-bnav__deal { display: none; }
+	}
+
+	/* Badge del carrito (reusa markup del header mobile) */
+	.oggi-bnav__cart .oggi-hdr-m__cart-badge {
+		position: absolute;
+		top: 2px;
+		right: calc(50% - 20px);
+		background: var(--oggi-red, #e11d48);
+		color: #fff;
+		font-size: 10px;
+		font-weight: 700;
+		min-width: 16px; height: 16px;
+		border-radius: 9px;
+		display: flex; align-items: center; justify-content: center;
+		padding: 0 4px;
+		line-height: 1;
+	}
+	.oggi-bnav__cart .oggi-hdr-m__cart-badge--empty { display: none; }
+
+	/* El contenido no queda tapado por la barra */
+	.site { padding-bottom: 60px; }
+
+	/* El WhatsApp flotante sube para no chocar con la barra */
+	.oggi-hdr-m-wpp { bottom: 74px !important; }
+}

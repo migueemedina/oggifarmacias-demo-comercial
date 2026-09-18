@@ -1,0 +1,68 @@
+/* ============================================================
+   OGGI FARMA — Design Tokens
+   Paleta y tokens del mock (oggi-farma.html).
+   Scope: todas las variables viven en :root para reuso.
+   NO pisan las variables viejas (--oggi-azul-marino, --oggi-verde).
+   Las clases que consumen estos tokens están namespaceadas .oggi-*.
+   ============================================================ */
+:root {
+    /* --- Paleta nueva --- */
+    /* Lime más chillón / vibrante (era #84CC16). Las shades 600/700
+       absorben los colores anteriores como hovers oscuros. Si querés
+       aún más neon, subí a #bef264 (lime-300) o un custom #a3ff00. */
+    --oggi-lime:        #A3E635;
+    --oggi-lime-600:    #84CC16;
+    --oggi-lime-700:    #65A30D;
+    --oggi-lime-50:     #F1FADC;
+    --oggi-lime-100:    #E4F5B9;
+
+    /* Navy unificado con --oggi-azul-marino del tema legacy (#1b3a77).
+       Antes era #0F2847 (muy oscuro, tipo slate); ahora un marino medio
+       más vivo, igual al header / footer / whatsapp button. */
+    --oggi-navy:        #1b3a77;
+    --oggi-navy-700:    #14305F; /* hover oscuro */
+    --oggi-navy-600:    #163168; /* hover para botón variable */
+    --oggi-navy-500:    #2B4A88; /* tono claro, igual a --oggi-azul-marino2 */
+    --oggi-navy-50:     #E6EDF7; /* fondo suave (chip presentaciones) */
+
+    --oggi-yellow:      #FFD400; /* amarillo chillón (topbar) */
+    --oggi-red:         #E11D48;
+
+    --oggi-ink:         #0F172A;
+    --oggi-ink-2:       #1F2937;
+    --oggi-muted:       #6B7280;
+    --oggi-line:        #E5E7EB;
+    --oggi-line-2:      #EEF1F4;
+    --oggi-bg:          #F7F9FB;
+    --oggi-white:       #FFFFFF;
+
+    /* --- Fondos pastel para secciones/carruseles --- */
+    --oggi-bg-pink:     #FDF2F8;
+    --oggi-bg-sky:      #F0F9FF;
+    --oggi-bg-lime:     #F7FEE7;
+    --oggi-bg-orange:   #FFF7ED;
+    --oggi-bg-amber:    #FEFCE8;
+    --oggi-bg-violet:   #F5F3FF;
+    --oggi-bg-mint:     #ECFDF5;
+
+    /* --- Radios y sombras --- */
+    --oggi-r-sm: 6px;
+    --oggi-r:    10px;
+    --oggi-r-lg: 16px;
+    --oggi-r-xl: 22px;
+
+    --oggi-sh-1: 0 1px 2px rgba(15,40,71,.06), 0 1px 1px rgba(15,40,71,.04);
+    --oggi-sh-2: 0 6px 16px rgba(15,40,71,.08);
+    --oggi-sh-3: 0 14px 40px rgba(15,40,71,.14);
+
+    /* --- Layout --- */
+    --oggi-container: 1360px;
+    --oggi-gap: 20px;
+
+    /* --- Transiciones --- */
+    --oggi-t-fast: .15s ease;
+    --oggi-t-base: .2s ease;
+
+    /* --- Tipografía --- */
+    --oggi-font-display: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}

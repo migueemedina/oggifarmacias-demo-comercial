@@ -1,0 +1,329 @@
+/* ============================================================
+   OGGI FARMA — Category nav (pills estilo Central Oeste)
+   Layout:
+     [ Todas las categorías ] [Ofertas] [Dermo] [Bebés] ... [ Sucursales ]
+   Mega-menú se abre al hover/click de "Todas las categorías".
+   ============================================================ */
+
+.oggi-catnav {
+    background: var(--oggi-bg);
+    border-top: 1px solid var(--oggi-line-2);
+    border-bottom: 1px solid var(--oggi-line-2);
+    position: relative;
+    z-index: 50;
+    width: 100vw;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+}
+
+.oggi-catnav__inner {
+    max-width: var(--oggi-container);
+    margin: 0 auto;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* ─────────── Wrapper del botón + mega-menú (anchor del position:absolute) ─────────── */
+.oggi-catnav__all-wrap {
+    position: relative;
+    flex-shrink: 0;
+}
+/* Puente invisible de 12px entre botón y mega-menú para que al bajar el cursor
+   no se pierda el :hover. Si no está este pseudo, el cursor cruza un gap vacío
+   y el mega se cierra. */
+.oggi-catnav__all-wrap::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    height: 12px;
+    background: transparent;
+    pointer-events: auto;
+}
+
+/* ─────────── Botón "Todas las categorías" (pill navy con menu/X) ─────────── */
+.oggi-catnav__all {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 11px 18px;
+    background: var(--oggi-navy);
+    color: #fff;
+    font-weight: 700;
+    font-size: 13.5px;
+    letter-spacing: .3px;
+    border-radius: 10px;
+    border: 0;
+    cursor: pointer;
+    font-family: var(--oggi-font-display);
+    text-transform: uppercase;
+    text-align: left;
+    white-space: nowrap;
+    text-decoration: none !important;
+    transition: background var(--oggi-t-fast);
+}
+.oggi-catnav__all:hover,
+.oggi-catnav__all.is-open {
+    background: var(--oggi-navy-700);
+    color: #fff;
+}
+.oggi-catnav__all .oggi-icon { font-size: 16px; }
+
+/* Toggle de iconos: menu cerrado / X abierto */
+.oggi-catnav__all-icon-menu,
+.oggi-catnav__all-icon-close {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+}
+.oggi-catnav__all-icon-close { display: none; }
+.oggi-catnav__all.is-open .oggi-catnav__all-icon-menu { display: none; }
+.oggi-catnav__all.is-open .oggi-catnav__all-icon-close { display: inline-flex; }
+.oggi-catnav__all-label { line-height: 1; }
+
+/* ─────────── Links (pills) ─────────── */
+.oggi-catnav__links {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex: 1;
+    min-width: 0;
+    overflow-x: auto;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+}
+.oggi-catnav__links::-webkit-scrollbar { display: none; }
+
+.oggi-catnav__link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 11px 18px;
+    background: #F1F4F7;
+    color: var(--oggi-navy);
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 10px;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: background var(--oggi-t-fast), color var(--oggi-t-fast), transform var(--oggi-t-fast);
+    flex-shrink: 0;
+    line-height: 1;
+}
+.oggi-catnav__link:hover {
+    background: #E4E9EE;
+    color: var(--oggi-navy);
+}
+
+/* Pill "hot" destacada (Ofertas) — lime Oggi, para mantener branding */
+.oggi-catnav__link--hot {
+    background: var(--oggi-lime);
+    color: var(--oggi-navy);
+    font-weight: 700;
+    box-shadow: 0 2px 6px rgba(132, 204, 22, .35);
+}
+.oggi-catnav__link--hot:hover {
+    background: var(--oggi-lime-600);
+    color: #fff;
+    box-shadow: 0 3px 10px rgba(132, 204, 22, .45);
+}
+
+/* ─────────── Tail (pill derecha) ─────────── */
+.oggi-catnav__tail {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.oggi-catnav__pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 11px 18px;
+    background: var(--oggi-navy);
+    color: #fff;
+    font-size: 13.5px;
+    font-weight: 700;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: background var(--oggi-t-fast);
+    white-space: nowrap;
+    line-height: 1;
+}
+.oggi-catnav__pill:hover {
+    background: var(--oggi-navy-700);
+    color: #fff;
+}
+.oggi-catnav__pill .oggi-icon { font-size: 14px; }
+.oggi-catnav__pill svg {
+    display: block;
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+}
+.oggi-catnav__pill-label {
+    line-height: 1;
+    display: inline-block;
+}
+
+/* Variante WhatsApp — verde, mismo formato que el pill principal */
+.oggi-catnav__pill--wpp {
+    background: #25D366;
+    color: #fff;
+}
+.oggi-catnav__pill--wpp:hover {
+    background: #1FAB54;
+    color: #fff;
+}
+.oggi-catnav__pill--wpp svg { fill: #fff; }
+
+/* ─────────── Mega-menú ─────────── */
+.oggi-megamenu {
+    display: none;
+    position: absolute;
+    top: calc(100% + 8px);
+    left: 0;
+    width: 820px;
+    max-width: calc(100vw - 40px);
+    background: #fff;
+    color: var(--oggi-ink-2);
+    grid-template-columns: 260px 1fr;
+    border-radius: 12px;
+    box-shadow: var(--oggi-sh-3);
+    overflow: hidden;
+    z-index: 100;
+}
+/* Abre al hover del wrapper entero o cuando el botón está en is-open (click) */
+.oggi-catnav__all-wrap:hover .oggi-megamenu,
+.oggi-catnav__all.is-open ~ .oggi-megamenu {
+    display: grid;
+}
+
+.oggi-megamenu__side {
+    background: var(--oggi-navy);
+    color: #fff;
+    padding: 12px 0;
+    max-height: 460px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: var(--oggi-navy-500) var(--oggi-navy);
+}
+.oggi-megamenu__side::-webkit-scrollbar { width: 6px; }
+.oggi-megamenu__side::-webkit-scrollbar-track { background: transparent; }
+.oggi-megamenu__side::-webkit-scrollbar-thumb { background: var(--oggi-navy-500); border-radius: 3px; }
+
+.oggi-megamenu__side-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 13px 20px;
+    font-family: var(--oggi-font-display);
+    font-size: 13.5px;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none !important;
+    border-left: 3px solid transparent;
+    transition: background var(--oggi-t-fast), border-color var(--oggi-t-fast);
+    cursor: pointer;
+    text-align: left;
+    line-height: 1.25;
+}
+.oggi-megamenu__side-item:hover,
+.oggi-megamenu__side-item.is-active {
+    background: var(--oggi-navy-700);
+    border-left-color: var(--oggi-lime);
+    color: #fff;
+}
+/* Chevron de los items del side — bien visible, color lime cuando activa */
+.oggi-megamenu__side-item .oggi-icon {
+    font-size: 14px;
+    color: rgba(255, 255, 255, .45);
+    stroke-width: 2.5;
+    flex-shrink: 0;
+    transition: color var(--oggi-t-fast), transform var(--oggi-t-fast);
+}
+.oggi-megamenu__side-item:hover .oggi-icon,
+.oggi-megamenu__side-item.is-active .oggi-icon {
+    color: var(--oggi-lime);
+    transform: translateX(2px);
+}
+
+.oggi-megamenu__body {
+    padding: 22px 24px;
+    min-height: 300px;
+    position: relative;
+}
+.oggi-megamenu__panel {
+    display: none;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 12px 24px;
+    align-content: start;
+}
+.oggi-megamenu__panel.is-active { display: grid; }
+
+.oggi-megamenu__panel-title {
+    grid-column: 1 / -1;
+    margin: 0 0 10px;
+    font-size: 15px;
+    font-weight: 800;
+    color: var(--oggi-navy);
+}
+.oggi-megamenu__panel-title a {
+    color: inherit;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+.oggi-megamenu__panel-title a:hover { color: var(--oggi-lime-600); }
+.oggi-megamenu__panel-title .oggi-icon { font-size: 13px; }
+
+.oggi-megamenu__link {
+    display: block;
+    padding: 4px 0;
+    font-size: 13px;
+    color: var(--oggi-ink-2);
+    text-decoration: none;
+    transition: color var(--oggi-t-fast);
+}
+.oggi-megamenu__link:hover { color: var(--oggi-lime-600); }
+
+.oggi-megamenu__empty {
+    grid-column: 1 / -1;
+    padding: 40px 0;
+    text-align: center;
+    color: var(--oggi-muted);
+    font-size: 13px;
+}
+
+/* ─────────── Ocultar navs residuales del parent theme / plugins ─────────── */
+.main-navigation,
+.storefront-primary-navigation,
+.storefront-secondary-navigation,
+#site-navigation,
+.site-header nav.main-navigation,
+.site-header .main-navigation,
+.site-header-content > .main-navigation,
+.handheld-navigation {
+    display: none !important;
+}
+
+/* ─────────── Responsive ─────────── */
+@media (max-width: 1100px) {
+    .oggi-catnav__inner { padding: 8px 12px; gap: 6px; }
+    .oggi-catnav__link { padding: 9px 12px; font-size: 12.5px; }
+    .oggi-catnav__all { padding: 9px 14px; font-size: 12.5px; }
+    .oggi-catnav__pill { padding: 9px 12px; font-size: 12.5px; }
+}
+@media (max-width: 768px) {
+    .oggi-catnav { display: none; }
+}

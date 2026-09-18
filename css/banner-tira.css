@@ -1,0 +1,157 @@
+/* ============================================================
+   OGGI FARMA — Tira (banner horizontal a lo ancho del contenido)
+   Formato Farmaplus: la pieza viene diseñada entera como imagen.
+   Scope: .oggi-tira
+   ============================================================ */
+
+.oggi-tira {
+    --tira-radio: 14px;
+    /* La proporción de la pieza. Vive acá y no en cada slide para que el
+       viewport pueda reservar el alto ANTES de que baje la imagen: sin esto
+       el home pega un salto cuando carga (CLS). */
+    --tira-ratio: 30 / 7;
+
+    background: #fff;
+    padding: 10px 0 18px;
+}
+
+.oggi-tira__inner {
+    max-width: var(--oggi-container);
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ═══ Viewport ═══
+   Alto reservado por aspect-ratio. Los slides van apilados en la misma caja
+   (position: absolute) y sólo uno está visible: es lo que permite el cruce
+   suave sin mover el layout. */
+.oggi-tira__viewport {
+    position: relative;
+    width: 100%;
+    aspect-ratio: var(--tira-ratio);
+    border-radius: var(--tira-radio);
+    overflow: hidden;
+}
+
+/* ═══ Slide ═══
+   Con un solo banner no hay animación posible ni necesaria: el .is-active
+   único queda quieto. La transición es la misma del hero mosaico (el saliente
+   se va a la izquierda, el entrante entra por la derecha) para que los dos
+   carruseles del home se muevan igual. */
+.oggi-tira__slide {
+    position: absolute;
+    inset: 0;
+    display: block;
+    opacity: 0;
+    transform: translateX(100%);
+    transition: opacity .45s ease, transform .55s cubic-bezier(.4, 0, .2, 1);
+    pointer-events: none;
+    text-decoration: none !important;
+}
+.oggi-tira__slide.is-active {
+    opacity: 1;
+    transform: translateX(0);
+    pointer-events: auto;
+}
+.oggi-tira__slide.is-leaving {
+    opacity: 0;
+    transform: translateX(-100%);
+}
+
+.oggi-tira__pic { display: block; width: 100%; height: 100%; }
+.oggi-tira__img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ═══ Controles ═══
+   Debajo de la pieza, nunca encima: la tira está diseñada a sangre y un botón
+   flotando tapa el packshot o el número del descuento. */
+.oggi-tira__controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 8px 2px 0;
+}
+.oggi-tira__dots { display: flex; align-items: center; gap: 6px; }
+.oggi-tira__dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: rgba(27, 58, 119, .22);
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+    transition: all var(--oggi-t-fast);
+}
+.oggi-tira__dot:hover { background: rgba(27, 58, 119, .4); }
+.oggi-tira__dot.is-active {
+    background: var(--oggi-lime);
+    width: 22px;
+    border-radius: 4px;
+}
+
+.oggi-tira__ctrl-group { display: flex; gap: 8px; }
+.oggi-tira__ctrl {
+    appearance: none;
+    -webkit-appearance: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    line-height: 0;
+    cursor: pointer;
+    flex-shrink: 0;
+
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: var(--oggi-navy-50, #E6ECF3);
+    color: var(--oggi-navy);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: background var(--oggi-t-fast), color var(--oggi-t-fast);
+}
+.oggi-tira__ctrl:hover,
+.oggi-tira__ctrl:focus-visible {
+    background: var(--oggi-lime);
+    color: var(--oggi-navy);
+    outline: none;
+}
+.oggi-tira__ctrl svg { display: block; }
+
+.oggi-tira__pause-icon { line-height: 1; pointer-events: none; }
+.oggi-tira__pause-icon--pause { display: inline-flex; gap: 3px; align-items: center; }
+.oggi-tira__pause-icon--pause span {
+    display: inline-block;
+    width: 3px;
+    height: 11px;
+    background: currentColor;
+    border-radius: 1px;
+}
+.oggi-tira__pause-icon--play { font-size: 11px; margin-left: 2px; display: none; }
+.oggi-tira__ctrl--pause[aria-pressed="true"] .oggi-tira__pause-icon--pause { display: none; }
+.oggi-tira__ctrl--pause[aria-pressed="true"] .oggi-tira__pause-icon--play  { display: inline-flex; }
+
+/* ═══ Responsive ═══
+   En ≤768 px entra la pieza angosta (15:4, la sirve el <source> del PHP) y el
+   contenedor cambia de proporción con ella. Si el cliente no subió la pieza de
+   mobile, acá se sigue viendo la de desktop RECORTADA por object-fit: cover
+   —no deformada—, que es el mal menor. */
+@media (max-width: 768px) {
+    .oggi-tira {
+        --tira-ratio: 15 / 4;
+        --tira-radio: 12px;
+        padding: 8px 0 14px;
+    }
+    .oggi-tira__inner { padding: 0 12px; }
+    .oggi-tira__ctrl { width: 28px; height: 28px; }
+}
+
+/* Sin animación para quien la pidió apagada en el sistema operativo. */
+@media (prefers-reduced-motion: reduce) {
+    .oggi-tira__slide { transition: opacity .2s linear; transform: none !important; }
+}

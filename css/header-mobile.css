@@ -1,0 +1,483 @@
+/* ============================================================
+   OGGI FARMA — Header mobile (estilo Central Oeste)
+   Estructura:
+     - Promo bar lime (cuotas)
+     - Bar principal: menu/wpp | logo | user/cart
+     - Search con lupita a la derecha
+     - Pills scrolleables
+     - WhatsApp flotante al fondo
+   Scope: .oggi-hdr-m (BEM). Visible solo en <=768px.
+   ============================================================ */
+
+/* Por default en desktop, todo el mobile header y WhatsApp flotante ocultos */
+.oggi-hdr-m { display: none; }
+.oggi-hdr-m-wpp { display: none; }
+
+@media (max-width: 768px) {
+
+    /* ─── Cleanup Storefront ─── */
+    #site-navigation-menu-toggle,
+    .handheld-navigation,
+    .storefront-handheld-footer-bar,
+    .storefront-primary-navigation {
+        display: none !important;
+    }
+
+    .site-header {
+        margin: 0 !important;
+        padding: 0 !important;
+        border: none !important;
+        box-shadow: none !important;
+    }
+    .site-header > .col-full,
+    .site-header > .container,
+    .site-header > * {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    /* En mobile SÍ mostramos el topbar navy deslizante, fijo arriba de todo.
+       La promo bar lime del header mobile se oculta para no apilar dos barras. */
+    .oggi-topbar {
+        display: flex !important;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 34px;
+        z-index: 101; /* por encima del header mobile (100) */
+    }
+    .oggi-hdr-m__promo { display: none !important; }
+
+    /* ─── Wrapper del header mobile (fixed) ─── */
+    /* position: fixed es más robusto que sticky acá — no depende de que
+       el parent .site-header esté en viewport.
+       El body compensa con padding-top dinámico (via CSS var, actualizada
+       por JS con ResizeObserver). */
+    .oggi-hdr-m {
+        display: block;
+        background: #fff;
+        box-shadow: 0 1px 6px rgba(15, 40, 71, .07);
+        position: fixed;
+        top: 34px; /* deja lugar para el topbar fijo de arriba */
+        left: 0;
+        right: 0;
+        z-index: 100;
+    }
+
+    body {
+        padding-top: calc(var(--oggi-hdr-m-h, 192px) + 34px);
+        /* Sin transition: el padding sigue al header en tiempo real (ResizeObserver).
+           Si transicionamos acá además de promo/pills, se desincroniza y se ve como
+           si el body "respirara" contra el header fixed. */
+    }
+
+    /* Asegurar que .site-header no ocupe lugar extra (queda vacío en mobile
+       porque removemos todos sus defaults y el header nuestro es fixed) */
+    .site-header {
+        min-height: 0 !important;
+        height: auto !important;
+    }
+
+    /* ═══════════════════ PROMO BAR (cuotas, con auto-slide) ═══════════════════ */
+    .oggi-hdr-m__promo {
+        background: var(--oggi-lime);
+        color: var(--oggi-navy);
+        padding: 6px 12px;
+        border-bottom: 1px solid var(--oggi-lime-600);
+        overflow: hidden;
+        max-height: 80px;
+        transition:
+            max-height .35s cubic-bezier(.4, 0, .2, 1),
+            opacity .25s ease,
+            padding .25s ease,
+            border-bottom-width .25s ease;
+    }
+    /* Se oculta cuando NO estamos en el tope de la página */
+    .oggi-hdr-m:not(.is-at-top) .oggi-hdr-m__promo {
+        max-height: 0;
+        opacity: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+        border-bottom-width: 0;
+    }
+    .oggi-hdr-m__promo-inner {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .oggi-hdr-m__promo-badge {
+        background: transparent;
+        color: var(--oggi-navy);
+        border: 1.5px solid var(--oggi-navy);
+        font-size: 10px;
+        font-weight: 800;
+        letter-spacing: 1.2px;
+        padding: 4px 12px;
+        border-radius: 50px;
+        white-space: nowrap;
+        text-transform: uppercase;
+        flex-shrink: 0;
+    }
+
+    /* Slider: wrapper con altura fija y slides absolutos */
+    .oggi-hdr-m__promo-slider {
+        position: relative;
+        flex: 1;
+        min-width: 0;
+        height: 28px;
+        overflow: hidden;
+    }
+    .oggi-hdr-m__promo-slide {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        font-size: 11.5px;
+        line-height: 1.2;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        opacity: 0;
+        transform: translateY(8px);
+        transition: opacity .45s ease, transform .45s ease;
+        pointer-events: none;
+    }
+    .oggi-hdr-m__promo-slide.is-active {
+        opacity: 1;
+        transform: translateY(0);
+        pointer-events: auto;
+    }
+    .oggi-hdr-m__promo-slide.is-leaving {
+        opacity: 0;
+        transform: translateY(-8px);
+    }
+    .oggi-hdr-m__promo-slide strong {
+        font-size: 13px;
+        font-weight: 800;
+    }
+    .oggi-hdr-m__promo-note {
+        font-size: 10.5px;
+        font-weight: 600;
+        opacity: .85;
+    }
+
+    /* Si hay un solo slide, anular estilos de animación */
+    .oggi-hdr-m__promo-slider[data-single="1"] .oggi-hdr-m__promo-slide {
+        position: static;
+        opacity: 1;
+        transform: none;
+    }
+
+    /* ═══════════════════ BAR PRINCIPAL (iconos + logo) ═══════════════════ */
+    .oggi-hdr-m__bar {
+        display: grid;
+        grid-template-columns: 1fr auto 1fr;
+        align-items: center;
+        gap: 10px;
+        padding: 8px 12px;
+        min-height: 60px;
+    }
+
+    .oggi-hdr-m__bar-side {
+        display: flex;
+        align-items: center;
+        gap: 2px;
+    }
+    .oggi-hdr-m__bar-side--right { justify-content: flex-end; }
+
+    /* Botones de acción (hamburguesa, wpp, user, cart) */
+    .oggi-hdr-m__icon-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        padding: 0;
+        border: 0;
+        background: transparent;
+        color: var(--oggi-navy);
+        text-decoration: none;
+        border-radius: 10px;
+        position: relative;
+        cursor: pointer;
+        transition: background var(--oggi-t-fast);
+        -webkit-tap-highlight-color: transparent;
+    }
+    .oggi-hdr-m__icon-btn:active { background: var(--oggi-bg); }
+    .oggi-hdr-m__icon-btn .oggi-icon {
+        font-size: 24px;
+        stroke-width: 1.8;
+    }
+
+    /* Cart con badge */
+    .oggi-hdr-m__cart-badge {
+        position: absolute;
+        top: 4px;
+        right: 4px;
+        min-width: 18px;
+        height: 18px;
+        padding: 0 5px;
+        background: var(--oggi-red);
+        color: #fff;
+        font-size: 10px;
+        font-weight: 700;
+        border-radius: 10px;
+        border: 2px solid #fff;
+        display: grid;
+        place-items: center;
+        line-height: 1;
+    }
+    .oggi-hdr-m__cart-badge--empty { display: none; }
+
+    /* Logo centrado */
+    .oggi-hdr-m__logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 160px;
+    }
+    .oggi-hdr-m__logo img {
+        height: 40px;
+        width: auto;
+        display: block;
+    }
+
+    /* ═══════════════════ SEARCH ═══════════════════ */
+    .oggi-hdr-m__search {
+        padding: 4px 12px 10px;
+    }
+    .oggi-hdr-m__search-form {
+        display: flex;
+        align-items: stretch;
+        background: #fff;
+        border: 1.5px solid var(--oggi-line);
+        border-radius: 12px;
+        overflow: hidden;
+        transition: border-color var(--oggi-t-fast), box-shadow var(--oggi-t-fast);
+    }
+    .oggi-hdr-m__search-form:focus-within {
+        border-color: var(--oggi-lime);
+        box-shadow: 0 0 0 3px rgba(132, 204, 22, .15);
+    }
+    .oggi-hdr-m__search-input {
+        flex: 1;
+        min-width: 0;
+        padding: 10px 4px 10px 16px;
+        border: 0;
+        outline: 0;
+        background: transparent;
+        font-size: 14px;
+        color: var(--oggi-ink);
+        font-family: inherit;
+        -webkit-appearance: none;
+    }
+    .oggi-hdr-m__search-input::placeholder {
+        color: var(--oggi-muted);
+        font-size: 13.5px;
+    }
+    .oggi-hdr-m__search-btn {
+        flex-shrink: 0;
+        width: 46px;
+        background: transparent;
+        border: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        color: var(--oggi-navy);
+        transition: color var(--oggi-t-fast);
+    }
+    .oggi-hdr-m__search-btn:active { color: var(--oggi-lime-600); }
+    .oggi-hdr-m__search-btn .oggi-icon {
+        font-size: 20px;
+        stroke-width: 2.2;
+    }
+
+    /* ═══════════════════ PILLS ═══════════════════ */
+    .oggi-hdr-m__pills {
+        display: grid;
+        grid-template-rows: 1fr;
+        transition: grid-template-rows .35s cubic-bezier(.4, 0, .2, 1);
+        border-top: 1px solid var(--oggi-line-2);
+    }
+    /* Se ocultan al scrollear hacia abajo; vuelven al scrollear hacia arriba */
+    .oggi-hdr-m.is-scroll-down .oggi-hdr-m__pills { grid-template-rows: 0fr; }
+
+    .oggi-hdr-m__pills-wrap {
+        min-height: 0;
+        overflow-x: auto;
+        overflow-y: hidden;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+    }
+    .oggi-hdr-m__pills-wrap::-webkit-scrollbar { display: none; }
+
+    .oggi-hdr-m__pills-track {
+        display: flex;
+        gap: 7px;
+        padding: 8px 12px 10px;
+        width: max-content;
+    }
+
+    .oggi-hdr-m__pill {
+        flex: 0 0 auto;
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+        padding: 7px 14px;
+        border-radius: 10px;
+        border: 1.5px solid var(--oggi-line);
+        background: #fff;
+        color: var(--oggi-navy);
+        font-size: 13px;
+        font-weight: 600;
+        text-decoration: none;
+        white-space: nowrap;
+        line-height: 1.25;
+        transition: all var(--oggi-t-fast);
+    }
+    .oggi-hdr-m__pill:active {
+        transform: scale(0.96);
+        background: var(--oggi-lime-50);
+        border-color: var(--oggi-lime);
+    }
+    .oggi-hdr-m__pill--accent {
+        background: var(--oggi-lime);
+        color: var(--oggi-navy);
+        border-color: var(--oggi-lime-600);
+        font-weight: 700;
+    }
+    .oggi-hdr-m__pill--hot {
+        background: var(--oggi-red);
+        color: #fff;
+        border-color: var(--oggi-red);
+        font-weight: 700;
+    }
+    .oggi-hdr-m__pill--wpp {
+        background: #25d366;
+        color: #fff;
+        border-color: #25d366;
+        font-weight: 700;
+    }
+
+    /* ═══════════════════ FLOAT WHATSAPP ═══════════════════
+       Pill verde más alargado, prominente, sin elementos extra (sin X
+       de cierre). Si ves una X arriba o un avatar adicional, viene de un
+       plugin externo de WhatsApp chat — desactivalo desde Plugins. Reglas
+       defensivas más abajo intentan ocultar las X más comunes. */
+    .oggi-hdr-m-wpp {
+        display: inline-flex;
+        position: fixed;
+        bottom: 16px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 9998;
+        align-items: center;
+        justify-content: center;
+        gap: 7px;
+        padding: 9px 18px;
+        border-radius: 999px;
+        background: #25d366;
+        color: #fff !important;
+        text-decoration: none !important;
+        font-size: 12.5px;
+        font-weight: 700;
+        letter-spacing: .2px;
+        min-width: 0;
+        box-shadow:
+            0 4px 14px rgba(37, 211, 102, .35),
+            0 2px 5px rgba(0, 0, 0, .14);
+        transition: transform .3s cubic-bezier(.4, 0, .2, 1), opacity .3s ease;
+        -webkit-tap-highlight-color: transparent;
+    }
+    .oggi-hdr-m-wpp:active { transform: translateX(-50%) scale(0.95); }
+    .oggi-hdr-m-wpp__icon {
+        width: 16px;
+        height: 16px;
+        fill: currentColor;
+        stroke: none;
+        flex-shrink: 0;
+    }
+    .oggi-hdr-m-wpp::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        border-radius: 50px;
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, .5);
+        animation: oggi-wpp-glow 4s ease-out infinite;
+        pointer-events: none;
+    }
+    @keyframes oggi-wpp-glow {
+        0%   { box-shadow: 0 0 0 0 rgba(37, 211, 102, .4); }
+        40%  { box-shadow: 0 0 0 10px rgba(37, 211, 102, 0); }
+        100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+    }
+    .oggi-hdr-m-wpp.is-top {
+        transform: translateX(-50%) translateY(80px);
+        opacity: 0;
+        pointer-events: none;
+    }
+    /* Se esconde al scrollear hacia abajo (leyendo); reaparece al subir */
+    .oggi-hdr-m-wpp.is-hidden {
+        transform: translateX(-50%) translateY(120px);
+        opacity: 0;
+        pointer-events: none;
+    }
+}
+
+/* Animación bounce hint (fuera del media query para que funcione al trigger) */
+@keyframes oggi-hint-bounce {
+    0%   { transform: translateX(0); }
+    25%  { transform: translateX(-22px); }
+    50%  { transform: translateX(6px); }
+    75%  { transform: translateX(-3px); }
+    100% { transform: translateX(0); }
+}
+.oggi-hdr-m__pills-track.is-hinting {
+    animation: oggi-hint-bounce .65s ease-out;
+}
+
+/* ───────────────────────────────────────────────────────────────────────
+   DEFENSIVO: ocultar widgets/X de plugins externos de WhatsApp chat
+   (Whatsapp Chat by QuadLayers, Click to Chat, Joinchat, WP Social Chat,
+   Chaty, Floating Chat Widget). El botón propio del theme — .oggi-hdr-m-wpp
+   — no usa ninguna de estas clases, así que no se afecta.
+
+   Si tu sitio NO tiene estos plugins, estas reglas no hacen nada.
+   Si los tenés, ocultan la X de cerrar y el avatar/burbuja extra.
+   ─────────────────────────────────────────────────────────────────────── */
+.qlwapp-close,
+.qlwapp .qlwapp-toggle .qlwapp-close,
+.qlwapp-launcher .qlwapp-toggle .qlwapp-close,
+.fly-chat-close,
+.click-to-chat-close,
+.ctc-analytics-close,
+.joinchat__close,
+.joinchat__close-button,
+.chaty-close,
+.wpschat-close,
+.fcw-close,
+.floating-chat-close,
+[class*="-chat-close"],
+[class*="whatsapp-close"],
+[class*="wpp-close"] {
+    display: none !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+}
+
+/* Avatares/badges flotantes de los plugins (los que muestran "el farmacéutico
+   te saluda" arriba del botón). Sólo en mobile donde nuestro botón ya cumple. */
+@media (max-width: 768px) {
+    .qlwapp-toggle .qlwapp-avatar,
+    .joinchat__badge,
+    .ctc-analytics-bubble,
+    .chaty-badge,
+    .wpschat-badge,
+    [class*="-chat-bubble"]:not(.oggi-hdr-m-wpp):not(.oggi-hdr-m-wpp *) {
+        display: none !important;
+    }
+}
