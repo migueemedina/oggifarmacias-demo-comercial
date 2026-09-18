@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Oggi Farma — así se va a ver la web</title>
+<meta name="description" content="Demo del home de oggifarmacias.com con las imágenes nuevas del sistema de crucetas y carruseles de productos reales.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="css/_tokens.css">
+  <link rel="stylesheet" href="css/_base.css">
+  <link rel="stylesheet" href="css/topbar.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/header-mobile.css">
+  <link rel="stylesheet" href="css/catnav.css">
+  <link rel="stylesheet" href="css/hero-mosaic.css">
+  <link rel="stylesheet" href="css/banner-tira.css">
+  <link rel="stylesheet" href="css/benefits-strip.css">
+  <link rel="stylesheet" href="css/product-carousel.css">
+  <link rel="stylesheet" href="css/product-cards.css">
+  <link rel="stylesheet" href="css/promo-mosaic.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/bottom-nav.css">
+  <link rel="stylesheet" href="css/wishlist.css">
+  <link rel="stylesheet" href="css/_footer.css">
+  <link rel="stylesheet" href="css/demo.css">
+</head>
+<body class="oggi-no-sidebar">
+<div class="oggi-topbar" data-bg="verde" data-oggi-topbar data-rotate-ms="4500" role="complementary" aria-label="Información de envíos y promociones"><div class="oggi-topbar__container"><div class="oggi-topbar__marquee" data-oggi-topbar-marquee><span class="oggi-topbar__msg oggi-topbar__msg--img is-active" data-bg="verde" aria-hidden="false"><span class="oggi-topbar__msg-inner"><picture class="oggi-topbar__msg-pic"><source media="(max-width: 768px)" srcset="img/placas/msg-envio-celular_680x68.webp"><img class="oggi-topbar__msg-img" src="img/placas/msg-envio-escritorio_1440x76.webp" alt="Envío gratis en CABA y GBA desde $25.000" loading="eager" decoding="async"></picture></span></span><span class="oggi-topbar__msg oggi-topbar__msg--img" data-bg="oggi" aria-hidden="true"><span class="oggi-topbar__msg-inner"><picture class="oggi-topbar__msg-pic"><source media="(max-width: 768px)" srcset="img/placas/msg-3cuotas-celular_680x68.webp"><img class="oggi-topbar__msg-img" src="img/placas/msg-3cuotas-escritorio_1440x76.webp" alt="3 cuotas sin interés con Visa y Mastercard, miércoles y sábados" loading="lazy" decoding="async"></picture></span></span><span class="oggi-topbar__msg oggi-topbar__msg--img" data-bg="verde" aria-hidden="true"><span class="oggi-topbar__msg-inner"><picture class="oggi-topbar__msg-pic"><source media="(max-width: 768px)" srcset="img/placas/msg-bbva-30-celular_680x68.webp"><img class="oggi-topbar__msg-img" src="img/placas/msg-bbva-30-escritorio_1440x76.webp" alt="30% de ahorro con crédito BBVA los martes, tope $12.000 por mes" loading="lazy" decoding="async"></picture></span></span><span class="oggi-topbar__msg oggi-topbar__msg--img" data-bg="oggi" aria-hidden="true"><span class="oggi-topbar__msg-inner"><picture class="oggi-topbar__msg-pic"><source media="(max-width: 768px)" srcset="img/placas/msg-dni-20-celular_680x68.webp"><img class="oggi-topbar__msg-img" src="img/placas/msg-dni-20-escritorio_1440x76.webp" alt="20% de ahorro con Cuenta DNI de lunes a viernes, tope $5.000 por semana" loading="lazy" decoding="async"></picture></span></span></div></div></div>
+<div class="oggi-hdr" role="banner"><div class="oggi-hdr__inner">
+  <a href="#" class="oggi-hdr__logo" aria-label="Oggi Farma — Inicio"><img src="img/logo.png" alt="Oggi Farma"></a>
+  <form class="oggi-hdr__search" role="search" onsubmit="return false">
+    <div class="oggi-hdr__cat-picker" data-oggi-cat-picker>
+      <button type="button" class="oggi-hdr__cat-toggle" aria-haspopup="listbox" aria-expanded="false">
+        <span class="oggi-hdr__cat-label">Temática</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon oggi-hdr__cat-chev" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+      </button>
+      <ul class="oggi-hdr__cat-menu" role="listbox" tabindex="-1">
+        <li class="oggi-hdr__cat-item is-selected" role="option" data-value="" data-label="Temática" aria-selected="true">Todas las categorías</li>
+        <li class="oggi-hdr__cat-item" role="option" data-value="cuidado de la piel" data-label="Cuidado de la piel" aria-selected="false">Cuidado de la piel</li><li class="oggi-hdr__cat-item" role="option" data-value="cuidado del cabello" data-label="Cuidado del cabello" aria-selected="false">Cuidado del cabello</li><li class="oggi-hdr__cat-item" role="option" data-value="higiene y cuidado personal" data-label="Higiene y cuidado personal" aria-selected="false">Higiene y cuidado personal</li><li class="oggi-hdr__cat-item" role="option" data-value="bebés y mamá" data-label="Bebés y mamá" aria-selected="false">Bebés y mamá</li><li class="oggi-hdr__cat-item" role="option" data-value="suplementos y vitaminas" data-label="Suplementos y vitaminas" aria-selected="false">Suplementos y vitaminas</li><li class="oggi-hdr__cat-item" role="option" data-value="medicamentos de venta libre" data-label="Medicamentos de venta libre" aria-selected="false">Medicamentos de venta libre</li><li class="oggi-hdr__cat-item" role="option" data-value="cuidado íntimo y femenino" data-label="Cuidado íntimo y femenino" aria-selected="false">Cuidado íntimo y femenino</li><li class="oggi-hdr__cat-item" role="option" data-value="equipos de salud" data-label="Equipos de salud" aria-selected="false">Equipos de salud</li>
+      </ul>
+      <input type="hidden" name="product_cat" value="" data-oggi-cat-value>
+    </div>
+    <input type="search" class="oggi-hdr__search-input" name="s" placeholder="¿Qué estás buscando hoy? Probá con “protector solar”" autocomplete="off">
+    <button type="submit" class="oggi-hdr__search-btn" aria-label="Buscar"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg><span>Buscar</span></button>
+  </form>
+  <div class="oggi-hdr__actions">
+    <a href="#" class="oggi-hdr__action oggi-hdr__action--account">
+      <span class="oggi-hdr__action-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></span>
+      <span class="oggi-hdr__action-text"><span class="oggi-hdr__action-t1">Hola, ingresá</span><span class="oggi-hdr__action-t2">Mi cuenta</span></span></a>
+    <a href="#" class="oggi-hdr__action oggi-hdr__action--wishlist">
+      <span class="oggi-hdr__action-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></span>
+      <span class="oggi-hdr__action-text"><span class="oggi-hdr__action-t1">Tu lista</span><span class="oggi-hdr__action-t2">Favoritos</span></span></a>
+    <a href="#" class="oggi-hdr__action oggi-hdr__action--cart">
+      <span class="oggi-hdr__action-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg><span class="oggi-hdr__cart-badge oggi-hdr__cart-badge--empty" data-count="0">0</span></span>
+      <span class="oggi-hdr__action-text"><span class="oggi-hdr__action-t1">Mi carrito</span><span class="oggi-hdr__action-t2 oggi-hdr__cart-total"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>0,00</bdi></span></span></span></a>
+  </div>
+</div></div>
+<div class="oggi-hdr-m" role="banner">
+  <div class="oggi-hdr-m__promo"><div class="oggi-hdr-m__promo-inner">
+    <span class="oggi-hdr-m__promo-badge">PAGÁ CON</span>
+    <div class="oggi-hdr-m__promo-slider" data-oggi-promo-slider data-interval="4000" aria-live="polite" aria-atomic="true"><span class="oggi-hdr-m__promo-slide is-active"><strong>3 cuotas</strong><span>sin interés</span><span class="oggi-hdr-m__promo-note">· Visa y Mastercard · miércoles y sábados</span></span><span class="oggi-hdr-m__promo-slide"><strong>30%</strong><span>de ahorro</span><span class="oggi-hdr-m__promo-note">· Crédito BBVA · los martes</span></span><span class="oggi-hdr-m__promo-slide"><strong>20%</strong><span>de ahorro</span><span class="oggi-hdr-m__promo-note">· Cuenta DNI · de lunes a viernes</span></span></div>
+  </div></div>
+  <div class="oggi-hdr-m__bar">
+    <div class="oggi-hdr-m__bar-side oggi-hdr-m__bar-side--left">
+      <a href="#" class="oggi-hdr-m__icon-btn" aria-label="Llamar a Oggi Farma"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></a></div>
+    <a href="#" class="oggi-hdr-m__logo" aria-label="Oggi Farma — Inicio"><img src="img/logo.png" alt="Oggi Farma" width="140" height="40"></a>
+    <div class="oggi-hdr-m__bar-side oggi-hdr-m__bar-side--right">
+      <a href="#" class="oggi-hdr-m__icon-btn" aria-label="Nuestras sucursales"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></a></div>
+  </div>
+  <div class="oggi-hdr-m__search"><form class="oggi-hdr-m__search-form" role="search" onsubmit="return false">
+    <input type="search" class="oggi-hdr-m__search-input" name="s" placeholder="Buscá por marca, producto o categoría" autocomplete="off">
+    <button type="submit" class="oggi-hdr-m__search-btn" aria-label="Buscar"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></button>
+  </form></div>
+  <div class="oggi-hdr-m__pills" data-oggi-hdr-m-pills><div class="oggi-hdr-m__pills-wrap">
+    <div class="oggi-hdr-m__pills-track" data-oggi-hdr-m-pills-track><a href="#" class="oggi-hdr-m__pill oggi-hdr-m__pill--accent"><span aria-hidden="true">🏷️</span>Ofertas</a><a href="#" class="oggi-hdr-m__pill"><span aria-hidden="true">🧴</span>Dermocosmética</a><a href="#" class="oggi-hdr-m__pill"><span aria-hidden="true">✨</span>Perfumería</a><a href="#" class="oggi-hdr-m__pill"><span aria-hidden="true">💊</span>Reservar</a><a href="#" class="oggi-hdr-m__pill"><span aria-hidden="true">🍼</span>Bebés</a><a href="#" class="oggi-hdr-m__pill"><span aria-hidden="true">📍</span>Sucursales</a><a href="#" class="oggi-hdr-m__pill"><span aria-hidden="true">💚</span>Comunidad</a></div></div></div>
+</div>
+<nav class="oggi-catnav" aria-label="Categorías"><div class="oggi-catnav__inner">
+  <div class="oggi-catnav__all-wrap" data-oggi-catnav-wrap>
+    <a href="#" class="oggi-catnav__all" data-oggi-catnav-all aria-haspopup="true" aria-expanded="false">
+      <span class="oggi-catnav__all-icon-menu"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></span>
+      <span class="oggi-catnav__all-icon-close"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span>
+      <span class="oggi-catnav__all-label">Todas las categorías</span></a>
+    <div class="oggi-megamenu" data-oggi-megamenu role="menu">
+      <div class="oggi-megamenu__side"><a href="#" class="oggi-megamenu__side-item is-active" data-oggi-megamenu-side-item data-cat-id="0" role="menuitem"><span>Cuidado de la piel</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg></a><a href="#" class="oggi-megamenu__side-item" data-oggi-megamenu-side-item data-cat-id="1" role="menuitem"><span>Cuidado del cabello</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg></a><a href="#" class="oggi-megamenu__side-item" data-oggi-megamenu-side-item data-cat-id="2" role="menuitem"><span>Higiene y cuidado personal</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg></a><a href="#" class="oggi-megamenu__side-item" data-oggi-megamenu-side-item data-cat-id="3" role="menuitem"><span>Bebés y mamá</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg></a><a href="#" class="oggi-megamenu__side-item" data-oggi-megamenu-side-item data-cat-id="4" role="menuitem"><span>Suplementos y vitaminas</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg></a><a href="#" class="oggi-megamenu__side-item" data-oggi-megamenu-side-item data-cat-id="5" role="menuitem"><span>Medicamentos de venta libre</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg></a><a href="#" class="oggi-megamenu__side-item" data-oggi-megamenu-side-item data-cat-id="6" role="menuitem"><span>Cuidado íntimo y femenino</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg></a><a href="#" class="oggi-megamenu__side-item" data-oggi-megamenu-side-item data-cat-id="7" role="menuitem"><span>Equipos de salud</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg></a></div>
+      <div class="oggi-megamenu__body"><div class="oggi-megamenu__panel is-active" data-oggi-megamenu-panel data-panel-id="0"><h5 class="oggi-megamenu__panel-title"><a href="#">Cuidado de la piel<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></h5><a href="#" class="oggi-megamenu__link">Facial</a><a href="#" class="oggi-megamenu__link">Corporal</a><a href="#" class="oggi-megamenu__link">Protección solar</a><a href="#" class="oggi-megamenu__link">Piel del diabético</a></div><div class="oggi-megamenu__panel" data-oggi-megamenu-panel data-panel-id="1"><h5 class="oggi-megamenu__panel-title"><a href="#">Cuidado del cabello<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></h5><a href="#" class="oggi-megamenu__link">Shampoo y acondicionador</a><a href="#" class="oggi-megamenu__link">Tratamientos</a><a href="#" class="oggi-megamenu__link">Peinado</a></div><div class="oggi-megamenu__panel" data-oggi-megamenu-panel data-panel-id="2"><h5 class="oggi-megamenu__panel-title"><a href="#">Higiene y cuidado personal<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></h5><a href="#" class="oggi-megamenu__link">Desodorantes</a><a href="#" class="oggi-megamenu__link">Jabones y geles</a><a href="#" class="oggi-megamenu__link">Higiene bucal</a></div><div class="oggi-megamenu__panel" data-oggi-megamenu-panel data-panel-id="3"><h5 class="oggi-megamenu__panel-title"><a href="#">Bebés y mamá<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></h5><a href="#" class="oggi-megamenu__link">Higiene del bebé</a><a href="#" class="oggi-megamenu__link">Leches y fórmulas</a><a href="#" class="oggi-megamenu__link">Pañales y toallitas</a></div><div class="oggi-megamenu__panel" data-oggi-megamenu-panel data-panel-id="4"><h5 class="oggi-megamenu__panel-title"><a href="#">Suplementos y vitaminas<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></h5><a href="#" class="oggi-megamenu__link">Vitaminas y minerales</a><a href="#" class="oggi-megamenu__link">Suplementos naturales</a><a href="#" class="oggi-megamenu__link">Nutricosmética</a></div><div class="oggi-megamenu__panel" data-oggi-megamenu-panel data-panel-id="5"><h5 class="oggi-megamenu__panel-title"><a href="#">Medicamentos de venta libre<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></h5><a href="#" class="oggi-megamenu__link">Dolor y fiebre</a><a href="#" class="oggi-megamenu__link">Alergia y respiratorio</a><a href="#" class="oggi-megamenu__link">Digestivo</a></div><div class="oggi-megamenu__panel" data-oggi-megamenu-panel data-panel-id="6"><h5 class="oggi-megamenu__panel-title"><a href="#">Cuidado íntimo y femenino<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></h5><a href="#" class="oggi-megamenu__link">Higiene íntima</a><a href="#" class="oggi-megamenu__link">Gestión menstrual</a></div><div class="oggi-megamenu__panel" data-oggi-megamenu-panel data-panel-id="7"><h5 class="oggi-megamenu__panel-title"><a href="#">Equipos de salud<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></h5><a href="#" class="oggi-megamenu__link">Tensiómetros</a><a href="#" class="oggi-megamenu__link">Nebulizadores</a><a href="#" class="oggi-megamenu__link">Primeros auxilios</a></div></div>
+    </div>
+  </div>
+  <div class="oggi-catnav__links"><a href="#" class="oggi-catnav__link oggi-catnav__link--hot"><span aria-hidden="true">🔥</span>Ofertas</a><a href="#" class="oggi-catnav__link"><span aria-hidden="true">💊</span>Venta libre</a><a href="#" class="oggi-catnav__link"><span aria-hidden="true">🌿</span>Suplementos</a><a href="#" class="oggi-catnav__link"><span aria-hidden="true">✨</span>Belleza</a><a href="#" class="oggi-catnav__link"><span aria-hidden="true">🍼</span>Bebé</a><a href="#" class="oggi-catnav__link"><span aria-hidden="true">💇</span>Capilar</a></div>
+  <div class="oggi-catnav__tail">
+    <a href="#" class="oggi-catnav__pill"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span class="oggi-catnav__pill-label">Sucursales</span></a>
+  </div>
+</div></nav>
+<main class="demo-main">
+<section class="oggi-hero-mosaic oggi-hero-mosaic--full" aria-label="Destacados">
+  <div class="oggi-hero-mosaic__inner"><div class="oggi-hero-mosaic__grid">
+    <div class="oggi-hero-mosaic__row-mobile oggi-hero-mosaic__row-mobile--tops">
+      <a href="#" class="oggi-hero-mosaic__tile oggi-hero-mosaic__tile--left-top"><img src="img/placas/esquina-6x5-facial_1200x1000.webp" alt="Cuidado facial — hasta 40% OFF" loading="lazy"></a>
+      <a href="#" class="oggi-hero-mosaic__tile oggi-hero-mosaic__tile--right-top"><img src="img/placas/esquina-6x5-solar_1200x1000.webp" alt="Protección solar — hasta 40% OFF" loading="lazy"></a>
+    </div>
+    <a href="#" class="oggi-hero-mosaic__tile oggi-hero-mosaic__tile--center">
+      <img src="img/placas/hero_2880x1600.webp" alt="Ofertas en belleza que duran todo el mes — hasta 40% OFF" loading="eager"></a>
+    <div class="oggi-hero-mosaic__row-mobile oggi-hero-mosaic__row-mobile--bottoms">
+      <a href="#" class="oggi-hero-mosaic__tile oggi-hero-mosaic__tile--left-bottom"><img src="img/placas/esquina-2x1-capilar_1200x600.webp" alt="Cuidado capilar — hasta 30% OFF y 2x1" loading="lazy"></a>
+      <a href="#" class="oggi-hero-mosaic__tile oggi-hero-mosaic__tile--right-bottom"><img src="img/placas/esquina-2x1-bebes_1200x600.webp" alt="Bebés y mamá — hasta 30% OFF" loading="lazy"></a>
+    </div>
+  </div></div>
+</section>
+<section class="oggi-benefits-strip oggi-benefits-strip--full" aria-label="Beneficios y cuotas"><div class="oggi-benefits-strip__inner"><div class="oggi-benefits-strip__grid"><a href="#" class="oggi-benefits-strip__item"><img src="img/placas/bbva-30-martes_2800x1200.webp" alt="30% de ahorro los martes con crédito BBVA — tope $12.000 por mes" loading="lazy"></a><a href="#" class="oggi-benefits-strip__item"><img src="img/placas/visa-mastercard-3-cuotas_2800x1200.webp" alt="3 cuotas sin interés con Visa y Mastercard, miércoles y sábados" loading="lazy"></a><a href="#" class="oggi-benefits-strip__item"><img src="img/placas/cuenta-dni-20_2800x1200.webp" alt="20% de ahorro con Cuenta DNI, de lunes a viernes — tope $5.000 por semana" loading="lazy"></a><a href="#" class="oggi-benefits-strip__item"><img src="img/placas/bbva-3-cuotas_2800x1200.webp" alt="3 cuotas sin interés con crédito BBVA, viernes y sábados" loading="lazy"></a></div></div></section>
+<section class="oggi-pcar oggi-pcar--full oggi-pcar--bg-violet"><div class="oggi-pcar__inner">
+  <div class="oggi-pcar__head">
+    <div class="oggi-pcar__head-text">
+      <span class="oggi-pcar__kicker">Hasta 40% OFF</span>
+      <h2 class="oggi-pcar__heading">Cuidado facial</h2>
+    </div>
+    <a class="oggi-pcar__link" href="#">Ver toda la categoría →</a>
+  </div>
+  <div class="oggi-pcar__wrap" data-oggi-pcar>
+    <button type="button" class="oggi-pcar__arr oggi-pcar__arr--prev" data-oggi-pcar-prev aria-label="Anterior"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="18" height="18"><polyline points="15 18 9 12 15 6"/></svg></button>
+    <button type="button" class="oggi-pcar__arr oggi-pcar__arr--next" data-oggi-pcar-next aria-label="Siguiente"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="18" height="18"><polyline points="9 18 15 12 9 6"/></svg></button>
+    <div class="oggi-pcar__track" id="oggi-pcar-1" data-oggi-pcar-track><article class="oggi-prodcard" data-product-id="1100">
+  <div class="oggi-prodcard__actions">
+    <button type="button" class="oggi-prodcard__wish" data-oggi-wish-toggle data-product-id="1100" aria-pressed="false" aria-label="Agregar a mi lista"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="16" height="16"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+    <button type="button" class="oggi-prodcard__share" data-oggi-share aria-label="Compartir producto"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="15" height="15"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg></button>
+  </div>
+  <a class="oggi-prodcard__img" href="#" aria-label="Effaclar Serum"><img src="img/productos/3337875722827.webp" alt="Effaclar Serum" loading="lazy"></a>
+  <span class="oggi-prodcard__disc oggi-prodcard__disc--purple">-45%</span>
+  <div class="oggi-prodcard__brand">La Roche-Posay</div>
+  <h3 class="oggi-prodcard__title"><a href="#">Effaclar Serum</a></h3>
+  <div class="oggi-prodcard__prices"><span class="oggi-prodcard__old"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>119.758,00</bdi></span></span><span class="oggi-prodcard__now"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>65.867,00</bdi></span></span></div>
+  <div class="oggi-prodcard__ex-tax">Precio s/imp. nacional: <span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>54.436,00</bdi></span></div>
+  <a href="#" class="oggi-prodcard__add button add_to_cart_button product_type_simple" aria-label="Agregar al carrito" rel="nofollow">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="15" height="15"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg><span class="oggi-prodcard__add-label oggi-prodcard__add-label--default">Agregar</span>
+    <span class="oggi-prodcard__add-label oggi-prodcard__add-label--added">Agregado ✓</span></a>
+</article><article class="oggi-prodcard" data-product-id="1101">
+  <div class="oggi-prodcard__actions">
+    <button type="button" class="oggi-prodcard__wish" data-oggi-wish-toggle data-product-id="1101" aria-pressed="false" aria-label="Agregar a mi lista"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="16" height="16"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+    <button type="button" class="oggi-prodcard__share" data-oggi-share aria-label="Compartir producto"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="15" height="15"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg></button>
+  </div>
+  <a class="oggi-prodcard__img" href="#" aria-label="Hyalu B5 Serum"><img src="img/productos/3337875920582.webp" alt="Hyalu B5 Serum" loading="lazy"></a>
+  <span class="oggi-prodcard__disc oggi-prodcard__disc--purple">-45%</span>
+  <div class="oggi-prodcard__brand">La Roche-Posay</div>
+  <h3 class="oggi-prodcard__title"><a href="#">Hyalu B5 Serum</a></h3>
+  <div class="oggi-prodcard__prices"><span class="oggi-prodcard__old"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>155.600,00</bdi></span></span><span class="oggi-prodcard__now"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>85.580,00</bdi></span></span></div>
+  <div class="oggi-prodcard__ex-tax">Precio s/imp. nacional: <span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>70.727,00</bdi></span></div>
+  <a href="#" class="oggi-prodcard__add button add_to_cart_button product_type_simple" aria-label="Agregar al carrito" rel="nofollow">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="15" height="15"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg><span class="oggi-prodcard__add-label oggi-prodcard__add-label--default">Agregar</span>
+    <span class="oggi-prodcard__add-label oggi-prodcard__add-label--added">Agregado ✓</span></a>
+</article><article class="oggi-prodcard" data-product-id="1102">
+  <div class="oggi-prodcard__actions">
+    <button type="button" class="oggi-prodcard__wish" data-oggi-wish-toggle data-product-id="1102" aria-pressed="false" aria-label="Agregar a mi lista"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="16" height="16"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+    <button type="button" class="oggi-prodcard__share" data-oggi-share aria-label="Compartir producto"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="15" height="15"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg></button>
+  </div>
+  <a class="oggi-prodcard__img" href="#" aria-label="Mela B3 10 Serum"><img src="img/productos/3337875890021.webp" alt="Mela B3 10 Serum" loading="lazy"></a>
+  <span class="oggi-prodcard__disc oggi-prodcard__disc--purple">-45%</span>
+  <div class="oggi-prodcard__brand">La Roche-Posay</div>
+  <h3 class="oggi-prodcard__title"><a href="#">Mela B3 10 Serum</a></h3>
+  <div class="oggi-prodcard__prices"><span class="oggi-prodcard__old"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>176.318,00</bdi></span></span><span class="oggi-prodcard__now"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>96.975,00</bdi></span></span></div>
+  <div class="oggi-prodcard__ex-tax">Precio s/imp. nacional: <span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>80.145,00</bdi></span></div>
+  <a href="#" class="oggi-prodcard__add button add_to_cart_button product_type_simple" aria-label="Agregar al carrito" rel="nofollow">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="15" height="15"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg><span class="oggi-prodcard__add-label oggi-prodcard__add-label--default">Agregar</span>
+    <span class="oggi-prodcard__add-label oggi-prodcard__add-label--added">Agregado ✓</span></a>
+</article><article class="oggi-prodcard" data-product-id="1103">
+  <div class="oggi-prodcard__actions">
+    <button type="button" class="oggi-prodcard__wish" data-oggi-wish-toggle data-product-id="1103" aria-pressed="false" aria-label="Agregar a mi lista"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="16" height="16"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+    <button type="button" class="oggi-prodcard__share" data-oggi-share aria-label="Compartir producto"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="15" height="15"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg></button>
+  </div>
+  <a class="oggi-prodcard__img" href="#" aria-label="CeraVe Limpiadores"><img src="img/productos/3337875597197.webp" alt="CeraVe Limpiadores" loading="lazy"></a>
+  <span class="oggi-prodcard__disc oggi-prodcard__disc--purple">-40%</span>
+  <div class="oggi-prodcard__brand">CeraVe</div>
+  <h3 class="oggi-prodcard__title"><a href="#">CeraVe Limpiadores</a></h3>
+  <div class="oggi-prodcard__prices"><span class="oggi-prodcard__old"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>55.620,00</bdi></span></span><span class="oggi-prodcard__now"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>33.372,00</bdi></span></span></div>
+  <div class="oggi-prodcard__ex-tax">Precio s/imp. nacional: <span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>27.580,00</bdi></span></div>
+  <a href="#" class="oggi-prodcard__add button add_to_cart_button product_type_simple" aria-label="Agregar al carrito" rel="nofollow">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="15" height="15"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg><span class="oggi-prodcard__add-label oggi-prodcard__add-label--default">Agregar</span>
+    <span class="oggi-prodcard__add-label oggi-prodcard__add-label--added">Agregado ✓</span></a>
+</article><article class="oggi-prodcard" data-product-id="1104">
+  <div class="oggi-prodcard__actions">
+    <button type="button" class="oggi-prodcard__wish" data-oggi-wish-toggle data-product-id="1104" aria-pressed="false" aria-label="Agregar a mi lista"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="16" height="16"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+    <button type="button" class="oggi-prodcard__share" data-oggi-share aria-label="Compartir producto"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="15" height="15"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg></button>
+  </div>
+  <a class="oggi-prodcard__img" href="#" aria-label="Crema Antiarrugas Vichy Liftactiv Supreme para Piel Seca x 50 ml"><img src="img/productos/3337871328801.webp" alt="Crema Antiarrugas Vichy Liftactiv Supreme para Piel Seca x 50 ml" loading="lazy"></a>
+  <span class="oggi-prodcard__disc oggi-prodcard__disc--purple">-40%</span>
+  <div class="oggi-prodcard__brand">Vichy</div>
+  <h3 class="oggi-prodcard__title"><a href="#">Crema Antiarrugas Vichy Liftactiv Supreme para Piel Seca x 50 ml</a></h3>
+  <div class="oggi-prodcard__prices"><span class="oggi-prodcard__old"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>158.597,00</bdi></span></span><span class="oggi-prodcard__now"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>95.158,00</bdi></span></span></div>
+  <div class="oggi-prodcard__ex-tax">Precio s/imp. nacional: <span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>78.643,00</bdi></span></div>
+  <a href="#" class="oggi-prodcard__add button add_to_cart_button product_type_simple" aria-label="Agregar al carrito" rel="nofollow">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="15" height="15"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg><span class="oggi-prodcard__add-label oggi-prodcard__add-label--default">Agregar</span>
+    <span class="oggi-prodcard__add-label oggi-prodcard__add-label--added">Agregado ✓</span></a>
+</article><article class="oggi-prodcard" data-product-id="1105">
+  <div class="oggi-prodcard__actions">
+    <button type="button" class="oggi-prodcard__wish" data-oggi-wish-toggle data-product-id="1105" aria-pressed="false" aria-label="Agregar a mi lista"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="16" height="16"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+    <button type="button" class="oggi-prodcard__share" data-oggi-share aria-label="Compartir producto"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="15" height="15"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg></button>
+  </div>
+  <a class="oggi-prodcard__img" href="#" aria-label="Minéral 89 Crema"><img src="img/productos/3337875839624.webp" alt="Minéral 89 Crema" loading="lazy"></a>
+  <span class="oggi-prodcard__disc oggi-prodcard__disc--purple">-40%</span>
+  <div class="oggi-prodcard__brand">Vichy</div>
+  <h3 class="oggi-prodcard__title"><a href="#">Minéral 89 Crema</a></h3>
+  <div class="oggi-prodcard__prices"><span class="oggi-prodcard__old"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>109.954,00</bdi></span></span><span class="oggi-prodcard__now"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>65.972,00</bdi></span></span></div>
+  <div class="oggi-prodcard__ex-tax">Precio s/imp. nacional: <span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>54.522,00</bdi></span></div>
+  <a href="#" class="oggi-prodcard__add button add_to_cart_button product_type_simple" aria-label="Agregar al carrito" rel="nofollow">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="15" height="15"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg><span class="oggi-prodcard__add-label oggi-prodcard__add-label--default">Agregar</span>
+    <span class="oggi-prodcard__add-label oggi-prodcard__add-label--added">Agregado ✓</span></a>
+</article><article class="oggi-prodcard" data-product-id="1106">
+  <div class="oggi-prodcard__actions">
+    <button type="button" class="oggi-prodcard__wish" data-oggi-wish-toggle data-product-id="1106" aria-pressed="false" aria-label="Agregar a mi lista"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="16" height="16"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+    <button type="button" class="oggi-prodcard__share" data-oggi-share aria-label="Compartir producto"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="15" height="15"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg></button>
+  </div>
+  <a class="oggi-prodcard__img" href="#" aria-label="Pure Vitamin C"><img src="img/productos/3337875909235.webp" alt="Pure Vitamin C" loading="lazy"></a>
+  <span class="oggi-prodcard__disc oggi-prodcard__disc--purple">-40%</span>
+  <div class="oggi-prodcard__brand">La Roche-Posay</div>
+  <h3 class="oggi-prodcard__title"><a href="#">Pure Vitamin C</a></h3>
+  <div class="oggi-prodcard__prices"><span class="oggi-prodcard__old"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>173.059,00</bdi></span></span><span class="oggi-prodcard__now"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>103.835,00</bdi></span></span></div>
+  <div class="oggi-prodcard__ex-tax">Precio s/imp. nacional: <span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>85.814,00</bdi></span></div>
+  <a href="#" class="oggi-prodcard__add button add_to_cart_button product_type_simple" aria-label="Agregar al carrito" rel="nofollow">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="15" height="15"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg><span class="oggi-prodcard__add-label oggi-prodcard__add-label--default">Agregar</span>
+    <span class="oggi-prodcard__add-label oggi-prodcard__add-label--added">Agregado ✓</span></a>
+</article><article class="oggi-prodcard" data-product-id="1107">
+  <div class="oggi-prodcard__actions">
+    <button type="button" class="oggi-prodcard__wish" data-oggi-wish-toggle data-product-id="1107" aria-pressed="false" aria-label="Agregar a mi lista"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="16" height="16"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+    <button type="button" class="oggi-prodcard__share" data-oggi-share aria-label="Compartir producto"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="15" height="15"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg></button>
+  </div>
+  <a class="oggi-prodcard__img" href="#" aria-label="Retinol B3 Serum"><img src="img/productos/3337875694469.webp" alt="Retinol B3 Serum" loading="lazy"></a>
+  <span class="oggi-prodcard__disc oggi-prodcard__disc--purple">-40%</span>
+  <div class="oggi-prodcard__brand">La Roche-Posay</div>
+  <h3 class="oggi-prodcard__title"><a href="#">Retinol B3 Serum</a></h3>
+  <div class="oggi-prodcard__prices"><span class="oggi-prodcard__old"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>181.481,00</bdi></span></span><span class="oggi-prodcard__now"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>108.889,00</bdi></span></span></div>
+  <div class="oggi-prodcard__ex-tax">Precio s/imp. nacional: <span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>89.991,00</bdi></span></div>
+  <a href="#" class="oggi-prodcard__add button add_to_cart_button product_type_simple" aria-label="Agregar al carrito" rel="nofollow">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="15" height="15"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg><span class="oggi-prodcard__add-label oggi-prodcard__add-label--default">Agregar</span>
+    <span class="oggi-prodcard__add-label oggi-prodcard__add-label--added">Agregado ✓</span></a>
+</article><article class="oggi-prodcard" data-product-id="1108">
+  <div class="oggi-prodcard__actions">
+    <button type="button" class="oggi-prodcard__wish" data-oggi-wish-toggle data-product-id="1108" aria-pressed="false" aria-label="Agregar a mi lista"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="16" height="16"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+    <button type="button" class="oggi-prodcard__share" data-oggi-share aria-label="Compartir producto"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="15" height="15"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg></button>
+  </div>
+  <a class="oggi-prodcard__img" href="#" aria-label="CERAVE FACIAL LIMPIADOR HIDRATANTE X 473ML"><img src="img/productos/3337875597333.webp" alt="CERAVE FACIAL LIMPIADOR HIDRATANTE X 473ML" loading="lazy"></a>
+  <span class="oggi-prodcard__disc oggi-prodcard__disc--purple">-35%</span>
+  <div class="oggi-prodcard__brand">Nuevo</div>
+  <h3 class="oggi-prodcard__title"><a href="#">CERAVE FACIAL LIMPIADOR HIDRATANTE X 473ML</a></h3>
+  <div class="oggi-prodcard__prices"><span class="oggi-prodcard__old"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>65.712,00</bdi></span></span><span class="oggi-prodcard__now"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>42.713,00</bdi></span></span></div>
+  <div class="oggi-prodcard__ex-tax">Precio s/imp. nacional: <span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>35.300,00</bdi></span></div>
+  <a href="#" class="oggi-prodcard__add button add_to_cart_button product_type_simple" aria-label="Agregar al carrito" rel="nofollow">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="15" height="15"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg><span class="oggi-prodcard__add-label oggi-prodcard__add-label--default">Agregar</span>
+    <span class="oggi-prodcard__add-label oggi-prodcard__add-label--added">Agregado ✓</span></a>
+</article><article class="oggi-prodcard" data-product-id="1109">
+  <div class="oggi-prodcard__actions">
+    <button type="button" class="oggi-prodcard__wish" data-oggi-wish-toggle data-product-id="1109" aria-pressed="false" aria-label="Agregar a mi lista"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="16" height="16"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+    <button type="button" class="oggi-prodcard__share" data-oggi-share aria-label="Compartir producto"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="15" height="15"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg></button>
+  </div>
+  <a class="oggi-prodcard__img" href="#" aria-label="CERAVE GEL LIMPIADOR ESPUMOSO X 473ML"><img src="img/productos/3337875597357.webp" alt="CERAVE GEL LIMPIADOR ESPUMOSO X 473ML" loading="lazy"></a>
+  <span class="oggi-prodcard__disc oggi-prodcard__disc--purple">-35%</span>
+  <div class="oggi-prodcard__brand">Nuevo</div>
+  <h3 class="oggi-prodcard__title"><a href="#">CERAVE GEL LIMPIADOR ESPUMOSO X 473ML</a></h3>
+  <div class="oggi-prodcard__prices"><span class="oggi-prodcard__old"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>78.918,00</bdi></span></span><span class="oggi-prodcard__now"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>51.297,00</bdi></span></span></div>
+  <div class="oggi-prodcard__ex-tax">Precio s/imp. nacional: <span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>42.394,00</bdi></span></div>
+  <a href="#" class="oggi-prodcard__add button add_to_cart_button product_type_simple" aria-label="Agregar al carrito" rel="nofollow">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="15" height="15"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg><span class="oggi-prodcard__add-label oggi-prodcard__add-label--default">Agregar</span>
+    <span class="oggi-prodcard__add-label oggi-prodcard__add-label--added">Agregado ✓</span></a>
+</article><article class="oggi-prodcard" data-product-id="1110">
+  <div class="oggi-prodcard__actions">
+    <button type="button" class="oggi-prodcard__wish" data-oggi-wish-toggle data-product-id="1110" aria-pressed="false" aria-label="Agregar a mi lista"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="16" height="16"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+    <button type="button" class="oggi-prodcard__share" data-oggi-share aria-label="Compartir producto"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="15" height="15"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg></button>
+  </div>
+  <a class="oggi-prodcard__img" href="#" aria-label="Hyalu B5 Crema"><img src="img/productos/3337875920667.webp" alt="Hyalu B5 Crema" loading="lazy"></a>
+  <span class="oggi-prodcard__disc oggi-prodcard__disc--purple">-35%</span>
+  <div class="oggi-prodcard__brand">La Roche-Posay</div>
+  <h3 class="oggi-prodcard__title"><a href="#">Hyalu B5 Crema</a></h3>
+  <div class="oggi-prodcard__prices"><span class="oggi-prodcard__old"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>160.161,00</bdi></span></span><span class="oggi-prodcard__now"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>104.105,00</bdi></span></span></div>
+  <div class="oggi-prodcard__ex-tax">Precio s/imp. nacional: <span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>86.037,00</bdi></span></div>
+  <a href="#" class="oggi-prodcard__add button add_to_cart_button product_type_simple" aria-label="Agregar al carrito" rel="nofollow">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="15" height="15"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg><span class="oggi-prodcard__add-label oggi-prodcard__add-label--default">Agregar</span>
+    <span class="oggi-prodcard__add-label oggi-prodcard__add-label--added">Agregado ✓</span></a>
+</article><article class="oggi-prodcard" data-product-id="1111">
+  <div class="oggi-prodcard__actions">
+    <button type="button" class="oggi-prodcard__wish" data-oggi-wish-toggle data-product-id="1111" aria-pressed="false" aria-label="Agregar a mi lista"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="16" height="16"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+    <button type="button" class="oggi-prodcard__share" data-oggi-share aria-label="Compartir producto"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="15" height="15"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg></button>
+  </div>
+  <a class="oggi-prodcard__img" href="#" aria-label="Aveno"><img src="img/productos/7793742005541.webp" alt="Aveno" loading="lazy"></a>
+  <span class="oggi-prodcard__disc oggi-prodcard__disc--purple">-30%</span>
+  <div class="oggi-prodcard__brand">Aveno</div>
+  <h3 class="oggi-prodcard__title"><a href="#">Aveno</a></h3>
+  <div class="oggi-prodcard__prices"><span class="oggi-prodcard__old"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>45.133,00</bdi></span></span><span class="oggi-prodcard__now"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>31.593,00</bdi></span></span></div>
+  <div class="oggi-prodcard__ex-tax">Precio s/imp. nacional: <span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>26.110,00</bdi></span></div>
+  <a href="#" class="oggi-prodcard__add button add_to_cart_button product_type_simple" aria-label="Agregar al carrito" rel="nofollow">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="15" height="15"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg><span class="oggi-prodcard__add-label oggi-prodcard__add-label--default">Agregar</span>
+    <span class="oggi-prodcard__add-label oggi-prodcard__add-label--added">Agregado ✓</span></a>
+</article></div>
+  </div>
+</div></section>
+<section class="oggi-tira oggi-tira--carrusel" data-oggi-tira data-slot="1" data-autoplay="5000"
+         aria-label="Banner horizontal 1" aria-roledescription="carrusel">
+  <div class="oggi-tira__inner">
+    <div class="oggi-tira__viewport" data-oggi-tira-viewport><a class="oggi-tira__slide is-active" href="#" aria-hidden="false"><picture class="oggi-tira__pic"><source media="(max-width: 768px)" srcset="img/placas/tira-facial-celular_2400x640.webp"><img class="oggi-tira__img" src="img/placas/tira-facial-escritorio_6960x1624.webp" alt="Tu rutina de cuidado facial en oferta — hasta 40% OFF" loading="eager" decoding="async"></picture></a><a class="oggi-tira__slide" href="#" aria-hidden="true" tabindex="-1"><picture class="oggi-tira__pic"><source media="(max-width: 768px)" srcset="img/placas/tira-solar-celular_2400x640.webp"><img class="oggi-tira__img" src="img/placas/tira-solar-escritorio_6960x1624.webp" alt="Protección solar para toda la familia — hasta 40% OFF" loading="lazy" decoding="async"></picture></a><a class="oggi-tira__slide" href="#" aria-hidden="true" tabindex="-1"><picture class="oggi-tira__pic"><source media="(max-width: 768px)" srcset="img/placas/tira-bancos-celular_2400x640.webp"><img class="oggi-tira__img" src="img/placas/tira-bancos-escritorio_6960x1624.webp" alt="Pagá con tu banco y ahorrá más" loading="lazy" decoding="async"></picture></a></div>
+    <div class="oggi-tira__controls">
+      <div class="oggi-tira__dots" role="tablist"><button type="button" class="oggi-tira__dot is-active" data-oggi-tira-dot aria-label="Ir al banner 1"></button><button type="button" class="oggi-tira__dot" data-oggi-tira-dot aria-label="Ir al banner 2"></button><button type="button" class="oggi-tira__dot" data-oggi-tira-dot aria-label="Ir al banner 3"></button></div>
+      <div class="oggi-tira__ctrl-group">
+        <button type="button" class="oggi-tira__ctrl oggi-tira__ctrl--prev" data-oggi-tira-prev aria-label="Banner anterior"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="18" height="18"><polyline points="15 18 9 12 15 6"/></svg></button>
+        <button type="button" class="oggi-tira__ctrl oggi-tira__ctrl--next" data-oggi-tira-next aria-label="Banner siguiente"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="18" height="18"><polyline points="9 18 15 12 9 6"/></svg></button>
+        <button type="button" class="oggi-tira__ctrl oggi-tira__ctrl--pause" data-oggi-tira-pause aria-label="Pausar carrusel" aria-pressed="false">
+          <span class="oggi-tira__pause-icon oggi-tira__pause-icon--pause" aria-hidden="true"><span></span><span></span></span>
+          <span class="oggi-tira__pause-icon oggi-tira__pause-icon--play" aria-hidden="true">▶</span></button>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="oggi-pcar oggi-pcar--full oggi-pcar--bg-sky"><div class="oggi-pcar__inner">
+  <div class="oggi-pcar__head">
+    <div class="oggi-pcar__head-text">
+      <span class="oggi-pcar__kicker">Hasta 40% OFF</span>
+      <h2 class="oggi-pcar__heading">Protección solar</h2>
+    </div>
+    <a class="oggi-pcar__link" href="#">Ver toda la categoría →</a>
+  </div>
+  <div class="oggi-pcar__wrap" data-oggi-pcar>
+    <button type="button" class="oggi-pcar__arr oggi-pcar__arr--prev" data-oggi-pcar-prev aria-label="Anterior"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="18" height="18"><polyline points="15 18 9 12 15 6"/></svg></button>
+    <button type="button" class="oggi-pcar__arr oggi-pcar__arr--next" data-oggi-pcar-next aria-label="Siguiente"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="18" height="18"><polyline points="9 18 15 12 9 6"/></svg></button>
+    <div class="oggi-pcar__track" id="oggi-pcar-2" data-oggi-pcar-track><article class="oggi-prodcard" data-product-id="1200">
+  <div class="oggi-prodcard__actions">
+    <button type="button" class="oggi-prodcard__wish" data-oggi-wish-toggle data-product-id="1200" aria-pressed="false" aria-label="Agregar a mi lista"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="16" height="16"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+    <button type="button" class="oggi-prodcard__share" data-oggi-share aria-label="Compartir producto"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="15" height="15"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg></button>
+  </div>
+  <a class="oggi-prodcard__img" href="#" aria-label="Anthelios UVAir Fluid"><img src="img/productos/3337875932349.webp" alt="Anthelios UVAir Fluid" loading="lazy"></a>
+  <span class="oggi-prodcard__disc oggi-prodcard__disc--purple">-40%</span>
+  <div class="oggi-prodcard__brand">La Roche-Posay</div>
+  <h3 class="oggi-prodcard__title"><a href="#">Anthelios UVAir Fluid</a></h3>
+  <div class="oggi-prodcard__prices"><span class="oggi-prodcard__old"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>75.000,00</bdi></span></span><span class="oggi-prodcard__now"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>45.000,00</bdi></span></span></div>
+  <div class="oggi-prodcard__ex-tax">Precio s/imp. nacional: <span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>37.190,00</bdi></span></div>
+  <a href="#" class="oggi-prodcard__add button add_to_cart_button product_type_simple" aria-label="Agregar al carrito" rel="nofollow">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="15" height="15"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg><span class="oggi-prodcard__add-label oggi-prodcard__add-label--default">Agregar</span>
+    <span class="oggi-prodcard__add-label oggi-prodcard__add-label--added">Agregado ✓</span></a>
+</article><article class="oggi-prodcard" data-product-id="1201">
+  <div class="oggi-prodcard__actions">
+    <button type="button" class="oggi-prodcard__wish" data-oggi-wish-toggle data-product-id="1201" aria-pressed="false" aria-label="Agregar a mi lista"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="16" height="16"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+    <button type="button" class="oggi-prodcard__share" data-oggi-share aria-label="Compartir producto"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="15" height="15"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg></button>
+  </div>
+  <a class="oggi-prodcard__img" href="#" aria-label="Anthelios UVMune 50+"><img src="img/productos/3337875797597.webp" alt="Anthelios UVMune 50+" loading="lazy"></a>
+  <span class="oggi-prodcard__disc oggi-prodcard__disc--purple">-40%</span>
+  <div class="oggi-prodcard__brand">La Roche-Posay</div>
+  <h3 class="oggi-prodcard__title"><a href="#">Anthelios UVMune 50+</a></h3>
+  <div class="oggi-prodcard__prices"><span class="oggi-prodcard__old"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>83.381,00</bdi></span></span><span class="oggi-prodcard__now"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>50.029,00</bdi></span></span></div>
+  <div class="oggi-prodcard__ex-tax">Precio s/imp. nacional: <span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>41.346,00</bdi></span></div>
+  <a href="#" class="oggi-prodcard__add button add_to_cart_button product_type_simple" aria-label="Agregar al carrito" rel="nofollow">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="15" height="15"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg><span class="oggi-prodcard__add-label oggi-prodcard__add-label--default">Agregar</span>
+    <span class="oggi-prodcard__add-label oggi-prodcard__add-label--added">Agregado ✓</span></a>
+</article><article class="oggi-prodcard" data-product-id="1202">
+  <div class="oggi-prodcard__actions">
+    <button type="button" class="oggi-prodcard__wish" data-oggi-wish-toggle data-product-id="1202" aria-pressed="false" aria-label="Agregar a mi lista"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="16" height="16"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+    <button type="button" class="oggi-prodcard__share" data-oggi-share aria-label="Compartir producto"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="15" height="15"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg></button>
+  </div>
+  <a class="oggi-prodcard__img" href="#" aria-label="Anthelios 50+"><img src="img/productos/3337875761123.webp" alt="Anthelios 50+" loading="lazy"></a>
+  <span class="oggi-prodcard__disc oggi-prodcard__disc--purple">-35%</span>
+  <div class="oggi-prodcard__brand">La Roche-Posay</div>
+  <h3 class="oggi-prodcard__title"><a href="#">Anthelios 50+</a></h3>
+  <div class="oggi-prodcard__prices"><span class="oggi-prodcard__old"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>95.770,00</bdi></span></span><span class="oggi-prodcard__now"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>62.250,00</bdi></span></span></div>
+  <div class="oggi-prodcard__ex-tax">Precio s/imp. nacional: <span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>51.446,00</bdi></span></div>
+  <a href="#" class="oggi-prodcard__add button add_to_cart_button product_type_simple" aria-label="Agregar al carrito" rel="nofollow">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="15" height="15"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg><span class="oggi-prodcard__add-label oggi-prodcard__add-label--default">Agregar</span>
+    <span class="oggi-prodcard__add-label oggi-prodcard__add-label--added">Agregado ✓</span></a>
+</article><article class="oggi-prodcard" data-product-id="1203">
+  <div class="oggi-prodcard__actions">
+    <button type="button" class="oggi-prodcard__wish" data-oggi-wish-toggle data-product-id="1203" aria-pressed="false" aria-label="Agregar a mi lista"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="16" height="16"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+    <button type="button" class="oggi-prodcard__share" data-oggi-share aria-label="Compartir producto"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="15" height="15"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg></button>
+  </div>
+  <a class="oggi-prodcard__img" href="#" aria-label="Anthelios Age Correct FPS 50"><img src="img/productos/3337875761031.webp" alt="Anthelios Age Correct FPS 50" loading="lazy"></a>
+  <span class="oggi-prodcard__disc oggi-prodcard__disc--purple">-35%</span>
+  <div class="oggi-prodcard__brand">La Roche-Posay</div>
+  <h3 class="oggi-prodcard__title"><a href="#">Anthelios Age Correct FPS 50</a></h3>
+  <div class="oggi-prodcard__prices"><span class="oggi-prodcard__old"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>98.661,00</bdi></span></span><span class="oggi-prodcard__now"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>64.130,00</bdi></span></span></div>
+  <div class="oggi-prodcard__ex-tax">Precio s/imp. nacional: <span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>53.000,00</bdi></span></div>
+  <a href="#" class="oggi-prodcard__add button add_to_cart_button product_type_simple" aria-label="Agregar al carrito" rel="nofollow">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="15" height="15"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg><span class="oggi-prodcard__add-label oggi-prodcard__add-label--default">Agregar</span>
+    <span class="oggi-prodcard__add-label oggi-prodcard__add-label--added">Agregado ✓</span></a>
+</article><article class="oggi-prodcard" data-product-id="1204">
+  <div class="oggi-prodcard__actions">
+    <button type="button" class="oggi-prodcard__wish" data-oggi-wish-toggle data-product-id="1204" aria-pressed="false" aria-label="Agregar a mi lista"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="16" height="16"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+    <button type="button" class="oggi-prodcard__share" data-oggi-share aria-label="Compartir producto"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="15" height="15"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg></button>
+  </div>
+  <a class="oggi-prodcard__img" href="#" aria-label="Anthelios Bruma Corporal XL 50+"><img src="img/productos/3337872420153.webp" alt="Anthelios Bruma Corporal XL 50+" loading="lazy"></a>
+  <span class="oggi-prodcard__disc oggi-prodcard__disc--purple">-35%</span>
+  <div class="oggi-prodcard__brand">La Roche-Posay</div>
+  <h3 class="oggi-prodcard__title"><a href="#">Anthelios Bruma Corporal XL 50+</a></h3>
+  <div class="oggi-prodcard__prices"><span class="oggi-prodcard__old"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>96.918,00</bdi></span></span><span class="oggi-prodcard__now"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>62.997,00</bdi></span></span></div>
+  <div class="oggi-prodcard__ex-tax">Precio s/imp. nacional: <span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>52.064,00</bdi></span></div>
+  <a href="#" class="oggi-prodcard__add button add_to_cart_button product_type_simple" aria-label="Agregar al carrito" rel="nofollow">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="15" height="15"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg><span class="oggi-prodcard__add-label oggi-prodcard__add-label--default">Agregar</span>
+    <span class="oggi-prodcard__add-label oggi-prodcard__add-label--added">Agregado ✓</span></a>
+</article><article class="oggi-prodcard" data-product-id="1205">
+  <div class="oggi-prodcard__actions">
+    <button type="button" class="oggi-prodcard__wish" data-oggi-wish-toggle data-product-id="1205" aria-pressed="false" aria-label="Agregar a mi lista"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="16" height="16"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+    <button type="button" class="oggi-prodcard__share" data-oggi-share aria-label="Compartir producto"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="15" height="15"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg></button>
+  </div>
+  <a class="oggi-prodcard__img" href="#" aria-label="Anthelios Fluido Anti-manchas"><img src="img/productos/3337875917407.webp" alt="Anthelios Fluido Anti-manchas" loading="lazy"></a>
+  <span class="oggi-prodcard__disc oggi-prodcard__disc--purple">-35%</span>
+  <div class="oggi-prodcard__brand">La Roche-Posay</div>
+  <h3 class="oggi-prodcard__title"><a href="#">Anthelios Fluido Anti-manchas</a></h3>
+  <div class="oggi-prodcard__prices"><span class="oggi-prodcard__old"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>83.381,00</bdi></span></span><span class="oggi-prodcard__now"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>54.198,00</bdi></span></span></div>
+  <div class="oggi-prodcard__ex-tax">Precio s/imp. nacional: <span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>44.792,00</bdi></span></div>
+  <a href="#" class="oggi-prodcard__add button add_to_cart_button product_type_simple" aria-label="Agregar al carrito" rel="nofollow">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="15" height="15"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg><span class="oggi-prodcard__add-label oggi-prodcard__add-label--default">Agregar</span>
+    <span class="oggi-prodcard__add-label oggi-prodcard__add-label--added">Agregado ✓</span></a>
+</article><article class="oggi-prodcard" data-product-id="1206">
+  <div class="oggi-prodcard__actions">
+    <button type="button" class="oggi-prodcard__wish" data-oggi-wish-toggle data-product-id="1206" aria-pressed="false" aria-label="Agregar a mi lista"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="16" height="16"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+    <button type="button" class="oggi-prodcard__share" data-oggi-share aria-label="Compartir producto"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="15" height="15"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg></button>
+  </div>
+  <a class="oggi-prodcard__img" href="#" aria-label="Anthelios Gel Crema Toque Seco FPS 50+"><img src="img/productos/3337875545891.webp" alt="Anthelios Gel Crema Toque Seco FPS 50+" loading="lazy"></a>
+  <span class="oggi-prodcard__disc oggi-prodcard__disc--purple">-35%</span>
+  <div class="oggi-prodcard__brand">La Roche-Posay</div>
+  <h3 class="oggi-prodcard__title"><a href="#">Anthelios Gel Crema Toque Seco FPS 50+</a></h3>
+  <div class="oggi-prodcard__prices"><span class="oggi-prodcard__old"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>79.502,00</bdi></span></span><span class="oggi-prodcard__now"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>51.676,00</bdi></span></span></div>
+  <div class="oggi-prodcard__ex-tax">Precio s/imp. nacional: <span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>42.707,00</bdi></span></div>
+  <a href="#" class="oggi-prodcard__add button add_to_cart_button product_type_simple" aria-label="Agregar al carrito" rel="nofollow">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="15" height="15"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg><span class="oggi-prodcard__add-label oggi-prodcard__add-label--default">Agregar</span>
+    <span class="oggi-prodcard__add-label oggi-prodcard__add-label--added">Agregado ✓</span></a>
+</article><article class="oggi-prodcard" data-product-id="1207">
+  <div class="oggi-prodcard__actions">
+    <button type="button" class="oggi-prodcard__wish" data-oggi-wish-toggle data-product-id="1207" aria-pressed="false" aria-label="Agregar a mi lista"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="16" height="16"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+    <button type="button" class="oggi-prodcard__share" data-oggi-share aria-label="Compartir producto"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="15" height="15"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg></button>
+  </div>
+  <a class="oggi-prodcard__img" href="#" aria-label="Anthelios Oil Control Fluido 50+"><img src="img/productos/3337875847087.webp" alt="Anthelios Oil Control Fluido 50+" loading="lazy"></a>
+  <span class="oggi-prodcard__disc oggi-prodcard__disc--purple">-35%</span>
+  <div class="oggi-prodcard__brand">La Roche-Posay</div>
+  <h3 class="oggi-prodcard__title"><a href="#">Anthelios Oil Control Fluido 50+</a></h3>
+  <div class="oggi-prodcard__prices"><span class="oggi-prodcard__old"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>83.381,00</bdi></span></span><span class="oggi-prodcard__now"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>54.198,00</bdi></span></span></div>
+  <div class="oggi-prodcard__ex-tax">Precio s/imp. nacional: <span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>44.792,00</bdi></span></div>
+  <a href="#" class="oggi-prodcard__add button add_to_cart_button product_type_simple" aria-label="Agregar al carrito" rel="nofollow">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="15" height="15"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg><span class="oggi-prodcard__add-label oggi-prodcard__add-label--default">Agregar</span>
+    <span class="oggi-prodcard__add-label oggi-prodcard__add-label--added">Agregado ✓</span></a>
+</article><article class="oggi-prodcard" data-product-id="1208">
+  <div class="oggi-prodcard__actions">
+    <button type="button" class="oggi-prodcard__wish" data-oggi-wish-toggle data-product-id="1208" aria-pressed="false" aria-label="Agregar a mi lista"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="16" height="16"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+    <button type="button" class="oggi-prodcard__share" data-oggi-share aria-label="Compartir producto"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="15" height="15"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg></button>
+  </div>
+  <a class="oggi-prodcard__img" href="#" aria-label="Anthelios UVMune 50+ Antibrillo"><img src="img/productos/3337875797689.webp" alt="Anthelios UVMune 50+ Antibrillo" loading="lazy"></a>
+  <span class="oggi-prodcard__disc oggi-prodcard__disc--purple">-35%</span>
+  <div class="oggi-prodcard__brand">La Roche-Posay</div>
+  <h3 class="oggi-prodcard__title"><a href="#">Anthelios UVMune 50+ Antibrillo</a></h3>
+  <div class="oggi-prodcard__prices"><span class="oggi-prodcard__old"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>83.420,00</bdi></span></span><span class="oggi-prodcard__now"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>54.223,00</bdi></span></span></div>
+  <div class="oggi-prodcard__ex-tax">Precio s/imp. nacional: <span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>44.812,00</bdi></span></div>
+  <a href="#" class="oggi-prodcard__add button add_to_cart_button product_type_simple" aria-label="Agregar al carrito" rel="nofollow">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="15" height="15"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg><span class="oggi-prodcard__add-label oggi-prodcard__add-label--default">Agregar</span>
+    <span class="oggi-prodcard__add-label oggi-prodcard__add-label--added">Agregado ✓</span></a>
+</article><article class="oggi-prodcard" data-product-id="1209">
+  <div class="oggi-prodcard__actions">
+    <button type="button" class="oggi-prodcard__wish" data-oggi-wish-toggle data-product-id="1209" aria-pressed="false" aria-label="Agregar a mi lista"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="16" height="16"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+    <button type="button" class="oggi-prodcard__share" data-oggi-share aria-label="Compartir producto"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="15" height="15"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg></button>
+  </div>
+  <a class="oggi-prodcard__img" href="#" aria-label="Anthelios UVMune Dermopediátrico"><img src="img/productos/3337875886055.webp" alt="Anthelios UVMune Dermopediátrico" loading="lazy"></a>
+  <span class="oggi-prodcard__disc oggi-prodcard__disc--purple">-35%</span>
+  <div class="oggi-prodcard__brand">La Roche-Posay</div>
+  <h3 class="oggi-prodcard__title"><a href="#">Anthelios UVMune Dermopediátrico</a></h3>
+  <div class="oggi-prodcard__prices"><span class="oggi-prodcard__old"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>114.264,00</bdi></span></span><span class="oggi-prodcard__now"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>74.271,00</bdi></span></span></div>
+  <div class="oggi-prodcard__ex-tax">Precio s/imp. nacional: <span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>61.381,00</bdi></span></div>
+  <a href="#" class="oggi-prodcard__add button add_to_cart_button product_type_simple" aria-label="Agregar al carrito" rel="nofollow">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="15" height="15"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg><span class="oggi-prodcard__add-label oggi-prodcard__add-label--default">Agregar</span>
+    <span class="oggi-prodcard__add-label oggi-prodcard__add-label--added">Agregado ✓</span></a>
+</article><article class="oggi-prodcard" data-product-id="1210">
+  <div class="oggi-prodcard__actions">
+    <button type="button" class="oggi-prodcard__wish" data-oggi-wish-toggle data-product-id="1210" aria-pressed="false" aria-label="Agregar a mi lista"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="16" height="16"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+    <button type="button" class="oggi-prodcard__share" data-oggi-share aria-label="Compartir producto"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="15" height="15"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg></button>
+  </div>
+  <a class="oggi-prodcard__img" href="#" aria-label="Aveno Solar F50 Corporal"><img src="img/productos/7793742005503.webp" alt="Aveno Solar F50 Corporal" loading="lazy"></a>
+  <span class="oggi-prodcard__disc oggi-prodcard__disc--purple">-35%</span>
+  <div class="oggi-prodcard__brand">Aveno</div>
+  <h3 class="oggi-prodcard__title"><a href="#">Aveno Solar F50 Corporal</a></h3>
+  <div class="oggi-prodcard__prices"><span class="oggi-prodcard__old"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>36.213,00</bdi></span></span><span class="oggi-prodcard__now"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>23.538,00</bdi></span></span></div>
+  <div class="oggi-prodcard__ex-tax">Precio s/imp. nacional: <span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>19.453,00</bdi></span></div>
+  <a href="#" class="oggi-prodcard__add button add_to_cart_button product_type_simple" aria-label="Agregar al carrito" rel="nofollow">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="15" height="15"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg><span class="oggi-prodcard__add-label oggi-prodcard__add-label--default">Agregar</span>
+    <span class="oggi-prodcard__add-label oggi-prodcard__add-label--added">Agregado ✓</span></a>
+</article><article class="oggi-prodcard" data-product-id="1211">
+  <div class="oggi-prodcard__actions">
+    <button type="button" class="oggi-prodcard__wish" data-oggi-wish-toggle data-product-id="1211" aria-pressed="false" aria-label="Agregar a mi lista"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="16" height="16"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+    <button type="button" class="oggi-prodcard__share" data-oggi-share aria-label="Compartir producto"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="15" height="15"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg></button>
+  </div>
+  <a class="oggi-prodcard__img" href="#" aria-label="Capital Soleil Leche Familiar"><img src="img/productos/3337871321826.webp" alt="Capital Soleil Leche Familiar" loading="lazy"></a>
+  <span class="oggi-prodcard__disc oggi-prodcard__disc--purple">-35%</span>
+  <div class="oggi-prodcard__brand">Vichy</div>
+  <h3 class="oggi-prodcard__title"><a href="#">Capital Soleil Leche Familiar</a></h3>
+  <div class="oggi-prodcard__prices"><span class="oggi-prodcard__old"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>92.476,00</bdi></span></span><span class="oggi-prodcard__now"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>60.109,00</bdi></span></span></div>
+  <div class="oggi-prodcard__ex-tax">Precio s/imp. nacional: <span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>49.677,00</bdi></span></div>
+  <a href="#" class="oggi-prodcard__add button add_to_cart_button product_type_simple" aria-label="Agregar al carrito" rel="nofollow">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="15" height="15"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg><span class="oggi-prodcard__add-label oggi-prodcard__add-label--default">Agregar</span>
+    <span class="oggi-prodcard__add-label oggi-prodcard__add-label--added">Agregado ✓</span></a>
+</article></div>
+  </div>
+</div></section>
+<section class="oggi-catcards oggi-catcards--full" aria-label="Categorías en oferta">
+  <div class="oggi-catcards__inner">
+    <div class="oggi-catcards__head">
+      <div>
+        <h2 class="oggi-catcards__heading">Las categorías en oferta</h2>
+      </div>
+    </div>
+    <div class="oggi-catcards__track"><a href="#" class="oggi-catcards__tile"><img src="img/placas/facial_2020x2360.webp" alt="Cuidado facial en oferta" loading="lazy"></a><a href="#" class="oggi-catcards__tile"><img src="img/placas/solar_2020x2360.webp" alt="Protección solar en oferta" loading="lazy"></a><a href="#" class="oggi-catcards__tile"><img src="img/placas/corporal_2020x2360.webp" alt="Cuidado corporal en oferta" loading="lazy"></a><a href="#" class="oggi-catcards__tile"><img src="img/placas/capilar_2020x2360.webp" alt="Cuidado capilar en oferta" loading="lazy"></a><a href="#" class="oggi-catcards__tile"><img src="img/placas/perfumeria_2020x2360.webp" alt="Desodorantes en oferta" loading="lazy"></a><a href="#" class="oggi-catcards__tile"><img src="img/placas/bebes_2020x2360.webp" alt="Bebés y mamá en oferta" loading="lazy"></a><a href="#" class="oggi-catcards__tile"><img src="img/placas/suplementos_2020x2360.webp" alt="Suplementos en oferta" loading="lazy"></a></div>
+  </div>
+</section>
+<section class="oggi-pcar oggi-pcar--full oggi-pcar--bg-pink"><div class="oggi-pcar__inner">
+  <div class="oggi-pcar__head">
+    <div class="oggi-pcar__head-text">
+      <span class="oggi-pcar__kicker">Hasta 30% OFF</span>
+      <h2 class="oggi-pcar__heading">Desodorantes y cuidado personal</h2>
+    </div>
+    <a class="oggi-pcar__link" href="#">Ver toda la categoría →</a>
+  </div>
+  <div class="oggi-pcar__wrap" data-oggi-pcar>
+    <button type="button" class="oggi-pcar__arr oggi-pcar__arr--prev" data-oggi-pcar-prev aria-label="Anterior"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="18" height="18"><polyline points="15 18 9 12 15 6"/></svg></button>
+    <button type="button" class="oggi-pcar__arr oggi-pcar__arr--next" data-oggi-pcar-next aria-label="Siguiente"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="18" height="18"><polyline points="9 18 15 12 9 6"/></svg></button>
+    <div class="oggi-pcar__track" id="oggi-pcar-3" data-oggi-pcar-track><article class="oggi-prodcard" data-product-id="1300">
+  <div class="oggi-prodcard__actions">
+    <button type="button" class="oggi-prodcard__wish" data-oggi-wish-toggle data-product-id="1300" aria-pressed="false" aria-label="Agregar a mi lista"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="16" height="16"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+    <button type="button" class="oggi-prodcard__share" data-oggi-share aria-label="Compartir producto"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="15" height="15"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg></button>
+  </div>
+  <a class="oggi-prodcard__img" href="#" aria-label="Aveno Jabón"><img src="img/productos/7793742004384.webp" alt="Aveno Jabón" loading="lazy"></a>
+  <span class="oggi-prodcard__disc oggi-prodcard__disc--purple">-35%</span>
+  <div class="oggi-prodcard__brand">Aveno</div>
+  <h3 class="oggi-prodcard__title"><a href="#">Aveno Jabón</a></h3>
+  <div class="oggi-prodcard__prices"><span class="oggi-prodcard__old"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>20.717,00</bdi></span></span><span class="oggi-prodcard__now"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>13.466,00</bdi></span></span></div>
+  <div class="oggi-prodcard__ex-tax">Precio s/imp. nacional: <span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>11.129,00</bdi></span></div>
+  <a href="#" class="oggi-prodcard__add button add_to_cart_button product_type_simple" aria-label="Agregar al carrito" rel="nofollow">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="15" height="15"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg><span class="oggi-prodcard__add-label oggi-prodcard__add-label--default">Agregar</span>
+    <span class="oggi-prodcard__add-label oggi-prodcard__add-label--added">Agregado ✓</span></a>
+</article><article class="oggi-prodcard" data-product-id="1301">
+  <div class="oggi-prodcard__actions">
+    <button type="button" class="oggi-prodcard__wish" data-oggi-wish-toggle data-product-id="1301" aria-pressed="false" aria-label="Agregar a mi lista"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="16" height="16"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+    <button type="button" class="oggi-prodcard__share" data-oggi-share aria-label="Compartir producto"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="15" height="15"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg></button>
+  </div>
+  <a class="oggi-prodcard__img" href="#" aria-label="Dove Jabón Líquido"><img src="img/productos/7891150029293.webp" alt="Dove Jabón Líquido" loading="lazy"></a>
+  <span class="oggi-prodcard__disc oggi-prodcard__disc--purple">-35%</span>
+  <div class="oggi-prodcard__brand">Dove</div>
+  <h3 class="oggi-prodcard__title"><a href="#">Dove Jabón Líquido</a></h3>
+  <div class="oggi-prodcard__prices"><span class="oggi-prodcard__old"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>6.150,00</bdi></span></span><span class="oggi-prodcard__now"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>3.998,00</bdi></span></span></div>
+  <div class="oggi-prodcard__ex-tax">Precio s/imp. nacional: <span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>3.304,00</bdi></span></div>
+  <a href="#" class="oggi-prodcard__add button add_to_cart_button product_type_simple" aria-label="Agregar al carrito" rel="nofollow">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="15" height="15"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg><span class="oggi-prodcard__add-label oggi-prodcard__add-label--default">Agregar</span>
+    <span class="oggi-prodcard__add-label oggi-prodcard__add-label--added">Agregado ✓</span></a>
+</article><article class="oggi-prodcard" data-product-id="1302">
+  <div class="oggi-prodcard__actions">
+    <button type="button" class="oggi-prodcard__wish" data-oggi-wish-toggle data-product-id="1302" aria-pressed="false" aria-label="Agregar a mi lista"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="16" height="16"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+    <button type="button" class="oggi-prodcard__share" data-oggi-share aria-label="Compartir producto"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="15" height="15"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg></button>
+  </div>
+  <a class="oggi-prodcard__img" href="#" aria-label="Colgate Luminous White Color Correct"><img src="img/productos/7509546700434.webp" alt="Colgate Luminous White Color Correct" loading="lazy"></a>
+  <span class="oggi-prodcard__disc oggi-prodcard__disc--purple">-30%</span>
+  <div class="oggi-prodcard__brand">Colgate</div>
+  <h3 class="oggi-prodcard__title"><a href="#">Colgate Luminous White Color Correct</a></h3>
+  <div class="oggi-prodcard__prices"><span class="oggi-prodcard__old"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>7.040,00</bdi></span></span><span class="oggi-prodcard__now"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>4.928,00</bdi></span></span></div>
+  <div class="oggi-prodcard__ex-tax">Precio s/imp. nacional: <span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>4.073,00</bdi></span></div>
+  <a href="#" class="oggi-prodcard__add button add_to_cart_button product_type_simple" aria-label="Agregar al carrito" rel="nofollow">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="15" height="15"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg><span class="oggi-prodcard__add-label oggi-prodcard__add-label--default">Agregar</span>
+    <span class="oggi-prodcard__add-label oggi-prodcard__add-label--added">Agregado ✓</span></a>
+</article><article class="oggi-prodcard" data-product-id="1303">
+  <div class="oggi-prodcard__actions">
+    <button type="button" class="oggi-prodcard__wish" data-oggi-wish-toggle data-product-id="1303" aria-pressed="false" aria-label="Agregar a mi lista"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="16" height="16"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+    <button type="button" class="oggi-prodcard__share" data-oggi-share aria-label="Compartir producto"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="15" height="15"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg></button>
+  </div>
+  <a class="oggi-prodcard__img" href="#" aria-label="Dove Anti-Serum Cream"><img src="img/productos/7891150094741.webp" alt="Dove Anti-Serum Cream" loading="lazy"></a>
+  <span class="oggi-prodcard__disc oggi-prodcard__disc--purple">-30%</span>
+  <div class="oggi-prodcard__brand">Dove</div>
+  <h3 class="oggi-prodcard__title"><a href="#">Dove Anti-Serum Cream</a></h3>
+  <div class="oggi-prodcard__prices"><span class="oggi-prodcard__old"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>5.910,00</bdi></span></span><span class="oggi-prodcard__now"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>4.137,00</bdi></span></span></div>
+  <div class="oggi-prodcard__ex-tax">Precio s/imp. nacional: <span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>3.419,00</bdi></span></div>
+  <a href="#" class="oggi-prodcard__add button add_to_cart_button product_type_simple" aria-label="Agregar al carrito" rel="nofollow">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="15" height="15"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg><span class="oggi-prodcard__add-label oggi-prodcard__add-label--default">Agregar</span>
+    <span class="oggi-prodcard__add-label oggi-prodcard__add-label--added">Agregado ✓</span></a>
+</article><article class="oggi-prodcard" data-product-id="1304">
+  <div class="oggi-prodcard__actions">
+    <button type="button" class="oggi-prodcard__wish" data-oggi-wish-toggle data-product-id="1304" aria-pressed="false" aria-label="Agregar a mi lista"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="16" height="16"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+    <button type="button" class="oggi-prodcard__share" data-oggi-share aria-label="Compartir producto"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="15" height="15"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg></button>
+  </div>
+  <a class="oggi-prodcard__img" href="#" aria-label="Dove Clinical Aerosol"><img src="img/productos/7791293049618.webp" alt="Dove Clinical Aerosol" loading="lazy"></a>
+  <span class="oggi-prodcard__disc oggi-prodcard__disc--purple">-30%</span>
+  <div class="oggi-prodcard__brand">Dove</div>
+  <h3 class="oggi-prodcard__title"><a href="#">Dove Clinical Aerosol</a></h3>
+  <div class="oggi-prodcard__prices"><span class="oggi-prodcard__old"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>9.250,00</bdi></span></span><span class="oggi-prodcard__now"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>6.475,00</bdi></span></span></div>
+  <div class="oggi-prodcard__ex-tax">Precio s/imp. nacional: <span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>5.351,00</bdi></span></div>
+  <a href="#" class="oggi-prodcard__add button add_to_cart_button product_type_simple" aria-label="Agregar al carrito" rel="nofollow">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="15" height="15"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg><span class="oggi-prodcard__add-label oggi-prodcard__add-label--default">Agregar</span>
+    <span class="oggi-prodcard__add-label oggi-prodcard__add-label--added">Agregado ✓</span></a>
+</article><article class="oggi-prodcard" data-product-id="1305">
+  <div class="oggi-prodcard__actions">
+    <button type="button" class="oggi-prodcard__wish" data-oggi-wish-toggle data-product-id="1305" aria-pressed="false" aria-label="Agregar a mi lista"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="16" height="16"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+    <button type="button" class="oggi-prodcard__share" data-oggi-share aria-label="Compartir producto"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="15" height="15"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg></button>
+  </div>
+  <a class="oggi-prodcard__img" href="#" aria-label="Rexona All Body Crema"><img src="img/productos/7891150102835.webp" alt="Rexona All Body Crema" loading="lazy"></a>
+  <span class="oggi-prodcard__disc oggi-prodcard__disc--purple">-30%</span>
+  <div class="oggi-prodcard__brand">Rexona</div>
+  <h3 class="oggi-prodcard__title"><a href="#">Rexona All Body Crema</a></h3>
+  <div class="oggi-prodcard__prices"><span class="oggi-prodcard__old"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>9.388,00</bdi></span></span><span class="oggi-prodcard__now"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>6.572,00</bdi></span></span></div>
+  <div class="oggi-prodcard__ex-tax">Precio s/imp. nacional: <span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>5.431,00</bdi></span></div>
+  <a href="#" class="oggi-prodcard__add button add_to_cart_button product_type_simple" aria-label="Agregar al carrito" rel="nofollow">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="15" height="15"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg><span class="oggi-prodcard__add-label oggi-prodcard__add-label--default">Agregar</span>
+    <span class="oggi-prodcard__add-label oggi-prodcard__add-label--added">Agregado ✓</span></a>
+</article><article class="oggi-prodcard" data-product-id="1306">
+  <div class="oggi-prodcard__actions">
+    <button type="button" class="oggi-prodcard__wish" data-oggi-wish-toggle data-product-id="1306" aria-pressed="false" aria-label="Agregar a mi lista"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="16" height="16"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+    <button type="button" class="oggi-prodcard__share" data-oggi-share aria-label="Compartir producto"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="15" height="15"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg></button>
+  </div>
+  <a class="oggi-prodcard__img" href="#" aria-label="Rexona All Body Desodorante"><img src="img/productos/7791293051543.webp" alt="Rexona All Body Desodorante" loading="lazy"></a>
+  <span class="oggi-prodcard__disc oggi-prodcard__disc--purple">-30%</span>
+  <div class="oggi-prodcard__brand">Rexona</div>
+  <h3 class="oggi-prodcard__title"><a href="#">Rexona All Body Desodorante</a></h3>
+  <div class="oggi-prodcard__prices"><span class="oggi-prodcard__old"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>6.572,00</bdi></span></span><span class="oggi-prodcard__now"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>4.600,00</bdi></span></span></div>
+  <div class="oggi-prodcard__ex-tax">Precio s/imp. nacional: <span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>3.802,00</bdi></span></div>
+  <a href="#" class="oggi-prodcard__add button add_to_cart_button product_type_simple" aria-label="Agregar al carrito" rel="nofollow">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="15" height="15"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg><span class="oggi-prodcard__add-label oggi-prodcard__add-label--default">Agregar</span>
+    <span class="oggi-prodcard__add-label oggi-prodcard__add-label--added">Agregado ✓</span></a>
+</article><article class="oggi-prodcard" data-product-id="1307">
+  <div class="oggi-prodcard__actions">
+    <button type="button" class="oggi-prodcard__wish" data-oggi-wish-toggle data-product-id="1307" aria-pressed="false" aria-label="Agregar a mi lista"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="16" height="16"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+    <button type="button" class="oggi-prodcard__share" data-oggi-share aria-label="Compartir producto"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="15" height="15"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg></button>
+  </div>
+  <a class="oggi-prodcard__img" href="#" aria-label="Dove Body Wash"><img src="img/productos/8934868194286.webp" alt="Dove Body Wash" loading="lazy"></a>
+  <span class="oggi-prodcard__disc oggi-prodcard__disc--orange">-25%</span>
+  <div class="oggi-prodcard__brand">Dove</div>
+  <h3 class="oggi-prodcard__title"><a href="#">Dove Body Wash</a></h3>
+  <div class="oggi-prodcard__prices"><span class="oggi-prodcard__old"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>18.450,00</bdi></span></span><span class="oggi-prodcard__now"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>13.837,00</bdi></span></span></div>
+  <div class="oggi-prodcard__ex-tax">Precio s/imp. nacional: <span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>11.436,00</bdi></span></div>
+  <a href="#" class="oggi-prodcard__add button add_to_cart_button product_type_simple" aria-label="Agregar al carrito" rel="nofollow">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="15" height="15"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg><span class="oggi-prodcard__add-label oggi-prodcard__add-label--default">Agregar</span>
+    <span class="oggi-prodcard__add-label oggi-prodcard__add-label--added">Agregado ✓</span></a>
+</article><article class="oggi-prodcard" data-product-id="1308">
+  <div class="oggi-prodcard__actions">
+    <button type="button" class="oggi-prodcard__wish" data-oggi-wish-toggle data-product-id="1308" aria-pressed="false" aria-label="Agregar a mi lista"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="16" height="16"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+    <button type="button" class="oggi-prodcard__share" data-oggi-share aria-label="Compartir producto"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="15" height="15"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg></button>
+  </div>
+  <a class="oggi-prodcard__img" href="#" aria-label="Rexona Clinical 96 h Aerosol"><img src="img/productos/7891150068735.webp" alt="Rexona Clinical 96 h Aerosol" loading="lazy"></a>
+  <span class="oggi-prodcard__disc oggi-prodcard__disc--orange">-25%</span>
+  <div class="oggi-prodcard__brand">Rexona</div>
+  <h3 class="oggi-prodcard__title"><a href="#">Rexona Clinical 96 h Aerosol</a></h3>
+  <div class="oggi-prodcard__prices"><span class="oggi-prodcard__old"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>8.003,00</bdi></span></span><span class="oggi-prodcard__now"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>6.002,00</bdi></span></span></div>
+  <div class="oggi-prodcard__ex-tax">Precio s/imp. nacional: <span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>4.960,00</bdi></span></div>
+  <a href="#" class="oggi-prodcard__add button add_to_cart_button product_type_simple" aria-label="Agregar al carrito" rel="nofollow">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="15" height="15"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg><span class="oggi-prodcard__add-label oggi-prodcard__add-label--default">Agregar</span>
+    <span class="oggi-prodcard__add-label oggi-prodcard__add-label--added">Agregado ✓</span></a>
+</article><article class="oggi-prodcard" data-product-id="1309">
+  <div class="oggi-prodcard__actions">
+    <button type="button" class="oggi-prodcard__wish" data-oggi-wish-toggle data-product-id="1309" aria-pressed="false" aria-label="Agregar a mi lista"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="16" height="16"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+    <button type="button" class="oggi-prodcard__share" data-oggi-share aria-label="Compartir producto"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="15" height="15"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg></button>
+  </div>
+  <a class="oggi-prodcard__img" href="#" aria-label="Dermaglós Hombres"><img src="img/productos/7793742008306.webp" alt="Dermaglós Hombres" loading="lazy"></a>
+  <span class="oggi-prodcard__disc oggi-prodcard__disc--orange">-20%</span>
+  <div class="oggi-prodcard__brand">Dermaglós</div>
+  <h3 class="oggi-prodcard__title"><a href="#">Dermaglós Hombres</a></h3>
+  <div class="oggi-prodcard__prices"><span class="oggi-prodcard__old"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>21.018,00</bdi></span></span><span class="oggi-prodcard__now"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>16.815,00</bdi></span></span></div>
+  <div class="oggi-prodcard__ex-tax">Precio s/imp. nacional: <span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>13.897,00</bdi></span></div>
+  <a href="#" class="oggi-prodcard__add button add_to_cart_button product_type_simple" aria-label="Agregar al carrito" rel="nofollow">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="15" height="15"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg><span class="oggi-prodcard__add-label oggi-prodcard__add-label--default">Agregar</span>
+    <span class="oggi-prodcard__add-label oggi-prodcard__add-label--added">Agregado ✓</span></a>
+</article><article class="oggi-prodcard" data-product-id="1310">
+  <div class="oggi-prodcard__actions">
+    <button type="button" class="oggi-prodcard__wish" data-oggi-wish-toggle data-product-id="1310" aria-pressed="false" aria-label="Agregar a mi lista"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="16" height="16"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+    <button type="button" class="oggi-prodcard__share" data-oggi-share aria-label="Compartir producto"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="15" height="15"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg></button>
+  </div>
+  <a class="oggi-prodcard__img" href="#" aria-label="Evagina Cuidado Íntimo"><img src="img/productos/7796285289331.webp" alt="Evagina Cuidado Íntimo" loading="lazy"></a>
+  <span class="oggi-prodcard__disc oggi-prodcard__disc--orange">-20%</span>
+  <div class="oggi-prodcard__brand">Evagina</div>
+  <h3 class="oggi-prodcard__title"><a href="#">Evagina Cuidado Íntimo</a></h3>
+  <div class="oggi-prodcard__prices"><span class="oggi-prodcard__old"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>12.834,00</bdi></span></span><span class="oggi-prodcard__now"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>10.268,00</bdi></span></span></div>
+  <div class="oggi-prodcard__ex-tax">Precio s/imp. nacional: <span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>8.486,00</bdi></span></div>
+  <a href="#" class="oggi-prodcard__add button add_to_cart_button product_type_simple" aria-label="Agregar al carrito" rel="nofollow">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="15" height="15"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg><span class="oggi-prodcard__add-label oggi-prodcard__add-label--default">Agregar</span>
+    <span class="oggi-prodcard__add-label oggi-prodcard__add-label--added">Agregado ✓</span></a>
+</article><article class="oggi-prodcard" data-product-id="1311">
+  <div class="oggi-prodcard__actions">
+    <button type="button" class="oggi-prodcard__wish" data-oggi-wish-toggle data-product-id="1311" aria-pressed="false" aria-label="Agregar a mi lista"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="16" height="16"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+    <button type="button" class="oggi-prodcard__share" data-oggi-share aria-label="Compartir producto"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="15" height="15"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg></button>
+  </div>
+  <a class="oggi-prodcard__img" href="#" aria-label="Evagina Higiene Íntima"><img src="img/productos/7796285289348.webp" alt="Evagina Higiene Íntima" loading="lazy"></a>
+  <span class="oggi-prodcard__disc oggi-prodcard__disc--orange">-20%</span>
+  <div class="oggi-prodcard__brand">Evagina</div>
+  <h3 class="oggi-prodcard__title"><a href="#">Evagina Higiene Íntima</a></h3>
+  <div class="oggi-prodcard__prices"><span class="oggi-prodcard__old"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>17.104,00</bdi></span></span><span class="oggi-prodcard__now"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>13.683,00</bdi></span></span></div>
+  <div class="oggi-prodcard__ex-tax">Precio s/imp. nacional: <span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>11.308,00</bdi></span></div>
+  <a href="#" class="oggi-prodcard__add button add_to_cart_button product_type_simple" aria-label="Agregar al carrito" rel="nofollow">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="15" height="15"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg><span class="oggi-prodcard__add-label oggi-prodcard__add-label--default">Agregar</span>
+    <span class="oggi-prodcard__add-label oggi-prodcard__add-label--added">Agregado ✓</span></a>
+</article></div>
+  </div>
+</div></section>
+<section class="oggi-promo-mosaic oggi-promo-mosaic--full">
+  <div class="oggi-promo-mosaic__inner">
+    <div class="oggi-promo-mosaic__row oggi-promo-mosaic__row--top">
+      <a class="oggi-promo-mosaic__tile oggi-promo-mosaic__tile--1" href="#"><img src="img/placas/promo-1-desodorantes_3884x1004.webp" alt="Desodorantes en oferta — hasta 30% OFF" loading="lazy"></a><a class="oggi-promo-mosaic__tile oggi-promo-mosaic__tile--2" href="#"><img src="img/placas/promo-2-corporal_3884x1004.webp" alt="Cuidado corporal en oferta — hasta 30% OFF" loading="lazy"></a>
+    </div>
+    <div class="oggi-promo-mosaic__row oggi-promo-mosaic__row--bottom">
+      <a class="oggi-promo-mosaic__tile oggi-promo-mosaic__tile--3" href="#"><img src="img/placas/promo-3-suplementos_4656x1480.webp" alt="Suplementos en oferta — hasta 30% OFF" loading="lazy"></a><a class="oggi-promo-mosaic__tile oggi-promo-mosaic__tile--4" href="#"><img src="img/placas/promo-4-bebes_2280x1480.webp" alt="Bebés y mamá en oferta — hasta 30% OFF" loading="lazy"></a>
+    </div>
+  </div>
+  <div class="oggi-promo-mosaic__mobile" aria-hidden="false">
+    <div class="oggi-promo-mosaic__mtrack" data-oggi-promo-mobile><a class="oggi-promo-mosaic__mtile" href="#"><img src="img/placas/promo-1-desodorantes-celular_1200x1000.webp" alt="Desodorantes en oferta — hasta 30% OFF" loading="lazy"></a><a class="oggi-promo-mosaic__mtile" href="#"><img src="img/placas/promo-2-corporal-celular_1200x1000.webp" alt="Cuidado corporal en oferta — hasta 30% OFF" loading="lazy"></a><a class="oggi-promo-mosaic__mtile" href="#"><img src="img/placas/promo-3-suplementos-celular_1200x1000.webp" alt="Suplementos en oferta — hasta 30% OFF" loading="lazy"></a><a class="oggi-promo-mosaic__mtile" href="#"><img src="img/placas/promo-4-bebes-celular_1200x1000.webp" alt="Bebés y mamá en oferta — hasta 30% OFF" loading="lazy"></a></div>
+  </div>
+</section>
+<section class="oggi-pcar oggi-pcar--full oggi-pcar--bg-mint"><div class="oggi-pcar__inner">
+  <div class="oggi-pcar__head">
+    <div class="oggi-pcar__head-text">
+      <span class="oggi-pcar__kicker">Hasta 30% OFF · y 2x1</span>
+      <h2 class="oggi-pcar__heading">Cuidado capilar</h2>
+    </div>
+    <a class="oggi-pcar__link" href="#">Ver toda la categoría →</a>
+  </div>
+  <div class="oggi-pcar__wrap" data-oggi-pcar>
+    <button type="button" class="oggi-pcar__arr oggi-pcar__arr--prev" data-oggi-pcar-prev aria-label="Anterior"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="18" height="18"><polyline points="15 18 9 12 15 6"/></svg></button>
+    <button type="button" class="oggi-pcar__arr oggi-pcar__arr--next" data-oggi-pcar-next aria-label="Siguiente"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="18" height="18"><polyline points="9 18 15 12 9 6"/></svg></button>
+    <div class="oggi-pcar__track" id="oggi-pcar-4" data-oggi-pcar-track><article class="oggi-prodcard" data-product-id="1400">
+  <div class="oggi-prodcard__actions">
+    <button type="button" class="oggi-prodcard__wish" data-oggi-wish-toggle data-product-id="1400" aria-pressed="false" aria-label="Agregar a mi lista"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="16" height="16"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+    <button type="button" class="oggi-prodcard__share" data-oggi-share aria-label="Compartir producto"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="15" height="15"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg></button>
+  </div>
+  <a class="oggi-prodcard__img" href="#" aria-label="Dercos Anticaspa"><img src="img/productos/3337871330286.webp" alt="Dercos Anticaspa" loading="lazy"></a>
+  <span class="oggi-prodcard__disc oggi-prodcard__disc--purple">-40%</span>
+  <div class="oggi-prodcard__brand">Vichy</div>
+  <h3 class="oggi-prodcard__title"><a href="#">Dercos Anticaspa</a></h3>
+  <div class="oggi-prodcard__prices"><span class="oggi-prodcard__old"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>61.695,00</bdi></span></span><span class="oggi-prodcard__now"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>37.017,00</bdi></span></span></div>
+  <div class="oggi-prodcard__ex-tax">Precio s/imp. nacional: <span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>30.593,00</bdi></span></div>
+  <a href="#" class="oggi-prodcard__add button add_to_cart_button product_type_simple" aria-label="Agregar al carrito" rel="nofollow">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="15" height="15"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg><span class="oggi-prodcard__add-label oggi-prodcard__add-label--default">Agregar</span>
+    <span class="oggi-prodcard__add-label oggi-prodcard__add-label--added">Agregado ✓</span></a>
+</article><article class="oggi-prodcard" data-product-id="1401">
+  <div class="oggi-prodcard__actions">
+    <button type="button" class="oggi-prodcard__wish" data-oggi-wish-toggle data-product-id="1401" aria-pressed="false" aria-label="Agregar a mi lista"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="16" height="16"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+    <button type="button" class="oggi-prodcard__share" data-oggi-share aria-label="Compartir producto"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="15" height="15"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg></button>
+  </div>
+  <a class="oggi-prodcard__img" href="#" aria-label="Dercos Energizante"><img src="img/productos/3337871311292.webp" alt="Dercos Energizante" loading="lazy"></a>
+  <span class="oggi-prodcard__disc oggi-prodcard__disc--purple">-40%</span>
+  <div class="oggi-prodcard__brand">Vichy</div>
+  <h3 class="oggi-prodcard__title"><a href="#">Dercos Energizante</a></h3>
+  <div class="oggi-prodcard__prices"><span class="oggi-prodcard__old"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>61.695,00</bdi></span></span><span class="oggi-prodcard__now"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>37.017,00</bdi></span></span></div>
+  <div class="oggi-prodcard__ex-tax">Precio s/imp. nacional: <span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>30.593,00</bdi></span></div>
+  <a href="#" class="oggi-prodcard__add button add_to_cart_button product_type_simple" aria-label="Agregar al carrito" rel="nofollow">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="15" height="15"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg><span class="oggi-prodcard__add-label oggi-prodcard__add-label--default">Agregar</span>
+    <span class="oggi-prodcard__add-label oggi-prodcard__add-label--added">Agregado ✓</span></a>
+</article><article class="oggi-prodcard" data-product-id="1402">
+  <div class="oggi-prodcard__actions">
+    <button type="button" class="oggi-prodcard__wish" data-oggi-wish-toggle data-product-id="1402" aria-pressed="false" aria-label="Agregar a mi lista"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="16" height="16"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+    <button type="button" class="oggi-prodcard__share" data-oggi-share aria-label="Compartir producto"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="15" height="15"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg></button>
+  </div>
+  <a class="oggi-prodcard__img" href="#" aria-label="Aveno"><img src="img/productos/7793742004360.webp" alt="Aveno" loading="lazy"></a>
+  <span class="oggi-prodcard__disc oggi-prodcard__disc--purple">-30%</span>
+  <div class="oggi-prodcard__brand">Aveno</div>
+  <h3 class="oggi-prodcard__title"><a href="#">Aveno</a></h3>
+  <div class="oggi-prodcard__prices"><span class="oggi-prodcard__old"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>32.046,00</bdi></span></span><span class="oggi-prodcard__now"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>22.432,00</bdi></span></span></div>
+  <div class="oggi-prodcard__ex-tax">Precio s/imp. nacional: <span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>18.539,00</bdi></span></div>
+  <a href="#" class="oggi-prodcard__add button add_to_cart_button product_type_simple" aria-label="Agregar al carrito" rel="nofollow">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="15" height="15"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg><span class="oggi-prodcard__add-label oggi-prodcard__add-label--default">Agregar</span>
+    <span class="oggi-prodcard__add-label oggi-prodcard__add-label--added">Agregado ✓</span></a>
+</article><article class="oggi-prodcard" data-product-id="1403">
+  <div class="oggi-prodcard__actions">
+    <button type="button" class="oggi-prodcard__wish" data-oggi-wish-toggle data-product-id="1403" aria-pressed="false" aria-label="Agregar a mi lista"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="16" height="16"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+    <button type="button" class="oggi-prodcard__share" data-oggi-share aria-label="Compartir producto"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="15" height="15"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg></button>
+  </div>
+  <a class="oggi-prodcard__img" href="#" aria-label="Dove Bond Repair"><img src="img/productos/7791293051017.webp" alt="Dove Bond Repair" loading="lazy"></a>
+  <span class="oggi-prodcard__disc oggi-prodcard__disc--orange">-25%</span>
+  <div class="oggi-prodcard__brand">Dove</div>
+  <h3 class="oggi-prodcard__title"><a href="#">Dove Bond Repair</a></h3>
+  <div class="oggi-prodcard__prices"><span class="oggi-prodcard__old"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>11.615,00</bdi></span></span><span class="oggi-prodcard__now"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>8.712,00</bdi></span></span></div>
+  <div class="oggi-prodcard__ex-tax">Precio s/imp. nacional: <span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>7.200,00</bdi></span></div>
+  <a href="#" class="oggi-prodcard__add button add_to_cart_button product_type_simple" aria-label="Agregar al carrito" rel="nofollow">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="15" height="15"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg><span class="oggi-prodcard__add-label oggi-prodcard__add-label--default">Agregar</span>
+    <span class="oggi-prodcard__add-label oggi-prodcard__add-label--added">Agregado ✓</span></a>
+</article><article class="oggi-prodcard" data-product-id="1404">
+  <div class="oggi-prodcard__actions">
+    <button type="button" class="oggi-prodcard__wish" data-oggi-wish-toggle data-product-id="1404" aria-pressed="false" aria-label="Agregar a mi lista"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="16" height="16"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+    <button type="button" class="oggi-prodcard__share" data-oggi-share aria-label="Compartir producto"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="15" height="15"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg></button>
+  </div>
+  <a class="oggi-prodcard__img" href="#" aria-label="Dove UV Repair &amp; Glow"><img src="img/productos/7891150104839.webp" alt="Dove UV Repair &amp; Glow" loading="lazy"></a>
+  <span class="oggi-prodcard__disc oggi-prodcard__disc--orange">-25%</span>
+  <div class="oggi-prodcard__brand">Dove</div>
+  <h3 class="oggi-prodcard__title"><a href="#">Dove UV Repair &amp; Glow</a></h3>
+  <div class="oggi-prodcard__prices"><span class="oggi-prodcard__old"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>11.615,00</bdi></span></span><span class="oggi-prodcard__now"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>8.712,00</bdi></span></span></div>
+  <div class="oggi-prodcard__ex-tax">Precio s/imp. nacional: <span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>7.200,00</bdi></span></div>
+  <a href="#" class="oggi-prodcard__add button add_to_cart_button product_type_simple" aria-label="Agregar al carrito" rel="nofollow">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="15" height="15"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg><span class="oggi-prodcard__add-label oggi-prodcard__add-label--default">Agregar</span>
+    <span class="oggi-prodcard__add-label oggi-prodcard__add-label--added">Agregado ✓</span></a>
+</article><article class="oggi-prodcard" data-product-id="1405">
+  <div class="oggi-prodcard__actions">
+    <button type="button" class="oggi-prodcard__wish" data-oggi-wish-toggle data-product-id="1405" aria-pressed="false" aria-label="Agregar a mi lista"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="16" height="16"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+    <button type="button" class="oggi-prodcard__share" data-oggi-share aria-label="Compartir producto"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="15" height="15"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg></button>
+  </div>
+  <a class="oggi-prodcard__img" href="#" aria-label="Tresemmé"><img src="img/productos/7791293049694.webp" alt="Tresemmé" loading="lazy"></a>
+  <span class="oggi-prodcard__disc oggi-prodcard__disc--orange">-25%</span>
+  <div class="oggi-prodcard__brand">Tresemmé</div>
+  <h3 class="oggi-prodcard__title"><a href="#">Tresemmé</a></h3>
+  <div class="oggi-prodcard__prices"><span class="oggi-prodcard__old"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>10.342,00</bdi></span></span><span class="oggi-prodcard__now"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>7.756,00</bdi></span></span></div>
+  <div class="oggi-prodcard__ex-tax">Precio s/imp. nacional: <span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>6.410,00</bdi></span></div>
+  <a href="#" class="oggi-prodcard__add button add_to_cart_button product_type_simple" aria-label="Agregar al carrito" rel="nofollow">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="15" height="15"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg><span class="oggi-prodcard__add-label oggi-prodcard__add-label--default">Agregar</span>
+    <span class="oggi-prodcard__add-label oggi-prodcard__add-label--added">Agregado ✓</span></a>
+</article><article class="oggi-prodcard" data-product-id="1406">
+  <div class="oggi-prodcard__actions">
+    <button type="button" class="oggi-prodcard__wish" data-oggi-wish-toggle data-product-id="1406" aria-pressed="false" aria-label="Agregar a mi lista"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="16" height="16"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+    <button type="button" class="oggi-prodcard__share" data-oggi-share aria-label="Compartir producto"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="15" height="15"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg></button>
+  </div>
+  <a class="oggi-prodcard__img" href="#" aria-label="Tresemmé Coat Sellador"><img src="img/productos/7891150100114.webp" alt="Tresemmé Coat Sellador" loading="lazy"></a>
+  <span class="oggi-prodcard__disc oggi-prodcard__disc--orange">-25%</span>
+  <div class="oggi-prodcard__brand">Tresemmé</div>
+  <h3 class="oggi-prodcard__title"><a href="#">Tresemmé Coat Sellador</a></h3>
+  <div class="oggi-prodcard__prices"><span class="oggi-prodcard__old"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>15.954,00</bdi></span></span><span class="oggi-prodcard__now"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>11.966,00</bdi></span></span></div>
+  <div class="oggi-prodcard__ex-tax">Precio s/imp. nacional: <span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>9.889,00</bdi></span></div>
+  <a href="#" class="oggi-prodcard__add button add_to_cart_button product_type_simple" aria-label="Agregar al carrito" rel="nofollow">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="15" height="15"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg><span class="oggi-prodcard__add-label oggi-prodcard__add-label--default">Agregar</span>
+    <span class="oggi-prodcard__add-label oggi-prodcard__add-label--added">Agregado ✓</span></a>
+</article><article class="oggi-prodcard" data-product-id="1407">
+  <div class="oggi-prodcard__actions">
+    <button type="button" class="oggi-prodcard__wish" data-oggi-wish-toggle data-product-id="1407" aria-pressed="false" aria-label="Agregar a mi lista"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="16" height="16"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+    <button type="button" class="oggi-prodcard__share" data-oggi-share aria-label="Compartir producto"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="15" height="15"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg></button>
+  </div>
+  <a class="oggi-prodcard__img" href="#" aria-label="Tresemmé Keratina AntiFrizz Máscara"><img src="img/productos/7891150100282.webp" alt="Tresemmé Keratina AntiFrizz Máscara" loading="lazy"></a>
+  <span class="oggi-prodcard__disc oggi-prodcard__disc--orange">-25%</span>
+  <div class="oggi-prodcard__brand">Tresemmé</div>
+  <h3 class="oggi-prodcard__title"><a href="#">Tresemmé Keratina AntiFrizz Máscara</a></h3>
+  <div class="oggi-prodcard__prices"><span class="oggi-prodcard__old"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>10.759,00</bdi></span></span><span class="oggi-prodcard__now"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>8.069,00</bdi></span></span></div>
+  <div class="oggi-prodcard__ex-tax">Precio s/imp. nacional: <span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>6.669,00</bdi></span></div>
+  <a href="#" class="oggi-prodcard__add button add_to_cart_button product_type_simple" aria-label="Agregar al carrito" rel="nofollow">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="15" height="15"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg><span class="oggi-prodcard__add-label oggi-prodcard__add-label--default">Agregar</span>
+    <span class="oggi-prodcard__add-label oggi-prodcard__add-label--added">Agregado ✓</span></a>
+</article><article class="oggi-prodcard" data-product-id="1408">
+  <div class="oggi-prodcard__actions">
+    <button type="button" class="oggi-prodcard__wish" data-oggi-wish-toggle data-product-id="1408" aria-pressed="false" aria-label="Agregar a mi lista"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="16" height="16"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+    <button type="button" class="oggi-prodcard__share" data-oggi-share aria-label="Compartir producto"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="15" height="15"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg></button>
+  </div>
+  <a class="oggi-prodcard__img" href="#" aria-label="Sedal Luminous Crema para Peinar"><img src="img/productos/7791293051482.webp" alt="Sedal Luminous Crema para Peinar" loading="lazy"></a>
+  <span class="oggi-prodcard__disc oggi-prodcard__disc--orange">-20%</span>
+  <div class="oggi-prodcard__brand">Sedal</div>
+  <h3 class="oggi-prodcard__title"><a href="#">Sedal Luminous Crema para Peinar</a></h3>
+  <div class="oggi-prodcard__prices"><span class="oggi-prodcard__old"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>6.139,00</bdi></span></span><span class="oggi-prodcard__now"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>4.911,00</bdi></span></span></div>
+  <div class="oggi-prodcard__ex-tax">Precio s/imp. nacional: <span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>4.059,00</bdi></span></div>
+  <a href="#" class="oggi-prodcard__add button add_to_cart_button product_type_simple" aria-label="Agregar al carrito" rel="nofollow">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="15" height="15"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg><span class="oggi-prodcard__add-label oggi-prodcard__add-label--default">Agregar</span>
+    <span class="oggi-prodcard__add-label oggi-prodcard__add-label--added">Agregado ✓</span></a>
+</article><article class="oggi-prodcard" data-product-id="1409">
+  <div class="oggi-prodcard__actions">
+    <button type="button" class="oggi-prodcard__wish" data-oggi-wish-toggle data-product-id="1409" aria-pressed="false" aria-label="Agregar a mi lista"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="16" height="16"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+    <button type="button" class="oggi-prodcard__share" data-oggi-share aria-label="Compartir producto"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="15" height="15"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg></button>
+  </div>
+  <a class="oggi-prodcard__img" href="#" aria-label="Sedal Luminous Serum"><img src="img/productos/7891150099906.webp" alt="Sedal Luminous Serum" loading="lazy"></a>
+  <span class="oggi-prodcard__disc oggi-prodcard__disc--blue">-10%</span>
+  <div class="oggi-prodcard__brand">Sedal</div>
+  <h3 class="oggi-prodcard__title"><a href="#">Sedal Luminous Serum</a></h3>
+  <div class="oggi-prodcard__prices"><span class="oggi-prodcard__old"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>10.782,00</bdi></span></span><span class="oggi-prodcard__now"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>9.704,00</bdi></span></span></div>
+  <div class="oggi-prodcard__ex-tax">Precio s/imp. nacional: <span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>8.020,00</bdi></span></div>
+  <a href="#" class="oggi-prodcard__add button add_to_cart_button product_type_simple" aria-label="Agregar al carrito" rel="nofollow">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="15" height="15"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg><span class="oggi-prodcard__add-label oggi-prodcard__add-label--default">Agregar</span>
+    <span class="oggi-prodcard__add-label oggi-prodcard__add-label--added">Agregado ✓</span></a>
+</article><article class="oggi-prodcard" data-product-id="1410">
+  <div class="oggi-prodcard__actions">
+    <button type="button" class="oggi-prodcard__wish" data-oggi-wish-toggle data-product-id="1410" aria-pressed="false" aria-label="Agregar a mi lista"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="16" height="16"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+    <button type="button" class="oggi-prodcard__share" data-oggi-share aria-label="Compartir producto"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="15" height="15"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg></button>
+  </div>
+  <a class="oggi-prodcard__img" href="#" aria-label="BAGOVIT CAPILAR PELO LARGO Y S/FRIZZ crema p/ peinar x 200 ml"><img src="img/productos/7790375269784.webp" alt="BAGOVIT CAPILAR PELO LARGO Y S/FRIZZ crema p/ peinar x 200 ml" loading="lazy"></a>
+  
+  <div class="oggi-prodcard__brand">Bagovit</div>
+  <h3 class="oggi-prodcard__title"><a href="#">BAGOVIT CAPILAR PELO LARGO Y S/FRIZZ crema p/ peinar x 200 ml</a></h3>
+  <div class="oggi-prodcard__prices"><span class="oggi-prodcard__now"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>9.971,00</bdi></span></span></div>
+  <div class="oggi-prodcard__ex-tax">Precio s/imp. nacional: <span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>8.240,00</bdi></span></div>
+  <a href="#" class="oggi-prodcard__add button add_to_cart_button product_type_simple" aria-label="Agregar al carrito" rel="nofollow">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="15" height="15"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg><span class="oggi-prodcard__add-label oggi-prodcard__add-label--default">Agregar</span>
+    <span class="oggi-prodcard__add-label oggi-prodcard__add-label--added">Agregado ✓</span></a>
+</article><article class="oggi-prodcard" data-product-id="1411">
+  <div class="oggi-prodcard__actions">
+    <button type="button" class="oggi-prodcard__wish" data-oggi-wish-toggle data-product-id="1411" aria-pressed="false" aria-label="Agregar a mi lista"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="16" height="16"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+    <button type="button" class="oggi-prodcard__share" data-oggi-share aria-label="Compartir producto"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="15" height="15"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg></button>
+  </div>
+  <a class="oggi-prodcard__img" href="#" aria-label="Bagóvit Brillo Sublime"><img src="img/productos/7790375269715.webp" alt="Bagóvit Brillo Sublime" loading="lazy"></a>
+  
+  <div class="oggi-prodcard__brand">Bagóvit Capilar</div>
+  <h3 class="oggi-prodcard__title"><a href="#">Bagóvit Brillo Sublime</a></h3>
+  <div class="oggi-prodcard__prices"><span class="oggi-prodcard__now"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>9.972,00</bdi></span></span></div>
+  <div class="oggi-prodcard__ex-tax">Precio s/imp. nacional: <span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>8.241,00</bdi></span></div>
+  <a href="#" class="oggi-prodcard__add button add_to_cart_button product_type_simple" aria-label="Agregar al carrito" rel="nofollow">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon" aria-hidden="true" width="15" height="15"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg><span class="oggi-prodcard__add-label oggi-prodcard__add-label--default">Agregar</span>
+    <span class="oggi-prodcard__add-label oggi-prodcard__add-label--added">Agregado ✓</span></a>
+</article></div>
+  </div>
+</div></section>
+</main>
+<div class="oggi-footer">
+  <div class="oggi-footer__inner">
+    <div class="oggi-footer__cols"><div class="oggi-footer__col"><h5 class="oggi-footer__title">Oggi Farma</h5><ul class="oggi-footer__menu"><li><a href="#">Sobre Oggi Farma</a></li><li><a href="#">Nuestras sucursales</a></li><li><a href="#">Trabajá con nosotros</a></li><li><a href="#">Responsabilidad social</a></li><li><a href="#">Blog</a></li></ul></div><div class="oggi-footer__col"><h5 class="oggi-footer__title">Ayuda</h5><ul class="oggi-footer__menu"><li><a href="#">Cómo comprar</a></li><li><a href="#">Envíos y retiros</a></li><li><a href="#">Medios de pago</a></li><li><a href="#">Cambios y devoluciones</a></li><li><a href="#">Preguntas frecuentes</a></li><li><a href="#">Defensa del consumidor</a></li></ul></div><div class="oggi-footer__col"><h5 class="oggi-footer__title">Mi cuenta</h5><ul class="oggi-footer__menu"><li><a href="#">Ingresar</a></li><li><a href="#">Mis pedidos</a></li><li><a href="#">Mi carrito</a></li><li><a href="#">Seguimiento de pedido</a></li><li><a href="#">Política de privacidad</a></li><li><a href="#">Términos y condiciones</a></li></ul></div><div class="oggi-footer__col"><h5 class="oggi-footer__title">Contacto</h5><ul class="oggi-footer__menu"><li><a href="#">0800-123-4567</a></li><li><a href="#">hola@oggifarma.com.ar</a></li><li><a href="#">WhatsApp</a></li><li><a href="#">Nuestras sucursales</a></li></ul></div></div>
+    <div class="oggi-footer__socials"><a href="#" class="oggi-footer__social" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon oggi-icon--filled" aria-hidden="true" width="16" height="16" fill="currentColor" stroke="none"><path d="M12 2c2.717 0 3.056.01 4.122.06 1.065.05 1.79.217 2.428.465.66.254 1.216.599 1.772 1.153a4.908 4.908 0 0 1 1.153 1.772c.247.637.415 1.363.465 2.428.047 1.066.06 1.405.06 4.122 0 2.717-.01 3.056-.06 4.122-.05 1.065-.218 1.79-.465 2.428a4.883 4.883 0 0 1-1.153 1.772 4.915 4.915 0 0 1-1.772 1.153c-.637.247-1.363.415-2.428.465-1.066.047-1.405.06-4.122.06-2.717 0-3.056-.01-4.122-.06-1.065-.05-1.79-.218-2.428-.465a4.89 4.89 0 0 1-1.772-1.153 4.904 4.904 0 0 1-1.153-1.772c-.248-.637-.415-1.363-.465-2.428C2.013 15.056 2 14.717 2 12c0-2.717.01-3.056.06-4.122.05-1.066.217-1.79.465-2.428a4.88 4.88 0 0 1 1.153-1.772A4.897 4.897 0 0 1 5.45 2.525c.638-.248 1.362-.415 2.428-.465C8.944 2.013 9.283 2 12 2zm0 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm6.5-.25a1.25 1.25 0 1 0-2.5 0 1.25 1.25 0 0 0 2.5 0zM12 9a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"/></svg></a><a href="#" class="oggi-footer__social" aria-label="Facebook"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon oggi-icon--filled" aria-hidden="true" width="16" height="16" fill="currentColor" stroke="none"><path d="M24 12.073c0-6.627-5.373-12-12-12S0 5.446 0 12.073c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a><a href="#" class="oggi-footer__social" aria-label="Tiktok"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon oggi-icon--filled" aria-hidden="true" width="16" height="16" fill="currentColor" stroke="none"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5.8 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1.84-.1z"/></svg></a><a href="#" class="oggi-footer__social" aria-label="Whatsapp"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="oggi-icon oggi-icon--filled" aria-hidden="true" width="16" height="16" fill="currentColor" stroke="none"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413"/></svg></a></div>
+    <div class="oggi-footer__bottom"><div class="oggi-footer__copyright">© 2026 Oggi Farma — Todos los derechos reservados.</div></div>
+  </div>
+  <div class="oggi-footer__legal"><div class="oggi-footer__legal-inner">
+    La información publicada en este sitio no reemplaza la consulta profesional. Lea atentamente los prospectos.
+    Ante la menor duda, consulte a su médico o farmacéutico.
+    <a href="#">Defensa de las y los consumidores</a>.
+  </div></div>
+</div>
+<nav class="oggi-bnav" role="navigation" aria-label="Navegación principal">
+  <a class="oggi-bnav__item is-active" href="#"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 10.5L12 3l9 7.5V21a1 1 0 01-1 1h-5v-6H9v6H4a1 1 0 01-1-1z"/></svg><span>Inicio</span></a>
+  <a class="oggi-bnav__item" href="#"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="2"/><rect x="14" y="3" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="2"/><rect x="3" y="14" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="2"/><rect x="14" y="14" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="2"/></svg><span>Categorías</span></a>
+  <a class="oggi-bnav__item oggi-bnav__play" href="#" aria-label="Seguinos en redes">
+    <span class="oggi-bnav__play-btn"><span class="oggi-bnav__play-tri"><svg viewBox="0 0 24 24" fill="var(--oggi-lime,#A3E635)"><path d="M8 5v14l11-7z"/></svg></span></span></a>
+  <a class="oggi-bnav__item oggi-bnav__cart" href="#"><svg viewBox="0 0 24 24" fill="none"><path d="M7 4h-.5a1 1 0 100 2H6l1.6 8.4A2 2 0 009.6 16H17a2 2 0 001.9-1.5l1.5-6A1 1 0 0019.5 7H8.2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="9" cy="20" r="1.5" fill="currentColor"/><circle cx="17" cy="20" r="1.5" fill="currentColor"/></svg><span>Carrito</span></a>
+  <a class="oggi-bnav__item" href="#"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="2"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span>Cuenta</span></a>
+</nav>
+  <script src="js/oggi-top-bar-init.js" defer></script>
+  <script src="js/oggi-header.js" defer></script>
+  <script src="js/oggi-catnav.js" defer></script>
+  <script src="js/oggi-header-mobile.js" defer></script>
+  <script src="js/oggi-hero-mosaic.js" defer></script>
+  <script src="js/oggi-banner-tira.js" defer></script>
+  <script src="js/oggi-product-carousel.js" defer></script>
+  <script src="js/oggi-promo-mosaic.js" defer></script>
+</body>
+</html>

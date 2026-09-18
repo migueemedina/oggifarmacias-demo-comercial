@@ -1,0 +1,211 @@
+/* =============================================================================
+   Oggi Farma — Lista de deseados
+   - Corazón en cards (.oggi-prodcard__wish) y ficha (.oggi-wish-single)
+   - Página de Mi cuenta (.oggi-wishlist)
+   - Contador del header ([data-oggi-wish-count])
+   Reglas Oggi: esquinas rectas, sin transform/box-shadow en hover, solo color.
+   ========================================================================== */
+
+/* --- Corazón en la card del shop ------------------------------------------ */
+/* Reusa el look de .oggi-prodcard__actions button (transparente, navy). */
+.oggi-prodcard__wish {
+    background: transparent;
+    border: none;
+    color: var(--oggi-navy);
+    cursor: pointer;
+    padding: 2px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    transition: color .15s ease;
+}
+.oggi-prodcard__wish .oggi-icon {
+    fill: none;
+    stroke: currentColor;
+    transition: fill .15s ease, stroke .15s ease, transform .2s ease;
+}
+.oggi-prodcard__wish:hover { color: var(--oggi-red, #E11D48); }
+.oggi-prodcard__wish.is-active { color: var(--oggi-red, #E11D48); }
+.oggi-prodcard__wish.is-active .oggi-icon {
+    fill: var(--oggi-red, #E11D48);
+    stroke: var(--oggi-red, #E11D48);
+}
+.oggi-prodcard__wish.is-loading { opacity: .5; cursor: default; }
+/* Pulso corto al guardar (feedback), no es un hover-fx permanente. */
+.oggi-prodcard__wish.is-pulsing .oggi-icon { transform: scale(1.25); }
+
+/* --- Corazón en la ficha de producto -------------------------------------- */
+.oggi-wish-single-wrap { margin-top: 12px; }
+.oggi-wish-single {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--oggi-white, #fff);
+    border: 1px solid var(--oggi-line, #E5E7EB);
+    color: var(--oggi-navy);
+    cursor: pointer;
+    padding: 10px 16px;
+    font-family: var(--oggi-font-display, inherit);
+    font-weight: 600;
+    font-size: .92rem;
+    line-height: 1;
+    transition: color .15s ease, border-color .15s ease;
+}
+.oggi-wish-single .oggi-icon {
+    fill: none;
+    stroke: currentColor;
+    transition: fill .15s ease, stroke .15s ease, transform .2s ease;
+}
+.oggi-wish-single:hover { border-color: var(--oggi-red, #E11D48); color: var(--oggi-red, #E11D48); }
+.oggi-wish-single.is-active { color: var(--oggi-red, #E11D48); border-color: var(--oggi-red, #E11D48); }
+.oggi-wish-single.is-active .oggi-icon {
+    fill: var(--oggi-red, #E11D48);
+    stroke: var(--oggi-red, #E11D48);
+}
+.oggi-wish-single.is-loading { opacity: .5; cursor: default; }
+.oggi-wish-single.is-pulsing .oggi-icon { transform: scale(1.25); }
+.oggi-wish-single__label-remove { display: none; }
+.oggi-wish-single.is-active .oggi-wish-single__label-add { display: none; }
+.oggi-wish-single.is-active .oggi-wish-single__label-remove { display: inline; }
+
+/* --- Contador en el header ------------------------------------------------ */
+[data-oggi-wish-count] {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 18px;
+    height: 18px;
+    padding: 0 5px;
+    font-size: .7rem;
+    font-weight: 700;
+    line-height: 1;
+    color: var(--oggi-white, #fff);
+    background: var(--oggi-red, #E11D48);
+    font-family: var(--oggi-font-display, inherit);
+}
+[data-oggi-wish-count].is-empty,
+[data-oggi-wish-count][hidden] { display: none; }
+
+/* --- Página de Mi cuenta -------------------------------------------------- */
+.oggi-wishlist { font-family: var(--oggi-font-display, inherit); }
+
+.oggi-wishlist--empty {
+    text-align: center;
+    padding: 32px 16px;
+}
+.oggi-wishlist__empty-title {
+    font-weight: 700;
+    font-size: 1.05rem;
+    color: var(--oggi-ink, #111827);
+    margin: 0 0 6px;
+}
+.oggi-wishlist__empty-text {
+    color: var(--oggi-muted, #6B7280);
+    margin: 0 0 18px;
+}
+
+/* --- Hero "de venta" ------------------------------------------------------ */
+.oggi-wishlist__hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+    padding: 18px 20px;
+    margin-bottom: 22px;
+    background: var(--oggi-navy-50, #EEF2FF);
+    border: 1px solid var(--oggi-line, #E5E7EB);
+    border-left: 4px solid var(--oggi-lime, #84CC16);
+}
+.oggi-wishlist__hero-copy { min-width: 0; }
+.oggi-wishlist__hero-title {
+    margin: 0 0 4px;
+    font-weight: 800;
+    font-size: 1.15rem;
+    color: var(--oggi-navy, #1E3A8A);
+    line-height: 1.2;
+}
+.oggi-wishlist__hero-sub {
+    margin: 0;
+    color: var(--oggi-ink-2, #374151);
+    font-size: .92rem;
+}
+
+/* Caja de ahorro total */
+.oggi-wishlist__savings {
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+    padding-left: 16px;
+}
+.oggi-wishlist__savings-label {
+    font-size: .72rem;
+    text-transform: uppercase;
+    letter-spacing: .04em;
+    color: var(--oggi-muted, #6B7280);
+    font-weight: 600;
+}
+.oggi-wishlist__savings-amount {
+    font-weight: 800;
+    font-size: 1.5rem;
+    line-height: 1.1;
+    color: var(--oggi-lime-700, #4D7C0F);
+}
+.oggi-wishlist__savings-note {
+    font-size: .72rem;
+    color: var(--oggi-muted, #6B7280);
+}
+
+/* --- Grid: reusa el layout del shop (body.oggi-has-loop-cards ul.products).
+   Acá sólo ajustamos columnas al ancho de Mi cuenta (auto-fill responsivo) y
+   el fade al quitar una card. Selector con clase extra para ganar al !important
+   del grid del shop. ------------------------------------------------------- */
+.oggi-wishlist__grid { margin: 0; padding: 0; list-style: none; }
+
+body.oggi-has-loop-cards ul.products.oggi-wishlist__grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)) !important;
+    gap: 16px !important;
+}
+.oggi-wishlist__grid .product { transition: opacity .2s ease; }
+.oggi-wishlist__grid .product.is-removing { opacity: 0; }
+
+/* Fallback (sin helper de card): grid simple con imagen + nombre + precio. */
+.oggi-wishlist__grid--fallback {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 16px;
+}
+.oggi-wishlist__grid--fallback .product a {
+    display: block;
+    border: 1px solid var(--oggi-line, #E5E7EB);
+    padding: 12px;
+    text-decoration: none;
+    color: var(--oggi-ink, #111827);
+}
+.oggi-wishlist__grid--fallback .oggi-wishlist__name {
+    display: block;
+    font-weight: 600;
+    margin-top: 8px;
+    line-height: 1.3;
+}
+.oggi-wishlist__grid--fallback .oggi-wishlist__price {
+    display: block;
+    margin-top: 4px;
+    color: var(--oggi-ink-2, #374151);
+    font-weight: 600;
+}
+
+@media (max-width: 560px) {
+    .oggi-wishlist__hero { padding: 14px 16px; }
+    .oggi-wishlist__savings {
+        align-items: flex-start;
+        text-align: left;
+        padding-left: 0;
+    }
+    body.oggi-has-loop-cards ul.products.oggi-wishlist__grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    }
+}

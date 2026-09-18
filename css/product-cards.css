@@ -1,0 +1,1077 @@
+/* ============================================================
+   OGGI FARMA — Product cards (.oggi-prodcard) + Shop loop grid
+   ------------------------------------------------------------
+   Card reutilizable en carousel + shop/categoría/búsqueda/related.
+   Estilo Farmapuntos: card blanca con imagen limpia, iconos
+   heart+share, badge de descuento flotante y CTA full-width.
+   ============================================================ */
+
+.oggi-prodcard {
+    background: #fff;
+    border: 1px solid #E5E7EB;
+    border-radius: 18px;
+    padding: 14px 14px 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    transition: border-color .15s ease;
+    overflow: hidden;
+}
+.oggi-prodcard:hover {
+    border-color: var(--oggi-lime);
+}
+
+/* Actions top-right (heart + share) */
+.oggi-prodcard__actions {
+    position: absolute;
+    top: 12px;
+    right: 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    z-index: 3;
+    color: var(--oggi-navy);
+}
+.oggi-prodcard__actions button,
+.oggi-prodcard__wish-slot .yith-wcwl-add-to-wishlist a,
+.oggi-prodcard__wish-slot a.add_to_wishlist {
+    background: transparent;
+    border: none;
+    color: var(--oggi-navy) !important;
+    cursor: pointer;
+    padding: 2px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    transition: color .15s ease;
+    text-decoration: none !important;
+}
+.oggi-prodcard__share:hover { color: var(--oggi-lime-700, #4D7C0F); }
+
+/* YITH Wishlist — re-estilado para integrarse al diseño */
+.oggi-prodcard__wish-slot .yith-wcwl-add-to-wishlist {
+    margin: 0;
+    padding: 0;
+    background: none;
+    border: none;
+    line-height: 1;
+}
+.oggi-prodcard__wish-slot .yith-wcwl-add-to-wishlist .feedback,
+.oggi-prodcard__wish-slot .yith-wcwl-add-to-wishlist .ajax-loading,
+.oggi-prodcard__wish-slot .yith-wcwl-icon {
+    display: none !important;
+}
+.oggi-prodcard__wish-slot a.add_to_wishlist::before,
+.oggi-prodcard__wish-slot a.delete_item::before {
+    content: "";
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    background-color: currentColor;
+    -webkit-mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>') center / contain no-repeat;
+            mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>') center / contain no-repeat;
+}
+.oggi-prodcard__wish-slot a.delete_item { color: #E11D48 !important; }
+.oggi-prodcard__wish-slot a > *:not(::before) { display: none; }
+
+/* Imagen — fondo blanco limpio, sin caja gris */
+.oggi-prodcard__img {
+    position: relative;
+    display: grid;
+    place-items: center;
+    height: 210px;
+    border-radius: 12px;
+    overflow: hidden;
+    text-decoration: none;
+    background: #fff;
+}
+.oggi-prodcard__img img {
+    max-height: 190px;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    display: block;
+    object-fit: contain;
+}
+
+/* Badge de descuento */
+.oggi-prodcard__disc {
+    align-self: flex-start;
+    margin: 10px 0 6px;
+    font-family: var(--oggi-font-display);
+    font-weight: 800;
+    font-size: 13px;
+    line-height: 1;
+    padding: 6px 10px;
+    border-radius: 8px;
+    color: #fff;
+    letter-spacing: .2px;
+}
+.oggi-prodcard__disc--red    { background: #EF4444; }
+.oggi-prodcard__disc--purple { background: #8B5CF6; }
+.oggi-prodcard__disc--orange { background: #F59E0B; }
+.oggi-prodcard__disc--blue   { background: #3B82F6; }
+.oggi-prodcard__disc--lime   { background: var(--oggi-lime, #84CC16); color: var(--oggi-navy); }
+.oggi-prodcard__disc--navy   { background: var(--oggi-navy); color: #fff; }
+.oggi-prodcard__disc--promo  {
+    background: var(--oggi-lime, #84CC16);
+    color: var(--oggi-navy);
+    text-transform: uppercase;
+    letter-spacing: .5px;
+}
+
+/* Countdown chiquito en cards (debajo del badge de descuento) */
+.oggi-countdown--card {
+    display: inline-flex;
+    align-items: center;
+    align-self: flex-start;
+    margin: 0 0 6px;
+    padding: 3px 8px;
+    background: #FEF2F2;
+    color: var(--oggi-red, #E11D48);
+    border-radius: 999px;
+    font-family: var(--oggi-font-display);
+    font-weight: 700;
+    font-size: 11px;
+    letter-spacing: .2px;
+    line-height: 1.2;
+    font-variant-numeric: tabular-nums;
+}
+
+/* Textos */
+.oggi-prodcard__brand {
+    font-family: var(--oggi-font-display);
+    font-size: 14px;
+    font-weight: 800;
+    color: var(--oggi-navy);
+    margin: 2px 0 4px;
+    line-height: 1.1;
+}
+.oggi-prodcard__title {
+    font-family: var(--oggi-font-display);
+    font-size: 15.5px;
+    color: var(--oggi-navy);
+    font-weight: 700;
+    line-height: 1.3;
+    min-height: 40px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin: 0 0 10px;
+}
+.oggi-prodcard__title a,
+.oggi-prodcard__img,
+.oggi-prodcard__img:hover,
+.oggi-prodcard__title a:hover,
+.oggi-prodcard__title a:focus {
+    color: inherit;
+    text-decoration: none !important;
+    border-bottom: none !important;
+    box-shadow: none !important;
+}
+.oggi-prodcard__title a:hover {
+    color: var(--oggi-lime-700, #4D7C0F);
+}
+
+/* Chip "N presentaciones" */
+.oggi-prodcard__variants {
+    display: inline-flex;
+    align-items: center;
+    align-self: flex-start;
+    gap: 4px;
+    font-family: var(--oggi-font-display);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: .3px;
+    color: var(--oggi-navy);
+    background: var(--oggi-navy-50, #E6ECF3);
+    border-radius: 999px;
+    padding: 4px 10px;
+    margin: 0 0 10px;
+    line-height: 1.2;
+}
+.oggi-prodcard__variants::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--oggi-lime);
+    display: inline-block;
+}
+
+/* Prices — centrados horizontalmente para que el card se sienta balanceado
+   (antes era flex-start y se veía "muy para el costado"). */
+.oggi-prodcard__prices {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2px;
+    margin-top: auto;
+}
+.oggi-prodcard__old {
+    color: var(--oggi-muted, #94A3B8);
+    text-decoration: line-through;
+    font-size: 13px;
+    font-weight: 500;
+}
+.oggi-prodcard__old bdi,
+.oggi-prodcard__now bdi {
+    display: inline;
+}
+.oggi-prodcard__now {
+    color: var(--oggi-navy);
+    font-family: var(--oggi-font-display);
+    font-weight: 800;
+    font-size: 22px;
+    letter-spacing: -.4px;
+    line-height: 1.1;
+}
+/* Aviso "PRECIO S/IMP. NACIONAL: $X" — chiquito y discreto, una nota debajo
+   del precio principal. No tiene que competir con él. */
+.oggi-prodcard__ex-tax {
+    font-family: var(--oggi-font-display);
+    font-size: 9px;
+    font-weight: 500;
+    letter-spacing: .4px;
+    text-transform: uppercase;
+    color: var(--oggi-muted, #94A3B8);
+    margin-top: 6px;
+    line-height: 1.3;
+    text-align: center;
+}
+.oggi-prodcard__ex-tax bdi { font-weight: 600; color: var(--oggi-muted, #94A3B8); }
+
+/* Add-to-cart button — full width, oscuro */
+.oggi-prodcard__add {
+    margin: 14px -14px 0;
+    background: var(--oggi-navy);
+    color: #fff !important;
+    font-family: var(--oggi-font-display);
+    font-weight: 700;
+    padding: 14px 14px;
+    border-radius: 0 0 18px 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: 14px;
+    text-decoration: none !important;
+    border: none;
+    cursor: pointer;
+    text-transform: none;
+    transition: background .15s ease, color .15s ease;
+}
+.oggi-prodcard__add:hover,
+.oggi-prodcard__add:focus {
+    background: var(--oggi-lime);
+    color: var(--oggi-navy) !important;
+}
+.oggi-prodcard__add--variable {
+    background: var(--oggi-navy);
+}
+.oggi-prodcard__add--variable:hover,
+.oggi-prodcard__add--variable:focus {
+    background: var(--oggi-navy-600, #1E3A5F);
+    color: #fff !important;
+}
+
+/* Medicamento → CTA WhatsApp lime */
+.oggi-prodcard__add--whatsapp {
+    background: var(--oggi-lime);
+    color: var(--oggi-navy) !important;
+}
+.oggi-prodcard__add--whatsapp:hover,
+.oggi-prodcard__add--whatsapp:focus {
+    background: var(--oggi-lime-600, #65A30D);
+    color: var(--oggi-navy) !important;
+}
+.oggi-prodcard__add.loading {
+    opacity: .85;
+    pointer-events: none;
+}
+.oggi-prodcard__add.added {
+    background: var(--oggi-lime);
+    color: var(--oggi-navy) !important;
+}
+.oggi-prodcard__add.added::after {
+    display: none !important;
+}
+
+/* Matar el link "Ver carrito" de Woo después del AJAX */
+.oggi-prodcard .added_to_cart,
+.oggi-prodcard a.added_to_cart.wc-forward {
+    display: none !important;
+}
+
+/* Text swap: "Agregar" ↔ "Agregado ✓" */
+.oggi-prodcard__add-label--added { display: none; }
+.oggi-prodcard__add.added .oggi-prodcard__add-label--default { display: none; }
+.oggi-prodcard__add.added .oggi-prodcard__add-label--added  { display: inline; }
+
+@media (max-width: 560px) {
+    .oggi-prodcard { padding: 12px 12px 0; }
+    .oggi-prodcard__img { height: 180px; }
+    .oggi-prodcard__img img { max-height: 160px; }
+    .oggi-prodcard__now { font-size: 20px; }
+    .oggi-prodcard__add { margin: 12px -12px 0; padding: 12px; border-radius: 0 0 18px 18px; }
+}
+
+/* ============================================================
+   OGGI FARMA — Shop loop grid (tienda / categoría / tag / search)
+   ------------------------------------------------------------
+   Neutraliza el markup default de WooCommerce/Storefront dentro
+   del <li class="product"> (lo llenamos nosotros con .oggi-prodcard)
+   y fuerza grid de 4 columnas con responsive sano.
+   Scope: body.oggi-has-loop-cards (agregada por PHP solo cuando
+   loop-card.php logra enganchar el render, para no ensuciar el
+   CSS si el PHP se desactiva).
+   ============================================================ */
+
+body.oggi-has-loop-cards ul.products {
+    display: grid !important;
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+    gap: 20px !important;
+    margin: 0 0 2em !important;
+    padding: 0 !important;
+    list-style: none !important;
+}
+body.oggi-has-loop-cards ul.products::before,
+body.oggi-has-loop-cards ul.products::after { content: none !important; display: none !important; }
+
+body.oggi-has-loop-cards ul.products li.product {
+    width: auto !important;
+    max-width: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    background: transparent !important;
+    border: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    float: none !important;
+    clear: none !important;
+    display: block !important;
+    list-style: none !important;
+    transform: none !important;
+    transition: none !important;
+}
+body.oggi-has-loop-cards ul.products li.product:hover {
+    transform: none !important;
+    box-shadow: none !important;
+    border: none !important;
+}
+
+/* Ocultar markup default de Woo/Storefront dentro del <li> */
+body.oggi-has-loop-cards ul.products li.product > .woocommerce-LoopProduct-link,
+body.oggi-has-loop-cards ul.products li.product > .button,
+body.oggi-has-loop-cards ul.products li.product > a.added_to_cart,
+body.oggi-has-loop-cards ul.products li.product > .price,
+body.oggi-has-loop-cards ul.products li.product > .woocommerce-loop-product__title,
+body.oggi-has-loop-cards ul.products li.product > .star-rating,
+body.oggi-has-loop-cards ul.products li.product > .onsale { display: none !important; }
+
+/* La card llena el li */
+body.oggi-has-loop-cards ul.products li.product > .oggi-prodcard {
+    height: 100%;
+}
+
+/* --------------------------------------------------------------
+   Overrides agresivos para matar el CSS legacy de Storefront/Woo
+   sobre el .button dentro de ul.products li.product, que intenta
+   meterle transform: translateY(-2px) + box-shadow en hover.
+   Scope estricto al loop para no afectar otras .button del sitio.
+   -------------------------------------------------------------- */
+body.oggi-has-loop-cards ul.products li.product .oggi-prodcard__add {
+    margin: 20px -14px 0 !important;
+    padding: 14px !important;
+    width: auto !important;
+    align-self: stretch !important;
+    background: var(--oggi-navy) !important;
+    color: #fff !important;
+    border: none !important;
+    border-radius: 0 0 18px 18px !important;
+    box-shadow: none !important;
+    transform: none !important;
+    transition: background .15s ease, color .15s ease !important;
+    background-image: none !important;
+}
+body.oggi-has-loop-cards ul.products li.product .oggi-prodcard__add:hover,
+body.oggi-has-loop-cards ul.products li.product .oggi-prodcard__add:focus {
+    transform: none !important;
+    box-shadow: none !important;
+    background: var(--oggi-lime) !important;
+    background-image: none !important;
+    color: var(--oggi-navy) !important;
+}
+body.oggi-has-loop-cards ul.products li.product .oggi-prodcard__add--variable {
+    background: var(--oggi-navy) !important;
+    color: #fff !important;
+}
+body.oggi-has-loop-cards ul.products li.product .oggi-prodcard__add--variable:hover,
+body.oggi-has-loop-cards ul.products li.product .oggi-prodcard__add--variable:focus {
+    background: var(--oggi-navy-600, #1E3A5F) !important;
+    color: #fff !important;
+}
+body.oggi-has-loop-cards ul.products li.product .oggi-prodcard__add--whatsapp {
+    background: var(--oggi-lime) !important;
+    color: var(--oggi-navy) !important;
+}
+body.oggi-has-loop-cards ul.products li.product .oggi-prodcard__add--whatsapp:hover,
+body.oggi-has-loop-cards ul.products li.product .oggi-prodcard__add--whatsapp:focus {
+    background: var(--oggi-lime-600, #65A30D) !important;
+    color: var(--oggi-navy) !important;
+}
+
+/* ============================================================
+   Single product: botón "Consultar por WhatsApp" (medicamentos).
+   Estilo pill lime grande, consistente con los CTAs Oggi.
+   ============================================================ */
+.oggi-med-wa-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--oggi-lime) !important;
+    color: var(--oggi-navy) !important;
+    font-family: var(--oggi-font-display);
+    font-weight: 700;
+    padding: 14px 26px !important;
+    border-radius: 999px !important;
+    text-decoration: none !important;
+    font-size: 16px;
+    border: none !important;
+    box-shadow: none !important;
+    transform: none !important;
+    transition: background .15s ease !important;
+    line-height: 1.1;
+}
+.oggi-med-wa-btn:hover,
+.oggi-med-wa-btn:focus {
+    background: var(--oggi-lime-600, #65A30D) !important;
+    color: var(--oggi-navy) !important;
+    transform: none !important;
+    box-shadow: none !important;
+}
+.oggi-med-wa-btn svg {
+    flex: none;
+}
+
+/* ============================================================
+   Aviso PAMI — strip compacto debajo del bloque de pagos
+   ============================================================ */
+.oggi-pami-notice {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 12px 0 0;
+    padding: 12px 14px;
+    background: var(--oggi-lime-50, #F1FADC);
+    font-family: var(--oggi-font-display);
+    flex-wrap: wrap;
+}
+.oggi-pami-notice__text {
+    margin: 0;
+    flex: 1 1 200px;
+    color: var(--oggi-navy);
+    font-size: 12.5px;
+    font-weight: 500;
+    line-height: 1.35;
+}
+.oggi-pami-notice__text strong {
+    font-weight: 800;
+}
+.oggi-pami-notice__cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--oggi-navy) !important;
+    background: transparent;
+    text-decoration: none !important;
+    font-weight: 700;
+    font-size: 12px;
+    padding: 6px 10px;
+    border: 1px solid var(--oggi-navy);
+    border-radius: 999px;
+    white-space: nowrap;
+    transition: background .15s ease, color .15s ease;
+    flex: none;
+}
+.oggi-pami-notice__cta:hover,
+.oggi-pami-notice__cta:focus {
+    background: var(--oggi-navy);
+    color: #fff !important;
+}
+.oggi-pami-notice__cta svg { flex: none; }
+
+@media (max-width: 520px) {
+    .oggi-pami-notice__cta { width: 100%; justify-content: center; }
+}
+
+/* ============================================================
+   Single product — descripción full-width (sin tabs)
+   Va después de .summary/.images, ancho completo del container.
+   ============================================================ */
+.oggi-product-description {
+    clear: both;
+    float: none;
+    width: 100%;
+    margin: 56px 0 32px;
+    padding: 0;
+    background: transparent;
+}
+.oggi-product-description__body {
+    font-family: var(--oggi-font-display);
+    color: var(--oggi-ink, #1F2937);
+    font-size: 15.5px;
+    line-height: 1.7;
+}
+.oggi-product-description__body > *:first-child { margin-top: 0; }
+.oggi-product-description__body > *:last-child  { margin-bottom: 0; }
+.oggi-product-description__body h1,
+.oggi-product-description__body h2,
+.oggi-product-description__body h3,
+.oggi-product-description__body h4,
+.oggi-product-description__body h5,
+.oggi-product-description__body h6 {
+    color: var(--oggi-navy);
+    font-family: var(--oggi-font-display);
+    font-weight: 800;
+    letter-spacing: -.2px;
+    margin: 1.6em 0 .5em;
+    line-height: 1.25;
+}
+.oggi-product-description__body h2 { font-size: 24px; }
+.oggi-product-description__body h3 { font-size: 20px; }
+.oggi-product-description__body h4 { font-size: 17px; }
+.oggi-product-description__body p {
+    margin: 0 0 1em;
+}
+.oggi-product-description__body a {
+    color: var(--oggi-navy);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+.oggi-product-description__body ul,
+.oggi-product-description__body ol {
+    margin: 0 0 1em 1.2em;
+    padding: 0;
+}
+.oggi-product-description__body li { margin-bottom: .25em; }
+.oggi-product-description__body img { max-width: 100%; height: auto; }
+
+/* Quitar el ancho limitado al 48% del summary para que la descripción use todo */
+.woocommerce div.product > .oggi-product-description,
+.woocommerce-page div.product > .oggi-product-description {
+    width: 100% !important;
+    float: none !important;
+    clear: both !important;
+}
+
+/* ============================================================
+   Single product — CTA "Añadir al carrito" / "Elegir variación"
+   Pill navy Poppins consistent con resto del sitio.
+   ============================================================ */
+.woocommerce div.product form.cart .button.single_add_to_cart_button,
+.woocommerce-page div.product form.cart .button.single_add_to_cart_button {
+    background: var(--oggi-navy) !important;
+    background-image: none !important;
+    color: #fff !important;
+    font-family: var(--oggi-font-display) !important;
+    font-weight: 800 !important;
+    font-size: 15px !important;
+    letter-spacing: .2px !important;
+    padding: 14px 28px !important;
+    border: none !important;
+    border-radius: 999px !important;
+    box-shadow: none !important;
+    transform: none !important;
+    transition: background .15s ease !important;
+    text-transform: none !important;
+    line-height: 1.2 !important;
+}
+.woocommerce div.product form.cart .button.single_add_to_cart_button:hover,
+.woocommerce-page div.product form.cart .button.single_add_to_cart_button:hover,
+.woocommerce div.product form.cart .button.single_add_to_cart_button:focus {
+    background: var(--oggi-navy-700, #14305F) !important;
+    color: #fff !important;
+    transform: none !important;
+    box-shadow: none !important;
+}
+
+/* Quantity input al lado del CTA */
+.woocommerce div.product form.cart .quantity {
+    margin-right: 10px !important;
+}
+.woocommerce div.product form.cart .quantity .qty,
+.woocommerce-page div.product form.cart .quantity .qty {
+    width: 64px !important;
+    height: 48px !important;
+    background: #fff !important;
+    border: 1px solid var(--oggi-line, #E5E7EB) !important;
+    border-radius: 999px !important;
+    font-family: var(--oggi-font-display) !important;
+    font-size: 15px !important;
+    font-weight: 700 !important;
+    color: var(--oggi-navy) !important;
+    text-align: center !important;
+    box-shadow: none !important;
+    transition: border-color .15s ease, box-shadow .15s ease;
+}
+.woocommerce div.product form.cart .quantity .qty:focus {
+    outline: none !important;
+    border-color: var(--oggi-lime) !important;
+    box-shadow: 0 0 0 3px rgba(132, 204, 22, .18) !important;
+}
+
+/* ============================================================
+   Stock duplicado: el tema/plugin renderea dos <p class="stock">
+   (uno fuera del .summary y otro adentro). Mostramos solo el de
+   adentro, que es donde tiene contexto.
+   ============================================================ */
+.woocommerce div.product > p.stock,
+.woocommerce-page div.product > p.stock {
+    display: none !important;
+}
+
+/* ============================================================
+   Short description (donde aparece "Laboratorio: DOMÍNGUEZ")
+   ============================================================ */
+.woocommerce-product-details__short-description,
+.woocommerce div.product .woocommerce-product-details__short-description {
+    font-family: var(--oggi-font-display);
+    color: var(--oggi-muted, #6B7280);
+    font-size: 14px;
+    line-height: 1.55;
+    margin: 6px 0 14px;
+}
+.woocommerce-product-details__short-description p {
+    margin: 0 0 6px;
+}
+.woocommerce-product-details__short-description p:last-child { margin-bottom: 0; }
+.woocommerce-product-details__short-description strong,
+.woocommerce-product-details__short-description b {
+    color: var(--oggi-navy);
+    font-weight: 800;
+}
+
+/* ============================================================
+   Stock + product_meta (laboratorio, categorías, etc.)
+   Reemplaza el emoji legacy por un dot/checkbox propio del tema.
+   ============================================================ */
+.woocommerce div.product p.stock,
+.woocommerce-page div.product p.stock,
+.woocommerce div.product .stock,
+.woocommerce-page div.product .stock {
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    margin: 12px 0 !important;
+    padding: 6px 12px 6px 10px !important;
+    background: var(--oggi-lime-50, #F1FADC) !important;
+    border-radius: 999px !important;
+    font-family: var(--oggi-font-display) !important;
+    font-weight: 700 !important;
+    font-size: 13px !important;
+    color: var(--oggi-lime-700, #4D7C0F) !important;
+    line-height: 1.2 !important;
+    letter-spacing: 0 !important;
+    text-shadow: none !important;
+}
+.woocommerce div.product p.stock::before,
+.woocommerce-page div.product p.stock::before,
+.woocommerce div.product .stock::before,
+.woocommerce-page div.product .stock::before {
+    content: "" !important;
+    display: inline-block !important;
+    width: 8px !important;
+    height: 8px !important;
+    border-radius: 50% !important;
+    background: var(--oggi-lime, #84CC16) !important;
+    flex: none !important;
+}
+/* Esconder cualquier emoji/ícono que el plugin haya inyectado dentro del .stock */
+.woocommerce div.product p.stock img,
+.woocommerce div.product p.stock svg,
+.woocommerce div.product p.stock i,
+.woocommerce div.product p.stock .emoji {
+    display: none !important;
+}
+/* Out of stock */
+.woocommerce div.product p.stock.out-of-stock,
+.woocommerce-page div.product p.stock.out-of-stock {
+    background: #FEF2F2 !important;
+    color: #B91C1C !important;
+}
+.woocommerce div.product p.stock.out-of-stock::before {
+    background: #DC2626 !important;
+}
+
+/* Product meta (laboratorio / categorías / sku / tags) en single */
+.woocommerce div.product .product_meta,
+.woocommerce-page div.product .product_meta {
+    margin-top: 18px;
+    padding-top: 16px;
+    border-top: 1px solid var(--oggi-line, #E5E7EB);
+    font-family: var(--oggi-font-display);
+    font-size: 13px;
+    color: var(--oggi-muted, #6B7280);
+    line-height: 1.6;
+}
+.woocommerce div.product .product_meta > span,
+.woocommerce-page div.product .product_meta > span {
+    display: block;
+    color: var(--oggi-muted, #6B7280);
+    font-weight: 500;
+}
+.woocommerce div.product .product_meta a,
+.woocommerce-page div.product .product_meta a {
+    color: var(--oggi-navy) !important;
+    font-weight: 700;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color .15s ease;
+}
+.woocommerce div.product .product_meta a:hover {
+    border-bottom-color: var(--oggi-lime);
+}
+
+/* "Laboratorio:" label si se renderea como párrafo separado (algunos plugins
+   lo agregan directamente al .summary). Si no calza con un selector estándar
+   no se altera; tiene comportamiento default heredado. */
+.woocommerce div.product .summary .laboratorio,
+.woocommerce div.product .summary .product-brand,
+.woocommerce div.product .summary p.brand,
+.woocommerce div.product .summary [class*="laboratorio"] {
+    font-family: var(--oggi-font-display) !important;
+    font-size: 13px !important;
+    color: var(--oggi-muted, #6B7280) !important;
+    font-weight: 500 !important;
+    margin: 8px 0 !important;
+    text-transform: none !important;
+    letter-spacing: 0 !important;
+}
+.woocommerce div.product .summary .laboratorio strong,
+.woocommerce div.product .summary [class*="laboratorio"] strong {
+    color: var(--oggi-navy) !important;
+    font-weight: 800 !important;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    font-size: 12px;
+    display: inline-block;
+    margin-right: 4px;
+}
+
+/* ============================================================
+   Shop: ordering select + result count + paginación
+   ============================================================ */
+
+/* Toolbar arriba (ordenar + conteo) */
+.woocommerce .woocommerce-ordering,
+.woocommerce-page .woocommerce-ordering {
+    margin-bottom: 24px !important;
+}
+.woocommerce .woocommerce-ordering select,
+.woocommerce-page .woocommerce-ordering select {
+    background: #fff !important;
+    border: 1px solid var(--oggi-line, #E5E7EB) !important;
+    border-radius: 999px !important;
+    padding: 10px 38px 10px 16px !important;
+    font-family: var(--oggi-font-display) !important;
+    font-size: 13.5px !important;
+    font-weight: 600 !important;
+    color: var(--oggi-navy) !important;
+    cursor: pointer;
+    -webkit-appearance: none;
+    appearance: none;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%231b3a77' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'><polyline points='6 9 12 15 18 9'/></svg>") !important;
+    background-repeat: no-repeat !important;
+    background-position: right 14px center !important;
+    background-size: 12px !important;
+    transition: border-color .15s ease, box-shadow .15s ease;
+    line-height: 1.2 !important;
+    box-shadow: none !important;
+}
+.woocommerce .woocommerce-ordering select:focus {
+    outline: none !important;
+    border-color: var(--oggi-lime, #84CC16) !important;
+    box-shadow: 0 0 0 3px rgba(132, 204, 22, .18) !important;
+}
+
+.woocommerce .woocommerce-result-count,
+.woocommerce-page .woocommerce-result-count {
+    font-family: var(--oggi-font-display) !important;
+    font-size: 13px !important;
+    color: var(--oggi-muted, #6B7280) !important;
+    font-weight: 500 !important;
+    line-height: 1.4 !important;
+    margin: 14px 0 0 !important;
+}
+
+/* Paginación */
+.woocommerce nav.woocommerce-pagination,
+.woocommerce-page nav.woocommerce-pagination {
+    margin: 36px 0 16px !important;
+}
+.woocommerce nav.woocommerce-pagination ul,
+.woocommerce-page nav.woocommerce-pagination ul {
+    border: none !important;
+    display: inline-flex !important;
+    flex-wrap: wrap;
+    gap: 6px;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+.woocommerce nav.woocommerce-pagination ul li,
+.woocommerce-page nav.woocommerce-pagination ul li {
+    border: none !important;
+    margin: 0 !important;
+    overflow: visible !important;
+}
+.woocommerce nav.woocommerce-pagination ul li a,
+.woocommerce nav.woocommerce-pagination ul li span,
+.woocommerce-page nav.woocommerce-pagination ul li a,
+.woocommerce-page nav.woocommerce-pagination ul li span {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    min-width: 38px !important;
+    height: 38px !important;
+    padding: 0 12px !important;
+    background: #fff !important;
+    border: 1px solid var(--oggi-line, #E5E7EB) !important;
+    border-radius: 10px !important;
+    font-family: var(--oggi-font-display) !important;
+    font-weight: 700 !important;
+    font-size: 13px !important;
+    color: var(--oggi-navy) !important;
+    line-height: 1 !important;
+    text-decoration: none !important;
+    transition: background .15s ease, border-color .15s ease, color .15s ease;
+    box-shadow: none !important;
+}
+.woocommerce nav.woocommerce-pagination ul li a:hover,
+.woocommerce nav.woocommerce-pagination ul li a:focus,
+.woocommerce-page nav.woocommerce-pagination ul li a:hover {
+    border-color: var(--oggi-navy) !important;
+    background: var(--oggi-navy-50, #E6EDF7) !important;
+    color: var(--oggi-navy) !important;
+}
+.woocommerce nav.woocommerce-pagination ul li span.current,
+.woocommerce-page nav.woocommerce-pagination ul li span.current {
+    background: var(--oggi-navy) !important;
+    border-color: var(--oggi-navy) !important;
+    color: #fff !important;
+}
+.woocommerce nav.woocommerce-pagination ul li span.dots,
+.woocommerce-page nav.woocommerce-pagination ul li span.dots {
+    background: transparent !important;
+    border: none !important;
+    color: var(--oggi-muted, #6B7280) !important;
+}
+/* Botones prev/next (con ícono → o ←) — mantienen el mismo estilo */
+.woocommerce nav.woocommerce-pagination ul li a.next,
+.woocommerce nav.woocommerce-pagination ul li a.prev,
+.woocommerce-page nav.woocommerce-pagination ul li a.next,
+.woocommerce-page nav.woocommerce-pagination ul li a.prev {
+    font-size: 16px !important;
+}
+
+/* Toolbar alignment: igualar altura del select de orderby con las cards de
+   paginación (ambos 40px) y centrar verticalmente. */
+.woocommerce .woocommerce-ordering select,
+.woocommerce-page .woocommerce-ordering select {
+    height: 40px !important;
+    line-height: 1 !important;
+    padding: 0 38px 0 16px !important;
+    vertical-align: middle !important;
+}
+.woocommerce nav.woocommerce-pagination ul li a,
+.woocommerce nav.woocommerce-pagination ul li span,
+.woocommerce-page nav.woocommerce-pagination ul li a,
+.woocommerce-page nav.woocommerce-pagination ul li span {
+    height: 40px !important;
+    min-width: 40px !important;
+    vertical-align: middle !important;
+}
+.woocommerce .woocommerce-result-count,
+.woocommerce-page .woocommerce-result-count {
+    line-height: 40px !important;
+    margin: 0 !important;
+    vertical-align: middle !important;
+}
+
+/* ============================================================
+   Single product — Precio sin impuestos nacionales (chiquito
+   debajo del precio principal)
+   ============================================================ */
+.oggi-price-ex-tax {
+    font-family: var(--oggi-font-display);
+    font-size: 11.5px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    color: var(--oggi-muted, #94A3B8);
+    margin: -8px 0 14px;
+    line-height: 1.3;
+}
+.oggi-price-ex-tax .woocommerce-Price-amount {
+    color: var(--oggi-muted, #94A3B8);
+    font-weight: 700;
+}
+
+/* ============================================================
+   Single product — Badge "-X%" o "2x1" (reemplazo del flash
+   "¡Oferta!" default de Woo).
+   ============================================================ */
+.oggi-single-badge {
+    display: inline-flex;
+    align-items: center;
+    margin: 0 0 14px;
+    padding: 6px 14px;
+    background: #EF4444;
+    color: #fff;
+    font-family: var(--oggi-font-display);
+    font-weight: 800;
+    font-size: 14px;
+    letter-spacing: .3px;
+    border-radius: 8px;
+    line-height: 1;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 5;
+}
+.oggi-single-badge--red    { background: #EF4444; color: #fff; }
+.oggi-single-badge--purple { background: #8B5CF6; color: #fff; }
+.oggi-single-badge--orange { background: #F59E0B; color: #fff; }
+.oggi-single-badge--blue   { background: #3B82F6; color: #fff; }
+.oggi-single-badge--lime   { background: var(--oggi-lime, #84CC16); color: var(--oggi-navy); }
+.oggi-single-badge--navy   { background: var(--oggi-navy); color: #fff; }
+.oggi-single-badge--promo  {
+    background: var(--oggi-lime, #84CC16);
+    color: var(--oggi-navy);
+}
+
+/* Countdown grande debajo del precio en single product. Pill estilo
+   "2x1" (lime-50 con border lime y radius 999px), pero con el contador
+   en rojo. Sin border lateral. */
+.oggi-countdown-block {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin: 6px 0 16px;
+    padding: 6px 16px 6px 14px;
+    background: var(--oggi-lime-50, #F1FADC);
+    border: 1px solid var(--oggi-lime, #84CC16);
+    border-radius: 999px;
+    font-family: var(--oggi-font-display);
+    font-size: 13px;
+    line-height: 1.2;
+    font-weight: 600;
+}
+.oggi-countdown-block__label {
+    color: var(--oggi-navy);
+    font-weight: 700;
+}
+.oggi-countdown-block__time {
+    font-weight: 800;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: .3px;
+    color: var(--oggi-red, #E11D48);
+}
+
+/* ============================================================
+   Single product — Pill informativa de la promo (2x1, 3x2, etc.)
+   Va debajo del precio + ex-tax. Badge lime con label, texto
+   navy con la frase humanizada.
+   ============================================================ */
+.oggi-promo-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin: 4px 0 14px;
+    padding: 6px 14px 6px 6px;
+    background: var(--oggi-lime-50, #F1FADC);
+    border: 1px solid var(--oggi-lime, #84CC16);
+    border-radius: 999px;
+    font-family: var(--oggi-font-display);
+}
+.oggi-promo-pill__badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--oggi-lime, #84CC16);
+    color: var(--oggi-navy);
+    font-weight: 800;
+    font-size: 13px;
+    padding: 4px 10px;
+    border-radius: 999px;
+    line-height: 1;
+    letter-spacing: .3px;
+    text-transform: uppercase;
+}
+.oggi-promo-pill__text {
+    color: var(--oggi-navy);
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 1.2;
+}
+
+/* ============================================================
+   Related products — full-width, título grande estilo Oggi
+   (grid 4 cols ya lo da la sección shop loop arriba con el scope
+   body.oggi-has-loop-cards; sólo necesitamos layout + título).
+   ============================================================ */
+.woocommerce div.product > .related.products,
+.woocommerce-page div.product > .related.products,
+.woocommerce .related.products,
+.woocommerce-page .related.products {
+    clear: both !important;
+    float: none !important;
+    width: 100% !important;
+    margin: 56px 0 32px !important;
+    padding: 0 !important;
+}
+.woocommerce .related.products > h2,
+.woocommerce-page .related.products > h2 {
+    font-family: var(--oggi-font-display);
+    font-size: 28px;
+    font-weight: 800;
+    color: var(--oggi-navy);
+    letter-spacing: -.3px;
+    margin: 0 0 24px;
+    line-height: 1.2;
+}
+@media (max-width: 560px) {
+    .woocommerce .related.products > h2,
+    .woocommerce-page .related.products > h2 {
+        font-size: 22px;
+    }
+}
+body.oggi-has-loop-cards ul.products li.product .oggi-prodcard__add.added {
+    background: var(--oggi-lime) !important;
+    color: var(--oggi-navy) !important;
+}
+/* Precio → separación extra del botón en loop (más ancho que el carousel) */
+body.oggi-has-loop-cards ul.products li.product .oggi-prodcard__prices {
+    padding-bottom: 4px;
+}
+
+@media (max-width: 1100px) {
+    body.oggi-has-loop-cards ul.products {
+        grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    }
+}
+@media (max-width: 768px) {
+    body.oggi-has-loop-cards ul.products {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        gap: 14px !important;
+    }
+}
+@media (max-width: 420px) {
+    body.oggi-has-loop-cards ul.products {
+        grid-template-columns: 1fr !important;
+    }
+}

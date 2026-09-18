@@ -1,0 +1,188 @@
+/* ============================================================
+   OGGI FARMA — Brands grid
+   Grilla de laboratorios / marcas con logos o texto.
+   ============================================================ */
+
+.oggi-brands {
+    background: transparent;
+    padding: 24px 0;
+    position: relative;
+}
+
+.oggi-brands--full {
+    width: 100vw;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+}
+
+.oggi-brands__inner {
+    max-width: var(--oggi-container);
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.oggi-brands[class*="oggi-brands--bg-"] .oggi-brands__inner {
+    padding: 36px 32px 32px;
+    border-radius: 28px;
+}
+.oggi-brands--bg-pink   .oggi-brands__inner { background: var(--oggi-bg-pink); }
+.oggi-brands--bg-sky    .oggi-brands__inner { background: var(--oggi-bg-sky); }
+.oggi-brands--bg-lime   .oggi-brands__inner { background: var(--oggi-bg-lime); }
+.oggi-brands--bg-orange .oggi-brands__inner { background: var(--oggi-bg-orange); }
+.oggi-brands--bg-amber  .oggi-brands__inner { background: var(--oggi-bg-amber); }
+.oggi-brands--bg-violet .oggi-brands__inner { background: var(--oggi-bg-violet); }
+.oggi-brands--bg-mint   .oggi-brands__inner { background: var(--oggi-bg-mint); }
+
+/* --- Cabecera --- */
+.oggi-brands__head {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+.oggi-brands__head-text {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.oggi-brands__kicker {
+    font-family: var(--oggi-font-display);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: var(--oggi-muted, #64748b);
+}
+.oggi-brands__heading {
+    font-family: var(--oggi-font-display);
+    font-size: 28px;
+    font-weight: 800;
+    color: var(--oggi-navy);
+    margin: 0;
+    line-height: 1.15;
+    letter-spacing: -.3px;
+}
+.oggi-brands__link,
+.oggi-brands__link:link,
+.oggi-brands__link:visited,
+.oggi-brands__link:hover,
+.oggi-brands__link:focus,
+.oggi-brands__link:active {
+    font-family: var(--oggi-font-display);
+    font-weight: 700;
+    font-size: 13px;
+    color: var(--oggi-navy);
+    text-decoration: none !important;
+    border-bottom: none !important;
+    box-shadow: none !important;
+}
+.oggi-brands__link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 14px;
+    background: #fff;
+    border: 1px solid #E5E7EB;
+    border-radius: 10px;
+    transition: border-color .15s ease, color .15s ease;
+}
+.oggi-brands__link:hover {
+    border-color: var(--oggi-lime);
+    color: var(--oggi-lime-700, #4D7C0F);
+}
+
+/* --- Grid: 6 columnas desktop, 4 tablet, 2 mobile --- */
+.oggi-brands__grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 14px;
+}
+
+/* --- Tile (cuadrado, matchea los assets 601×601) ---
+   El color del tile se controla con --tile-bg. Por default es blanco;
+   las clases .oggi-brands--tile-bg-* lo pisan. */
+.oggi-brands { --tile-bg: #fff; }
+.oggi-brands--tile-bg-pink   { --tile-bg: var(--oggi-bg-pink); }
+.oggi-brands--tile-bg-sky    { --tile-bg: var(--oggi-bg-sky); }
+.oggi-brands--tile-bg-lime   { --tile-bg: var(--oggi-bg-lime); }
+.oggi-brands--tile-bg-orange { --tile-bg: var(--oggi-bg-orange); }
+.oggi-brands--tile-bg-amber  { --tile-bg: var(--oggi-bg-amber); }
+.oggi-brands--tile-bg-violet { --tile-bg: var(--oggi-bg-violet); }
+.oggi-brands--tile-bg-mint   { --tile-bg: var(--oggi-bg-mint); }
+
+.oggi-brands__tile {
+    background: var(--tile-bg);
+    border: 1px solid #E5E7EB;
+    border-radius: 12px;
+    aspect-ratio: 1 / 1;
+    display: grid;
+    place-items: center;
+    transition: border-color .15s ease;
+    padding: 8px;
+    text-decoration: none !important;
+    overflow: hidden;
+}
+a.oggi-brands__tile:hover {
+    border-color: var(--oggi-lime);
+}
+.oggi-brands__tile img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+.oggi-brands__tile span {
+    font-family: var(--oggi-font-display);
+    font-weight: 700;
+    font-size: 17px;
+    color: var(--oggi-navy);
+    text-align: center;
+    letter-spacing: -.2px;
+    line-height: 1.15;
+}
+
+/* --- Responsive --- */
+@media (max-width: 1024px) {
+    /* En tablet/mobile pasamos a carousel horizontal con snap por marca.
+       Las cols pasan a ancho fijo (no %) para que los tiles cuadrados no se
+       hagan enormes a medida que el viewport crece. */
+    .oggi-brands__grid {
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: 160px;
+        grid-template-columns: none;
+        gap: 12px;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        padding: 4px 2px 12px;
+        scrollbar-width: none;
+        overscroll-behavior-x: contain;
+    }
+    .oggi-brands__grid::-webkit-scrollbar { display: none; }
+    .oggi-brands__tile {
+        scroll-snap-align: start;
+        scroll-snap-stop: always;
+    }
+    .oggi-brands__heading { font-size: 24px; }
+}
+
+@media (max-width: 640px) {
+    .oggi-brands { padding: 14px 0; }
+    .oggi-brands__inner { padding: 0 12px; }
+    .oggi-brands[class*="oggi-brands--bg-"] .oggi-brands__inner {
+        padding: 24px 16px 20px;
+        border-radius: 20px;
+    }
+    .oggi-brands__grid {
+        grid-auto-columns: 130px; /* tile cuadrado 130×130 — ~2.5 marcas visibles */
+        gap: 10px;
+    }
+    .oggi-brands__tile { padding: 6px; }
+    .oggi-brands__tile span { font-size: 14px; }
+    .oggi-brands__heading { font-size: 20px; }
+}

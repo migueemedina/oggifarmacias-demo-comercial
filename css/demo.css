@@ -1,0 +1,124 @@
+/* ══════════════════════════════════════════════════════════════════
+   demo.css — lo que en el sitio pone Storefront, más lo que todavía
+   no existe. Nada de esto pisa al tema: son los cimientos que faltan.
+   ══════════════════════════════════════════════════════════════════ */
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+    margin: 0;
+    background: var(--oggi-white, #fff);
+    color: var(--oggi-ink, #0F172A);
+    font-family: var(--oggi-font-display);
+    font-size: 15px;
+    line-height: 1.5;
+}
+img { max-width: 100%; }
+a { color: inherit; }
+h1, h2, h3, h4, h5 { margin: 0; font-weight: 700; }
+ul { margin: 0; padding: 0; list-style: none; }
+button { font: inherit; }
+/* ⚠️ A propósito NO hay `overflow-x: hidden` acá. El tema no lo tiene (mirá
+   assets/css/base/_global.css) y taparlo haría que la demo mienta: el mosaico
+   del home se desborda 16 px en celular y eso hay que verlo. Ver el LEEME. */
+.demo-main { width: 100%; }
+.oggi-prodcard__disc { z-index: 3; }
+
+/* ── Bloque nuevo: tarjetas de categoría (1010×1180) ──
+   No existe en el tema. El día que se programe, este CSS es el punto de
+   partida: grilla de 7 en escritorio y carrusel con snap en celular, los dos
+   patrones que ya usan el resto de los bloques. */
+.oggi-catcards { background: #fff; padding: 22px 0 10px; position: relative; }
+.oggi-catcards--full { width: 100vw; left: 50%; right: 50%; margin-left: -50vw; margin-right: -50vw; }
+.oggi-catcards__inner { max-width: var(--oggi-container); margin: 0 auto; padding: 0 20px; }
+.oggi-catcards__head {
+    display: flex; align-items: flex-end; justify-content: space-between;
+    gap: 16px; margin-bottom: 18px; flex-wrap: wrap;
+}
+.oggi-catcards__kicker {
+    display: block; font-size: 12px; font-weight: 700; letter-spacing: 2.5px;
+    text-transform: uppercase; color: var(--oggi-muted); margin-bottom: 6px;
+}
+.oggi-catcards__heading {
+    font-size: 34px; font-weight: 800; color: var(--oggi-navy);
+    line-height: 1.1; letter-spacing: -.6px;
+}
+.oggi-catcards__track { display: grid; grid-template-columns: repeat(7, 1fr); gap: 12px; }
+.oggi-catcards__tile {
+    display: block; border-radius: 16px; overflow: hidden; min-width: 0;
+    background: var(--oggi-navy-50, #E6EDF7); text-decoration: none !important;
+}
+.oggi-catcards__tile img { display: block; width: 100%; height: auto; }
+@media (max-width: 1100px) {
+    .oggi-catcards__track { grid-template-columns: repeat(4, 1fr); }
+}
+@media (max-width: 768px) {
+    .oggi-catcards__inner { padding: 0 12px; }
+    .oggi-catcards__heading { font-size: 24px; }
+    .oggi-catcards__track {
+        display: flex; gap: 10px; overflow-x: auto; scroll-snap-type: x mandatory;
+        padding-bottom: 6px; scrollbar-width: none; -webkit-overflow-scrolling: touch;
+    }
+    .oggi-catcards__track::-webkit-scrollbar { display: none; }
+    .oggi-catcards__tile { flex: 0 0 47%; scroll-snap-align: start; }
+}
+
+/* ── Barra superior: los dos campos nuevos ──
+   ⚠️ NO existen en el tema. Hay que sumarlos a `oggi_topbar_campos()` (PHP) y a
+   `topbar.css`. Los hex y las tintas salen de la tabla de contraste de
+   `fam_topbar.py`: verde manda navy (5,28:1), azul manda blanco (4,52:1).
+   La trama es un azulejo que repite en x — por eso sirve de 360 a 2560 px. */
+.oggi-topbar[data-bg="verde"] { background: #4F7A04; color: #FFFFFF; }
+.oggi-topbar[data-bg="oggi"]  { background: #007BC6; color: #FFFFFF; }
+/* la pieza es transparente y se centra: sin sombra de texto encima */
+.oggi-topbar__msg--img .oggi-topbar__msg-text { text-shadow: none; }
+
+/* ── Marcas de la demo: lo que no es del sitio se ve distinto a propósito ── */
+[data-demo-nota] {
+    font-size: 11px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase;
+    color: #8A5A00; background: #FFF4D6; border: 1px dashed #E3B505;
+    padding: 5px 10px; border-radius: 999px;
+}
+
+/* ── Panel «qué estoy mirando» ── */
+.demo-btn {
+    position: fixed; right: 16px; bottom: 76px; z-index: 9000;
+    display: inline-flex; align-items: center; gap: 8px;
+    background: var(--oggi-navy); color: #fff; border: 0;
+    padding: 11px 16px; border-radius: 999px; cursor: pointer;
+    font-size: 13px; font-weight: 700; box-shadow: 0 8px 24px rgba(15,40,71,.28);
+}
+.demo-btn:hover { background: var(--oggi-navy-700); }
+@media (min-width: 769px) { .demo-btn { bottom: 20px; } }
+.demo-panel {
+    position: fixed; inset: auto 0 0 0; z-index: 9001; max-height: 82vh; overflow-y: auto;
+    background: #fff; border-top: 3px solid var(--oggi-lime);
+    box-shadow: 0 -18px 50px rgba(15,40,71,.22);
+    padding: 22px 20px 40px; display: none;
+}
+.demo-panel[open], .demo-panel.is-open { display: block; }
+@media (min-width: 900px) {
+    .demo-panel { inset: auto 20px 20px auto; width: 460px; border-radius: 20px; border-top: 0;
+                  border: 1px solid var(--oggi-line); max-height: 76vh; }
+}
+.demo-panel h3 { font-size: 19px; color: var(--oggi-navy); margin-bottom: 4px; }
+.demo-panel h4 {
+    font-size: 11px; letter-spacing: .09em; text-transform: uppercase;
+    color: var(--oggi-muted); margin: 18px 0 7px;
+}
+.demo-panel p, .demo-panel li { font-size: 13.5px; line-height: 1.55; color: var(--oggi-ink-2); }
+.demo-panel ul { display: grid; gap: 7px; }
+.demo-panel li { padding-left: 17px; position: relative; }
+.demo-panel li::before {
+    content: ""; position: absolute; left: 0; top: 8px; width: 7px; height: 7px;
+    border-radius: 2px; background: var(--oggi-lime);
+}
+.demo-panel li.no::before { background: #E3B505; }
+.demo-panel li.falta::before { background: var(--oggi-red); }
+.demo-panel__x {
+    position: absolute; top: 14px; right: 16px; border: 0; background: transparent;
+    font-size: 22px; line-height: 1; color: var(--oggi-muted); cursor: pointer;
+}
+.demo-panel code {
+    background: var(--oggi-bg); padding: 1px 5px; border-radius: 4px;
+    font-size: 12px; font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+}
